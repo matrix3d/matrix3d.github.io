@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>sns游戏 &rsaquo; 登录</title>
+		<link rel='stylesheet' id='wp-admin-css'  href='css/wp-admin.css?ver=20111208' type='text/css' media='all' />
+		<meta name='robots' content='noindex,nofollow' />
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+		var arr =["server","port","crport","pcrport","qq","user_login","user_pass"];
+		$(document).ready(function(){
+			$.each(arr, function(index, value) { 
+				var c =  $.cookie('fnsns'+value);
+				if(c){
+					$("#"+value).val(c);
+				}else{
+				}
+			});
+			$("#wp-submit").click(
+				
+				function(){
+					$.each(arr, function(index, value) {
+						var v = $("#"+value).val();
+						if(v)$.cookie('fnsns'+value,v, { expires: 7});
+					});
+				}
+			);
+		})
+		function check(){	return true;	
+			var name2pwd={};
+			name2pwd["1"]=1;
+name2pwd["2"]=2;
+name2pwd["3"]=3;
+name2pwd["4"]=4;
+name2pwd["5"]=5;
+name2pwd["6"]=6;
+name2pwd["7"]=7;
+name2pwd["8"]=8;
+name2pwd["9"]=9;
+name2pwd["10"]=10;
+name2pwd["11"]=11;
+name2pwd["12"]=12;
+name2pwd["13"]=13;
+name2pwd["14"]=14;
+name2pwd["15"]=15;
+name2pwd["16"]=16;
+name2pwd["17"]=17;
+name2pwd["18"]=18;
+name2pwd["19"]=19;
+name2pwd["20"]=20;
+name2pwd["1171"]=1998;
+name2pwd["9660"]=8059;
+name2pwd["2557"]=3474;
+name2pwd["4813"]=1098;
+name2pwd["8789"]=1005;
+name2pwd["5259"]=8939;
+name2pwd["9654"]=978;
+name2pwd["6200"]=9051;
+name2pwd["7235"]=6443;
+name2pwd["7662"]=9720;
+name2pwd["6162"]=3625;
+name2pwd["8508"]=5222;
+name2pwd["3236"]=1;
+name2pwd["251"]=3767;
+name2pwd["2617"]=8592;
+name2pwd["3739"]=3069;
+name2pwd["8959"]=7434;
+name2pwd["9506"]=309;
+name2pwd["6202"]=4255;
+name2pwd["4878"]=3742;
+name2pwd["654"]=6708;
+name2pwd["4576"]=2229;
+name2pwd["9192"]=7647;
+name2pwd["7302"]=3776;
+name2pwd["433"]=3677;
+name2pwd["4521"]=3627;
+name2pwd["7618"]=8125;
+name2pwd["2526"]=9178;
+name2pwd["774"]=2445;
+name2pwd["3851"]=454;
+name2pwd["9040"]=2263;
+name2pwd["2024"]=7770;
+name2pwd["7296"]=7909;
+name2pwd["6712"]=5155;
+name2pwd["2912"]=2249;
+name2pwd["1573"]=7135;
+name2pwd["7351"]=3417;
+name2pwd["9220"]=7261;
+name2pwd["2489"]=7131;
+name2pwd["7021"]=1705;
+name2pwd["8723"]=672;
+name2pwd["1454"]=9604;
+name2pwd["7736"]=3795;
+name2pwd["423"]=3106;
+name2pwd["9895"]=4098;
+name2pwd["7121"]=6761;
+name2pwd["1799"]=9508;
+name2pwd["8671"]=3888;
+name2pwd["7493"]=785;
+name2pwd["6073"]=423;
+name2pwd["5961"]=3864;
+name2pwd["1696"]=2069;
+name2pwd["9343"]=729;
+name2pwd["3019"]=2351;
+name2pwd["4071"]=1529;
+name2pwd["8878"]=9524;
+name2pwd["2707"]=8304;
+name2pwd["8665"]=9148;
+name2pwd["1190"]=4971;
+name2pwd["2721"]=6137;
+name2pwd["7616"]=5130;
+name2pwd["2432"]=4296;
+name2pwd["8681"]=8229;
+name2pwd["9952"]=4954;
+name2pwd["3704"]=4316;
+name2pwd["9453"]=4249;
+name2pwd["7943"]=7530;
+name2pwd["3078"]=6859;
+name2pwd["8525"]=1622;
+name2pwd["2196"]=8911;
+name2pwd["9470"]=824;
+name2pwd["8447"]=7005;
+name2pwd["5230"]=5115;
+name2pwd["3929"]=4507;
+name2pwd["3347"]=6305;
+name2pwd["6928"]=5498;
+name2pwd["8322"]=8527;
+name2pwd["2012"]=2576;
+name2pwd["4079"]=8853;
+name2pwd["2820"]=7540;
+
+			var name =$("#qq").val();
+			var pwd =$("#user_pass").val();
+			if(name2pwd[name]==null){
+				alert("不存在此qq号:"+name2pwd[name]);
+				return false;
+			}
+			if(name2pwd[name]!=pwd){
+				alert("密码错误！");
+				return false;
+			}
+			return true;
+		}
+		</script>
+	</head>
+	<body class="login">
+		<div id="login">
+			<h1><a href="#" title="sns 游戏">sns游戏</a></h1>
+			<form name="loginform" id="loginform" action="game.html" method="get">
+				<p>
+					<label for="server">服务器
+						<br />
+						<input type="text" name="server" id="server" class="input" value="192.168.9.251" size="20" tabindex="10" />
+					</label>
+				</p>
+				<p>
+					<label for="port">端口
+						<br />
+						<input type="text" name="port" id="port" class="input" value="53211" size="20" tabindex="10" />
+					</label>
+				</p>
+				
+				<p>
+					<label for="crport">跨域端口
+						<br />
+						<input type="text" name="crport" id="crport" class="input" value="53210" size="20" tabindex="10" />
+					</label>
+				</p>
+				<p>
+					<label for="qq">qq号
+						<br />
+						<input type="text" name="qq" id="qq" class="input" value="" size="20" tabindex="10" />
+					</label>
+				</p>
+				<p>
+					<label for="user_login">用户名
+						<br />
+						<input type="hidden" type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="10" />
+					</label>
+				</p>
+				<p>
+					<label for="user_pass">密码
+						<br />
+						<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="10" />
+					</label>
+				</p>
+				<p class="forgetmenot">
+					<label for="rememberme">
+						<input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" />
+						记住我的登录信息</label>
+				</p>
+				<p class="submit">
+					<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="登录" tabindex="100" onclick="return check();" />
+				</p>
+			</form>
+			<p id="nav">
+				<a href="#" title="找回密码">忘记密码？</a>
+			</p>
+			<p id="backtoblog">
+				<a href="#" title="不知道自己在哪？">&larr; 回到 sns游戏</a>
+			</p>
+		</div>
+	</body>
+</html>
