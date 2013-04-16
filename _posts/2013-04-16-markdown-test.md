@@ -35,9 +35,9 @@ tags : [beginner, jekyll, tutorial]
 2. 34  
 ### 代码块一个制表符 ##  
 
-	var a = 0;
-	a++;
-	trace(a);
+    var a = 0;
+    a++;
+    trace(a);
 	
 ###  小段代码 ##
 小段'log(a)'代码
