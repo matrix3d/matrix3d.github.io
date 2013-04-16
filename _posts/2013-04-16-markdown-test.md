@@ -34,6 +34,7 @@ tags : [beginner, jekyll, tutorial]
 1. 2  
 2. 34  
 ## 代码块一个制表符 ##  
+
 	var a = 0;
 	a++;
 	trace(a);
