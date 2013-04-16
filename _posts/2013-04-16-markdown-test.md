@@ -38,7 +38,7 @@ tags : [beginner, jekyll, tutorial]
     var a = 0;
     a++;
     trace(a);
-	
+
 ###  小段代码 ##
 小段'log(a)'代码
 
