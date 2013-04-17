@@ -9,22 +9,48 @@ tags : [as3, tutorial]
 as3 可以用urlloader请求http。也可以用socket模拟请求。 
 	```  
 	
-	var url:String = "g.cn";
-	socket = new Socket(url.split("/")[0],80);
-	socket.addEventListener(Event.CONNECT, socket_connect);
-	socket.addEventListener(ProgressEvent.SOCKET_DATA, socket_socketData);
-
-	function socket_socketData(e:ProgressEvent):void 
+	private var socket:Socket;
+		
+	private var url:String = "g.cn";
+	private var ip:String;
+	private var port:int;
+	public function Test() 
 	{
-		while (socket.bytesAvailable) {
-			trace(socket.readUTFBytes(socket.bytesAvailable));
-		}
+		var host:String = url.split("/")[0];
+		ip = host.split(":")[0];
+		port = int(host.split(":")[1]);
+		if (port == 0) port = 80;
+		trace(ip,port);
+		socket = new Socket(ip,port);
+		socket.addEventListener(Event.CONNECT, socket_connect);
+		socket.addEventListener(ProgressEvent.SOCKET_DATA, socket_socketData);
+		socket.addEventListener(Event.CLOSE, socket_close);
 	}
-
-	function socket_connect(e:Event):void 
+	
+	private function socket_connect(e:Event):void 
 	{
-		socket.writeUTFBytes("GET "+url.substr(url.indexOf("/"))+" HTTP/1.1\r\nHost:\r\n\r\n");
+		var i:int = url.indexOf("/");
+		var req:String = i==-1?"":url.substr(i+1);
+		var str:String = "GET /" + req + " HTTP/1.1\r\n";
+		str += "Host:" + ip + ":" + port + "\r\n";
+		trace(str);
+		socket.writeUTFBytes(str+"\r\n");
 		socket.flush();
+	}
+	
+	private function socket_close(e:Event):void 
+	{
+		trace("close");
+	}
+	
+	private function socket_socketData(e:ProgressEvent):void 
+	{
+		
+		while (socket.bytesAvailable) {
+			trace(socket.bytesAvailable);
+			var line:String = socket.readUTFBytes(socket.bytesAvailable);
+			trace(line);
+		}
 	}
 
 	//result
