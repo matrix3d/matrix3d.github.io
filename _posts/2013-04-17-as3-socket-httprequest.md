@@ -6,8 +6,8 @@ tags : [as3, tutorial]
 ---
 {% include JB/setup %}
 ### as3 socket httprequest  
-as3 可以用urlloader请求http。也可以用socket模拟请求。
-	```
+as3 可以用urlloader请求http。也可以用socket模拟请求。 
+	```  
 	
 	var socket:Socket = new Socket("g.cn",80);
 	socket.addEventListener(Event.CONNECT, socket_connect);
@@ -46,7 +46,7 @@ as3 可以用urlloader请求http。也可以用socket模拟请求。
 	</BODY></HTML>
 
 
-	```
+	```  
 
 
 
