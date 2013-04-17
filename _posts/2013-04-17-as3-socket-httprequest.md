@@ -9,7 +9,8 @@ tags : [as3, tutorial]
 as3 可以用urlloader请求http。也可以用socket模拟请求。 
 	```  
 	
-	var socket:Socket = new Socket("g.cn",80);
+	var url:String = "g.cn";
+	socket = new Socket(url.split("/")[0],80);
 	socket.addEventListener(Event.CONNECT, socket_connect);
 	socket.addEventListener(ProgressEvent.SOCKET_DATA, socket_socketData);
 
@@ -22,7 +23,7 @@ as3 可以用urlloader请求http。也可以用socket模拟请求。
 
 	function socket_connect(e:Event):void 
 	{
-		socket.writeUTFBytes("GET /index.html HTTP/1.1\r\nHost:g.cn\r\n\r\n");
+		socket.writeUTFBytes("GET "+url.substr(url.indexOf("/"))+" HTTP/1.1\r\nHost:\r\n\r\n");
 		socket.flush();
 	}
 
