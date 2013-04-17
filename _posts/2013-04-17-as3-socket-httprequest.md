@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category : 
 tagline: "tl"
 tags : [as3, tutorial]
 ---
