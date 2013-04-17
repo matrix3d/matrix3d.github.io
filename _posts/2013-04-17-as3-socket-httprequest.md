@@ -8,6 +8,7 @@ tags : [as3, tutorial]
 ### as3 socket httprequest  
 as3 可以用urlloader请求http。也可以用socket模拟请求。
 	```
+	
 	var socket:Socket = new Socket("g.cn",80);
 	socket.addEventListener(Event.CONNECT, socket_connect);
 	socket.addEventListener(ProgressEvent.SOCKET_DATA, socket_socketData);
