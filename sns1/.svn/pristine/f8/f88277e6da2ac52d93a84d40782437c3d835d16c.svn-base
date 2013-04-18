@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="js/swfobject.js"></script>
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$.get("v.txt?"+Math.random(), null, function (data, textStatus){
+					var flashvars = {
+						//uname : getParameter("log"),
+						uname : getParameter("qq"),
+						server : getParameter("server"),
+						port : getParameter("port"),
+						crport : getParameter("crport"),
+						log : getParameter("qq")
+					};
+					var params = {
+						menu : "true",
+						scale : "noScale",
+						allowFullscreen : "true",
+						allowScriptAccess : "always",
+						bgcolor : "",
+						wmode : "direct" // can cause issues with FP settings & webcam
+					};
+					var attributes = {
+						id : "testalchemy"
+					};
+					swfobject.embedSWF("webgameclient.swf?v=" + data/*getParameter("version")*/, "altContent", "960", "640", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+
+			});
+			
+			
+			function getParameter(param) {
+				var reg = new RegExp(".*[?,&]"+param+"=(.*?)((&.*)|$)");
+				var obj = reg.exec(window.location.search);
+				if(obj)return obj[1];
+				else return "";
+			}
+		</script>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<style>
+			html, body {
+				height: 100%;
+				background-image:url("bg.gif");
+				background-attachment:fixed;
+				background-color:#b2dfda;
+				background-repeat:no-repeat no-repeat;
+				margin:0px;
+			}
+			#wp{
+				text-align:center;
+				width:960px;
+				margin: 0px auto;
+				padding:0px;
+				background-color: #E7E7E7;
+			}
+			
+					#header {
+	margin: 0px auto; width: 960px; height: 170px; position: relative;
+	background: url("images/header.png")
+	
+}				
+#footer {
+	margin: 0px auto; width: 960px; height: 335px; position: relative;
+	background: url("images/things.jpg")
+	
+}
+			#header ul {
+	list-style: none; margin: 0px; padding: 0px; left: 250px; bottom: 0px; position: absolute;
+}
+#header li {
+	margin: 0px 2px 0px 0px; padding: 0px; float: left;
+}
+
+.page_item a {
+	background: url("images/bg-menu.png") no-repeat left top; font: 20px; margin: 0px; padding: 10px 0px 0px; width: 85px; height: 40px; text-align: center; color: rgb(255, 255, 255); text-decoration: none; display: block; font-size-adjust: none; font-stretch: normal;
+}
+.page_item a:hover {
+	background: url("images/bg-menu-hover.png") no-repeat left top;
+}
+.current_page_item a {
+	background: url("images/bg-menu-active.png") no-repeat left top;  color: rgb(54, 54, 54); font-size-adjust: none; font-stretch: normal;
+}
+.current_page_item a:hover {
+	background: url("images/bg-menu-active-hover.png") no-repeat left top;  color: rgb(54, 54, 54); font-size-adjust: none; font-stretch: normal;
+}
+.clear {
+	clear: both;
+}
+		</style>
+	</head>
+	<body>
+		<div id="wp">
+			<div id="header">
+				<ul>
+					<li class="page_item current_page_item">
+						<a href="#">进行游戏</a>
+					</li>
+					<li class="page_item">
+						<a href="#">邀请好友</a>
+					</li>
+					<li class="page_item">
+						<a href="#">游戏论坛</a>
+					</li>
+					<li class="page_item">
+						<a href="#">新手教导</a>
+					</li>
+					<li class="page_item">
+						<a href="#">充值</a>
+					</li>
+					<li class="page_item">
+						<a href="#">黄钻</a>
+					</li>
+					<li class="page_item">
+						<a href="#">问题诊断</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div id="altContent">
+				<h1>test</h1>
+				<p>
+					<a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a>
+				</p>
+			</div>
+			<div id="footer">
+				
+			</div>
+		</div>
+	</body>
+</html>

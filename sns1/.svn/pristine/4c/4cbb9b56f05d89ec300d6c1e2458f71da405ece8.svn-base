@@ -1,0 +1,811 @@
+﻿ui1.swf 影片报告
+
+
+
+帧 #    帧字节           字节总数          场景
+
+    
+    
+    
+
+  1       2196767       2196767    场景 1 (AS 3.0 类导出帧)
+
+场景      形状字节          文本字节          ActionScript 字节
+
+    
+    
+    
+
+场景 1             0             0              51660
+
+符号                              形状字节          文本字节          ActionScript 字节
+
+    
+    
+    
+
+arean_main_tab2_mc                       0             0                  0
+arena_creat_bord_mc                      0             0                  0
+arena_creat_mc                           0          1348                  0
+button3_mc                             554           141                  0
+button2_mc                               0           141                  0
+竞技场边框                        345             0                  0
+tab_arena_create_level_mc                0             0                  0
+tab_arena_create_time_mc                 0             0                  0
+maplist_wrapper_mc                       0             0                  0
+arena_create_tab_battle                  0             0                  0
+arena_face_cell                          0           270                  0
+xx_mc                                    0             0                  0
+ready_mc                                 0             0                  0
+mc_mini_close_btn                        0             0                  0
+框框mc                                 0             0                  0
+arena_main_grid_cell                     0             0                  0
+arena_main_grid_cell_base                0           427                  0
+arena_main_grid_mc                       0             0                  0
+arena_main_grid_tabbar_mc                0             0                  0
+arena_main_mc                            0             0                  0
+button_s7_mc                             0           138                  0
+button7_mc                               0           152                  0
+arena_main_see                           0             0                  0
+lock_mc                                  0             0                  0
+button5_mc                               0           141                  0
+arena_main_tabbar3_mc                    0             0                  0
+stepper_mc                               0           133                  0
+button4_mc                               0           142                  0
+arena_mins_menulist_mc                   0             0                  0
+button6_mc                               0           141                  0
+arena_room_bg_mc                        69             0                  0
+arena_room_mc                            0          1343                  0
+button_mc                              532           140                  0
+map_list_menu_mc                         0             0                  0
+maplist_cell_0_mc                        0           141                  0
+maplist_cell_1_mc                        0             0                  0
+maplist_cell_2_mc                        0             0                  0
+maplist_cell_3_mc                        0             0                  0
+maplist_cell_4_mc                        0             0                  0
+maplist_cell_5_mc                        0             0                  0
+maplist_cell_6_mc                        0             0                  0
+maplist_cell_7_mc                        0             0                  0
+maplist_cell_8_mc                        0             0                  0
+框框2mc                              270             0                  0
+maplist_btn_mc                           0             0                  0
+arrow_s2_mc                              0             0                  0
+tabbar_s3_mc                             0             0                  0
+tabbar_s5_mc                             0             0                  0
+tabbar_s6_mc                             0             0                  0
+alert_bg_mc                            285             0                  0
+alert_mc                                 0           199                  0
+battle_stepper_mc                        0            51                  0
+bg2_mc                                 598             0                  0
+btn_arrow_mc                             0             0                  0
+btn_arrow_s2_mc                          0             0                  0
+btn_inter_mc                             0             0                  0
+btn3_tabbar_mc                           0             0                  0
+button_s3_mc                             0             0                  0
+button_s3_mc_big                         0             0                  0
+button_s10_mc                            0             0                  0
+button_s32_mc                            0           132                  0
+button_shop_tab_mc                       0             0                  0
+button4s_mc                              0           141                  0
+rect_mc                                 47             0                  0
+cbox_mc                                  0             0                  0
+chat_mc                                  0            52                  0
+close_roll_mc                            0             0                  0
+development_bottom_tabbar_mc             0             0                  0
+development_top_tabbar_mc                0             0                  0
+develop_mini_icon_mc                     0             0                  0
+frame_mc                               291             0                  0
+log_mc                                   0           590                  0
+textarea_mc                              0            50                  0
+make_item_wrapper_mc                     0             0                  0
+mc_close_btn                             0             0                  0
+menu_mc                                  0             0                  0
+message_mini_icon_mc                     0             0                  0
+message_sender_mc                        0           286                  0
+yellow_button_mc                       532           140                  0
+null_mc                                  0             0                  0
+progress_anima_mc                        0            51                  0
+progress_exp_mc                          0            51                  0
+progress_mc                              0            52                  0
+progress_up_mc                         111             0                  0
+progress_s2_mc                           0            52                  0
+skill_wrapper_mc                         0             0                  0
+slider_bg                               32             0                  0
+slider_btn_mc                          224             0                  0
+slider_mc                                0             0                  0
+stepper_friend_mc                        0             0                  0
+stepper_friend_s2_mc                     0             0                  0
+stepper_mc2                              0             0                  0
+stepper_s1_mc                            0            52                  0
+stepper_s2_mc                            0             0                  0
+stepper_s3_mc                            0           133                  0
+stepper_s4_mc                            0           133                  0
+stepper_sdevelopment_mc                  0             0                  0
+tabbar_friends_mc                        0             0                  0
+tabbar_mc                                0             0                  0
+pack_mini_icon_mc                        0             0                  0
+tabbar_s4_mc                             0             0                  0
+tabbar_s7_mc                             0             0                  0
+tabbar_shop_mc                           0             0                  0
+tabbar2_mc                               0             0                  0
+title_mc                                89             0                  0
+up_s2_mc                               111             0                  0
+v_btn3_tabbar_mc                         0             0                  0
+界面装饰物                         81             0                  0
+框框3                                  0             0                  0
+框框5_mc                             277             0                  0
+battle_bottom_mc                         0             0                  0
+battle_car_bg_mc                         0             0                  0
+battle_car_bg0_mc                        0             0                  0
+battle_hp_mc                             0            52                  0
+battle_car_bg1_mc                        0             0                  0
+battle_car_bg2_mc                        0             0                  0
+battle_hp_up_mc                         97             0                  0
+battle_item_mc                           0             0                  0
+battle_main_mc                           0             0                  0
+battle_time_mc                           0           135                  0
+skill_mc                                 0            50                  0
+battle_top_mc                            0             0                  0
+battle_map_mc                            0          1216                  0
+level_ball1_mc                           0             0                  0
+level_ball2_mc                           0             0                  0
+m3_mc                                    0             0                  0
+m8_mc                                    0             0                  0
+m1_mc                                    0             0                  0
+m6_mc                                    0             0                  0
+m4_mc                                    0             0                  0
+m2_mc                                    0             0                  0
+m5_mc                                    0             0                  0
+m7_mc                                    0             0                  0
+箭头发光                             0             0                  0
+battle_map_bg_mc                        42             0                  0
+battle_pass_mc                           0           957                  0
+pass_monter_mc                           0           141                  0
+battle_prepare_mc                        0           118                  0
+prepare_bullet_mc                        0             0                  0
+selected_bullet_mc                       0             0                  0
+battle_scroll_buttle_mc                  0             0                  0
+buff_mc                                  0             0                  0
+level_ball_mc                            0             0                  0
+reward_wrapper_mc                        0             0                  0
+build_mc                                 0             0                  0
+build_menu_addspeed_mc                   0             0                  0
+build_menu_bg1_mc                        0             0                  0
+build_menu_bg2_mc                        0             0                  0
+build_menu_enter_mc                      0             0                  0
+build_menu_lvup_mc                       0             0                  0
+build_ui_base_mc                         0           206                  0
+build_ui_mc                              0             0                  0
+build_ui_selected_mc                     0           117                  0
+upable_mc                                0             0                  0
+buildMenu_mc                             0            51                  0
+buildWrapper_mc                          0             0                  0
+development_icon_gray_mc                 0             0                  0
+development_icon_gray2_mc                0             0                  0
+development_icon_gray3_mc                0             0                  0
+development_addspeed_mc                  0           158                  0
+development_card_mc                      0           268                  0
+development_mc                           0           610                  0
+grid_development_wrapper                 0             0                  0
+development_tab_mc                       0             0                  0
+development_mini_btn_mc                  0             0                  0
+development_mini_btn_tab_mc              0             0                  0
+product_wrapper_mc                       0             0                  0
+production_card_mc                       0           268                  0
+production_mc                            0           496                  0
+prot_titles_mc                           0             0                  0
+元件 1                                58             0                  0
+build_effect_100_mc                      0             0                  0
+build_effect_101_mc                      0             0                  0
+元件 1                                58             0                  0
+DM0174-01-SC001#Symbol 48             1316             0                  0
+DM0174-01-SC001#Symbol 47              443             0                  0
+equit_make_mc                            0           670                  0
+make_wrapper_mc                          0             0                  0
+equit_marge_mc                           0           152                  0
+equit_mc                                 0             0                  0
+equit_tabbar_mc                          0             0                  0
+equit_upgrade_mc                         0           152                  0
+tabbar_s8_mc                             0             0                  0
+help_mc                                  0           145                  0
+bg_mc                                   95             0                  0
+btn_cangku_mc                            0             0                  0
+btn_gift_mc                              0            49                  0
+btn_gift2_mc                             0             0                  0
+btn_jianzhu_mc                           0             0                  0
+btn_jjc_mc                               0             0                  0
+btn_setting_mc                           0             0                  0
+btn_shangcheng_mc                        0             0                  0
+btn_xiaoxi_mc                            0             0                  0
+btn_yingxiong_mc                         0             0                  0
+btn_yuanzheng_mc                         0             0                  0
+cir_face_mc                             80             0                  0
+exp_up_mc                                0             0                  0
+faceWrapper                              0             0                  0
+friend_base_mc                           0           102                  0
+friend_wrapper                           0             0                  0
+friend_wrapper_mc                        0             0                  0
+frient_btn_mc                            0             0                  0
+gear_mc                                  0             0                  0
+gears_mc                                 0             0                  0
+gift_mc                                  0             0                  0
+help_btn_mc                              0             0                  0
+hero_achievement_mc                      0            52                  0
+hero_attack_mc                           0            51                  0
+hero_attackspeed_mc                      0            51                  0
+hero_def_mc                              0            51                  0
+hero_exp_mc                              0            52                  0
+hero_fighting_mc                         0            52                  0
+hero_hp_mc                               0            52                  0
+hero_level_mc                            0            52                  0
+hero_mc                                  0           275                  0
+item_wrapper_mc                          0             0                  0
+item_s2_wrapper_mc                       0             0                  0
+hero_photo_mc                            0             0                  0
+hero_movespeed_mc                        0            52                  0
+mainui_bottom                            0             0                  0
+moshengren_btn_mc                        0             0                  0
+mainui_bottom_funbtn_mc                  0             0                  0
+message_doudou_mc                        0             0                  0
+mainui_day_quest_mc                      0             0                  0
+mainui_mc                                0             0                  0
+mainui_top_mc                           28           102                  0
+mainui_quest_mc                          0             0                  0
+元件 1                                58             0                  0
+mainui_setting_mc                        0             0                  0
+message_btn_mc                           0             0                  0
+message_mc                               0             0                  0
+Ranking_mc                               0             0                  0
+txt_s1_mc                                0           299                  0
+补间 1                                 0             0                  0
+补间 2                                 0             0                  0
+补间 3                                 0             0                  0
+补间 4                                 0             0                  0
+补间 5                                 0             0                  0
+补间 6                                 0             0                  0
+补间 7                                 0             0                  0
+补间 8                                 0             0                  0
+补间 9                                 0             0                  0
+补间 10                                0             0                  0
+补间 11                                0             0                  0
+补间 12                                0             0                  0
+箭头浮动                             0             0                  0
+pack_item_wrapper                       41             0                  0
+pack_mc                                  0           104                  0
+pack_wrapper_mc                        252             0                  0
+sell_ui_mc                               0           205                  0
+shop_card_mc                             0           945                  0
+shop_grid_wrapper_mc                     0             0                  0
+shop_mc                                  0           104                  0
+shop_mini_icon_mc                        0             0                  0
+achievement_mc                           0           104                  0
+bg2_mc                                 598             0                  0
+day_quest_mc                             0             0                  0
+quest_mc                                 0           208                  0
+bg3_mc                                 284             0                  0
+bg4_mc                                 275             0                  0
+reward_cell_mc                           0             0                  0
+reward_mc                                0           149                  0
+buff_tip                                 0           274                  0
+tip_bg_mc                              270             0                  0
+level_tip                                0           274                  0
+1                                        0             0                  0
+11                                       0             0                  0
+12                                       0             0                  0
+13                                       0             0                  0
+14                                       0             0                  0
+15                                    1795             0                  0
+22                                       0             0                  0
+23asdf                                   0             0                  0
+23easdf4tr                            4293             0                  0
+24                                    2360             0                  0
+25                                      97             0                  0
+26                                       0             0                  0
+27                                    2149             0                  0
+33                                     157             0                  0
+234asdfsdaf                              0             0                  0
+333                                      0             0                  0
+3333                                     0             0                  0
+be_hammer_0_mc                           0             0                  0
+be_hammer_1_mc                           0             0                  0
+be_hammer_2_mc                           0             0                  0
+dadishu_mc                               0             0                  0
+dishuUI_mc                               0             0                  0
+hammer_mc                                0             0                  0
+元件 2                               228             0                  0
+wenzi_att_0_mc                       18637             0                  0
+符号 62                              372             0                  0
+wenzi_att_1_mc                       17874             0                  0
+wenzi_att_2_mc                        7659             0                  0
+wenzi_die_0_mc                         403             0                  0
+wenzi_die_1_mc                         688             0                  0
+wenzi_fly_mc                             0             0                  0
+元件 2                               228             0                  0
+wenzi_ui                                 0             0                  0
+元件 75                              112             0                  0
+元件 76                              182             0                  0
+draw_mc                                  0             0                  0
+win2                                     0             0                  0
+win3                                     0             0                  0
+win4                                     0             0                  0
+win5                                     0             0                  0
+win6                                     0             0                  0
+win_mc                                   0             0                  0
+win9                                  1670             0                  0
+烟花01                                 0             0                  0
+Symbol 1jjj                          30425             0                  0
+win8                                  3271             0                  0
+Symbol 5jj                            5111             0                  0
+Symbol 4jjj                              0             0                  0
+Symbol 3jj                            3276             0                  0
+Symbol 2jj                            3260             0                  0
+Symbol 330                              50             0                  0
+Symbol 331                             277             0                  0
+Symbol 332                             526             0                  0
+Symbol 333                             468             0                  0
+Symbol 334                             448             0                  0
+Symbol 335                             278             0                  0
+Symbol 336                              63             0                  0
+fail_mc                                  0             0                  0
+win17                                    0             0                  0
+
+字体名称                 字节            字符
+
+    
+    
+
+TimesNewRomanPSMT            25    
+SimSun                       25    
+NSimSun                      26    
+MicrosoftYaHei               33    
+SimHei                       25    
+xx 粗体                 25508    PVbnotu不中书互井亡人仓件任会何做兑入关其农凉分创初别制力加务动匠升卡厄原友发台合名商器园图地场坛域塔备天头好如子它就尽展山岸工库店建开役必快感成战房所找技拥按换擂斗无时有松林查武死每沉沙没海漠物田石矿研礼科积称穴究竞等筑级者胸舍花英草荒装裤运迷逆速造部针钮铁铺门间限雄雨雪风高魅
+SimSun                       25    
+SimSun 粗体                25    
+xx                        28300    PV不中主书互井亡人仓件任会何你做兑入关其具农凉出分创初别制力加务动匠升卡厄原友发台合名售商器园图地场坛域塔备天头好如子它宝就尽展山岸工库店建开弹役必快感成战房所找技拥择按换擂斗无时有松林查武死每沉沙没海漠物田的石矿研礼科积称穴究竞等筑级者胸舍花英草荒药装裤请辅运迷逆选速造道部针钮铁铺门间附限雄雨雪风高魅
+SimHei 粗体                25    
+
+ActionScript 字节    位置
+
+    
+
+            212    场景 1:帧 1:guangbiao_font
+            278    场景 1:帧 1:battle_car_bg_0_bmd
+            278    场景 1:帧 1:battle_car_bg_1_bmd
+            278    场景 1:帧 1:battle_car_bg_2_bmd
+            266    场景 1:帧 1:build_10_bmd
+            265    场景 1:帧 1:build_11_bmd
+            264    场景 1:帧 1:build_12_bmd
+            265    场景 1:帧 1:build_13_bmd
+            266    场景 1:帧 1:build_14_bmd
+            263    场景 1:帧 1:build_1_bmd
+            263    场景 1:帧 1:build_2_bmd
+            264    场景 1:帧 1:build_3_bmd
+            261    场景 1:帧 1:build_4_bmd
+            262    场景 1:帧 1:build_5_bmd
+            264    场景 1:帧 1:build_6_bmd
+            263    场景 1:帧 1:build_7_bmd
+            264    场景 1:帧 1:build_8_bmd
+            264    场景 1:帧 1:build_9_bmd
+            275    场景 1:帧 1:knowledge_icon_bmd
+            260    场景 1:帧 1:map_1_bmd
+            260    场景 1:帧 1:map_2_bmd
+            260    场景 1:帧 1:map_3_bmd
+            260    场景 1:帧 1:map_4_bmd
+            260    场景 1:帧 1:map_5_bmd
+            260    场景 1:帧 1:map_6_bmd
+            260    场景 1:帧 1:map_7_bmd
+            260    场景 1:帧 1:map_8_bmd
+            267    场景 1:帧 1:map_icon_1_bmd
+            267    场景 1:帧 1:map_icon_2_bmd
+            267    场景 1:帧 1:map_icon_3_bmd
+            267    场景 1:帧 1:map_icon_4_bmd
+            267    场景 1:帧 1:map_icon_5_bmd
+            267    场景 1:帧 1:map_icon_6_bmd
+            267    场景 1:帧 1:map_icon_7_bmd
+            267    场景 1:帧 1:map_icon_8_bmd
+            267    场景 1:帧 1:money_icon_bmd
+            258    场景 1:帧 1:num1_bmd
+            258    场景 1:帧 1:num2_bmd
+            264    场景 1:帧 1:ore_icon_bmd
+            506    场景 1:帧 1:Ranking_mc
+            542    场景 1:帧 1:achievement_mc
+            479    场景 1:帧 1:alert_mc
+            598    场景 1:帧 1:arena_creat_mc
+            523    场景 1:帧 1:arena_face_cell
+            671    场景 1:帧 1:arena_main_mc
+            444    场景 1:帧 1:arena_mins_menulist_mc
+            928    场景 1:帧 1:arena_room_mc
+            414    场景 1:帧 1:battle_car_bg0_mc
+            414    场景 1:帧 1:battle_car_bg1_mc
+            414    场景 1:帧 1:battle_car_bg2_mc
+            349    场景 1:帧 1:battle_car_bg_mc
+            433    场景 1:帧 1:battle_main_mc
+           1985    场景 1:帧 1:battle_map_mc
+            730    场景 1:帧 1:battle_pass_mc
+            566    场景 1:帧 1:battle_prepare_mc
+            341    场景 1:帧 1:be_hammer_0_mc
+            341    场景 1:帧 1:be_hammer_1_mc
+            341    场景 1:帧 1:be_hammer_2_mc
+            398    场景 1:帧 1:buff_tip
+            520    场景 1:帧 1:buildMenu_mc
+            349    场景 1:帧 1:build_effect_100_mc
+            371    场景 1:帧 1:build_effect_101_mc
+            330    场景 1:帧 1:build_mc
+            594    场景 1:帧 1:build_ui_mc
+            383    场景 1:帧 1:button_mc
+            375    场景 1:帧 1:chat_mc
+            436    场景 1:帧 1:day_quest_mc
+            456    场景 1:帧 1:development_addspeed_mc
+            471    场景 1:帧 1:development_bottom_tabbar_mc
+            461    场景 1:帧 1:development_card_mc
+            773    场景 1:帧 1:development_mc
+            440    场景 1:帧 1:development_top_tabbar_mc
+            414    场景 1:帧 1:dishuUI_mc
+            328    场景 1:帧 1:draw_mc
+            556    场景 1:帧 1:equit_make_mc
+            596    场景 1:帧 1:equit_marge_mc
+            379    场景 1:帧 1:equit_mc
+            552    场景 1:帧 1:equit_upgrade_mc
+            328    场景 1:帧 1:fail_mc
+            334    场景 1:帧 1:frame_mc
+            446    场景 1:帧 1:friend_base_mc
+            444    场景 1:帧 1:gift_mc
+            570    场景 1:帧 1:grid_development_wrapper
+            336    场景 1:帧 1:hammer_mc
+            427    场景 1:帧 1:help_mc
+            836    场景 1:帧 1:hero_mc
+            378    场景 1:帧 1:level_tip
+            655    场景 1:帧 1:log_mc
+            545    场景 1:帧 1:mainui_bottom
+            577    场景 1:帧 1:mainui_bottom_funbtn_mc
+            542    场景 1:帧 1:mainui_mc
+            710    场景 1:帧 1:mainui_top_mc
+            613    场景 1:帧 1:map_list_menu_mc
+            397    场景 1:帧 1:menu_mc
+            448    场景 1:帧 1:message_mc
+            421    场景 1:帧 1:message_sender_mc
+            629    场景 1:帧 1:pack_mc
+            510    场景 1:帧 1:product_wrapper_mc
+            460    场景 1:帧 1:production_card_mc
+            579    场景 1:帧 1:production_mc
+            410    场景 1:帧 1:progress_mc
+            610    场景 1:帧 1:quest_mc
+            328    场景 1:帧 1:rect_mc
+            380    场景 1:帧 1:reward_cell_mc
+            467    场景 1:帧 1:reward_mc
+            439    场景 1:帧 1:sell_ui_mc
+            542    场景 1:帧 1:shop_card_mc
+            508    场景 1:帧 1:shop_grid_wrapper_mc
+            637    场景 1:帧 1:shop_mc
+            413    场景 1:帧 1:slider_mc
+            439    场景 1:帧 1:stepper_mc
+            489    场景 1:帧 1:tabbar_mc
+            430    场景 1:帧 1:textarea_mc
+            330    场景 1:帧 1:title_mc
+            457    场景 1:帧 1:ui1_fla._24_253
+            341    场景 1:帧 1:wenzi_att_0_mc
+            341    场景 1:帧 1:wenzi_att_1_mc
+            341    场景 1:帧 1:wenzi_att_2_mc
+            341    场景 1:帧 1:wenzi_die_0_mc
+            341    场景 1:帧 1:wenzi_die_1_mc
+            337    场景 1:帧 1:wenzi_fly_mc
+            353    场景 1:帧 1:wenzi_ui
+            327    场景 1:帧 1:win_mc
+            395    场景 1:帧 1:yellow_button_mc
+
+位图                                压缩后           原来的           压缩
+
+    
+    
+    
+
+num2.png                                7168         38440    JPEG 品质=80
+num1.png                                7406         38440    JPEG 品质=80
+8.png                                  19183        218416    JPEG 品质=80
+7.png                                  25046        349800    JPEG 品质=80
+6.png                                  17668        287308    JPEG 品质=80
+5.png                                  18149        412848    JPEG 品质=80
+4.png                                  16707        244016    JPEG 品质=80
+3.png                                  20224        305760    JPEG 品质=80
+2.png                                  25771        442864    JPEG 品质=80
+1.png                                  16118        264176    JPEG 品质=80
+win13                                   2444         24440    JPEG 品质=80
+win10                                   3487        179772    JPEG 品质=80
+win12                                  26206        380484    JPEG 品质=80
+win12                                  30677        395780    JPEG 品质=80
+win11                                   3090         86856    JPEG 品质=80
+win1                                   45333        616768    JPEG 品质=80
+win7                                   10566        176736    JPEG 品质=80
+退出按钮底.png                     2378         27556    JPEG 品质=80
+退出按钮底2.png                    2259         17424    JPEG 品质=80
+退出按钮中（普通）.png          1178          6400    JPEG 品质=80
+退出按钮中（鼠标经过）.png          1243          6400    JPEG 品质=80
+退出按钮中（鼠标按下）.png          1039          6400    JPEG 品质=80
+砸蚊子身子.png                     8514         98956    JPEG 品质=80
+砸蚊子翅膀2.png                    1271         23940    JPEG 品质=80
+砸蚊子翅膀1.png                    2134         23940    JPEG 品质=80
+砸老鼠砸蚊子2.png                 3695        160000    JPEG 品质=80
+砸老鼠砸蚊子wei.png               2260        160000    JPEG 品质=80
+砸老鼠砸蚊子1.png                 2824        160000    JPEG 品质=80
+砸老鼠砸蚊子tou.png               4126        160000    JPEG 品质=80
+锤子.png                              3516         29072    JPEG 品质=80
+砸老鼠-老鼠洞.png                 2621         18960    JPEG 品质=80
+砸老鼠.png                           8544         86292    JPEG 品质=80
+头盔裂开.png                        1461          7872    JPEG 品质=80
+老鼠被打.png                        3524         21868    JPEG 品质=80
+头盔.png                              1408          7680    JPEG 品质=80
+关卡界面BOSS名称框.png           1745         22512    JPEG 品质=80
+英雄界面背景框.png              19144       1278432    JPEG 品质=80
+抽奖界面背景框装饰.png         18571       1079560    JPEG 品质=80
+生产界面生产信息框.png          1950         53808    JPEG 品质=80
+竞技场加入房间界面标题框.png          7686        116064    JPEG 品质=80
+普通按钮（普通）.png            1345         10472    JPEG 品质=80
+普通按钮（凹陷）.png            1241         10472    JPEG 品质=80
+英雄界面底框装饰.png            5313         47080    JPEG 品质=80
+奖励.png                              4812         42240    JPEG 品质=80
+标题边框.png                       14325        201856    JPEG 品质=80
+生产界面生产背景框.png         10004        875000    JPEG 品质=80
+竞技场加入房间界面文字输入底框.png          4403        190784    JPEG 品质=80
+出售界面按钮2（普通）.png          1167         13600    JPEG 品质=80
+出售界面按钮2（按下）.png          1069         13600    JPEG 品质=80
+帮助界面内容框装饰.png         16503       1106688    JPEG 品质=80
+物品仓库界面物品框分页1.png         25894       1054776    JPEG 品质=80
+任务.png                              5430         43648    JPEG 品质=80
+出售界面界面右翻按钮（普通）.png           992          4324    JPEG 品质=80
+宝箱4（激活）.png                 3488         19040    JPEG 品质=80
+宝箱4（打开）.png                 4417         28512    JPEG 品质=80
+宝箱3（激活）.png                 3248         17160    JPEG 品质=80
+宝箱3（打开）.png                 4104         25232    JPEG 品质=80
+宝箱2（激活）.png                 3093         16640    JPEG 品质=80
+宝箱1（激活）.png                 2626         15616    JPEG 品质=80
+宝箱1（打开）.png                 3017         17856    JPEG 品质=80
+宝箱2（打开）.png                 3949         23976    JPEG 品质=80
+每日任务界面进度条.png          2060         22568    JPEG 品质=80
+每日任务界面进度底框.png         10745        194760    JPEG 品质=80
+位图 1.png                           11175         41984    无损
+每日任务.png                        7138         51336    JPEG 品质=80
+成就界面分类底框.png            1251         55460    无损
+物品仓库界面仓库说明框.png          4951        123728    JPEG 品质=80
+成就.png                              5362         43648    JPEG 品质=80
+未标题-1.png                         1533         35568    JPEG 品质=80
+物品仓库界面物品框分页选中水晶.png          1778         25944    JPEG 品质=80
+物品仓库界面背景框装饰.png         13789       1336500    JPEG 品质=80
+商店界面图标--热卖（激活）.png          1374          5184    JPEG 品质=80
+商店界面图标--热卖（未激活）.png          1297          5184    JPEG 品质=80
+商店界面图标--装备（激活）.png          1026          3400    JPEG 品质=80
+商店界面图标--装备（未激活）.png           944          3400    JPEG 品质=80
+商店界面图标--药水（激活）.png          1587          3328    无损
+商店界面图标--药水（未激活）.png          1487          3328    无损
+商店界面图标--功能（激活）.png          1148          4092    JPEG 品质=80
+商店界面图标--功能（未激活）.png          1087          4092    JPEG 品质=80
+商店界面图标--生产科研（激活）.png          1266          5032    JPEG 品质=80
+商店界面图标--生产科研（未激活）.png          1187          5032    JPEG 品质=80
+商店界面图标--外观（激活）.png          1038          3844    JPEG 品质=80
+商店界面图标--外观（未激活）.png           967          3844    JPEG 品质=80
+商店界面图标--限量（激活）.png          1078          3348    JPEG 品质=80
+商店界面图标--限量（未激活）.png          1032          3348    JPEG 品质=80
+科研所界面科研项目框.png          2169         74292    JPEG 品质=80
+竞技场主界面自己排名头像框.png           817         17424    JPEG 品质=80
+商店界面勾选图标.png            1158          3100    无损
+商店.png                              4652         45056    JPEG 品质=80
+出售界面主框.png                  8825        334560    JPEG 品质=80
+物品仓库界面分类图标-ALL(选中).png          1944          5336    无损
+物品仓库界面分类图标-ALL(未选中).png          1320          3936    无损
+物品仓库界面分类图标-装备(选中).png          1611          3720    无损
+物品仓库界面分类图标-装备(未选中).png          1758          3472    无损
+物品仓库界面分类图标-药水(选中).png          1661          3500    无损
+物品仓库界面分类图标-药水(未选中).png          1625          3072    无损
+物品仓库界面分类图标-竞技场(选中).png          2082          4224    无损
+物品仓库界面分类图标-竞技场(未选中).png          2044          4224    无损
+物品仓库界面分类图标-杂物(选中).png          1717          3960    无损
+物品仓库界面分类图标-杂物(未选中).png          1762          3480    无损
+物品仓库界面分类图标-任务物品(选中).png          1973          4144    无损
+物品仓库界面分类图标-任务物品(未选中).png          1255          3920    JPEG 品质=80
+仓库.png                              5449         50680    JPEG 品质=80
+竞技场主界面房间列表模式分类按钮（未选中）.png          1672         17908    JPEG 品质=80
+竞技场主界面房间列表模式分类按钮（选中）.png          1949         17908    JPEG 品质=80
+竞技场加入房间界面人物信息框.png          2218         90948    JPEG 品质=80
+排行.png                              5447         43648    JPEG 品质=80
+英雄界面武器框.png               2986         45792    JPEG 品质=80
+竞技场主界面排名框.png          5985        317800    无损
+消息留言界面公告图标1.png          1396          4060    无损
+消息留言界面公告图标2.png          1337          4060    无损
+消息留言界面战役图标1.png          1257          3364    无损
+消息留言界面战役图标2.png          1137          3364    无损
+消息留言界面竞技场图标1.png          1177          3968    JPEG 品质=80
+消息留言界面竞技场图标2.png          1846          3968    无损
+消息留言界面好友互动图标1.png          1740          4320    无损
+消息留言界面好友互动图标2.png          1652          4320    无损
+消息留言界面消息图标1.png          1541          4524    无损
+消息留言界面消息图标2.png          1373          4524    无损
+消息留言界面消息框.png          1608         77088    无损
+消息.png                              4709         41968    JPEG 品质=80
+UI部件10.png                          1796          7332    JPEG 品质=80
+UI部件9.png                           1513          6600    JPEG 品质=80
+UI部件8.png                           1471          5168    JPEG 品质=80
+UI部件5.png                           1479          5456    无损
+帮助（普通）.png                   870          2704    JPEG 品质=80
+礼物（普通）.png                  2306          9792    JPEG 品质=80
+每日任务（普通）.png            2763         14820    JPEG 品质=80
+设置（普通）.png                   872          2704    JPEG 品质=80
+UI部件1.png                           4368         44880    JPEG 品质=80
+金币栏进度条.png                  1640          8064    无损
+UI部件2.png                           4930         43608    JPEG 品质=80
+UI部件11.png                          1504          5880    JPEG 品质=80
+功能栏齿轮.png                     2203         22800    JPEG 品质=80
+UI部件4.png                           1459          8096    JPEG 品质=80
+玫瑰骑士团主ui（没有邀请按钮）.png         37041       2457600    JPEG 品质=80
+右快进按钮（普通）.png           987          1716    无损
+好友（普通）.png                  1846         14896    JPEG 品质=80
+好友（鼠标滑过）.png            2120         14896    JPEG 品质=80
+陌生人（普通）.png               1968         14896    JPEG 品质=80
+陌生人（鼠标滑过）.png          2161         14896    JPEG 品质=80
+好友框.png                           1851         42112    JPEG 品质=80
+好友框等级.png                     1333          7396    JPEG 品质=80
+战役图标（普通）.png            2337         12272    JPEG 品质=80
+战役图标（动作）.png            2671         13992    JPEG 品质=80
+英雄（普通）.png                  2957         10800    JPEG 品质=80
+英雄图标（动作）.png            2796         12784    JPEG 品质=80
+仓库（普通）.png                  3064         13924    JPEG 品质=80
+仓库图标（动作）.png            3115         17608    JPEG 品质=80
+商城（普通）.png                  3047         13392    JPEG 品质=80
+商城图标（动作）.png            5522         39600    JPEG 品质=80
+消息（普通）.png                  2532         10176    JPEG 品质=80
+消息图标（动作）.png            2581         13608    JPEG 品质=80
+消息图标点点（动作）.png           354           400    无损
+竞技场（普通）.png               3817         16048    JPEG 品质=80
+竞技场图标（动作）.png          4033         19456    JPEG 品质=80
+建筑图标（动作）.png            4306         24024    JPEG 品质=80
+建筑图标（普通）.png            3697         18768    JPEG 品质=80
+主UI大边框.png                      3475       2457600    无损
+英雄界面头像框.png               9862        347456    JPEG 品质=80
+英雄界面背景框装饰.png         18285        694912    JPEG 品质=80
+英雄界面属性框.png               5316        370208    JPEG 品质=80
+英雄界面装备框.png               1967         30272    JPEG 品质=80
+英雄界面头像框经验条.png          1788         22304    JPEG 品质=80
+英雄界面头像等级框.png          3447         18496    JPEG 品质=80
+英雄界面装备框装饰.png          1655          6888    JPEG 品质=80
+英雄界面属性字体.png             726          5900    无损
+英雄.png                              6490         46728    JPEG 品质=80
+公熊猫.png                          13083        145632    JPEG 品质=80
+母熊猫.png                          10336        119848    JPEG 品质=80
+英雄界面属性图标—等级.png          1022          6784    JPEG 品质=80
+英雄界面属性图标—经验.png          1144          4800    JPEG 品质=80
+英雄界面属性图标—生命.png          1031          4416    JPEG 品质=80
+英雄界面属性图标—战斗力.png          1147          5580    JPEG 品质=80
+英雄界面属性图标—防御.png           979          5400    JPEG 品质=80
+英雄界面属性图标—攻击速度.png          1138          5796    JPEG 品质=80
+英雄界面属性图标—攻击.png          1087          6384    JPEG 品质=80
+英雄界面属性图标—成就点.png          1298          6120    JPEG 品质=80
+英雄界面属性图标—移动速度.png          1134          6468    JPEG 品质=80
+兑换礼物界面底框装饰.png          5485        154800    JPEG 品质=80
+礼物.png                              5171         42240    JPEG 品质=80
+竞技场界面按钮2（普通）.png          1922         29768    JPEG 品质=80
+竞技场界面按钮2（按下）.png          1846         29768    JPEG 品质=80
+帮助界面内容分页框（选中）.png           942         15580    JPEG 品质=80
+帮助界面内容分页水晶.png           914         10324    JPEG 品质=80
+帮助.png                              4885         43648    JPEG 品质=80
+装备合成界面附加宝石标题框.png          1771         22448    JPEG 品质=80
+装备合成界面装备底框.png          2787         66560    JPEG 品质=80
+装备合成界面升级底框装饰.png         25342        581696    JPEG 品质=80
+装备制造界面材料说明框.png          6952        225888    无损
+铁匠铺.png                           7830         54404    JPEG 品质=80
+装备合成界面规则说明框 右（关）.png          8880        189044    JPEG 品质=80
+装备制造界面制造框装饰.png         16589        742252    JPEG 品质=80
+装备制造界面装备合成选择底框.png          8028        351728    无损
+装备制造界面装备合成选择说明框.png          1839         31752    无损
+位图 5                                6012         15360    无损
+位图 1                                3012          6536    无损
+位图 2                                3955          8280    无损
+位图 3                                3167          6440    无损
+位图 4                                1970          6480    无损
+位图 1.png                            5448          7056    无损
+位图 2.png                            5641          7808    无损
+位图 3.png                            6536          8784    无损
+位图 4.png                            8289         11224    无损
+生产界面生产背景框装饰.png          7173        281280    JPEG 品质=80
+农田.png                              4617         41536    JPEG 品质=80
+矿井.png                              4505         44352    JPEG 品质=80
+书舍.png                              4751         44352    JPEG 品质=80
+生产界面物品生产框.png          4269        119200    JPEG 品质=80
+科研所界面图标--弹药研发（激活）.png          2897         14560    JPEG 品质=80
+科研所界面图标--装备研发（激活）.png          2907         13888    JPEG 品质=80
+科研所界面图标--生产研发（激活）.png          2983         15048    JPEG 品质=80
+科研所.png                           6833         48800    JPEG 品质=80
+科研所界面正在研究按钮.png           840          3968    JPEG 品质=80
+科研所界面未在研究按钮.png           840          3968    JPEG 品质=80
+快捷操作盘主盘.png              16199        127440    JPEG 品质=80
+快捷操作盘次盘.png               3636         36860    JPEG 品质=80
+快捷操作盘退出图标.png          1702         11628    JPEG 品质=80
+快捷操作盘图标背景盘.png          1850         14160    JPEG 品质=80
+快捷操作盘升级图标.png          1331          8000    JPEG 品质=80
+快捷操作盘加速图标.png          1806         11172    JPEG 品质=80
+14.png                                 12561         94464    JPEG 品质=80
+13.png                                  7048         62272    JPEG 品质=80
+12.png                                  5177         37260    JPEG 品质=80
+11.png                                  9682         75500    JPEG 品质=80
+10.png                                 11275        114872    JPEG 品质=80
+9.png                                  11119         88184    JPEG 品质=80
+8.png                                  12221        126688    JPEG 品质=80
+7.png                                   6292         55836    JPEG 品质=80
+6.png                                  10488         74360    JPEG 品质=80
+5.png                                   5950         53352    JPEG 品质=80
+4.png                                   6876         64516    JPEG 品质=80
+3.png                                  10492         85280    JPEG 品质=80
+2.png                                   5900         68600    JPEG 品质=80
+1.png                                   9421         99000    JPEG 品质=80
+建筑.png                              6866         53568    JPEG 品质=80
+建筑界面背景框装饰.png         22492       1583388    JPEG 品质=80
+1350649955_agt_update_misc.png          1616         11520    JPEG 品质=80
+主城地形.jpg                      185979       3840000    JPEG 品质=80
+关卡界面底框装饰.png           17876       1043280    JPEG 品质=80
+战斗准备界面选择道具、弹药底框.png          3623        304380    JPEG 品质=80
+备战.png                              4926         41300    JPEG 品质=80
+战斗准备界面已选道具底框.png          3143        216448    JPEG 品质=80
+关卡信息.png                        6612         52164    JPEG 品质=80
+关卡界面BOSS信息底框.png          3608        225816    JPEG 品质=80
+关卡界面小怪信息底框.png          4997        437236    JPEG 品质=80
+关卡界面小怪名称框.png           856          8400    JPEG 品质=80
+battle_map.png                         90975       2457600    JPEG 品质=80
+大地图大关卡.png                  1435          9328    JPEG 品质=80
+大地图小关卡.png                  1400          5016    无损
+大地图附属小关卡.png             441          1440    无损
+底图指针4.png                       3031         27360    JPEG 品质=80
+底图指针4-2.png                      416           896    无损
+大地图边框.png                    22280       2457600    JPEG 品质=80
+竞技场战斗界面底框下.png          9810        433920    JPEG 品质=80
+竞技场战斗界面底框上.png          6203        295680    JPEG 品质=80
+竞技场创建房间界面房间属性选择按钮1（激活）.png          2577         26860    JPEG 品质=80
+平台方案1.png                      12116        119880    JPEG 品质=80
+平台方案3.png                      11897        119880    JPEG 品质=80
+平台方案2.png                      11859        119880    JPEG 品质=80
+竞技场战斗界面血条框.png          1921         13376    无损
+竞技场战斗界面血条.png          1410          7896    无损
+消息编辑界面内容框.png          1554        274392    无损
+消息编辑界面内容标题框.png          1298         44160    无损
+竞技场加入房间界面对话框（不发光）.png          2626        103212    JPEG 品质=80
+竞技场界面按钮1（普通）.png          2033         29768    JPEG 品质=80
+竞技场界面按钮1（按下）.png          1903         29768    JPEG 品质=80
+1.png                                   1151         16384    JPEG 品质=80
+2.png                                   1495         16384    JPEG 品质=80
+3.png                                   1408         16384    JPEG 品质=80
+4.png                                   1017         16384    JPEG 品质=80
+5.png                                   1666         16384    JPEG 品质=80
+6.png                                   1567         16384    JPEG 品质=80
+7.png                                   1120         16384    JPEG 品质=80
+8.png                                   1232         16384    JPEG 品质=80
+竞技场加入房间界面道具光效底框.png          3371        185032    JPEG 品质=80
+竞技场加入房间2组对战界面底框.png          6568       1139968    无损
+竞技场加入房间3组对战界面背景装饰框（上）.png          5442        164032    JPEG 品质=80
+竞技场加入房间2组对战界面无人图标.png          3688         39060    JPEG 品质=80
+竞技场加入房间界面准备图标2.png          5827         26400    JPEG 品质=80
+竞技场加入房间界面底框.png          5366       2457600    无损
+竞技场加入房间界面花图标.png          1533          7056    JPEG 品质=80
+竞技场加入房间界面光效图标.png          2428         11872    JPEG 品质=80
+竞技场主界面边框.png           37058       2457600    JPEG 品质=80
+竞技场加入房间界面文字输入框.png           222        104904    无损
+竞技场加入房间界面房间属性框.png          4867        161928    JPEG 品质=80
+竞技场加入房间界面道具光效图标（打开）.png          1624          6020    JPEG 品质=80
+竞技场加入房间界面道具光效图标框.png           902          6560    无损
+竞技场加入房间2组对战界面VS图标.png          6357         35148    JPEG 品质=80
+竞技场加入房间2组对战界面VS底图.png          8707        125664    JPEG 品质=80
+竞技场主界面底框装饰.png         30815       1471520    JPEG 品质=80
+竞技场主界面底框.png            8834       2457600    无损
+竞技场主界面排名选择分页（选中）.png          1153         11880    JPEG 品质=80
+竞技场主界面排名选择分页（未选中）.png          1323         11160    无损
+竞技场主界面自己排名底框.png          1293         99360    无损
+竞技场主界面房间列表底框.png         13238       1013472    JPEG 品质=80
+竞技场主界面房间列表框.png          3881         84700    JPEG 品质=80
+竞技场主界面房间列表观战图标.png          1507          6468    JPEG 品质=80
+竞技场主界面房间列表上锁图标.png          1167          5576    JPEG 品质=80
+竞技场主界面房间列表搜索分类按钮（未选中）.png           728          8008    无损
+竞技场主界面房间列表搜索分类按钮（选中）.png           935         10692    JPEG 品质=80
+竞技场创建房间界面标题框.png          8266        159984    JPEG 品质=80
+竞技场创建房间界面房间属性选择标题框.png          1108         15088    JPEG 品质=80
+竞技场创建房间界面房间命名底框.png          3904        192372    JPEG 品质=80
+竞技场创建房间界面房间命名框.png          1306         31820    JPEG 品质=80
+
+
+
+

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="1" height="1" tilewidth="960" tileheight="640">
+ <tileset firstgid="1" name="3" tilewidth="960" tileheight="640">
+  <image source="assets/3.png" width="960" height="640"/>
+ </tileset>
+ <tileset firstgid="2" name="墙体1" tilewidth="162" tileheight="12">
+  <image source="assets/2.png" width="162" height="12"/>
+  <tile id="0">
+   <properties>
+    <property name="id" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="障碍2" tilewidth="32" tileheight="28">
+  <image source="assets/4.png" width="32" height="28"/>
+  <tile id="0">
+   <properties>
+    <property name="image2" value="4_"/>
+    <property name="type" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="障碍1" tilewidth="32" tileheight="28">
+  <image source="assets/6.png" width="32" height="28"/>
+  <tile id="0">
+   <properties>
+    <property name="image2" value="6_"/>
+    <property name="type" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="障碍3" tilewidth="32" tileheight="28">
+  <image source="assets/8.png" width="32" height="28"/>
+  <tile id="0">
+   <properties>
+    <property name="image2" value="8_"/>
+    <property name="type" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="墙体2" tilewidth="12" tileheight="162">
+  <image source="assets/10.png" width="12" height="162"/>
+  <tile id="0">
+   <properties>
+    <property name="id" value="2"/>
+    <property name="type" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="1" height="1">
+  <data encoding="csv">
+1
+</data>
+ </layer>
+ <objectgroup name="mapall" width="1" height="1">
+  <object gid="3" x="278" y="229">
+   <properties>
+    <property name="dir" value="y"/>
+    <property name="group" value="1"/>
+    <property name="move" value="1"/>
+    <property name="moveCycle" value="2"/>
+    <property name="speed" value="50"/>
+    <property name="vy" value="200"/>
+   </properties>
+  </object>
+  <object gid="3" x="278" y="246">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="3" x="516" y="227">
+   <properties>
+    <property name="move" value="2"/>
+    <property name="moveCycle" value="1.5"/>
+    <property name="speed" value="20"/>
+    <property name="vx" value="150"/>
+   </properties>
+  </object>
+  <object gid="3" x="617" y="438">
+   <properties>
+    <property name="dir" value="x"/>
+    <property name="flickering" value="3,5"/>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="3" x="647" y="438">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="3" x="676" y="438">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="800" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="638" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="475" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="312" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="150" y="89">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="-1" y="90">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="798" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="637" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="479" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="318" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="155" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="1" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="252">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="414">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="547">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="0" y="253">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="417">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="554">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="map2" width="1" height="1" visible="0">
+  <object gid="2" x="800" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="638" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="475" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="312" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="150" y="89">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="-1" y="90">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="798" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="637" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="479" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="318" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="155" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="1" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="252">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="414">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="547">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="0" y="253">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="417">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="554">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="365" y="310">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="365" y="327">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="650" y="199">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="650" y="182">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="649" y="425">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="650" y="444">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="365" y="344">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="651" y="217">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="4" x="650" y="461">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="map3" width="1" height="1">
+  <object gid="2" x="800" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="638" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="475" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="312" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="150" y="89">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="-1" y="90">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="798" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="637" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="479" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="318" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="155" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="1" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="252">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="414">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="547">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="0" y="253">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="417">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="554">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="352" y="197">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="352" y="214">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="351" y="439">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="351" y="421">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="603" y="303">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="603" y="320">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="352" y="230">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="351" y="457">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="603" y="337">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="351" y="246">
+   <properties>
+    <property name="group" value="5"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="351" y="474">
+   <properties>
+    <property name="group" value="6"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="4" x="603" y="355">
+   <properties>
+    <property name="group" value="7"/>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="map1" width="1" height="1" visible="0">
+  <object gid="2" x="800" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="638" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="475" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="312" y="88">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="150" y="89">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="-1" y="90">
+   <properties>
+    <property name="group" value="1"/>
+   </properties>
+  </object>
+  <object gid="2" x="798" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="637" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="479" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="318" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="155" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="2" x="1" y="558">
+   <properties>
+    <property name="group" value="2"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="252">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="414">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="948" y="547">
+   <properties>
+    <property name="group" value="3"/>
+   </properties>
+  </object>
+  <object gid="6" x="0" y="253">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="417">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+  <object gid="6" x="1" y="554">
+   <properties>
+    <property name="group" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
