@@ -1,3 +1,0 @@
-::放入音乐文件目录中，搜索mp3和wav。批量转换成单声道mp3
-for %%i in (*.mp3 *.wav) do D:\"Program Files"\lame_v3.99.2\lame.exe -a %%i lame_%%~ni.mp3
-pause
