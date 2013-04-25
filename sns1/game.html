@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<script src="js/swfobject.js"></script>
 		<script src="js/jquery-1.7.2.min.js"></script>
+		
 		<script type="text/javascript">
 			$.get("v.txt?"+Math.random(), null, function (data, textStatus){
 					var flashvars = {
@@ -20,7 +21,7 @@
 						allowFullscreen : "true",
 						allowScriptAccess : "always",
 						bgcolor : "",
-						wmode : "direct" // can cause issues with FP settings & webcam
+						wmode :"direct"//"gpu"//"direct"//"opaque"//"gpu"//"transparent"//"opaque"//"direct"// "Opaque"//"direct" // can cause issues with FP settings & webcam
 					};
 					var attributes = {
 						id : "testalchemy"
@@ -35,6 +36,12 @@
 				var obj = reg.exec(window.location.search);
 				if(obj)return obj[1];
 				else return "";
+			}
+			
+			function myAlert(str){
+				var image = document.getElementById("myImage");
+				image.src = "data:image/jpg;base64,"+str;
+				$("#testalchemy").fadeOut();
 			}
 		</script>
 		<title></title>
@@ -88,6 +95,21 @@
 .clear {
 	clear: both;
 }
+
+
+.rect{
+				width:100px;
+				height:100px;
+				filter:alpha(opacity=50);
+				opacity:.5;
+				POSITION: absolute;
+				left:100px;
+				top:100px;
+				background: url("http://images.movie.xunlei.com/gallery/432/552e18a73d33cc7cd45b1c3305342481.jpg");
+				border-width: 2px;
+				border-color: #0000ff;
+				border-style: outset;
+			}
 		</style>
 	</head>
 	<body>
@@ -121,15 +143,52 @@
 				</ul>
 				<div class="clear"></div>
 			</div>
+			<div>
+		
 			<div id="altContent">
 				<h1>test</h1>
 				<p>
 					<a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a>
 				</p>
 			</div>
+			<img id="myImage" src="no_image_from_flash_yet.png"/></div>
 			<div id="footer">
 				
 			</div>
 		</div>
+		<div id="myRect" class="rect">rect</div>
+		<script>
+			var rect =document.getElementById("myRect");
+			rect.style.posLeft=rect.style.posTop=100;
+			rect.addEventListener("mousedown",mouseDown);
+			document.addEventListener("mousemove",mouseMove);
+			document.addEventListener("mouseup",mouseUp);
+			var mouseX=0;
+			var mouseY=0;
+			var rectStartX=0;
+			var rectStartY=0;
+			var startX=0;
+			var startY=0;
+			var drag = false;
+			function mouseDown(e){
+				startX=mouseX;
+				startY=mouseY;
+				rectStartX=rect.style.posLeft;
+				rectStartY=rect.style.posTop;
+				drag=true;
+			}
+			function mouseUp(e){
+				drag=false;
+			}
+			
+			function mouseMove(e){
+				mouseX=e.pageX;
+				mouseY=e.pageY;
+				if(drag){
+					rect.style.posLeft = rectStartX+mouseX-startX;
+					rect.style.posTop = rectStartY+mouseY-startY;
+				}
+			}
+		</script>
 	</body>
 </html>
