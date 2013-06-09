@@ -1,0 +1,32 @@
+<TextureAtlas imagePath="sheet.png">
+<SubTexture name="防御线中-01.png" fx="0" fy="0" x="80" y="162" width="25" height="160"/>
+<SubTexture name="防御线中-02.png" fx="5" fy="0" x="205" y="163" width="20" height="160"/>
+<SubTexture name="防御线中-03.png" fx="5" fy="0" x="227" y="0" width="20" height="160"/>
+<SubTexture name="防御线中-04.png" fx="1" fy="0" x="107" y="162" width="25" height="160"/>
+<SubTexture name="防御线中-05.png" fx="2" fy="0" x="134" y="162" width="24" height="160"/>
+<SubTexture name="防御线中-06.png" fx="5" fy="0" x="160" y="0" width="21" height="160"/>
+<SubTexture name="防御线中-07.png" fx="5" fy="0" x="183" y="162" width="20" height="160"/>
+<SubTexture name="防御线中-08.png" fx="5" fy="0" x="183" y="0" width="20" height="160"/>
+<SubTexture name="防御线中-09.png" fx="0" fy="0" x="107" y="0" width="25" height="160"/>
+<SubTexture name="防御线中-10.png" fx="5" fy="0" x="227" y="162" width="20" height="160"/>
+<SubTexture name="防御线中-11.png" fx="5" fy="0" x="249" y="162" width="20" height="160"/>
+<SubTexture name="防御线中-12.png" fx="1" fy="0" x="80" y="0" width="25" height="160"/>
+<SubTexture name="防御线中-13.png" fx="2" fy="0" x="134" y="0" width="24" height="160"/>
+<SubTexture name="防御线中-14.png" fx="5" fy="0" x="160" y="162" width="21" height="160"/>
+<SubTexture name="防御线中-15.png" fx="5" fy="0" x="249" y="0" width="20" height="160"/>
+<SubTexture name="防御线中-16.png" fx="5" fy="0" x="205" y="0" width="20" height="161"/>
+<SubTexture name="防御线弱-01.png" fx="0" fy="0" x="287" y="150" width="14" height="148"/>
+<SubTexture name="防御线弱-02.png" fx="0" fy="0" x="319" y="0" width="14" height="148"/>
+<SubTexture name="防御线弱-03.png" fx="0" fy="0" x="303" y="0" width="14" height="148"/>
+<SubTexture name="防御线弱-04.png" fx="0" fy="0" x="271" y="150" width="14" height="148"/>
+<SubTexture name="防御线弱-05.png" fx="0" fy="0" x="271" y="0" width="14" height="148"/>
+<SubTexture name="防御线弱-06.png" fx="0" fy="0" x="287" y="0" width="14" height="148"/>
+<SubTexture name="防御线弱-07.png" fx="0" fy="0" x="335" y="0" width="14" height="148"/>
+<SubTexture name="防御线弱-08.png" fx="0" fy="0" x="319" y="150" width="14" height="148"/>
+<SubTexture name="防御线弱-09.png" fx="0" fy="0" x="303" y="150" width="14" height="148"/>
+<SubTexture name="防御线弱-10.png" fx="0" fy="0" x="271" y="0" width="14" height="148"/>
+<SubTexture name="防御线强-1.png" fx="0" fy="0" x="0" y="0" width="38" height="164"/>
+<SubTexture name="防御线强-2.png" fx="0" fy="0" x="0" y="166" width="38" height="164"/>
+<SubTexture name="防御线强-3.png" fx="0" fy="0" x="40" y="166" width="38" height="164"/>
+<SubTexture name="防御线强-4.png" fx="0" fy="0" x="40" y="0" width="38" height="164"/>
+</TextureAtlas>

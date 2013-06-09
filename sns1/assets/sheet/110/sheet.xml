@@ -1,0 +1,13 @@
+<TextureAtlas imagePath="sheet.png">
+<SubTexture name="毒爆-1.png" fx="71" fy="75" x="0" y="591" width="60" height="55"/>
+<SubTexture name="毒爆-10.png" fx="4" fy="7" x="194" y="0" width="184" height="184"/>
+<SubTexture name="毒爆-11.png" fx="21" fy="43" x="380" y="162" width="150" height="111"/>
+<SubTexture name="毒爆-2.png" fx="35" fy="41" x="532" y="162" width="122" height="116"/>
+<SubTexture name="毒爆-3.png" fx="14" fy="19" x="380" y="0" width="174" height="160"/>
+<SubTexture name="毒爆-4.png" fx="8" fy="5" x="193" y="191" width="185" height="187"/>
+<SubTexture name="毒爆-5.png" fx="5" fy="4" x="0" y="0" width="192" height="189"/>
+<SubTexture name="毒爆-6.png" fx="6" fy="1" x="191" y="388" width="185" height="195"/>
+<SubTexture name="毒爆-7.png" fx="4" fy="0" x="378" y="380" width="183" height="197"/>
+<SubTexture name="毒爆-8.png" fx="1" fy="0" x="0" y="388" width="189" height="201"/>
+<SubTexture name="毒爆-9.png" fx="0" fy="1" x="0" y="191" width="191" height="195"/>
+</TextureAtlas>

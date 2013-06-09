@@ -1,0 +1,18 @@
+<TextureAtlas imagePath="sheet.png">
+<SubTexture name="建造-1.png" fx="29" fy="48" x="940" y="0" width="418" height="315"/>
+<SubTexture name="建造-10.png" fx="27" fy="31" x="467" y="1011" width="456" height="342"/>
+<SubTexture name="建造-11.png" fx="33" fy="0" x="929" y="664" width="450" height="360"/>
+<SubTexture name="建造-12.png" fx="27" fy="7" x="0" y="1358" width="456" height="355"/>
+<SubTexture name="建造-13.png" fx="27" fy="47" x="0" y="694" width="469" height="315"/>
+<SubTexture name="建造-14.png" fx="32" fy="26" x="0" y="1011" width="465" height="345"/>
+<SubTexture name="建造-15.png" fx="32" fy="26" x="916" y="1355" width="454" height="346"/>
+<SubTexture name="建造-16.png" fx="35" fy="48" x="1360" y="0" width="395" height="380"/>
+<SubTexture name="建造-2.png" fx="27" fy="50" x="458" y="1358" width="456" height="310"/>
+<SubTexture name="建造-3.png" fx="33" fy="48" x="488" y="0" width="450" height="312"/>
+<SubTexture name="建造-4.png" fx="27" fy="47" x="487" y="347" width="456" height="315"/>
+<SubTexture name="建造-5.png" fx="27" fy="47" x="471" y="694" width="456" height="315"/>
+<SubTexture name="建造-6.png" fx="1" fy="26" x="0" y="347" width="485" height="345"/>
+<SubTexture name="建造-7.png" fx="0" fy="26" x="0" y="0" width="486" height="345"/>
+<SubTexture name="建造-8.png" fx="35" fy="48" x="945" y="317" width="395" height="315"/>
+<SubTexture name="建造-9.png" fx="29" fy="48" x="925" y="1026" width="432" height="315"/>
+</TextureAtlas>

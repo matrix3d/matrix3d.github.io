@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="sheet.png">
+<SubTexture name="碰撞光效-1.png" fx="10" fy="0" x="173" y="0" width="156" height="162"/>
+<SubTexture name="碰撞光效-2.png" fx="0" fy="2" x="0" y="0" width="171" height="163"/>
+<SubTexture name="碰撞光效-3.png" fx="4" fy="1" x="169" y="165" width="166" height="163"/>
+<SubTexture name="碰撞光效-4.png" fx="3" fy="1" x="0" y="165" width="167" height="163"/>
+</TextureAtlas>

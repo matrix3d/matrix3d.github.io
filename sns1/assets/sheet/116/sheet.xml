@@ -1,0 +1,4 @@
+<TextureAtlas imagePath="sheet.png">
+<SubTexture name="飞行尾巴-2.png" fx="11" fy="8" x="0" y="23" width="87" height="21"/>
+<SubTexture name="飞行尾巴-3.png" fx="0" fy="8" x="0" y="0" width="95" height="21"/>
+</TextureAtlas>

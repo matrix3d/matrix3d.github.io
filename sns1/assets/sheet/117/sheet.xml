@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="sheet.png">
+<SubTexture name="加成尾巴-1.png" fx="22" fy="5" x="0" y="327" width="161" height="77"/>
+<SubTexture name="加成尾巴-2.png" fx="12" fy="7" x="206" y="86" width="174" height="78"/>
+<SubTexture name="加成尾巴-3.png" fx="0" fy="6" x="0" y="167" width="204" height="81"/>
+<SubTexture name="加成尾巴-4.png" fx="22" fy="8" x="206" y="166" width="161" height="78"/>
+<SubTexture name="加成尾巴-5.png" fx="12" fy="7" x="206" y="0" width="174" height="84"/>
+<SubTexture name="加成尾巴-6.png" fx="0" fy="3" x="0" y="77" width="204" height="88"/>
+<SubTexture name="加成尾巴-7.png" fx="8" fy="0" x="177" y="250" width="175" height="91"/>
+<SubTexture name="加成尾巴-8.png" fx="11" fy="13" x="0" y="250" width="175" height="75"/>
+<SubTexture name="加成尾巴-9.png" fx="0" fy="12" x="0" y="0" width="204" height="75"/>
+</TextureAtlas>
