@@ -1,9 +1,0 @@
-<TextureAtlas imagePath="sheet.png">
-<SubTexture name="冰爆-1.png" fx="85" fy="96" x="0" y="529" width="88" height="88"/>
-<SubTexture name="冰爆-2.png" fx="10" fy="14" x="0" y="286" width="244" height="241"/>
-<SubTexture name="冰爆-3.png" fx="18" fy="19" x="246" y="286" width="227" height="229"/>
-<SubTexture name="冰爆-4.png" fx="23" fy="24" x="281" y="0" width="217" height="221"/>
-<SubTexture name="冰爆-5.png" fx="37" fy="40" x="475" y="223" width="188" height="189"/>
-<SubTexture name="冰爆-6.png" fx="0" fy="0" x="0" y="0" width="279" height="284"/>
-<SubTexture name="冰爆-7.png" fx="109" fy="113" x="0" y="619" width="43" height="43"/>
-</TextureAtlas>

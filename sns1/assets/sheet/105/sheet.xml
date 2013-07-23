@@ -1,6 +1,0 @@
-<TextureAtlas imagePath="sheet.png">
-<SubTexture name="大反弹-1.png" fx="146" fy="269" x="0" y="0" width="225" height="136"/>
-<SubTexture name="大反弹-2.png" fx="146" fy="269" x="0" y="138" width="225" height="136"/>
-<SubTexture name="大反弹-3.png" fx="206" fy="310" x="126" y="276" width="106" height="51"/>
-<SubTexture name="大反弹-4.png" fx="197" fy="305" x="0" y="276" width="124" height="61"/>
-</TextureAtlas>

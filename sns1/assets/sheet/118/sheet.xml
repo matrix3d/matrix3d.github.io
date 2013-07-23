@@ -1,8 +1,0 @@
-<TextureAtlas imagePath="sheet.png">
-<SubTexture name="再次加成尾巴-1.png" fx="31" fy="11" x="0" y="386" width="231" height="100"/>
-<SubTexture name="再次加成尾巴-2.png" fx="29" fy="10" x="239" y="294" width="233" height="101"/>
-<SubTexture name="再次加成尾巴-3.png" fx="18" fy="14" x="0" y="198" width="242" height="94"/>
-<SubTexture name="再次加成尾巴-4.png" fx="18" fy="17" x="0" y="294" width="237" height="90"/>
-<SubTexture name="再次加成尾巴-5.png" fx="0" fy="13" x="0" y="101" width="259" height="95"/>
-<SubTexture name="再次加成尾巴-6.png" fx="0" fy="11" x="0" y="0" width="262" height="99"/>
-</TextureAtlas>

@@ -1,8 +1,0 @@
-<TextureAtlas imagePath="sheet.png">
-<SubTexture name="再次加成笼罩光效-1.png" fx="99" fy="8" x="0" y="0" width="174" height="104"/>
-<SubTexture name="再次加成笼罩光效-2.png" fx="99" fy="2" x="0" y="106" width="169" height="114"/>
-<SubTexture name="再次加成笼罩光效-3.png" fx="106" fy="0" x="176" y="0" width="153" height="117"/>
-<SubTexture name="再次加成笼罩光效-4.png" fx="103" fy="19" x="171" y="119" width="152" height="87"/>
-<SubTexture name="再次加成笼罩光效-5.png" fx="101" fy="14" x="162" y="222" width="157" height="94"/>
-<SubTexture name="再次加成笼罩光效-6.png" fx="102" fy="12" x="0" y="222" width="160" height="97"/>
-</TextureAtlas>
