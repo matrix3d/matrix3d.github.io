@@ -14,10 +14,6 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
-{% assign arr = "one|two|three" | split: "|" %}
-{% for a in arr %}
-	a
-{% endfor %}
 
 
 
