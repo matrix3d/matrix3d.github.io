@@ -2,7 +2,6 @@
 layout: page
 title: Hello World!
 tagline: Supporting tagline
-arr: [a, b]
 ---
 {% include JB/setup %}
 
@@ -14,6 +13,8 @@ arr: [a, b]
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+{% assign arr = "one|two|three" | split: "|" %}
 {% for a in arr %}
 	a
 {% endfor %}
