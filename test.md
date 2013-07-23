@@ -2,7 +2,7 @@
 layout: page
 title: Hello World!
 tagline: Supporting tagline
-arr: [a,b]
+arr: [a, b]
 ---
 {% include JB/setup %}
 
