@@ -1,0 +1,12 @@
+---
+layout: post
+category : lessons
+tagline: "Supporting tagline"
+tags : [intro, beginner, jekyll, tutorial]
+---
+{% include JB/setup %}
+
+<h2>{{ page.title }}</h2>
+<p>my frist</p>
+
+<p>{{ page.date | date_to_string }}</p>
