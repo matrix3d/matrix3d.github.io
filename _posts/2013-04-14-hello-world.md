@@ -1,8 +1,8 @@
 ---
 layout: post
-category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+category : as3
+tagline: ""
+tags : [as3, flash]
 ---
 {% include JB/setup %}
 
