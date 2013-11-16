@@ -7,7 +7,7 @@
     <target name="compile">
         <jscomp compilationLevel="simple" warning="quiet"
                 debug="false" output="myTemplate.js">
-            <externs dir="${basedir}/../cocos2d">
+            <externs dir="${basedir}/../../cocos2d">
                 <file name="cocos2d_externs.js"/>
             </externs>
             <sources dir="${basedir}/../cocos2d">

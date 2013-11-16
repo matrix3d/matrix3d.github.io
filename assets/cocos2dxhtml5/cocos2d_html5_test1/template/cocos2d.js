@@ -64,7 +64,7 @@
         //first load engine file if specified
         var s = d.createElement('script');
         /*********Delete this section if you have packed all files into one*******/
-        if (c.SingleEngineFile && !c.engineDir) {
+        /*if (c.SingleEngineFile && !c.engineDir) {
             s.src = c.SingleEngineFile;
 
             var loadJsImg = new Image();
@@ -85,10 +85,10 @@
         }
         else {
             alert('You must specify either the single engine file OR the engine directory in "cocos2d.js"');
-        }
+        }*/
         /*********Delete this section if you have packed all files into one*******/
 
-            //s.src = 'myTemplate.js'; //IMPORTANT: Un-comment this line if you have packed all files into one
+         s.src = 'myTemplate.js'; //IMPORTANT: Un-comment this line if you have packed all files into one
 
         d.body.appendChild(s);
         s.id = 'cocos2d-html5';
