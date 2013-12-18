@@ -1,0 +1,15 @@
+---
+layout: post
+category : as3
+tagline: ""
+tags : [as3, flash]
+---
+{% include JB/setup %}
+
+[native3d](https://github.com/matrix3d/native3d)
+
+<div id="altContent" style="width:800px height:600px">
+<iframe src="/assets/native3d/blendexporter" width="800" height="600" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes">
+</iframe>
+</div>
+
