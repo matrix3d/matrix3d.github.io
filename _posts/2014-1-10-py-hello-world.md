@@ -9,7 +9,10 @@ tags : [as3, flash]
 ```
 #import
 from Tkinter import *
-from ttk import *
+try:
+	from ttk import *
+except ImportError:
+	print "import ttk error"
 #comment
 print 'Hello World'
 #loop
