@@ -134,7 +134,7 @@ function Tetris(canvas) {
 							}
 							if (full) {
 								for (var y2 = y; y2 > 0; y2-- ) {
-									for (x = 1; x < numCols - 1; x++ ) {
+									for (x = 1; x < this.numCols - 1; x++ ) {
 										this.data[y2][x] = this.data[y2 - 1][x];
 									}
 								}
