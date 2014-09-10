@@ -6,9 +6,29 @@
 	<script src="tetris.js"></script>
 </head>
 <body>
-	<canvas id="tetris" width="500" height="500" style="background:#ffffff"></canvas>
+	<canvas id="tetris" width="500" height="400" style="background:#ffffff"></canvas>
 	<script>
-		new Tetris(document.getElementById("tetris"));
+		var tetris = new Tetris(document.getElementById("tetris"));
+		function btnclick(type){
+			if (type==0) {
+				tetris.yadder = 1;
+			}else if (type==1) {
+				tetris.xadder = -1;
+			}else if (type==2) {
+				tetris.xadder = 1;
+			}else if (type==3) {
+				tetris.rotadder = 1;
+			}else if (type==4) {
+				tetris.rotadder = -1;
+			}
+		}
 	</script>
+	<div>
+		<button onclick="btnclick(0)">down</button>
+		<button onclick="btnclick(1)">left</button>
+		<button onclick="btnclick(2)">right</button>
+		<button onclick="btnclick(3)">rotation left</button>
+		<button onclick="btnclick(4)">rotation right</button>
+	</div>
 </body>
 </html>
