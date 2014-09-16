@@ -5,12 +5,13 @@
 
 function Tetris(canvas) {
 	this.canvas=canvas;
-	this.numRows = 20;
-	this.numCols = 20;
+	this.numRows = 21;
+	this.numCols = 14;
 	this.data = [];
 	this.groups = [];
 	this.xadder=0;
 	this.yadder=0;
+	this.toEnd = false;
 	this.rotadder=0;
 	this.frame = 0;
 	this.cxt = canvas.getContext("2d");
@@ -21,7 +22,7 @@ function Tetris(canvas) {
 		this.yadder = 0;
 		this.rotadder = 0;
 		if (e.keyCode==40) {
-			this.yadder = 1;
+			this.toEnd = true;
 		}else if (e.keyCode==37) {
 			this.xadder = -1;
 		}else if (e.keyCode==39) {
@@ -36,8 +37,9 @@ function Tetris(canvas) {
 	Tetris.prototype.newGroup = function(){
 		var g = new CubeGroup();
 		g.x = Math.floor(this.numRows / 2);
+		g.xFloat = g.x;
 		this.groups.push(g);
-		var r = Math.floor(Math.random() * 5);
+		var r = Math.floor(Math.random() * 7);
 		if (r == 0) {//土
 			g.color = 0xaa0000;
 			g.createCube(0, 0);
@@ -68,20 +70,44 @@ function Tetris(canvas) {
 			g.createCube(0, 0);
 			g.createCube(1, 0);
 			g.createCube(0, 1);
+		}else if (r==5) {//l1
+			g.color = 0xaa00aa;
+			g.createCube(0, -1);
+			g.createCube(0, 0);
+			g.createCube(0, 1);
+			g.createCube(1, 1);
+		}else if (r==6) {//l2
+			g.color = 0xaaaaaa;
+			g.createCube(0, -1);
+			g.createCube(0, 0);
+			g.createCube(0, 1);
+			g.createCube(-1, 1);
 		}
 	}
 	
 	Tetris.prototype.enterFrame = function(){
+		this.update();
+		var g = this.groups[this.groups.length - 1];
+		if (g&&(g.yFloat-g.y)>=0) {
+			this.yadder = 1;
+			this.update();
+		}
+		if (this.toEnd) {
+			do {
+				this.yadder = 1;
+				var isEnd = this.update();
+			}while(!isEnd)
+			this.toEnd = false;
+		}
+		
+		this.frame++;
+		this.render();
+	}
+	
+	Tetris.prototype.update = function(){
+		var ret=false;
 		var g = this.groups[this.groups.length - 1];
 		if (g) {
-			if (this.xadder||this.yadder||this.rotadder) {
-				
-			}else {
-				if ((this.frame%12)==0) {
-					this.yadder = 1;
-				}
-				this.frame++;
-			}
 			if(this.xadder||this.yadder||this.rotadder){
 				g.x += this.xadder;
 				g.y += this.yadder;
@@ -144,6 +170,7 @@ function Tetris(canvas) {
 						
 						this.groups.pop();
 						this.newGroup();
+						ret=true;
 					}
 				}
 				
@@ -151,8 +178,24 @@ function Tetris(canvas) {
 				this.yadder = 0;
 				this.rotadder = 0;
 			}
+				
+			var absdx=Math.abs(g.x-g.xFloat)
+			if (absdx<=.2) {
+				g.xFloat = g.x;
+			}else {
+				var speed = .2 * Math.ceil(absdx);
+				if (g.xFloat<g.x) {
+					g.xFloat += speed;
+				}else {
+					g.xFloat -= speed;
+				}
+			}
+			g.yFloat += .1;
 		}
-		
+		return ret;
+	}
+	
+	Tetris.prototype.render = function(){
 		var cubeWidth = 20;
 		this.cxt.clearRect(0,0,500,500);
 				
@@ -176,7 +219,7 @@ function Tetris(canvas) {
 				var color = new Color();
 				color.fromHex(c.color);
 				this.cxt.fillStyle=color.toHTMLRGB();
-				this.cxt.fillRect((g.x+c.x)*cubeWidth,(g.y+c.y)*cubeWidth,cubeWidth,cubeWidth);
+				this.cxt.fillRect((g.xFloat+c.x)*cubeWidth,(g.yFloat+c.y)*cubeWidth,cubeWidth,cubeWidth);
 			}
 		}
 	}
@@ -238,6 +281,11 @@ function CubeGroup() {
 	this.rotation = 0;
 	this.cubes = [];
 	this.color = 0xff0000;
+	
+	
+	//ease缓动
+	this.xFloat = 0;
+	this.yFloat = 0;
 	CubeGroup.prototype.createCube=function(x, y) {
 		var cube = new Cube;
 		cube.x=cube.ox = x;
