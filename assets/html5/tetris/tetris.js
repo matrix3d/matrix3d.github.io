@@ -36,7 +36,7 @@ function Tetris(canvas) {
 	
 	Tetris.prototype.newGroup = function(){
 		var g = new CubeGroup();
-		g.x = Math.floor(this.numRows / 2);
+		g.x = Math.floor(this.numCols / 2);
 		g.xFloat = g.x;
 		this.groups.push(g);
 		var r = Math.floor(Math.random() * 7);
