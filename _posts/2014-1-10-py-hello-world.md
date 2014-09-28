@@ -7,11 +7,11 @@ tags : [as3, flash]
 {% include JB/setup %}
 
 
-```javascript
+    ```javascript
 
-    var a = 0;//bbb
+    var a = 0;//bbb aaa
 
-```
+    ```
 
 ```python
 
