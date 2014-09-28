@@ -6,7 +6,8 @@ tags : [as3, flash]
 ---
 {% include JB/setup %}
 
-```
+```python
+
 #import
 from Tkinter import *
 try:
@@ -42,5 +43,6 @@ btn.pack()
 
 mainloop()
 #raw_input();
+
 ```
 
