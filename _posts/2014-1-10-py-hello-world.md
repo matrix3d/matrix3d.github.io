@@ -9,7 +9,7 @@ tags : [as3, flash]
 
 ```javascript
 
-var a = 0;
+    var a = 0;
 
 ```
 
