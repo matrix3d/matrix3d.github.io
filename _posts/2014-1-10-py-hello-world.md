@@ -6,6 +6,13 @@ tags : [as3, flash]
 ---
 {% include JB/setup %}
 
+
+```javascript
+
+var a = 0;
+
+```
+
 ```python
 
 #import
