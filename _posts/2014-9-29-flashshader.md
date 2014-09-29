@@ -11,6 +11,7 @@ tags : [as3, flash]
 <iframe src="/assets/native3d/flashshader" width="800" height="600" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes">
 </iframe>
 <a href='https://github.com/matrix3d/FlashShader/'>github</a>
+
     class VShader extends FlShader {
         public function VShader() 
         {
