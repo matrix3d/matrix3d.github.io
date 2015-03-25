@@ -41,3 +41,20 @@ tags : [as3, flash]
 在build_example.xml中找到所有${example}.mxml更改为${example}
 
 在ant窗口运行main即可编译成功
+
+## 调用js代码
+flexjs会把swc里的类去找js sdk中的js。flexjs不包含任何flash包中的内容。比如vector3d，matrix3d等，
+所以如果as代码中包含flash包中的代码，要写上相应的js代码放到源文件夹中，比如TextField
+
+	goog.provide('flash.text.TextField');
+	flash.text.TextField = function() {
+	};
+
+而且还要把src添加到js编译目录
+更改build_example.xml,搜索所有-sdk-js-lib,在下面加上一行
+
+	<arg value="-sdk-js-lib=${basedir}/src" />
+
+这样就把src添加到了编译目录。
+
+如果自定义的as类，要用到本地js代码。需要将as类转成swc，再写对应的js类
