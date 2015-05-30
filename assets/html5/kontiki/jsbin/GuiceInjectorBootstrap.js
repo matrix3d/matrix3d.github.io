@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Fri May 29 18:25:02 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:59 CST 2015 */
 
 
 GuiceInjectorBootstrap = function(mainClassName, dynamicClassBaseUrl) {

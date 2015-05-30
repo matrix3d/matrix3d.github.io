@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Fri May 29 18:25:02 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:58 CST 2015 */
 
 
 Main = function() {
@@ -18,6 +18,8 @@ Main = function() {
 	}
 };
 
+Main.rockmanAsset = flash.utils.FlashEmbed.getEmbed("flash.display.Bitmap", {source:"../assets/rockman.png"});
+
 Main.prototype.init = function(e) {
 	this.removeEventListener("addedToStage", $createStaticDelegate(this, this.init), false);
 	this.stage3D = this.get_stage().get_stage3Ds()[0];
@@ -31,13 +33,15 @@ Main.prototype.init = function(e) {
 	this.shape.get_graphics().lineTo(-50, 50);
 	this.shape.get_graphics().lineTo(-50, -50);
 	this.addChild(this.shape);
+	var bitmap = new flash.display.Bitmap(new Main.rockmanAsset(), "auto", false);
+	this.addChild(bitmap);
+	this.addEventListener("enterFrame", $createStaticDelegate(this, this.enterFrame), false, 0, false);
 };
 
 Main.prototype.stage3D_context3dCreate = function(e) {
 	this.context3D = this.stage3D.get_context3D();
 	this.context3D.enableErrorChecking = true;
 	this.context3D.configureBackBuffer(400, 400, 0, true, false);
-	this.addEventListener("enterFrame", $createStaticDelegate(this, this.enterFrame), false, 0, false);
 	this.program = this.context3D.createProgram();
 	if (flash.system.Capabilities.playerType != "js") {
 		var minia = new com.adobe.utils.AGALMiniAssembler(false);
@@ -63,19 +67,21 @@ Main.prototype.enterFrame = function(e) {
 	this.shape.set_x(200 * (Math.sin(flash.utils.getTimer() / 3000) + 1));
 	this.shape.set_y(200 * (Math.cos(flash.utils.getTimer() / 1000) + 1));
 	this.shape.set_rotation(this.shape.get_rotation() + 1);
-	this.context3D.clear(0, 0, 0, 0, 1, 0, 16777215);
-	for (var i = 0; i < this.ss.length; i++) {
-		var s = this.ss[i];
-		s.rotation++;
-		this.context3D.setDepthTest(true, "lessEqual");
-		if (i == 0) {
-		} else {
+	if (this.context3D) {
+		this.context3D.clear(0, 0, 0, 0, 1, 0, 16777215);
+		for (var i = 0; i < this.ss.length; i++) {
+			var s = this.ss[i];
+			s.rotation++;
+			this.context3D.setDepthTest(true, "lessEqual");
+			if (i == 0) {
+			} else {
+			}
+			this.context3D.setProgram(this.program);
+			this.context3D.setVertexBufferAt(0, this.vertexBuffer, 0, "float3");
+			this.draw(s);
 		}
-		this.context3D.setProgram(this.program);
-		this.context3D.setVertexBufferAt(0, this.vertexBuffer, 0, "float3");
-		this.draw(s);
+		this.context3D.present();
 	}
-	this.context3D.present();
 };
 
 Main.prototype.draw = function(s) {
@@ -94,6 +100,7 @@ Main.getRuntimeDependencies = function(t) {
 	var p;
 	p = [];
 	p.push('com.adobe.utils.AGALMiniAssembler');
+	p.push('flash.display.Bitmap');
 	p.push('flash.display3D.Context3DCompareMode');
 	p.push('flash.display.Sprite');
 	p.push('flash.system.Capabilities');

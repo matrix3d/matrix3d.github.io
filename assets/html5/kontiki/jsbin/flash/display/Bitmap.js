@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Fri May 29 18:25:02 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:59 CST 2015 */
 
 if (typeof flash == "undefined")
 	var flash = {};
@@ -6,10 +6,29 @@ if (typeof flash.display == "undefined")
 	flash.display = {};
 
 flash.display.Bitmap = function(bitmapData, pixelSnapping, smoothing) {
-	this.pixelsnapping = "";
+	this._ctx = null;
 	this.blendMode = "";
+	this.pixelsnapping = "";
 	this.bitmapData = bitmapData;
 	flash.display.DisplayObject.call(this);
+};
+
+flash.display.Bitmap._ctx;
+
+flash.display.Bitmap.prototype.updateGraphics = function() {
+	flash.display.DisplayObject.prototype.updateGraphics.call(this);
+	if (this.bitmapData) {
+		var m = this.transform.worldMatrix;
+		flash.display.Bitmap.get_ctx().setTransform(m.a, m.b, m.c, m.d, m.tx, m.ty);
+	}
+};
+
+flash.display.Bitmap.get_ctx = function() {
+	if (flash.display.Bitmap._ctx == null) {
+		var g = new flash.display.Graphics();
+		flash.display.Bitmap._ctx = g.getCanvas();
+	}
+	return flash.display.Bitmap._ctx;
 };
 
 
@@ -19,7 +38,10 @@ flash.display.Bitmap.className = "flash.display.Bitmap";
 
 flash.display.Bitmap.getRuntimeDependencies = function(t) {
 	var p;
-	return [];
+	p = [];
+	p.push('flash.geom.Matrix');
+	p.push('flash.display.Graphics');
+	return p;
 };
 
 flash.display.Bitmap.getStaticDependencies = function(t) {
