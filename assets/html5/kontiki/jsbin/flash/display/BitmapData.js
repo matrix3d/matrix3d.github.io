@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:58 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Mon Jun 01 12:16:15 CST 2015 */
 
 if (typeof flash == "undefined")
 	var flash = {};
@@ -10,7 +10,9 @@ flash.display.BitmapData = function(width, height, transparent, fillColor) {
 	this.isLoaded = false;
 	this.checkTable = null;
 	this.image = null;
+	this.noRepeatPatern = null;
 	this._rect = null;
+	this.repeatPatern = null;
 	this.bitmapBytes = null;
 	this.width = width;
 	this.height = height;
@@ -34,8 +36,16 @@ flash.display.BitmapData = function(width, height, transparent, fillColor) {
 		}
 		ctx.putImageData(this.imageData, 0, 0);
 		this.image = canvas;
+		this.updatePatern();
 	}
 	this._rect = new flash.geom.Rectangle(0, 0, width, height);
+};
+
+flash.display.BitmapData.prototype.updatePatern = function() {
+	var g = new flash.display.Graphics();
+	var ctx = g.getCanvas();
+	this.repeatPatern = ctx.createPattern(this.image, "repeat");
+	this.noRepeatPatern = ctx.createPattern(this.image, "no-repeat");
 };
 
 flash.display.BitmapData.prototype.embedImage = function(source) {
@@ -245,6 +255,7 @@ flash.display.BitmapData.getRuntimeDependencies = function(t) {
 	p.push('flash.geom.Rectangle');
 	p.push('flash.utils.FlashTimingEngine');
 	p.push('flash.utils.Dictionary');
+	p.push('flash.display.Graphics');
 	return p;
 };
 

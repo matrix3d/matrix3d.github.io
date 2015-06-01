@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:58 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Mon Jun 01 12:16:15 CST 2015 */
 
 if (typeof flash == "undefined")
 	var flash = {};
@@ -18,6 +18,7 @@ flash.display.cmds.SetBitmapAttribCmd = function(target, name, bmd, matrix, repe
 };
 
 flash.display.cmds.SetBitmapAttribCmd.prototype.update = function() {
+	this.value = this.bmd.noRepeatPatern;
 	flash.display.cmds.SetAttribCmd.prototype.update.call(this);
 };
 

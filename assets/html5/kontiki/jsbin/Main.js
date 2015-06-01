@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:58 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Mon Jun 01 12:16:15 CST 2015 */
 
 
 Main = function() {
@@ -6,6 +6,7 @@ Main = function() {
 	this.ss = [];
 	this.shape = null;
 	this.texture = null;
+	this.loader = null;
 	this.indexBuffer = null;
 	this.stage3D = null;
 	this.program = null;
@@ -18,8 +19,6 @@ Main = function() {
 	}
 };
 
-Main.rockmanAsset = flash.utils.FlashEmbed.getEmbed("flash.display.Bitmap", {source:"../assets/rockman.png"});
-
 Main.prototype.init = function(e) {
 	this.removeEventListener("addedToStage", $createStaticDelegate(this, this.init), false);
 	this.stage3D = this.get_stage().get_stage3Ds()[0];
@@ -27,15 +26,16 @@ Main.prototype.init = function(e) {
 	this.stage3D.requestContext3D("auto", "baseline");
 	this.shape = new flash.display.Sprite();
 	this.shape.get_graphics().beginFill(0xff0000, 1.0);
-	this.shape.get_graphics().moveTo(-50, -50);
-	this.shape.get_graphics().lineTo(50, -50);
-	this.shape.get_graphics().lineTo(50, 50);
-	this.shape.get_graphics().lineTo(-50, 50);
-	this.shape.get_graphics().lineTo(-50, -50);
+	this.shape.get_graphics().drawRect(-50, -50, 100, 100);
 	this.addChild(this.shape);
-	var bitmap = new flash.display.Bitmap(new Main.rockmanAsset(), "auto", false);
-	this.addChild(bitmap);
+	this.loader = new flash.display.Loader();
+	this.loader.contentLoaderInfo.addEventListener("complete", $createStaticDelegate(this, this.loader_complete), false, 0, false);
+	this.loader.load(new flash.net.URLRequest("..\/assets\/rockman.png"));
 	this.addEventListener("enterFrame", $createStaticDelegate(this, this.enterFrame), false, 0, false);
+};
+
+Main.prototype.loader_complete = function(e) {
+	this.addChild(this.loader.content);
 };
 
 Main.prototype.stage3D_context3dCreate = function(e) {
@@ -99,10 +99,11 @@ Main.className = "Main";
 Main.getRuntimeDependencies = function(t) {
 	var p;
 	p = [];
+	p.push('flash.display.Loader');
 	p.push('com.adobe.utils.AGALMiniAssembler');
-	p.push('flash.display.Bitmap');
 	p.push('flash.display3D.Context3DCompareMode');
 	p.push('flash.display.Sprite');
+	p.push('flash.net.URLRequest');
 	p.push('flash.system.Capabilities');
 	p.push('flash.display3D.Context3DProgramType');
 	p.push('flash.utils.getTimer');

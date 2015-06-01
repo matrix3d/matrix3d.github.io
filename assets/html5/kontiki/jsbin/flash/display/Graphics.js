@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat May 30 16:40:58 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Mon Jun 01 12:16:15 CST 2015 */
 
 if (typeof flash == "undefined")
 	var flash = {};
@@ -26,7 +26,8 @@ flash.display.Graphics.prototype.beginFill = function(color, alpha) {
 };
 
 flash.display.Graphics.prototype.beginBitmapFill = function(bitmap, matrix, repeat, smooth) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.beginBitmapFill() $$$$");
+	var cmd = new flash.display.cmds.SetBitmapAttribCmd(this.getCanvas(), "fillStyle", bitmap, matrix, repeat, this.sprite);
+	this.cmds.push(cmd, new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.SetAttribCmd(this, "filling", true), new flash.display.cmds.SetAttribCmd(this, "fillingBmdCmd", cmd));
 };
 
 flash.display.Graphics.prototype.beginGradientFill = function(type, colors, alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio) {
@@ -44,7 +45,11 @@ flash.display.Graphics.prototype.drawCircle = function(x, y, radius) {
 };
 
 flash.display.Graphics.prototype.drawRect = function(x, y, width, height) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.drawRect() $$$$");
+	this.moveTo(x, y);
+	this.lineTo(x + width, y);
+	this.lineTo(x + width, y + height);
+	this.lineTo(x, y + height);
+	this.lineTo(x, y);
 };
 
 flash.display.Graphics.prototype.drawRoundRect = function(x, y, width, height, ellipseWidth, ellipseHeight) {
@@ -129,6 +134,7 @@ flash.display.Graphics.getRuntimeDependencies = function(t) {
 	p.push('flash.geom.Matrix');
 	p.push('flash.display.cmds.SetAttribCmd');
 	p.push('flash.display.cmds.SetColorAttribCmd');
+	p.push('flash.display.cmds.SetBitmapAttribCmd');
 	return p;
 };
 
