@@ -30,7 +30,7 @@ Main.prototype.init = function(e) {
 	this.addChild(this.shape);
 	this.loader = new flash.display.Loader();
 	this.loader.contentLoaderInfo.addEventListener("complete", $createStaticDelegate(this, this.loader_complete), false, 0, false);
-	this.loader.load(new flash.net.URLRequest("..\/assets\/rockman.png"));
+	this.loader.load(new flash.net.URLRequest("assets\/rockman.png"));
 	this.addEventListener("enterFrame", $createStaticDelegate(this, this.enterFrame), false, 0, false);
 };
 
