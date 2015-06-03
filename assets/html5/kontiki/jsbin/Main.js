@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Mon Jun 01 12:16:15 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Wed Jun 03 10:44:51 CST 2015 */
 
 
 Main = function() {
@@ -30,7 +30,7 @@ Main.prototype.init = function(e) {
 	this.addChild(this.shape);
 	this.loader = new flash.display.Loader();
 	this.loader.contentLoaderInfo.addEventListener("complete", $createStaticDelegate(this, this.loader_complete), false, 0, false);
-	this.loader.load(new flash.net.URLRequest("assets\/rockman.png"));
+	this.loader.load(new flash.net.URLRequest("..\/assets\/rockman.png"));
 	this.addEventListener("enterFrame", $createStaticDelegate(this, this.enterFrame), false, 0, false);
 };
 

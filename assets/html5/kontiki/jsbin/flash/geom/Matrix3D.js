@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Mon Jun 01 12:16:16 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Wed Jun 03 10:44:51 CST 2015 */
 
 if (typeof flash == "undefined")
 	var flash = {};
@@ -7,6 +7,9 @@ if (typeof flash.geom == "undefined")
 
 flash.geom.Matrix3D = function(v) {
 	this.rawData = null;
+	if (v == null) {
+		v = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
+	}
 	this.rawData = v;
 };
 

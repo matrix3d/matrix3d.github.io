@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+    <script src="jsbin/randori-guice-framework.js"></script>
+    <script src="jsbin/GuiceInjectorBootstrap.js"></script>
+    <script src="jsbinmin/kontiki.js"></script>
+</head>
+<body>
+	<canvas width="400" height="400" id="stage3d"></canvas>
+	<canvas width="400" height="400" id="stage"></canvas>
+	<a href="src/Main.as">source</a>
+	<iframe width="400" height="400" src="bin"></iframe>
+<script>
+onload = function() {
+      
+ var bootstrap = new GuiceInjectorBootstrap( "Main", "" );
+       bootstrap.launch("#0000cc", 1024, 768, 60);
+}
+</script>
+</body>
+</html>
