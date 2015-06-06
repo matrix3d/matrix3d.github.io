@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-    <script src="jsbin/randori-guice-framework.js"></script>
-    <script src="jsbin/GuiceInjectorBootstrap.js"></script>
+    <script src="jsbinmin/randori-guice-framework.js"></script>
+    <script src="jsbinmin/GuiceInjectorBootstrap.js"></script>
+    <script src="jsbinmin/kontiki.js"></script>
 </head>
 <body>
 	<canvas width="400" height="400" id="stage3d"></canvas>
@@ -14,7 +15,7 @@
 <script>
 onload = function() {
       
- var bootstrap = new GuiceInjectorBootstrap( "Main", "jsbin/" );
+ var bootstrap = new GuiceInjectorBootstrap( "Main", "" );
        bootstrap.launch("#0000cc", 1024, 768, 60);
 }
 </script>

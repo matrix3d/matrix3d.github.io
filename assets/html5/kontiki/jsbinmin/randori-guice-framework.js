@@ -344,7 +344,7 @@ guice.reflection.TypeDefinitionFactory.prototype.buildProxyObjectForDependency =
 	var proxy = this.createEmptyDefinition(qualifiedClassName);
 	if (!proxy.className) {
 		proxy.className = qualifiedClassName;
-		proxy.isProxy = true;
+		proxy.isProxy = false;
 	}
 	return proxy;
 };

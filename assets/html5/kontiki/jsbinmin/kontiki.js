@@ -1,4 +1,4 @@
-/** Compiled by the Randori compiler v0.2.6.5_renaun on Wed Jun 03 10:44:54 CST 2015 */
+/** Compiled by the Randori compiler v0.2.6.5_renaun on Sat Jun 06 14:16:10 CST 2015 */
 
 
 // ====================================================
@@ -355,1727 +355,7 @@ flash.utils.clearTimeout.injectionPoints = function(t) {
 };
 
 // ====================================================
-// flash.display3D.Context3DTriangleFace
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.Context3DTriangleFace = function() {
-};
-
-flash.display3D.Context3DTriangleFace.BACK = "back";
-
-flash.display3D.Context3DTriangleFace.FRONT = "front";
-
-flash.display3D.Context3DTriangleFace.FRONT_AND_BACK = "fontAndBack";
-
-flash.display3D.Context3DTriangleFace.NONE = "none";
-
-
-flash.display3D.Context3DTriangleFace.className = "flash.display3D.Context3DTriangleFace";
-
-flash.display3D.Context3DTriangleFace.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DTriangleFace.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DTriangleFace.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.ui.Multitouch
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.ui == "undefined")
-	flash.ui = {};
-
-flash.ui.Multitouch = function() {
-};
-
-flash.ui.Multitouch.inputMode;
-
-
-flash.ui.Multitouch.className = "flash.ui.Multitouch";
-
-flash.ui.Multitouch.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.Multitouch.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.Multitouch.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.media.SoundLoaderContext
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.media == "undefined")
-	flash.media = {};
-
-flash.media.SoundLoaderContext = function(bufferTime, checkPolicyFile) {
-	this.bufferTime = bufferTime;
-	this.checkPolicyFile = checkPolicyFile;
-};
-
-
-flash.media.SoundLoaderContext.className = "flash.media.SoundLoaderContext";
-
-flash.media.SoundLoaderContext.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.media.SoundLoaderContext.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.media.SoundLoaderContext.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'bufferTime', t:'Number'});
-			p.push({n:'checkPolicyFile', t:'Boolean'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display3D.Context3DVertexBufferFormat
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.Context3DVertexBufferFormat = function() {
-};
-
-flash.display3D.Context3DVertexBufferFormat.BYTES_4 = "bytes4";
-
-flash.display3D.Context3DVertexBufferFormat.FLOAT_1 = "float1";
-
-flash.display3D.Context3DVertexBufferFormat.FLOAT_2 = "float2";
-
-flash.display3D.Context3DVertexBufferFormat.FLOAT_3 = "float3";
-
-flash.display3D.Context3DVertexBufferFormat.FLOAT_4 = "float4";
-
-
-flash.display3D.Context3DVertexBufferFormat.className = "flash.display3D.Context3DVertexBufferFormat";
-
-flash.display3D.Context3DVertexBufferFormat.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DVertexBufferFormat.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DVertexBufferFormat.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.ui.MouseCursor
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.ui == "undefined")
-	flash.ui = {};
-
-flash.ui.MouseCursor = function() {
-};
-
-flash.ui.MouseCursor.AUTO = "auto";
-
-flash.ui.MouseCursor.BUTTON = "button";
-
-flash.ui.MouseCursor.ARROW = "arrow";
-
-flash.ui.MouseCursor.HAND = "hand";
-
-
-flash.ui.MouseCursor.className = "flash.ui.MouseCursor";
-
-flash.ui.MouseCursor.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.MouseCursor.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.MouseCursor.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// com.adobe.utils.AGALMiniAssembler
-// ====================================================
-
-if (typeof com == "undefined")
-	var com = {};
-if (typeof com.adobe == "undefined")
-	com.adobe = {};
-if (typeof com.adobe.utils == "undefined")
-	com.adobe.utils = {};
-
-com.adobe.utils.AGALMiniAssembler = function(debugging) {
-	this.initialized = false;
-	this._agalcode = null;
-	this.verbose = false;
-	this.debugEnabled = false;
-	this._error = "";
-	this.debugEnabled = debugging;
-	if (!com.adobe.utils.AGALMiniAssembler.initialized)
-		com.adobe.utils.AGALMiniAssembler.init();
-};
-
-com.adobe.utils.AGALMiniAssembler.USE_NEW_SYNTAX = false;
-
-com.adobe.utils.AGALMiniAssembler.REGEXP_OUTER_SPACES = /^\s+|\s+$/g;
-
-com.adobe.utils.AGALMiniAssembler.initialized = false;
-
-com.adobe.utils.AGALMiniAssembler.prototype.get_error = function() {
-	return this._error;
-};
-
-com.adobe.utils.AGALMiniAssembler.prototype.get_agalcode = function() {
-	return this._agalcode;
-};
-
-com.adobe.utils.AGALMiniAssembler.prototype.assemble = function(mode, source) {
-	var start = flash.utils.getTimer();
-	this._agalcode = new flash.utils.ByteArray();
-	this._error = "";
-	var isFrag = false;
-	if (mode == "fragment")
-		isFrag = true;
-	else if (mode != "vertex")
-		this._error = "ERROR: mode needs to be \"" + "fragment" + "\" or \"" + "vertex" + "\" but is \"" + mode + "\".";
-	this.get_agalcode().set_endian("littleEndian");
-	this.get_agalcode().writeByte(0xa0);
-	this.get_agalcode().writeUnsignedInt(0x1);
-	this.get_agalcode().writeByte(0xa1);
-	this.get_agalcode().writeByte(isFrag ? 1 : 0);
-	var lines = source.replace(/[\f\n\r\v]+/g, "\n").split("\n", 4.294967295E9);
-	var nest = 0;
-	var nops = 0;
-	var i;
-	var lng = lines.length;
-	for (i = 0; i < lng && this._error == ""; i++) {
-		var line = new String(lines[i]);
-		line = line.replace(/^\s+|\s+$/g, "");
-		var startcomment = line.search("\/\/");
-		if (startcomment != -1)
-			line = line.slice(0, startcomment);
-		var optsi = line.search(/<.*>/g);
-		var opts;
-		if (optsi != -1) {
-			opts = line.slice(optsi, 2147483647).match(/([\w\.\-\+]+)/gi);
-			line = line.slice(0, optsi);
-		}
-		var opCode = line.match(/^\w{3}/ig);
-		if (!opCode) {
-			if (line.length >= 3)
-				trace("warning: bad line " + i + ": " + lines[i]);
-			continue;
-		}
-		var opFound = com.adobe.utils.AGALMiniAssembler.OPMAP[opCode[0]];
-		if (this.debugEnabled)
-			trace(opFound);
-		if (opFound == null) {
-			if (line.length >= 3)
-				trace("warning: bad line " + i + ": " + lines[i]);
-			continue;
-		}
-		line = line.slice(line.search(opFound.get_name()) + opFound.get_name().length, 2147483647);
-		if (opFound.get_flags() & 4) {
-			nest--;
-			if (nest < 0) {
-				this._error = "error: conditional closes without open.";
-				break;
-			}
-		}
-		if (opFound.get_flags() & 2) {
-			nest++;
-			if (nest > 4) {
-				this._error = "error: nesting to deep, maximum allowed is " + 4 + ".";
-				break;
-			}
-		}
-		if ((opFound.get_flags() & 32) && !isFrag) {
-			this._error = "error: opcode is only allowed in fragment programs.";
-			break;
-		}
-		if (this.verbose)
-			trace("emit opcode=" + opFound);
-		this.get_agalcode().writeUnsignedInt(opFound.get_emitCode());
-		nops++;
-		if (nops > 256) {
-			this._error = "error: too many opcodes. maximum is " + 256 + ".";
-			break;
-		}
-		var regs;
-		if (false)
-			regs = line.match(/vc\[([vif][acost]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vif][acost]?)(\d*)?(\.[xyzw]{1,4})?/gi);
-		else
-			regs = line.match(/vc\[([vof][actps]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vof][actps]?)(\d*)?(\.[xyzw]{1,4})?/gi);
-		if (!regs || regs.length != opFound.get_numRegister()) {
-			this._error = "error: wrong number of operands. found " + regs.length + " but expected " + opFound.get_numRegister() + ".";
-			break;
-		}
-		var badreg = false;
-		var pad = 64 + 64 + 32;
-		var regLength = regs.length;
-		for (var j = 0; j < regLength; j++) {
-			var isRelative = false;
-			var relreg = regs[j].match(/\[.*\]/ig);
-			if (relreg && relreg.length > 0) {
-				regs[j] = regs[j].replace(relreg[0], "0");
-				if (this.verbose)
-					trace("IS REL");
-				isRelative = true;
-			}
-			var res = regs[j].match(/^\b[A-Za-z]{1,2}/ig);
-			if (!res) {
-				this._error = "error: could not parse operand " + j + " (" + regs[j] + ").";
-				badreg = true;
-				break;
-			}
-			var regFound = com.adobe.utils.AGALMiniAssembler.REGMAP[res[0]];
-			if (this.debugEnabled)
-				trace(regFound);
-			if (regFound == null) {
-				this._error = "error: could not parse operand " + j + " (" + regs[j] + ").";
-				badreg = true;
-				break;
-			}
-			if (isFrag) {
-				if (!(regFound.get_flags() & 32)) {
-					this._error = "error: register operand " + j + " (" + regs[j] + ") only allowed in vertex programs.";
-					badreg = true;
-					break;
-				}
-				if (isRelative) {
-					this._error = "error: register operand " + j + " (" + regs[j] + ") relative adressing not allowed in fragment programs.";
-					badreg = true;
-					break;
-				}
-			} else {
-				if (!(regFound.get_flags() & 64)) {
-					this._error = "error: register operand " + j + " (" + regs[j] + ") only allowed in fragment programs.";
-					badreg = true;
-					break;
-				}
-			}
-			regs[j] = regs[j].slice(regs[j].search(regFound.get_name()) + regFound.get_name().length);
-			var idxmatch = isRelative ? relreg[0].match(/\d+/) : regs[j].match(/\d+/);
-			var regidx = 0;
-			if (idxmatch)
-				regidx = idxmatch[0];
-			if (regFound.get_range() < regidx) {
-				this._error = "error: register operand " + j + " (" + regs[j] + ") index exceeds limit of " + (regFound.get_range() + 1) + ".";
-				badreg = true;
-				break;
-			}
-			var regmask = 0;
-			var maskmatch = regs[j].match(/(\.[xyzw]{1,4})/);
-			var isDest = (j == 0 && !(opFound.get_flags() & 128));
-			var isSampler = (j == 2 && (opFound.get_flags() & 8));
-			var reltype = 0;
-			var relsel = 0;
-			var reloffset = 0;
-			if (isDest && isRelative) {
-				this._error = "error: relative can not be destination";
-				badreg = true;
-				break;
-			}
-			if (maskmatch) {
-				regmask = 0;
-				var cv;
-				var maskLength = maskmatch[0].length;
-				for (var k = 1; k < maskLength; k++) {
-					cv = maskmatch[0].charCodeAt(k) - "x".charCodeAt(0);
-					if (cv > 2)
-						cv = 3;
-					if (isDest)
-						regmask |= 1 << cv;
-					else
-						regmask |= cv << ((k - 1) << 1);
-				}
-				if (!isDest)
-					for (; k <= 4; k++)
-						regmask |= cv << ((k - 1) << 1);
-			} else {
-				regmask = isDest ? 0xf : 0xe4;
-			}
-			if (isRelative) {
-				var relname = relreg[0].match(/[A-Za-z]{1,2}/ig);
-				var regFoundRel = com.adobe.utils.AGALMiniAssembler.REGMAP[relname[0]];
-				if (regFoundRel == null) {
-					this._error = "error: bad index register";
-					badreg = true;
-					break;
-				}
-				reltype = regFoundRel.get_emitCode();
-				var selmatch = relreg[0].match(/(\.[xyzw]{1,1})/);
-				if (selmatch.length == 0) {
-					this._error = "error: bad index register select";
-					badreg = true;
-					break;
-				}
-				relsel = selmatch[0].charCodeAt(1) - "x".charCodeAt(0);
-				if (relsel > 2)
-					relsel = 3;
-				var relofs = relreg[0].match(/\+\d{1,3}/ig);
-				if (relofs.length > 0)
-					reloffset = relofs[0];
-				if (reloffset < 0 || reloffset > 255) {
-					this._error = "error: index offset " + reloffset + " out of bounds. [0..255]";
-					badreg = true;
-					break;
-				}
-				if (this.verbose)
-					trace("RELATIVE: type=" + reltype + "==" + relname[0] + " sel=" + relsel + "==" + selmatch[0] + " idx=" + regidx + " offset=" + reloffset);
-			}
-			if (this.verbose)
-				trace("  emit argcode=" + regFound + "[" + regidx + "][" + regmask + "]");
-			if (isDest) {
-				this.get_agalcode().writeShort(regidx);
-				this.get_agalcode().writeByte(regmask);
-				this.get_agalcode().writeByte(regFound.get_emitCode());
-				pad -= 32;
-			} else {
-				if (isSampler) {
-					if (this.verbose)
-						trace("  emit sampler");
-					var samplerbits = 5;
-					var optsLength = opts == null ? 0 : opts.length;
-					var bias = 0;
-					for (k = 0; k < optsLength; k++) {
-						if (this.verbose)
-							trace("    opt: " + opts[k]);
-						var optfound = com.adobe.utils.AGALMiniAssembler.SAMPLEMAP[opts[k]];
-						if (optfound == null) {
-							bias = opts[k];
-							if (this.verbose)
-								trace("    bias: " + bias);
-						} else {
-							if (optfound.get_flag() != 16)
-								samplerbits &= ~(0xf << optfound.get_flag());
-							samplerbits |= optfound.get_mask() << optfound.get_flag();
-						}
-					}
-					this.get_agalcode().writeShort(regidx);
-					this.get_agalcode().writeByte(~~(bias * 8.0));
-					this.get_agalcode().writeByte(0);
-					this.get_agalcode().writeUnsignedInt(samplerbits);
-					if (this.verbose)
-						trace("    bits: " + (samplerbits - 5));
-					pad -= 64;
-				} else {
-					if (j == 0) {
-						this.get_agalcode().writeUnsignedInt(0);
-						pad -= 32;
-					}
-					this.get_agalcode().writeShort(regidx);
-					this.get_agalcode().writeByte(reloffset);
-					this.get_agalcode().writeByte(regmask);
-					this.get_agalcode().writeByte(regFound.get_emitCode());
-					this.get_agalcode().writeByte(reltype);
-					this.get_agalcode().writeShort(isRelative ? (relsel | (1 << 15)) : 0);
-					pad -= 64;
-				}
-			}
-		}
-		for (j = 0; j < pad; j += 8)
-			this.get_agalcode().writeByte(0);
-		if (badreg)
-			break;
-	}
-	if (this._error != "") {
-		this._error += "\n  at line " + i + " " + lines[i];
-		this.get_agalcode().set_length(0);
-		trace(this._error);
-	}
-	if (this.debugEnabled) {
-		var dbgLine = "generated bytecode:";
-		var agalLength = this.get_agalcode().get_length();
-		for (var index = 0; index < agalLength; index++) {
-			if (!(index % 16))
-				dbgLine += "\n";
-			if (!(index % 4))
-				dbgLine += " ";
-			var byteStr = this.get_agalcode().getValueByPosition(index).toString(16);
-			if (byteStr.length < 2)
-				byteStr = "0" + byteStr;
-			dbgLine += byteStr;
-		}
-		trace(dbgLine);
-	}
-	if (this.verbose)
-		trace("AGALMiniAssembler.assemble time: " + ((flash.utils.getTimer() - start) / 1000) + "s");
-	return this.get_agalcode();
-};
-
-com.adobe.utils.AGALMiniAssembler.init = function() {
-	com.adobe.utils.AGALMiniAssembler.initialized = true;
-	com.adobe.utils.AGALMiniAssembler.OPMAP["mov"] = new com.adobe.utils.AGALMiniAssembler$OpCode("mov", 2, 0x00, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["add"] = new com.adobe.utils.AGALMiniAssembler$OpCode("add", 3, 0x01, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sub"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sub", 3, 0x02, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["mul"] = new com.adobe.utils.AGALMiniAssembler$OpCode("mul", 3, 0x03, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["div"] = new com.adobe.utils.AGALMiniAssembler$OpCode("div", 3, 0x04, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["rcp"] = new com.adobe.utils.AGALMiniAssembler$OpCode("rcp", 2, 0x05, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["min"] = new com.adobe.utils.AGALMiniAssembler$OpCode("min", 3, 0x06, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["max"] = new com.adobe.utils.AGALMiniAssembler$OpCode("max", 3, 0x07, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["frc"] = new com.adobe.utils.AGALMiniAssembler$OpCode("frc", 2, 0x08, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sqt"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sqt", 2, 0x09, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["rsq"] = new com.adobe.utils.AGALMiniAssembler$OpCode("rsq", 2, 0x0a, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["pow"] = new com.adobe.utils.AGALMiniAssembler$OpCode("pow", 3, 0x0b, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["log"] = new com.adobe.utils.AGALMiniAssembler$OpCode("log", 2, 0x0c, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["exp"] = new com.adobe.utils.AGALMiniAssembler$OpCode("exp", 2, 0x0d, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["nrm"] = new com.adobe.utils.AGALMiniAssembler$OpCode("nrm", 2, 0x0e, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sin"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sin", 2, 0x0f, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["cos"] = new com.adobe.utils.AGALMiniAssembler$OpCode("cos", 2, 0x10, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["crs"] = new com.adobe.utils.AGALMiniAssembler$OpCode("crs", 3, 0x11, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["dp3"] = new com.adobe.utils.AGALMiniAssembler$OpCode("dp3", 3, 0x12, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["dp4"] = new com.adobe.utils.AGALMiniAssembler$OpCode("dp4", 3, 0x13, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["abs"] = new com.adobe.utils.AGALMiniAssembler$OpCode("abs", 2, 0x14, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["neg"] = new com.adobe.utils.AGALMiniAssembler$OpCode("neg", 2, 0x15, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sat"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sat", 2, 0x16, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["m33"] = new com.adobe.utils.AGALMiniAssembler$OpCode("m33", 3, 0x17, 16);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["m44"] = new com.adobe.utils.AGALMiniAssembler$OpCode("m44", 3, 0x18, 16);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["m34"] = new com.adobe.utils.AGALMiniAssembler$OpCode("m34", 3, 0x19, 16);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["ifz"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ifz", 1, 0x1a, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["inz"] = new com.adobe.utils.AGALMiniAssembler$OpCode("inz", 1, 0x1b, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["ife"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ife", 2, 0x1c, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["ine"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ine", 2, 0x1d, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["ifg"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ifg", 2, 0x1e, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["ifl"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ifl", 2, 0x1f, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["ieg"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ieg", 2, 0x20, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["iel"] = new com.adobe.utils.AGALMiniAssembler$OpCode("iel", 2, 0x21, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["els"] = new com.adobe.utils.AGALMiniAssembler$OpCode("els", 0, 0x22, 128 | 2 | 4);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["eif"] = new com.adobe.utils.AGALMiniAssembler$OpCode("eif", 0, 0x23, 128 | 4);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["rep"] = new com.adobe.utils.AGALMiniAssembler$OpCode("rep", 1, 0x24, 128 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["erp"] = new com.adobe.utils.AGALMiniAssembler$OpCode("erp", 0, 0x25, 128 | 4);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["brk"] = new com.adobe.utils.AGALMiniAssembler$OpCode("brk", 0, 0x26, 128);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["kil"] = new com.adobe.utils.AGALMiniAssembler$OpCode("kil", 1, 0x27, 128 | 32);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["tex"] = new com.adobe.utils.AGALMiniAssembler$OpCode("tex", 3, 0x28, 32 | 8);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sge"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sge", 3, 0x29, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["slt"] = new com.adobe.utils.AGALMiniAssembler$OpCode("slt", 3, 0x2a, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sgn"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sgn", 2, 0x2b, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["seq"] = new com.adobe.utils.AGALMiniAssembler$OpCode("seq", 3, 0x2c, 0);
-	com.adobe.utils.AGALMiniAssembler.OPMAP["sne"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sne", 3, 0x2d, 0);
-	com.adobe.utils.AGALMiniAssembler.REGMAP["va"] = new com.adobe.utils.AGALMiniAssembler$Register("va", "vertex attribute", 0x0, 7, 64 | 2);
-	com.adobe.utils.AGALMiniAssembler.REGMAP["vc"] = new com.adobe.utils.AGALMiniAssembler$Register("vc", "vertex constant", 0x1, 127, 64 | 2);
-	com.adobe.utils.AGALMiniAssembler.REGMAP["vt"] = new com.adobe.utils.AGALMiniAssembler$Register("vt", "vertex temporary", 0x2, 7, 64 | 1 | 2);
-	com.adobe.utils.AGALMiniAssembler.REGMAP[com.adobe.utils.AGALMiniAssembler.VO] = new com.adobe.utils.AGALMiniAssembler$Register(com.adobe.utils.AGALMiniAssembler.VO, "vertex output", 0x3, 0, 64 | 1);
-	com.adobe.utils.AGALMiniAssembler.REGMAP[com.adobe.utils.AGALMiniAssembler.I] = new com.adobe.utils.AGALMiniAssembler$Register(com.adobe.utils.AGALMiniAssembler.I, "varying", 0x4, 7, 64 | 32 | 2 | 1);
-	com.adobe.utils.AGALMiniAssembler.REGMAP["fc"] = new com.adobe.utils.AGALMiniAssembler$Register("fc", "fragment constant", 0x1, 27, 32 | 2);
-	com.adobe.utils.AGALMiniAssembler.REGMAP["ft"] = new com.adobe.utils.AGALMiniAssembler$Register("ft", "fragment temporary", 0x2, 7, 32 | 1 | 2);
-	com.adobe.utils.AGALMiniAssembler.REGMAP["fs"] = new com.adobe.utils.AGALMiniAssembler$Register("fs", "texture sampler", 0x5, 7, 32 | 2);
-	com.adobe.utils.AGALMiniAssembler.REGMAP[com.adobe.utils.AGALMiniAssembler.FO] = new com.adobe.utils.AGALMiniAssembler$Register(com.adobe.utils.AGALMiniAssembler.FO, "fragment output", 0x3, 0, 32 | 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["rgba"] = new com.adobe.utils.AGALMiniAssembler$Sampler("rgba", 8, 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["dxt1"] = new com.adobe.utils.AGALMiniAssembler$Sampler("dxt1", 8, 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["dxt5"] = new com.adobe.utils.AGALMiniAssembler$Sampler("dxt5", 8, 2);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["2d"] = new com.adobe.utils.AGALMiniAssembler$Sampler("2d", 12, 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["3d"] = new com.adobe.utils.AGALMiniAssembler$Sampler("3d", 12, 2);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["cube"] = new com.adobe.utils.AGALMiniAssembler$Sampler("cube", 12, 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["mipnearest"] = new com.adobe.utils.AGALMiniAssembler$Sampler("mipnearest", 24, 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["miplinear"] = new com.adobe.utils.AGALMiniAssembler$Sampler("miplinear", 24, 2);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["mipnone"] = new com.adobe.utils.AGALMiniAssembler$Sampler("mipnone", 24, 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["nomip"] = new com.adobe.utils.AGALMiniAssembler$Sampler("nomip", 24, 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["nearest"] = new com.adobe.utils.AGALMiniAssembler$Sampler("nearest", 28, 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["linear"] = new com.adobe.utils.AGALMiniAssembler$Sampler("linear", 28, 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic2x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic2x", 28, 2);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic4x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic4x", 28, 3);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic8x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic8x", 28, 4);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic16x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic16x", 28, 5);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["centroid"] = new com.adobe.utils.AGALMiniAssembler$Sampler("centroid", 16, 1 << 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["single"] = new com.adobe.utils.AGALMiniAssembler$Sampler("single", 16, 1 << 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["depth"] = new com.adobe.utils.AGALMiniAssembler$Sampler("depth", 16, 1 << 2);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["repeat"] = new com.adobe.utils.AGALMiniAssembler$Sampler("repeat", 20, 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["wrap"] = new com.adobe.utils.AGALMiniAssembler$Sampler("wrap", 20, 1);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["clamp"] = new com.adobe.utils.AGALMiniAssembler$Sampler("clamp", 20, 0);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["clamp_u_repeat_v"] = new com.adobe.utils.AGALMiniAssembler$Sampler("clamp_u_repeat_v", 20, 2);
-	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["repeat_u_clamp_v"] = new com.adobe.utils.AGALMiniAssembler$Sampler("repeat_u_clamp_v", 20, 3);
-};
-
-com.adobe.utils.AGALMiniAssembler.OPMAP = new flash.utils.Dictionary(false);
-
-com.adobe.utils.AGALMiniAssembler.REGMAP = new flash.utils.Dictionary(false);
-
-com.adobe.utils.AGALMiniAssembler.SAMPLEMAP = new flash.utils.Dictionary(false);
-
-com.adobe.utils.AGALMiniAssembler.MAX_NESTING = 4;
-
-com.adobe.utils.AGALMiniAssembler.MAX_OPCODES = 256;
-
-com.adobe.utils.AGALMiniAssembler.FRAGMENT = "fragment";
-
-com.adobe.utils.AGALMiniAssembler.VERTEX = "vertex";
-
-com.adobe.utils.AGALMiniAssembler.SAMPLER_TYPE_SHIFT = 8;
-
-com.adobe.utils.AGALMiniAssembler.SAMPLER_DIM_SHIFT = 12;
-
-com.adobe.utils.AGALMiniAssembler.SAMPLER_SPECIAL_SHIFT = 16;
-
-com.adobe.utils.AGALMiniAssembler.SAMPLER_REPEAT_SHIFT = 20;
-
-com.adobe.utils.AGALMiniAssembler.SAMPLER_MIPMAP_SHIFT = 24;
-
-com.adobe.utils.AGALMiniAssembler.SAMPLER_FILTER_SHIFT = 28;
-
-com.adobe.utils.AGALMiniAssembler.REG_WRITE = 0x1;
-
-com.adobe.utils.AGALMiniAssembler.REG_READ = 0x2;
-
-com.adobe.utils.AGALMiniAssembler.REG_FRAG = 0x20;
-
-com.adobe.utils.AGALMiniAssembler.REG_VERT = 0x40;
-
-com.adobe.utils.AGALMiniAssembler.OP_SCALAR = 0x1;
-
-com.adobe.utils.AGALMiniAssembler.OP_INC_NEST = 0x2;
-
-com.adobe.utils.AGALMiniAssembler.OP_DEC_NEST = 0x4;
-
-com.adobe.utils.AGALMiniAssembler.OP_SPECIAL_TEX = 0x8;
-
-com.adobe.utils.AGALMiniAssembler.OP_SPECIAL_MATRIX = 0x10;
-
-com.adobe.utils.AGALMiniAssembler.OP_FRAG_ONLY = 0x20;
-
-com.adobe.utils.AGALMiniAssembler.OP_NO_DEST = 0x80;
-
-com.adobe.utils.AGALMiniAssembler.MOV = "mov";
-
-com.adobe.utils.AGALMiniAssembler.ADD = "add";
-
-com.adobe.utils.AGALMiniAssembler.SUB = "sub";
-
-com.adobe.utils.AGALMiniAssembler.MUL = "mul";
-
-com.adobe.utils.AGALMiniAssembler.DIV = "div";
-
-com.adobe.utils.AGALMiniAssembler.RCP = "rcp";
-
-com.adobe.utils.AGALMiniAssembler.MIN = "min";
-
-com.adobe.utils.AGALMiniAssembler.MAX = "max";
-
-com.adobe.utils.AGALMiniAssembler.FRC = "frc";
-
-com.adobe.utils.AGALMiniAssembler.SQT = "sqt";
-
-com.adobe.utils.AGALMiniAssembler.RSQ = "rsq";
-
-com.adobe.utils.AGALMiniAssembler.POW = "pow";
-
-com.adobe.utils.AGALMiniAssembler.LOG = "log";
-
-com.adobe.utils.AGALMiniAssembler.EXP = "exp";
-
-com.adobe.utils.AGALMiniAssembler.NRM = "nrm";
-
-com.adobe.utils.AGALMiniAssembler.SIN = "sin";
-
-com.adobe.utils.AGALMiniAssembler.COS = "cos";
-
-com.adobe.utils.AGALMiniAssembler.CRS = "crs";
-
-com.adobe.utils.AGALMiniAssembler.DP3 = "dp3";
-
-com.adobe.utils.AGALMiniAssembler.DP4 = "dp4";
-
-com.adobe.utils.AGALMiniAssembler.ABS = "abs";
-
-com.adobe.utils.AGALMiniAssembler.NEG = "neg";
-
-com.adobe.utils.AGALMiniAssembler.SAT = "sat";
-
-com.adobe.utils.AGALMiniAssembler.M33 = "m33";
-
-com.adobe.utils.AGALMiniAssembler.M44 = "m44";
-
-com.adobe.utils.AGALMiniAssembler.M34 = "m34";
-
-com.adobe.utils.AGALMiniAssembler.IFZ = "ifz";
-
-com.adobe.utils.AGALMiniAssembler.INZ = "inz";
-
-com.adobe.utils.AGALMiniAssembler.IFE = "ife";
-
-com.adobe.utils.AGALMiniAssembler.INE = "ine";
-
-com.adobe.utils.AGALMiniAssembler.IFG = "ifg";
-
-com.adobe.utils.AGALMiniAssembler.IFL = "ifl";
-
-com.adobe.utils.AGALMiniAssembler.IEG = "ieg";
-
-com.adobe.utils.AGALMiniAssembler.IEL = "iel";
-
-com.adobe.utils.AGALMiniAssembler.ELS = "els";
-
-com.adobe.utils.AGALMiniAssembler.EIF = "eif";
-
-com.adobe.utils.AGALMiniAssembler.REP = "rep";
-
-com.adobe.utils.AGALMiniAssembler.ERP = "erp";
-
-com.adobe.utils.AGALMiniAssembler.BRK = "brk";
-
-com.adobe.utils.AGALMiniAssembler.KIL = "kil";
-
-com.adobe.utils.AGALMiniAssembler.TEX = "tex";
-
-com.adobe.utils.AGALMiniAssembler.SGE = "sge";
-
-com.adobe.utils.AGALMiniAssembler.SLT = "slt";
-
-com.adobe.utils.AGALMiniAssembler.SGN = "sgn";
-
-com.adobe.utils.AGALMiniAssembler.SEQ = "seq";
-
-com.adobe.utils.AGALMiniAssembler.SNE = "sne";
-
-com.adobe.utils.AGALMiniAssembler.VA = "va";
-
-com.adobe.utils.AGALMiniAssembler.VC = "vc";
-
-com.adobe.utils.AGALMiniAssembler.VT = "vt";
-
-com.adobe.utils.AGALMiniAssembler.VO = false ? "vo" : "op";
-
-com.adobe.utils.AGALMiniAssembler.I = false ? "i" : "v";
-
-com.adobe.utils.AGALMiniAssembler.FC = "fc";
-
-com.adobe.utils.AGALMiniAssembler.FT = "ft";
-
-com.adobe.utils.AGALMiniAssembler.FS = "fs";
-
-com.adobe.utils.AGALMiniAssembler.FO = false ? "fo" : "oc";
-
-com.adobe.utils.AGALMiniAssembler.D2 = "2d";
-
-com.adobe.utils.AGALMiniAssembler.D3 = "3d";
-
-com.adobe.utils.AGALMiniAssembler.CUBE = "cube";
-
-com.adobe.utils.AGALMiniAssembler.MIPNEAREST = "mipnearest";
-
-com.adobe.utils.AGALMiniAssembler.MIPLINEAR = "miplinear";
-
-com.adobe.utils.AGALMiniAssembler.MIPNONE = "mipnone";
-
-com.adobe.utils.AGALMiniAssembler.NOMIP = "nomip";
-
-com.adobe.utils.AGALMiniAssembler.NEAREST = "nearest";
-
-com.adobe.utils.AGALMiniAssembler.LINEAR = "linear";
-
-com.adobe.utils.AGALMiniAssembler.ANISOTROPIC2X = "anisotropic2x";
-
-com.adobe.utils.AGALMiniAssembler.ANISOTROPIC4X = "anisotropic4x";
-
-com.adobe.utils.AGALMiniAssembler.ANISOTROPIC8X = "anisotropic8x";
-
-com.adobe.utils.AGALMiniAssembler.ANISOTROPIC16X = "anisotropic16x";
-
-com.adobe.utils.AGALMiniAssembler.CENTROID = "centroid";
-
-com.adobe.utils.AGALMiniAssembler.SINGLE = "single";
-
-com.adobe.utils.AGALMiniAssembler.DEPTH = "depth";
-
-com.adobe.utils.AGALMiniAssembler.REPEAT = "repeat";
-
-com.adobe.utils.AGALMiniAssembler.WRAP = "wrap";
-
-com.adobe.utils.AGALMiniAssembler.CLAMP = "clamp";
-
-com.adobe.utils.AGALMiniAssembler.REPEAT_U_CLAMP_V = "repeat_u_clamp_v";
-
-com.adobe.utils.AGALMiniAssembler.CLAMP_U_REPEAT_V = "clamp_u_repeat_v";
-
-com.adobe.utils.AGALMiniAssembler.RGBA = "rgba";
-
-com.adobe.utils.AGALMiniAssembler.DXT1 = "dxt1";
-
-com.adobe.utils.AGALMiniAssembler.DXT5 = "dxt5";
-
-Object.defineProperty(com.adobe.utils.AGALMiniAssembler.prototype, 'agalcode', {
-  get: function() { return this.get_agalcode(); },
-  set: function(value) { return this.set_agalcode(value); }
-});
-Object.defineProperty(com.adobe.utils.AGALMiniAssembler.prototype, 'error', {
-  get: function() { return this.get_error(); },
-  set: function(value) { return this.set_error(value); }
-});
-
-com.adobe.utils.AGALMiniAssembler.className = "com.adobe.utils.AGALMiniAssembler";
-
-com.adobe.utils.AGALMiniAssembler.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('trace');
-	p.push('flash.utils.ByteArray');
-	p.push('flash.utils.getTimer');
-	return p;
-};
-
-com.adobe.utils.AGALMiniAssembler.getStaticDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.utils.Dictionary');
-	return p;
-};
-
-com.adobe.utils.AGALMiniAssembler.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'debugging', t:'Boolean'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-com.adobe.utils.AGALMiniAssembler$OpCode = function(name, numRegister, emitCode, flags) {
-	this._numRegister = 0;
-	this._flags = 0;
-	this._name = null;
-	this._emitCode = 0;
-	this._name = name;
-	this._numRegister = numRegister;
-	this._emitCode = emitCode;
-	this._flags = flags;
-};
-
-com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_emitCode = function() {
-	return this._emitCode;
-};
-
-com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_flags = function() {
-	return this._flags;
-};
-
-com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_name = function() {
-	return this._name;
-};
-
-com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_numRegister = function() {
-	return this._numRegister;
-};
-
-com.adobe.utils.AGALMiniAssembler$OpCode.prototype.toString = function() {
-	return "[OpCode name=\"" + this._name + "\", numRegister=" + this._numRegister + ", emitCode=" + this._emitCode + ", flags=" + this._flags + "]";
-};
-
-com.adobe.utils.AGALMiniAssembler$Register = function(name, longName, emitCode, range, flags) {
-	this._name = null;
-	this._flags = 0;
-	this._emitCode = 0;
-	this._range = 0;
-	this._longName = null;
-	this._name = name;
-	this._longName = longName;
-	this._emitCode = emitCode;
-	this._range = range;
-	this._flags = flags;
-};
-
-com.adobe.utils.AGALMiniAssembler$Register.prototype.get_emitCode = function() {
-	return this._emitCode;
-};
-
-com.adobe.utils.AGALMiniAssembler$Register.prototype.get_longName = function() {
-	return this._longName;
-};
-
-com.adobe.utils.AGALMiniAssembler$Register.prototype.get_name = function() {
-	return this._name;
-};
-
-com.adobe.utils.AGALMiniAssembler$Register.prototype.get_flags = function() {
-	return this._flags;
-};
-
-com.adobe.utils.AGALMiniAssembler$Register.prototype.get_range = function() {
-	return this._range;
-};
-
-com.adobe.utils.AGALMiniAssembler$Register.prototype.toString = function() {
-	return "[Register name=\"" + this._name + "\", longName=\"" + this._longName + "\", emitCode=" + this._emitCode + ", range=" + this._range + ", flags=" + this._flags + "]";
-};
-
-com.adobe.utils.AGALMiniAssembler$Sampler = function(name, flag, mask) {
-	this._flag = 0;
-	this._name = null;
-	this._mask = 0;
-	this._name = name;
-	this._flag = flag;
-	this._mask = mask;
-};
-
-com.adobe.utils.AGALMiniAssembler$Sampler.prototype.get_flag = function() {
-	return this._flag;
-};
-
-com.adobe.utils.AGALMiniAssembler$Sampler.prototype.get_mask = function() {
-	return this._mask;
-};
-
-com.adobe.utils.AGALMiniAssembler$Sampler.prototype.get_name = function() {
-	return this._name;
-};
-
-com.adobe.utils.AGALMiniAssembler$Sampler.prototype.toString = function() {
-	return "[Sampler name=\"" + this._name + "\", flag=\"" + this._flag + "\", mask=" + this.get_mask() + "]";
-};
-
-
-// ====================================================
-// flash.display3D.IndexBuffer3D
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.IndexBuffer3D = function(context3D, numIndices) {
-	this.buffer = null;
-	this.context3D = context3D;
-	this.numIndices = numIndices;
-	this.buffer = context3D.webglContext.createBuffer();
-};
-
-flash.display3D.IndexBuffer3D.prototype.uploadFromVector = function(data, startOffset, count) {
-	trace("IndexBuffer3D.uploadFromVector: " + data.length);
-	var indices = new ArrayBuffer(data.length * 2);
-	var shortArr = new Uint16Array(indices);
-	for (var i = 0; i < data.length; i++) {
-		shortArr[i] = data[i];
-	}
-	this.context3D.webglContext.bindBuffer(34963, this.buffer);
-	this.context3D.webglContext.bufferData(34963, indices, 35044);
-};
-
-flash.display3D.IndexBuffer3D.prototype.dispose = function() {
-	this.context3D.webglContext.deleteBuffer(this.buffer);
-};
-
-
-flash.display3D.IndexBuffer3D.className = "flash.display3D.IndexBuffer3D";
-
-flash.display3D.IndexBuffer3D.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('trace');
-	return p;
-};
-
-flash.display3D.IndexBuffer3D.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.IndexBuffer3D.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'context3D', t:'flash.display3D.Context3D'});
-			p.push({n:'numIndices', t:'int'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.Shader
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.Shader = function(code) {
-};
-
-
-flash.display.Shader.className = "flash.display.Shader";
-
-flash.display.Shader.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.Shader.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.Shader.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'code', t:'flash.utils.ByteArray'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.geom.Rectangle
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.geom == "undefined")
-	flash.geom = {};
-
-flash.geom.Rectangle = function(x, y, width, height) {
-	this._right = 0;
-	this.sizePoint = new flash.geom.Point(0, 0);
-	this.topLeftPoint = new flash.geom.Point(0, 0);
-	this._bottom = 0;
-	this.x = x;
-	this.y = y;
-	this.width = width;
-	this.height = height;
-};
-
-flash.geom.Rectangle.prototype.clone = function() {
-	return new flash.geom.Rectangle(this.x, this.y, this.width, this.height);
-};
-
-flash.geom.Rectangle.prototype.copyFrom = function(sourceRect) {
-	this.x = sourceRect.x;
-	this.y = sourceRect.y;
-	this.width = sourceRect.width;
-	this.height = sourceRect.height;
-};
-
-flash.geom.Rectangle.prototype.union = function(toUnion) {
-	if (toUnion.width == 0 || toUnion.height == 0)
-		return this;
-	var leftX = Math.min(this.x, toUnion.x);
-	var leftY = Math.min(this.y, toUnion.y);
-	var newW = Math.max(this.x + this.width, toUnion.x + toUnion.width) - leftX;
-	var newH = Math.max(this.y + this.height, toUnion.y + toUnion.height) - leftY;
-	return new flash.geom.Rectangle(leftX, leftY, newW, newH);
-};
-
-flash.geom.Rectangle.prototype.inflate = function(dx, dy) {
-	this.x -= dx;
-	this.width += 2 * dx;
-	this.y -= dy;
-	this.height += 2 * dy;
-};
-
-flash.geom.Rectangle.prototype.get_left = function() {
-	return this.x;
-};
-
-flash.geom.Rectangle.prototype.set_left = function(value) {
-	this.x = value;
-};
-
-flash.geom.Rectangle.prototype.get_top = function() {
-	return this.y;
-};
-
-flash.geom.Rectangle.prototype.set_top = function(value) {
-	this.y = value;
-};
-
-flash.geom.Rectangle.prototype.get_right = function() {
-	return this.x + this.width;
-};
-
-flash.geom.Rectangle.prototype.set_right = function(value) {
-	this.width = value - this.x;
-};
-
-flash.geom.Rectangle.prototype.get_bottom = function() {
-	return this.y + this.height;
-};
-
-flash.geom.Rectangle.prototype.set_bottom = function(value) {
-	this.height = value - this.y;
-};
-
-flash.geom.Rectangle.prototype.get_topLeft = function() {
-	this.topLeftPoint.x = this.x;
-	this.topLeftPoint.y = this.y;
-	return this.topLeftPoint;
-};
-
-flash.geom.Rectangle.prototype.set_topLeft = function(value) {
-	this.x = value.x;
-	this.y = value.y;
-};
-
-flash.geom.Rectangle.prototype.contains = function(cx, cy) {
-	return (cx >= this.x && cx <= this.get_right() && cy >= this.y && cy <= this.get_bottom());
-};
-
-flash.geom.Rectangle.prototype.containsPoint = function(point) {
-	return this.contains(point.x, point.y);
-};
-
-flash.geom.Rectangle.prototype.get_size = function() {
-	this.sizePoint.x = this.width;
-	this.sizePoint.y = this.height;
-	return this.sizePoint;
-};
-
-flash.geom.Rectangle.prototype.set_size = function(value) {
-	this.width = value.x;
-	this.height = value.y;
-};
-
-flash.geom.Rectangle.prototype.offset = function(dx, dy) {
-	this.x += dx;
-	this.y += dy;
-};
-
-flash.geom.Rectangle.prototype.intersects = function(toIntersect) {
-	return !(toIntersect.get_left() > this.get_right() || toIntersect.get_right() < this.get_left() || toIntersect.get_top() > this.get_bottom() || toIntersect.get_bottom() < this.get_top());
-};
-
-flash.geom.Rectangle.prototype.intersection = function(toIntersect) {
-	var rect = new flash.geom.Rectangle(0, 0, 0, 0);
-	if (this.intersects(toIntersect)) {
-		if (toIntersect.get_left() <= this.get_right()) {
-			rect.x = toIntersect.get_left();
-			rect.width = this.get_right() - rect.x;
-		} else {
-			rect.x = this.get_left();
-			rect.width = toIntersect.get_right() - rect.x;
-		}
-		rect.y = (toIntersect.get_top() < this.get_top()) ? this.get_top() : toIntersect.get_top();
-		rect.height = (toIntersect.get_bottom() < this.get_bottom()) ? toIntersect.get_bottom() : this.get_bottom();
-		rect.height = rect.height - rect.y;
-	}
-	return rect;
-};
-
-flash.geom.Rectangle.prototype.isEmpty = function() {
-	return this.width <= 0 || this.height <= 0;
-};
-
-flash.geom.Rectangle.prototype.setEmpty = function() {
-	this.x = 0;
-	this.y = 0;
-	this.width = 0;
-	this.height = 0;
-};
-
-flash.geom.Rectangle.prototype.setTo = function(xa, ya, widtha, heighta) {
-	this.x = xa;
-	this.y = ya;
-	this.width = widtha;
-	this.height = heighta;
-};
-
-Object.defineProperty(flash.geom.Rectangle.prototype, 'top', {
-  get: function() { return this.get_top(); },
-  set: function(value) { return this.set_top(value); }
-});
-Object.defineProperty(flash.geom.Rectangle.prototype, 'size', {
-  get: function() { return this.get_size(); },
-  set: function(value) { return this.set_size(value); }
-});
-Object.defineProperty(flash.geom.Rectangle.prototype, 'left', {
-  get: function() { return this.get_left(); },
-  set: function(value) { return this.set_left(value); }
-});
-Object.defineProperty(flash.geom.Rectangle.prototype, 'bottom', {
-  get: function() { return this.get_bottom(); },
-  set: function(value) { return this.set_bottom(value); }
-});
-Object.defineProperty(flash.geom.Rectangle.prototype, 'topLeft', {
-  get: function() { return this.get_topLeft(); },
-  set: function(value) { return this.set_topLeft(value); }
-});
-Object.defineProperty(flash.geom.Rectangle.prototype, 'right', {
-  get: function() { return this.get_right(); },
-  set: function(value) { return this.set_right(value); }
-});
-
-flash.geom.Rectangle.className = "flash.geom.Rectangle";
-
-flash.geom.Rectangle.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.geom.Point');
-	return p;
-};
-
-flash.geom.Rectangle.getStaticDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.geom.Point');
-	return p;
-};
-
-flash.geom.Rectangle.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'x', t:'Number'});
-			p.push({n:'y', t:'Number'});
-			p.push({n:'width', t:'Number'});
-			p.push({n:'height', t:'Number'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.SpreadMethod
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.SpreadMethod = function() {
-};
-
-flash.display.SpreadMethod.PAD = "pad";
-
-flash.display.SpreadMethod.REFLECT = "reflect";
-
-flash.display.SpreadMethod.REPEAT = "repeat";
-
-
-flash.display.SpreadMethod.className = "flash.display.SpreadMethod";
-
-flash.display.SpreadMethod.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.SpreadMethod.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.SpreadMethod.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.net.FileReference
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.net == "undefined")
-	flash.net = {};
-
-flash.net.FileReference = function() {
-this.name = "";
-};
-
-
-flash.net.FileReference.className = "flash.net.FileReference";
-
-flash.net.FileReference.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.FileReference.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.FileReference.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.geom.Vector3D
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.geom == "undefined")
-	flash.geom = {};
-
-flash.geom.Vector3D = function(x, y, z, w) {
-};
-
-
-flash.geom.Vector3D.className = "flash.geom.Vector3D";
-
-flash.geom.Vector3D.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Vector3D.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Vector3D.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'x', t:'Number'});
-			p.push({n:'y', t:'Number'});
-			p.push({n:'z', t:'Number'});
-			p.push({n:'w', t:'Number'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.external.ExternalInterface
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.external == "undefined")
-	flash.external = {};
-
-flash.external.ExternalInterface = function() {
-	
-};
-
-flash.external.ExternalInterface.available = false;
-
-flash.external.ExternalInterface.objectID = "null";
-
-flash.external.ExternalInterface.addCallback = function(functionName, closure) {
-};
-
-flash.external.ExternalInterface.call = function(functionName, args) {
-	return "";
-};
-
-
-flash.external.ExternalInterface.className = "flash.external.ExternalInterface";
-
-flash.external.ExternalInterface.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.external.ExternalInterface.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.external.ExternalInterface.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.net.URLRequestMethod
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.net == "undefined")
-	flash.net = {};
-
-flash.net.URLRequestMethod = function() {
-};
-
-flash.net.URLRequestMethod.GET = "get";
-
-flash.net.URLRequestMethod.POST = "post";
-
-
-flash.net.URLRequestMethod.className = "flash.net.URLRequestMethod";
-
-flash.net.URLRequestMethod.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLRequestMethod.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLRequestMethod.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.display.BitmapDataChannel
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.BitmapDataChannel = function() {
-	
-};
-
-flash.display.BitmapDataChannel.ALPHA = 8;
-
-flash.display.BitmapDataChannel.BLUE = 4;
-
-flash.display.BitmapDataChannel.GREEN = 2;
-
-flash.display.BitmapDataChannel.RED = 1;
-
-
-flash.display.BitmapDataChannel.className = "flash.display.BitmapDataChannel";
-
-flash.display.BitmapDataChannel.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.BitmapDataChannel.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.BitmapDataChannel.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.profiler.showRedrawRegions
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.profiler == "undefined")
-	flash.profiler = {};
-
-flash.profiler.showRedrawRegions = function() {
-};
-
-
-flash.profiler.showRedrawRegions.className = "flash.profiler.showRedrawRegions";
-
-flash.profiler.showRedrawRegions.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.profiler.showRedrawRegions.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.profiler.showRedrawRegions.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.geom.Matrix
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.geom == "undefined")
-	flash.geom = {};
-
-flash.geom.Matrix = function(a, b, c, d, tx, ty) {
-	this.a = a;
-	this.b = b;
-	this.c = c;
-	this.d = d;
-	this.tx = tx;
-	this.ty = ty;
-};
-
-flash.geom.Matrix.prototype.identity = function() {
-	this.a = 1;
-	this.b = 0;
-	this.c = 0;
-	this.d = 1;
-	this.tx = 0;
-	this.ty = 0;
-};
-
-flash.geom.Matrix.prototype.setTo = function(aa, ba, ca, da, txa, tya) {
-	this.a = aa;
-	this.b = ba;
-	this.c = ca;
-	this.d = da;
-	this.tx = txa;
-	this.ty = tya;
-};
-
-flash.geom.Matrix.prototype.concat = function(m) {
-	var aT = this.a;
-	var cT = this.c;
-	var txT = this.tx;
-	this.a = aT * m.a + this.b * m.c;
-	this.b = aT * m.b + this.b * m.d;
-	this.c = cT * m.a + this.d * m.c;
-	this.d = cT * m.b + this.d * m.d;
-	this.tx = txT * m.a + this.ty * m.c + m.tx;
-	this.ty = txT * m.b + this.ty * m.d + m.ty;
-};
-
-flash.geom.Matrix.prototype.copyFrom = function(sourceMatrix) {
-	this.a = sourceMatrix.a;
-	this.b = sourceMatrix.b;
-	this.c = sourceMatrix.c;
-	this.d = sourceMatrix.d;
-	this.tx = sourceMatrix.tx;
-	this.ty = sourceMatrix.ty;
-};
-
-flash.geom.Matrix.prototype.invert = function() {
-	var b01 = this.d;
-	var b11 = -1 * this.c;
-	var b21 = this.ty * this.c - this.d * this.tx;
-	var det = this.a * b01 + this.b * b11;
-	det = 1.0 / det;
-	this.a = b01 * det;
-	this.b = (-1 * this.b) * det;
-	this.c = b11 * det;
-	this.d = (1 * this.a) * det;
-	this.tx = b21 * det;
-	this.ty = (-this.ty * this.a + this.b * this.tx) * det;
-};
-
-flash.geom.Matrix.prototype.rotate = function(angle) {
-	var s = Math.sin(angle);
-	var c = Math.cos(angle);
-	var m = new flash.geom.Matrix(c, s, -s, c, 0, 0);
-	this.concat(m);
-};
-
-flash.geom.Matrix.prototype.scale = function(sx, sy) {
-	var m = new flash.geom.Matrix(sx, 0, 0, sy, 0, 0);
-	this.concat(m);
-};
-
-flash.geom.Matrix.prototype.translate = function(dx, dy) {
-	this.tx = dx;
-	this.ty = dy;
-};
-
-flash.geom.Matrix.prototype.createGradientBox = function(width, height, rotation, tx, ty) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Matrix.createGradientBox() $$$$");
-};
-
-
-flash.geom.Matrix.className = "flash.geom.Matrix";
-
-flash.geom.Matrix.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.utils.FlashTimingEngine');
-	return p;
-};
-
-flash.geom.Matrix.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Matrix.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'a', t:'Number'});
-			p.push({n:'b', t:'Number'});
-			p.push({n:'c', t:'Number'});
-			p.push({n:'d', t:'Number'});
-			p.push({n:'tx', t:'Number'});
-			p.push({n:'ty', t:'Number'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.system.LoaderContext
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.system == "undefined")
-	flash.system = {};
-
-flash.system.LoaderContext = function(checkPolicyFile, applicationDomain, securityDomain) {
-};
-
-
-flash.system.LoaderContext.className = "flash.system.LoaderContext";
-
-flash.system.LoaderContext.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.LoaderContext.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.LoaderContext.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'checkPolicyFile', t:'Boolean'});
-			p.push({n:'applicationDomain', t:'Object'});
-			p.push({n:'securityDomain', t:'Object'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.ui.MouseCursorData
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.ui == "undefined")
-	flash.ui = {};
-
-flash.ui.MouseCursorData = function() {
-this.hotSpot = null;
-this.data = null;
-};
-
-
-flash.ui.MouseCursorData.className = "flash.ui.MouseCursorData";
-
-flash.ui.MouseCursorData.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.MouseCursorData.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.MouseCursorData.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.utils.Endian
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.utils == "undefined")
-	flash.utils = {};
-
-flash.utils.Endian = function() {
-	
-};
-
-flash.utils.Endian.BIG_ENDIAN = "bigEndian";
-
-flash.utils.Endian.LITTLE_ENDIAN = "littleEndian";
-
-
-flash.utils.Endian.className = "flash.utils.Endian";
-
-flash.utils.Endian.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.utils.Endian.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.utils.Endian.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.text.TextFieldAutoSize
+// flash.text.AntiAliasType
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -2083,144 +363,87 @@ if (typeof flash == "undefined")
 if (typeof flash.text == "undefined")
 	flash.text = {};
 
-flash.text.TextFieldAutoSize = function() {
+flash.text.AntiAliasType = function() {
+	
 };
 
-flash.text.TextFieldAutoSize.CENTER = "center";
+flash.text.AntiAliasType.ADVANCED = "advanced";
 
-flash.text.TextFieldAutoSize.LEFT = "left";
-
-flash.text.TextFieldAutoSize.NONE = "none";
-
-flash.text.TextFieldAutoSize.RIGHT = "right";
+flash.text.AntiAliasType.NORMAL = "normal";
 
 
-flash.text.TextFieldAutoSize.className = "flash.text.TextFieldAutoSize";
+flash.text.AntiAliasType.className = "flash.text.AntiAliasType";
 
-flash.text.TextFieldAutoSize.getRuntimeDependencies = function(t) {
+flash.text.AntiAliasType.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.text.TextFieldAutoSize.getStaticDependencies = function(t) {
+flash.text.AntiAliasType.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.text.TextFieldAutoSize.injectionPoints = function(t) {
+flash.text.AntiAliasType.injectionPoints = function(t) {
 	return [];
 };
 
 // ====================================================
-// flash.events.Event
+// flash.text.TextFormat
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
 
-flash.events.Event = function(type, bubbles, cancelable) {
-	this._bubbles = null;
-	this._cancelable = null;
-	this._type = "";
-	this.target = null;
-	this.currentTarget = null;
-	this._type = type;
-	this._bubbles = bubbles;
-	this._cancelable = cancelable;
+flash.text.TextFormat = function(font, size, color, bold, italic, underline, url, target, align, leftMargin, rightMargin, indent, leading) {
+	this.font = font;
+	this.size = size;
+	this.color = color;
+	this.bold = bold;
+	this.italic = italic;
+	this.underline = underline;
+	this.url = url;
+	this.target = target;
+	this.align = align;
+	this.leftMargin = leftMargin;
+	this.rightMargin = rightMargin;
+	this.indent = indent;
+	this.leading = leading;
 };
 
-flash.events.Event.ACTIVATE = "activate";
 
-flash.events.Event.ADDED_TO_STAGE = "addedToStage";
+flash.text.TextFormat.className = "flash.text.TextFormat";
 
-flash.events.Event.CLOSE = "close";
-
-flash.events.Event.OPEN = "open";
-
-flash.events.Event.COMPLETE = "complete";
-
-flash.events.Event.CONNECT = "connect";
-
-flash.events.Event.CHANGE = "change";
-
-flash.events.Event.ADDED = "added";
-
-flash.events.Event.ENTER_FRAME = "enterFrame";
-
-flash.events.Event.FULLSCREEN = "fullScreen";
-
-flash.events.Event.REMOVED_FROM_STAGE = "removedFromStage";
-
-flash.events.Event.REMOVED = "removed";
-
-flash.events.Event.RENDER = "render";
-
-flash.events.Event.RESIZE = "resize";
-
-flash.events.Event.MOUSE_LEAVE = "mouseLeave";
-
-flash.events.Event.SOUND_COMPLETE = "soundComplete";
-
-flash.events.Event.CONTEXT3D_CREATE = "context3DCreate";
-
-flash.events.Event.prototype.get_type = function() {
-	return this._type;
-};
-
-flash.events.Event.prototype.get_bubbles = function() {
-	return this._bubbles;
-};
-
-flash.events.Event.prototype.get_cancelable = function() {
-	return this._cancelable;
-};
-
-flash.events.Event.prototype.clone = function() {
-	return new flash.events.Event(this.get_type(), false, false);
-};
-
-flash.events.Event.prototype.preventDefault = function() {
-};
-
-flash.events.Event.prototype.toString = function() {
-	return "";
-};
-
-Object.defineProperty(flash.events.Event.prototype, 'cancelable', {
-  get: function() { return this.get_cancelable(); },
-  set: function(value) { return this.set_cancelable(value); }
-});
-Object.defineProperty(flash.events.Event.prototype, 'bubbles', {
-  get: function() { return this.get_bubbles(); },
-  set: function(value) { return this.set_bubbles(value); }
-});
-Object.defineProperty(flash.events.Event.prototype, 'type', {
-  get: function() { return this.get_type(); },
-  set: function(value) { return this.set_type(value); }
-});
-
-flash.events.Event.className = "flash.events.Event";
-
-flash.events.Event.getRuntimeDependencies = function(t) {
+flash.text.TextFormat.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.events.Event.getStaticDependencies = function(t) {
+flash.text.TextFormat.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.events.Event.injectionPoints = function(t) {
+flash.text.TextFormat.injectionPoints = function(t) {
 	var p;
 	switch (t) {
 		case 0:
 			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'font', t:'String'});
+			p.push({n:'size', t:'Object'});
+			p.push({n:'color', t:'Object'});
+			p.push({n:'bold', t:'Object'});
+			p.push({n:'italic', t:'Object'});
+			p.push({n:'underline', t:'Object'});
+			p.push({n:'url', t:'String'});
+			p.push({n:'target', t:'String'});
+			p.push({n:'align', t:'String'});
+			p.push({n:'leftMargin', t:'Object'});
+			p.push({n:'rightMargin', t:'Object'});
+			p.push({n:'indent', t:'Object'});
+			p.push({n:'leading', t:'Object'});
 			break;
 		default:
 			p = [];
@@ -2229,1009 +452,6 @@ flash.events.Event.injectionPoints = function(t) {
 	return p;
 };
 
-
-// ====================================================
-// flash.events.ErrorEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.ErrorEvent = function(type, bubbles, cancelable, text, id) {
-	this._errorID = 0;
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.text = text;
-	this._errorID = id;
-};
-
-flash.events.ErrorEvent.ERROR = "error";
-
-flash.events.ErrorEvent.prototype.get_errorID = function() {
-	return this._errorID;
-};
-
-Object.defineProperty(flash.events.ErrorEvent.prototype, 'errorID', {
-  get: function() { return this.get_errorID(); },
-  set: function(value) { return this.set_errorID(value); }
-});
-
-$inherit(flash.events.ErrorEvent, flash.events.Event);
-
-flash.events.ErrorEvent.className = "flash.events.ErrorEvent";
-
-flash.events.ErrorEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ErrorEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ErrorEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'text', t:'String'});
-			p.push({n:'id', t:'int'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.SecurityErrorEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.SecurityErrorEvent = function(type, bubbles, cancelable, text, id) {
-	flash.events.ErrorEvent.call(this, type, bubbles, cancelable, text, id);
-};
-
-flash.events.SecurityErrorEvent.SECURITY_ERROR = "securityError";
-
-
-$inherit(flash.events.SecurityErrorEvent, flash.events.ErrorEvent);
-
-flash.events.SecurityErrorEvent.className = "flash.events.SecurityErrorEvent";
-
-flash.events.SecurityErrorEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.SecurityErrorEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.SecurityErrorEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'text', t:'String'});
-			p.push({n:'id', t:'int'});
-			break;
-		case 1:
-			p = flash.events.ErrorEvent.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.ErrorEvent.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.ErrorEvent.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.AsyncErrorEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.AsyncErrorEvent = function(type, bubbles, cancelable, text, id) {
-	flash.events.ErrorEvent.call(this, type, bubbles, cancelable, text, id);
-};
-
-flash.events.AsyncErrorEvent.ASYNC_ERROR = "asyncError";
-
-
-$inherit(flash.events.AsyncErrorEvent, flash.events.ErrorEvent);
-
-flash.events.AsyncErrorEvent.className = "flash.events.AsyncErrorEvent";
-
-flash.events.AsyncErrorEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.AsyncErrorEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.AsyncErrorEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'text', t:'String'});
-			p.push({n:'id', t:'int'});
-			break;
-		case 1:
-			p = flash.events.ErrorEvent.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.ErrorEvent.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.ErrorEvent.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.KeyboardEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.KeyboardEvent = function(type, bubbles, cancelable, charCodeValue, keyCodeValue, keyLocationValue, ctrlKeyValue, altKeyValue, shiftKeyValue, controlKeyValue, commandKeyValue) {
-	this.keyCode = 0;
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.keyCode = keyCodeValue;
-};
-
-flash.events.KeyboardEvent.KEY_UP = "keyUp";
-
-flash.events.KeyboardEvent.KEY_DOWN = "keyDown";
-
-
-$inherit(flash.events.KeyboardEvent, flash.events.Event);
-
-flash.events.KeyboardEvent.className = "flash.events.KeyboardEvent";
-
-flash.events.KeyboardEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.KeyboardEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.KeyboardEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'charCodeValue', t:'uint'});
-			p.push({n:'keyCodeValue', t:'uint'});
-			p.push({n:'keyLocationValue', t:'uint'});
-			p.push({n:'ctrlKeyValue', t:'Boolean'});
-			p.push({n:'altKeyValue', t:'Boolean'});
-			p.push({n:'shiftKeyValue', t:'Boolean'});
-			p.push({n:'controlKeyValue', t:'Boolean'});
-			p.push({n:'commandKeyValue', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.TextEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.TextEvent = function(type, bubbles, cancelable, text) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.text = text;
-};
-
-flash.events.TextEvent.LINK = "link";
-
-flash.events.TextEvent.TEXT_INPUT = "textInput";
-
-
-$inherit(flash.events.TextEvent, flash.events.Event);
-
-flash.events.TextEvent.className = "flash.events.TextEvent";
-
-flash.events.TextEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.TextEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.TextEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'text', t:'String'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.NetStatusEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.NetStatusEvent = function(type, bubbles, cancelable) {
-	this.info = {};
-	flash.events.Event.call(this, type, bubbles, cancelable);
-};
-
-flash.events.NetStatusEvent.NET_STATUS = "netStatus";
-
-
-$inherit(flash.events.NetStatusEvent, flash.events.Event);
-
-flash.events.NetStatusEvent.className = "flash.events.NetStatusEvent";
-
-flash.events.NetStatusEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.NetStatusEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.NetStatusEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.ContextMenuEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.ContextMenuEvent = function(type, bubbles, cancelable) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-};
-
-flash.events.ContextMenuEvent.MENU_ITEM_SELECT = "menuItemSelect";
-
-
-$inherit(flash.events.ContextMenuEvent, flash.events.Event);
-
-flash.events.ContextMenuEvent.className = "flash.events.ContextMenuEvent";
-
-flash.events.ContextMenuEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ContextMenuEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ContextMenuEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.ActivityEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.ActivityEvent = function(type, bubbles, cancelable, activating) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-};
-
-
-$inherit(flash.events.ActivityEvent, flash.events.Event);
-
-flash.events.ActivityEvent.className = "flash.events.ActivityEvent";
-
-flash.events.ActivityEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ActivityEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ActivityEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'activating', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.FullScreenEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.FullScreenEvent = function(type, bubbles, cancelable, fullScreen) {
-	flash.events.ActivityEvent.call(this, type, bubbles, cancelable, false);
-};
-
-flash.events.FullScreenEvent.FULL_SCREEN = "fullScreen";
-
-
-$inherit(flash.events.FullScreenEvent, flash.events.ActivityEvent);
-
-flash.events.FullScreenEvent.className = "flash.events.FullScreenEvent";
-
-flash.events.FullScreenEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.FullScreenEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.FullScreenEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'fullScreen', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.ActivityEvent.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.ActivityEvent.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.ActivityEvent.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.IOErrorEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.IOErrorEvent = function(type, bubbles, cancelable, text, id) {
-	this._errorID = 0;
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.text = text;
-	this._errorID = id;
-};
-
-flash.events.IOErrorEvent.IO_ERROR = "ioError";
-
-flash.events.IOErrorEvent.NETWORK_ERROR = "networkError";
-
-flash.events.IOErrorEvent.prototype.get_errorID = function() {
-	return this._errorID;
-};
-
-Object.defineProperty(flash.events.IOErrorEvent.prototype, 'errorID', {
-  get: function() { return this.get_errorID(); },
-  set: function(value) { return this.set_errorID(value); }
-});
-
-$inherit(flash.events.IOErrorEvent, flash.events.Event);
-
-flash.events.IOErrorEvent.className = "flash.events.IOErrorEvent";
-
-flash.events.IOErrorEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.IOErrorEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.IOErrorEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'text', t:'String'});
-			p.push({n:'id', t:'int'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.TimerEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.TimerEvent = function(type, bubbles, cancelable) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-};
-
-flash.events.TimerEvent.TIMER = "timer";
-
-flash.events.TimerEvent.TIMER_COMPLETE = "timerComplete";
-
-
-$inherit(flash.events.TimerEvent, flash.events.Event);
-
-flash.events.TimerEvent.className = "flash.events.TimerEvent";
-
-flash.events.TimerEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.TimerEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.TimerEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.TouchEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.TouchEvent = function(type, bubbles, cancelable, touchPointID, isPrimaryTouchPoint, localX, localY, sizeX, sizeY, pressure, relatedObject, ctrlKey, altKey, shiftKey, commandKey, controlKey, timestamp, touchIntent, samples, isTouchPointCanceled) {
-	this.stageY = 0;
-	this.stageX = 0;
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.pressure = pressure;
-	this.sizeX = sizeX;
-	this.sizeY = sizeY;
-	this.touchPointID = touchPointID;
-	this.isPrimaryTouchPoint = isPrimaryTouchPoint;
-};
-
-flash.events.TouchEvent.TOUCH_BEGIN = "touchBegin";
-
-flash.events.TouchEvent.TOUCH_END = "touchEnd";
-
-flash.events.TouchEvent.TOUCH_MOVE = "touchMove";
-
-
-$inherit(flash.events.TouchEvent, flash.events.Event);
-
-flash.events.TouchEvent.className = "flash.events.TouchEvent";
-
-flash.events.TouchEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.TouchEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.TouchEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'touchPointID', t:'int'});
-			p.push({n:'isPrimaryTouchPoint', t:'Boolean'});
-			p.push({n:'localX', t:'Number'});
-			p.push({n:'localY', t:'Number'});
-			p.push({n:'sizeX', t:'Number'});
-			p.push({n:'sizeY', t:'Number'});
-			p.push({n:'pressure', t:'Number'});
-			p.push({n:'relatedObject', t:'flash.display.InteractiveObject'});
-			p.push({n:'ctrlKey', t:'Boolean'});
-			p.push({n:'altKey', t:'Boolean'});
-			p.push({n:'shiftKey', t:'Boolean'});
-			p.push({n:'commandKey', t:'Boolean'});
-			p.push({n:'controlKey', t:'Boolean'});
-			p.push({n:'timestamp', t:'Number'});
-			p.push({n:'touchIntent', t:'String'});
-			p.push({n:'samples', t:'flash.utils.ByteArray'});
-			p.push({n:'isTouchPointCanceled', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.MouseEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.MouseEvent = function(type, bubbles, cancelable, localX, localY, relatedObject, ctrlKey, altKey, shiftKey, buttonDown, delta, commandKey, controlKey, clickCount) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.localX = localX;
-	this.localY = localY;
-};
-
-flash.events.MouseEvent.CLICK = "click";
-
-flash.events.MouseEvent.MOUSE_DOWN = "mouseDown";
-
-flash.events.MouseEvent.MOUSE_MOVE = "mouseMove";
-
-flash.events.MouseEvent.MOUSE_UP = "mouseUp";
-
-flash.events.MouseEvent.MOUSE_OVER = "mouseOver";
-
-flash.events.MouseEvent.MOUSE_OUT = "mouseOut";
-
-flash.events.MouseEvent.ROLL_OVER = "rollOver";
-
-flash.events.MouseEvent.ROLL_OUT = "rollOut";
-
-flash.events.MouseEvent.MOUSE_WHEEL = "mouseWheel";
-
-flash.events.MouseEvent.prototype.get_stageX = function() {
-	return this.localX;
-};
-
-flash.events.MouseEvent.prototype.get_stageY = function() {
-	return this.localY;
-};
-
-Object.defineProperty(flash.events.MouseEvent.prototype, 'stageY', {
-  get: function() { return this.get_stageY(); },
-  set: function(value) { return this.set_stageY(value); }
-});
-Object.defineProperty(flash.events.MouseEvent.prototype, 'stageX', {
-  get: function() { return this.get_stageX(); },
-  set: function(value) { return this.set_stageX(value); }
-});
-
-$inherit(flash.events.MouseEvent, flash.events.Event);
-
-flash.events.MouseEvent.className = "flash.events.MouseEvent";
-
-flash.events.MouseEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.MouseEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.MouseEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'localX', t:'Number'});
-			p.push({n:'localY', t:'Number'});
-			p.push({n:'relatedObject', t:'flash.display.InteractiveObject'});
-			p.push({n:'ctrlKey', t:'Boolean'});
-			p.push({n:'altKey', t:'Boolean'});
-			p.push({n:'shiftKey', t:'Boolean'});
-			p.push({n:'buttonDown', t:'Boolean'});
-			p.push({n:'delta', t:'int'});
-			p.push({n:'commandKey', t:'Boolean'});
-			p.push({n:'controlKey', t:'Boolean'});
-			p.push({n:'clickCount', t:'int'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.FocusEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.FocusEvent = function(type, bubbles, cancelable) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-};
-
-flash.events.FocusEvent.FOCUS_IN = "focusIn";
-
-flash.events.FocusEvent.FOCUS_OUT = "focusOut";
-
-
-$inherit(flash.events.FocusEvent, flash.events.Event);
-
-flash.events.FocusEvent.className = "flash.events.FocusEvent";
-
-flash.events.FocusEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.FocusEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.FocusEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.events.ProgressEvent
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.events == "undefined")
-	flash.events = {};
-
-flash.events.ProgressEvent = function(type, bubbles, cancelable, bytesLoaded, bytesTotal) {
-	flash.events.Event.call(this, type, bubbles, cancelable);
-	this.bytesLoaded = bytesLoaded;
-	this.bytesTotal = bytesTotal;
-};
-
-flash.events.ProgressEvent.PROGRESS = "progress";
-
-flash.events.ProgressEvent.SOCKET_DATA = "socketData";
-
-
-$inherit(flash.events.ProgressEvent, flash.events.Event);
-
-flash.events.ProgressEvent.className = "flash.events.ProgressEvent";
-
-flash.events.ProgressEvent.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ProgressEvent.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.events.ProgressEvent.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'String'});
-			p.push({n:'bubbles', t:'Boolean'});
-			p.push({n:'cancelable', t:'Boolean'});
-			p.push({n:'bytesLoaded', t:'Number'});
-			p.push({n:'bytesTotal', t:'Number'});
-			break;
-		case 1:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.events.Event.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.system.SecurityDomain
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.system == "undefined")
-	flash.system = {};
-
-flash.system.SecurityDomain = function() {
-};
-
-flash.system.SecurityDomain.currentDomain = new flash.system.SecurityDomain();
-
-
-flash.system.SecurityDomain.className = "flash.system.SecurityDomain";
-
-flash.system.SecurityDomain.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.SecurityDomain.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.SecurityDomain.injectionPoints = function(t) {
-	return [];
-};
 
 // ====================================================
 // flash.events.HTTPStatusEvent
@@ -3280,38 +500,36 @@ flash.events.HTTPStatusEvent.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.system.ImageDecodingPolicy
+// flash.text.StyleSheet
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.system == "undefined")
-	flash.system = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
 
-flash.system.ImageDecodingPolicy = function() {
+flash.text.StyleSheet = function() {
 };
 
-flash.system.ImageDecodingPolicy.ON_LOAD = "onLoad";
 
+flash.text.StyleSheet.className = "flash.text.StyleSheet";
 
-flash.system.ImageDecodingPolicy.className = "flash.system.ImageDecodingPolicy";
-
-flash.system.ImageDecodingPolicy.getRuntimeDependencies = function(t) {
+flash.text.StyleSheet.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.system.ImageDecodingPolicy.getStaticDependencies = function(t) {
+flash.text.StyleSheet.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.system.ImageDecodingPolicy.injectionPoints = function(t) {
+flash.text.StyleSheet.injectionPoints = function(t) {
 	return [];
 };
 
 // ====================================================
-// flash.display3D.Context3DClearMask
+// flash.display3D.Context3DVertexBufferFormat
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -3319,618 +537,33 @@ if (typeof flash == "undefined")
 if (typeof flash.display3D == "undefined")
 	flash.display3D = {};
 
-flash.display3D.Context3DClearMask = function() {
-	
+flash.display3D.Context3DVertexBufferFormat = function() {
 };
 
-flash.display3D.Context3DClearMask.COLOR = 16384;
+flash.display3D.Context3DVertexBufferFormat.BYTES_4 = "bytes4";
 
-flash.display3D.Context3DClearMask.DEPTH = 256;
+flash.display3D.Context3DVertexBufferFormat.FLOAT_1 = "float1";
 
-flash.display3D.Context3DClearMask.STENCIL = 1024;
+flash.display3D.Context3DVertexBufferFormat.FLOAT_2 = "float2";
 
-flash.display3D.Context3DClearMask.ALL = ~~(16384) | ~~(256) | ~~(1024);
+flash.display3D.Context3DVertexBufferFormat.FLOAT_3 = "float3";
+
+flash.display3D.Context3DVertexBufferFormat.FLOAT_4 = "float4";
 
 
-flash.display3D.Context3DClearMask.className = "flash.display3D.Context3DClearMask";
+flash.display3D.Context3DVertexBufferFormat.className = "flash.display3D.Context3DVertexBufferFormat";
 
-flash.display3D.Context3DClearMask.getRuntimeDependencies = function(t) {
+flash.display3D.Context3DVertexBufferFormat.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display3D.Context3DClearMask.getStaticDependencies = function(t) {
+flash.display3D.Context3DVertexBufferFormat.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display3D.Context3DClearMask.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// FlashAPILoggeer
-// ====================================================
-
-
-FlashAPILoggeer = function() {
-	
-};
-
-FlashAPILoggeer.logger;
-
-FlashAPILoggeer.log = function(msg) {
-	trace(FlashAPILoggeer.getTimestamp() + "[FAPI]" + msg + "");
-	if (FlashAPILoggeer.logger)
-		FlashAPILoggeer.logger(FlashAPILoggeer.getTimestamp() + "[FAPI]" + msg + "");
-};
-
-FlashAPILoggeer.getTimestamp = function() {
-	var date = new Date();
-	var hours = date.getHours();
-	var minutes = date.getMinutes();
-	var seconds = date.getSeconds();
-	var millis = date.getMilliseconds();
-	return "[" + hours < 10 ? "0" : "" + hours + ":" + minutes < 10 ? "0" : "" + minutes + ":" + seconds < 10 ? "0" : "" + seconds + "." + millis < 10 ? "00" : millis < 100 ? "0" : "" + millis + "] ";
-};
-
-
-FlashAPILoggeer.className = "FlashAPILoggeer";
-
-FlashAPILoggeer.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('trace');
-	return p;
-};
-
-FlashAPILoggeer.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-FlashAPILoggeer.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.net.URLLoaderDataFormat
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.net == "undefined")
-	flash.net = {};
-
-flash.net.URLLoaderDataFormat = function() {
-};
-
-flash.net.URLLoaderDataFormat.TEXT = "text";
-
-flash.net.URLLoaderDataFormat.BINARY = "binary";
-
-
-flash.net.URLLoaderDataFormat.className = "flash.net.URLLoaderDataFormat";
-
-flash.net.URLLoaderDataFormat.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLLoaderDataFormat.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLLoaderDataFormat.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.text.TextFieldType
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
-
-flash.text.TextFieldType = function() {
-};
-
-flash.text.TextFieldType.INPUT = "input";
-
-flash.text.TextFieldType.DYNAMIC = "dynamic";
-
-
-flash.text.TextFieldType.className = "flash.text.TextFieldType";
-
-flash.text.TextFieldType.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.TextFieldType.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.TextFieldType.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.display3D.Context3DBlendFactor
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.Context3DBlendFactor = function() {
-};
-
-flash.display3D.Context3DBlendFactor.DESTINATION_ALPHA = "destinationAlpha";
-
-flash.display3D.Context3DBlendFactor.DESTINATION_COLOR = "destinationColor";
-
-flash.display3D.Context3DBlendFactor.ONE = "one";
-
-flash.display3D.Context3DBlendFactor.ONE_MINUS_DESTINATION_ALPHA = "oneMinusDestinationAlpha";
-
-flash.display3D.Context3DBlendFactor.ONE_MINUS_DESTINATION_COLOR = "oneMinusDestinationColor";
-
-flash.display3D.Context3DBlendFactor.ONE_MINUS_SOURCE_ALPHA = "oneMinusSourceAlpha";
-
-flash.display3D.Context3DBlendFactor.ONE_MINUS_SOURCE_COLOR = "oneMinusSourceColor";
-
-flash.display3D.Context3DBlendFactor.SOURCE_ALPHA = "sourceAlpha";
-
-flash.display3D.Context3DBlendFactor.SOURCE_COLOR = "sourceColor";
-
-flash.display3D.Context3DBlendFactor.ZERO = "zero";
-
-
-flash.display3D.Context3DBlendFactor.className = "flash.display3D.Context3DBlendFactor";
-
-flash.display3D.Context3DBlendFactor.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DBlendFactor.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DBlendFactor.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.text.GridFitType
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
-
-flash.text.GridFitType = function() {
-};
-
-
-flash.text.GridFitType.className = "flash.text.GridFitType";
-
-flash.text.GridFitType.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.GridFitType.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.GridFitType.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.system.ApplicationDomain
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.system == "undefined")
-	flash.system = {};
-
-flash.system.ApplicationDomain = function(parentDomain) {
-};
-
-flash.system.ApplicationDomain.get_MIN_DOMAIN_MEMORY_LENGTH = function() {
-	return 0;
-};
-
-flash.system.ApplicationDomain.cD;
-
-flash.system.ApplicationDomain.get_currentDomain = function() {
-	return {};
-};
-
-flash.system.ApplicationDomain.prototype.get_domainMemory = function() {
-	return new flash.utils.ByteArray();
-};
-
-flash.system.ApplicationDomain.prototype.set_domainMemory = function(value) {
-	FlashAPILoggeer.log("ApplicationDomain::set domainMemory: " + value);
-	FlashAPILoggeer.log("ApplicationDomain::set domainMemory: " + value.get_length());
-};
-
-flash.system.ApplicationDomain.prototype.hasDefinition = function(name) {
-	return true;
-};
-
-flash.system.ApplicationDomain.prototype.getDefinition = function(name) {
-	return {};
-};
-
-Object.defineProperty(flash.system.ApplicationDomain.prototype, 'domainMemory', {
-  get: function() { return this.get_domainMemory(); },
-  set: function(value) { return this.set_domainMemory(value); }
-});
-
-flash.system.ApplicationDomain.className = "flash.system.ApplicationDomain";
-
-flash.system.ApplicationDomain.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.utils.ByteArray');
-	p.push('FlashAPILoggeer');
-	return p;
-};
-
-flash.system.ApplicationDomain.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.ApplicationDomain.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'parentDomain', t:'Object'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.StageQuality
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.StageQuality = function() {
-	
-};
-
-flash.display.StageQuality.BEST = "best";
-
-flash.display.StageQuality.HIGH = "high";
-
-flash.display.StageQuality.HIGH_16X16 = "16x16";
-
-flash.display.StageQuality.HIGH_16X16_LINEAR = "16x16linear";
-
-flash.display.StageQuality.HIGH_8X8 = "8x8";
-
-flash.display.StageQuality.HIGH_8X8_LINEAR = "8x8linear";
-
-flash.display.StageQuality.LOW = "low";
-
-flash.display.StageQuality.MEDIUM = "medium";
-
-
-flash.display.StageQuality.className = "flash.display.StageQuality";
-
-flash.display.StageQuality.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.StageQuality.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.StageQuality.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.display.BlendMode
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.BlendMode = function() {
-};
-
-flash.display.BlendMode.NORMAL = "normal";
-
-flash.display.BlendMode.MULTIPLY = "MULTIPLY";
-
-flash.display.BlendMode.ADD = "add";
-
-flash.display.BlendMode.SUBTRACT = "subtract";
-
-flash.display.BlendMode.OVERLAY = "overlay";
-
-
-flash.display.BlendMode.className = "flash.display.BlendMode";
-
-flash.display.BlendMode.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.BlendMode.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.BlendMode.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.geom.Transform
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.geom == "undefined")
-	flash.geom = {};
-
-flash.geom.Transform = function() {
-this.matrix = new flash.geom.Matrix(1, 0, 0, 1, 0, 0);
-this.worldMatrix = new flash.geom.Matrix(1, 0, 0, 1, 0, 0);
-this.target = null;
-this.colorTransform = null;
-};
-
-
-flash.geom.Transform.className = "flash.geom.Transform";
-
-flash.geom.Transform.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Transform.getStaticDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.geom.Matrix');
-	return p;
-};
-
-flash.geom.Transform.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.text.Font
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
-
-flash.text.Font = function() {
-};
-
-
-flash.text.Font.className = "flash.text.Font";
-
-flash.text.Font.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.Font.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.Font.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// mx.core.FontAsset
-// ====================================================
-
-if (typeof mx == "undefined")
-	var mx = {};
-if (typeof mx.core == "undefined")
-	mx.core = {};
-
-mx.core.FontAsset = function() {
-	flash.text.Font.call(this);
-};
-
-
-$inherit(mx.core.FontAsset, flash.text.Font);
-
-mx.core.FontAsset.className = "mx.core.FontAsset";
-
-mx.core.FontAsset.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-mx.core.FontAsset.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-mx.core.FontAsset.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 1:
-			p = flash.text.Font.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.text.Font.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.text.Font.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.geom.Point
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.geom == "undefined")
-	flash.geom = {};
-
-flash.geom.Point = function(x, y) {
-	this.x = x;
-	this.y = y;
-};
-
-flash.geom.Point.interpolate = function(pt1, pt2, f) {
-	var xDis = (pt2.x - pt1.x);
-	var yDis = (pt2.y - pt1.y);
-	return new flash.geom.Point(pt1.x + (xDis * f), pt1.y + (xDis * f));
-};
-
-flash.geom.Point.distance = function(pt1, pt2) {
-	var a = pt1.x - pt2.x;
-	var b = pt1.y - pt2.y;
-	return Math.sqrt(a * a + b * b);
-};
-
-flash.geom.Point.prototype.clone = function() {
-	return new flash.geom.Point(this.x, this.y);
-};
-
-flash.geom.Point.prototype.normalize = function(thickness) {
-};
-
-flash.geom.Point.prototype.get_length = function() {
-	return Math.sqrt(this.x * this.x + this.y * this.y);
-};
-
-flash.geom.Point.prototype.add = function(v) {
-	return new flash.geom.Point(this.x + v.x, this.y + v.y);
-};
-
-flash.geom.Point.prototype.subtract = function(v) {
-	return new flash.geom.Point(this.x - v.x, this.y - v.y);
-};
-
-flash.geom.Point.prototype.equals = function(toCompare) {
-	return (this.x == toCompare.x && this.y == toCompare.y);
-};
-
-flash.geom.Point.prototype.toString = function() {
-	return "Point";
-};
-
-flash.geom.Point.prototype.setTo = function(xa, ya) {
-	this.x = xa;
-	this.y = ya;
-};
-
-Object.defineProperty(flash.geom.Point.prototype, 'length', {
-  get: function() { return this.get_length(); },
-  set: function(value) { return this.set_length(value); }
-});
-
-flash.geom.Point.className = "flash.geom.Point";
-
-flash.geom.Point.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Point.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Point.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'x', t:'Number'});
-			p.push({n:'y', t:'Number'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.StageDisplayState
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.StageDisplayState = function() {
-};
-
-flash.display.StageDisplayState.FULL_SCREEN = "fullScreen";
-
-flash.display.StageDisplayState.FULL_SCREEN_INTERACTIVE = "fullScreenInteractive";
-
-flash.display.StageDisplayState.NORMAL = "normal";
-
-
-flash.display.StageDisplayState.className = "flash.display.StageDisplayState";
-
-flash.display.StageDisplayState.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.StageDisplayState.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.StageDisplayState.injectionPoints = function(t) {
+flash.display3D.Context3DVertexBufferFormat.injectionPoints = function(t) {
 	return [];
 };
 
@@ -4013,241 +646,44 @@ flash.media.SoundTransform.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.utils.FlashEmbed
+// ArgumentError
 // ====================================================
 
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.utils == "undefined")
-	flash.utils = {};
 
-flash.utils.FlashEmbed = function() {
-};
-
-flash.utils.FlashEmbed.getEmbed = function(type, properties) {
-	var embedClass;
-	if (type == "flash.display.Bitmap") {
-		flash.utils.FlashTimingEngine.getEmbed(properties.source);
-		embedClass = function() {
-			this.source = properties.source;
-			this.bitmapData = flash.utils.FlashTimingEngine.getEmbed(this.source);
-		};
-	} else if (type == "XML") {
-		embedClass = function() {
-			this.source = properties.source;
-			this.mimeType = properties.mimeType;
-			var xmlHTTP = new XMLHttpRequest();
-			try {
-				xmlHTTP.open("GET", this.source, false);
-				xmlHTTP.send(null);
-			} catch (e) {
-				window.alert("Unable to load the requested file.");
-				return;
-			}
-			var oParser = new DOMParser();
-			var oDOM = oParser.parseFromString(xmlHTTP.responseText, "text\/xml");
-			var jxon = new flash.utils.JXONTree(oDOM.documentElement);
-			for (var property in jxon) {
-				if (jxon.hasOwnProperty(property)) {
-					this[property] = jxon[property];
-				}
-			}
-		};
-		$inherit(embedClass, flash.utils.JXONTree);
-	} else if (type == "flash.media.Sound") {
-		flash.utils.FlashTimingEngine.getSoundEmbed(properties.source);
-		embedClass = function() {
-			this.source = properties.source;
-			flash.media.Sound.call(this, new flash.net.URLRequest(properties.source));
-		};
-		$inherit(embedClass, flash.media.Sound);
-	}
-	if (embedClass) {
-		embedClass.filename = properties.source.match(/[\w\-. ]+$/g)[0].split(".")[0];
-		embedClass.classType = type;
-	}
-	return embedClass;
+ArgumentError = function(message) {
+	Error.call(this, message, 0);
 };
 
 
-flash.utils.FlashEmbed.className = "flash.utils.FlashEmbed";
+$inherit(ArgumentError, Error);
 
-flash.utils.FlashEmbed.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.media.Sound');
-	p.push('flash.utils.FlashTimingEngine');
-	p.push('flash.utils.JXONTree');
-	p.push('flash.net.URLRequest');
-	return p;
-};
+ArgumentError.className = "ArgumentError";
 
-flash.utils.FlashEmbed.getStaticDependencies = function(t) {
+ArgumentError.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.utils.FlashEmbed.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.media.SoundMixer
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.media == "undefined")
-	flash.media = {};
-
-flash.media.SoundMixer = function() {
-};
-
-flash.media.SoundMixer.stopAll = function() {
-	var $n0;
-	for (var $v0 in ($n0 = flash.media.SoundMixer.soundTransformInstance.transforms)){
-		var transform = $n0[$v0];
-		if (transform.buffer)
-			transform.buffer.stop(0);
-	}
-};
-
-flash.media.SoundMixer.cache = {};
-
-flash.media.SoundMixer.ctx = null;
-
-flash.media.SoundMixer.usingWebAudio = true;
-
-flash.media.SoundMixer.noAudio = false;
-
-flash.media.SoundMixer.codecs = {};
-
-flash.media.SoundMixer.masterGain;
-
-flash.media.SoundMixer.soundTransformInstance;
-
-flash.media.SoundMixer.get_soundTransform = function() {
-	if (!flash.media.SoundMixer.soundTransformInstance) {
-		if (typeof(AudioContext) !== "undefined") {
-			flash.media.SoundMixer.ctx = new webkitAudioContext();
-		} else if (typeof(webkitAudioContext) !== "undefined") {
-			flash.media.SoundMixer.ctx = new webkitAudioContext();
-		} else if (typeof(Audio) !== "undefined") {
-			flash.media.SoundMixer.usingWebAudio = false;
-		} else {
-			flash.media.SoundMixer.usingWebAudio = false;
-			flash.media.SoundMixer.noAudio = true;
-		}
-		if (flash.media.SoundMixer.usingWebAudio) {
-			flash.media.SoundMixer.masterGain = (typeof(flash.media.SoundMixer.ctx.createGain) === "undefined") ? flash.media.SoundMixer.ctx.createGainNode() : flash.media.SoundMixer.ctx.createGain();
-			flash.media.SoundMixer.masterGain.gain.value = 1;
-			flash.media.SoundMixer.masterGain.connect(flash.media.SoundMixer.ctx.destination);
-		}
-		var audioTest = null;
-		if (!flash.media.SoundMixer.noAudio) {
-			audioTest = new Audio();
-			flash.media.SoundMixer.codecs = {mp3:!!audioTest.canPlayType("audio\/mpeg;").replace(/^no$/, ""), opus:!!audioTest.canPlayType("audio\/ogg; codecs=\"opus\"").replace(/^no$/, ""), ogg:!!audioTest.canPlayType("audio\/ogg; codecs=\"vorbis\"").replace(/^no$/, ""), wav:!!audioTest.canPlayType("audio\/wav; codecs=\"1\"").replace(/^no$/, ""), m4a:!!(audioTest.canPlayType("audio\/x-m4a;") || audioTest.canPlayType("audio\/aac;")).replace(/^no$/, ""), webm:!!audioTest.canPlayType("audio\/webm; codecs=\"vorbis\"").replace(/^no$/, "")};
-		}
-		flash.media.SoundMixer.soundTransformInstance = new flash.media.SoundTransform(1, 0);
-	}
-	return flash.media.SoundMixer.soundTransformInstance;
-};
-
-flash.media.SoundMixer.getGainNode = function() {
-	var node = (typeof(flash.media.SoundMixer.ctx.createGain) === "undefined") ? flash.media.SoundMixer.ctx.createGainNode() : flash.media.SoundMixer.ctx.createGain();
-	return node;
-};
-
-
-flash.media.SoundMixer.className = "flash.media.SoundMixer";
-
-flash.media.SoundMixer.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.media.SoundTransform');
-	return p;
-};
-
-flash.media.SoundMixer.getStaticDependencies = function(t) {
+ArgumentError.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.media.SoundMixer.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.text.StyleSheet
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
-
-flash.text.StyleSheet = function() {
-};
-
-
-flash.text.StyleSheet.className = "flash.text.StyleSheet";
-
-flash.text.StyleSheet.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.StyleSheet.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.StyleSheet.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.net.URLVariables
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.net == "undefined")
-	flash.net = {};
-
-flash.net.URLVariables = function(source) {
-};
-
-flash.net.URLVariables.prototype.toString = function() {
-	var vars = "";
-	var v = 0;
-	for (var key in this) {
-		if (v++ > 0)
-			vars += "&";
-		vars += key + "=" + escape(this[key]);
-	}
-	return vars;
-};
-
-
-flash.net.URLVariables.className = "flash.net.URLVariables";
-
-flash.net.URLVariables.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLVariables.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLVariables.injectionPoints = function(t) {
+ArgumentError.injectionPoints = function(t) {
 	var p;
 	switch (t) {
 		case 0:
 			p = [];
-			p.push({n:'source', t:'String'});
+			p.push({n:'message', t:'Object'});
+			break;
+		case 1:
+			p = Error.injectionPoints(t);
+			break;
+		case 2:
+			p = Error.injectionPoints(t);
+			break;
+		case 3:
+			p = Error.injectionPoints(t);
 			break;
 		default:
 			p = [];
@@ -4258,116 +694,134 @@ flash.net.URLVariables.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.display.FrameLabel
+// flash.errors.IllegalOperationError
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
+if (typeof flash.errors == "undefined")
+	flash.errors = {};
 
-flash.display.FrameLabel = function() {
+flash.errors.IllegalOperationError = function(message, id) {
+	Error.call(this, message, id);
 };
 
 
-flash.display.FrameLabel.className = "flash.display.FrameLabel";
+$inherit(flash.errors.IllegalOperationError, Error);
 
-flash.display.FrameLabel.getRuntimeDependencies = function(t) {
+flash.errors.IllegalOperationError.className = "flash.errors.IllegalOperationError";
+
+flash.errors.IllegalOperationError.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.FrameLabel.getStaticDependencies = function(t) {
+flash.errors.IllegalOperationError.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.FrameLabel.injectionPoints = function(t) {
-	return [];
+flash.errors.IllegalOperationError.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'message', t:'Object'});
+			p.push({n:'id', t:'Object'});
+			break;
+		case 1:
+			p = Error.injectionPoints(t);
+			break;
+		case 2:
+			p = Error.injectionPoints(t);
+			break;
+		case 3:
+			p = Error.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
 };
+
 
 // ====================================================
-// flash.display3D.Context3DCompareMode
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.Context3DCompareMode = function() {
-};
-
-flash.display3D.Context3DCompareMode.ALWAYS = "always";
-
-flash.display3D.Context3DCompareMode.EQUAL = "equal";
-
-flash.display3D.Context3DCompareMode.GREATER = "greater";
-
-flash.display3D.Context3DCompareMode.GREATER_EQUAL = "greaterEqual";
-
-flash.display3D.Context3DCompareMode.LESS = "less";
-
-flash.display3D.Context3DCompareMode.LESS_EQUAL = "lessEqual";
-
-flash.display3D.Context3DCompareMode.NEVER = "never";
-
-flash.display3D.Context3DCompareMode.NOT_EQUAL = "notEqual";
-
-
-flash.display3D.Context3DCompareMode.className = "flash.display3D.Context3DCompareMode";
-
-flash.display3D.Context3DCompareMode.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DCompareMode.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DCompareMode.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.utils.RequestAnimationFrame
+// flash.text.Font
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.utils == "undefined")
-	flash.utils = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
 
-flash.utils.RequestAnimationFrame = function() {
-	
-};
-
-flash.utils.RequestAnimationFrame.prototype.request = function(callback) {
-	var w = Window;
-	var requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.mozRequestAnimationFrame || w.oRequestAnimationFrame || w.msRequestAnimationFrame || function(callback) {
-		setTimeout(callback, 1000 / 60);
-	};
-	requestAnimationFrame($createStaticDelegate(this, callback));
+flash.text.Font = function() {
 };
 
 
-flash.utils.RequestAnimationFrame.className = "flash.utils.RequestAnimationFrame";
+flash.text.Font.className = "flash.text.Font";
 
-flash.utils.RequestAnimationFrame.getRuntimeDependencies = function(t) {
+flash.text.Font.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.utils.RequestAnimationFrame.getStaticDependencies = function(t) {
+flash.text.Font.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.utils.RequestAnimationFrame.injectionPoints = function(t) {
+flash.text.Font.injectionPoints = function(t) {
 	return [];
 };
+
+// ====================================================
+// mx.core.FontAsset
+// ====================================================
+
+if (typeof mx == "undefined")
+	var mx = {};
+if (typeof mx.core == "undefined")
+	mx.core = {};
+
+mx.core.FontAsset = function() {
+	flash.text.Font.call(this);
+};
+
+
+$inherit(mx.core.FontAsset, flash.text.Font);
+
+mx.core.FontAsset.className = "mx.core.FontAsset";
+
+mx.core.FontAsset.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+mx.core.FontAsset.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+mx.core.FontAsset.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 1:
+			p = flash.text.Font.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.text.Font.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.text.Font.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
 
 // ====================================================
 // flash.display.cmds.Cmd
@@ -4634,49 +1088,7 @@ flash.display.cmds.SetBitmapAttribCmd.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.net.URLRequest
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.net == "undefined")
-	flash.net = {};
-
-flash.net.URLRequest = function(url) {
-	this.method = "get";
-	this.url = url;
-};
-
-
-flash.net.URLRequest.className = "flash.net.URLRequest";
-
-flash.net.URLRequest.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLRequest.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.net.URLRequest.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'url', t:'String'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.GraphicsPathCommand
+// flash.display.Graphics
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -4684,600 +1096,147 @@ if (typeof flash == "undefined")
 if (typeof flash.display == "undefined")
 	flash.display = {};
 
-flash.display.GraphicsPathCommand = function() {
+flash.display.Graphics = function() {
+this.cmds = [];
+this.sprite = null;
+this.canvas = null;
+this.lineing = null;
+this.fillingBmdCmd = null;
+this.filling = null;
 };
 
-flash.display.GraphicsPathCommand.MOVE_TO = 1;
-
-flash.display.GraphicsPathCommand.LINE_TO = 2;
-
-
-flash.display.GraphicsPathCommand.className = "flash.display.GraphicsPathCommand";
-
-flash.display.GraphicsPathCommand.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.GraphicsPathCommand.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.GraphicsPathCommand.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.xml.XMLNode
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.xml == "undefined")
-	flash.xml = {};
-
-flash.xml.XMLNode = function(type, value) {
-};
-
-
-flash.xml.XMLNode.className = "flash.xml.XMLNode";
-
-flash.xml.XMLNode.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.xml.XMLNode.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.xml.XMLNode.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'type', t:'uint'});
-			p.push({n:'value', t:'String'});
-			break;
-		default:
-			p = [];
-			break;
+flash.display.Graphics.prototype.getCanvas = function() {
+	if (!this.canvas) {
+		this.canvas = document.getElementById("stage");
 	}
-	return p;
+	return this.canvas.getContext("2d");
 };
 
-
-// ====================================================
-// flash.xml.XMLDocument
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.xml == "undefined")
-	flash.xml = {};
-
-flash.xml.XMLDocument = function(source) {
-	flash.xml.XMLNode.call(this, 1, source);
+flash.display.Graphics.prototype.beginFill = function(color, alpha) {
+	this.cmds.push(new flash.display.cmds.SetColorAttribCmd(this.getCanvas(), "fillStyle", color, alpha, this.sprite), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.SetAttribCmd(this, "filling", true), new flash.display.cmds.SetAttribCmd(this, "fillingBmdCmd", null));
 };
 
-
-$inherit(flash.xml.XMLDocument, flash.xml.XMLNode);
-
-flash.xml.XMLDocument.className = "flash.xml.XMLDocument";
-
-flash.xml.XMLDocument.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
+flash.display.Graphics.prototype.beginBitmapFill = function(bitmap, matrix, repeat, smooth) {
+	var cmd = new flash.display.cmds.SetBitmapAttribCmd(this.getCanvas(), "fillStyle", bitmap, matrix, repeat, this.sprite);
+	this.cmds.push(cmd, new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.SetAttribCmd(this, "filling", true), new flash.display.cmds.SetAttribCmd(this, "fillingBmdCmd", cmd));
 };
 
-flash.xml.XMLDocument.getStaticDependencies = function(t) {
-	var p;
-	return [];
+flash.display.Graphics.prototype.beginGradientFill = function(type, colors, alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio) {
+	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.beginGradientFill() $$$$");
 };
 
-flash.xml.XMLDocument.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'source', t:'String'});
-			break;
-		case 1:
-			p = flash.xml.XMLNode.injectionPoints(t);
-			break;
-		case 2:
-			p = flash.xml.XMLNode.injectionPoints(t);
-			break;
-		case 3:
-			p = flash.xml.XMLNode.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
+flash.display.Graphics.prototype.clear = function() {
+	this.filling = false;
+	this.lineing = false;
+	this.cmds = [];
+};
+
+flash.display.Graphics.prototype.drawCircle = function(x, y, radius) {
+	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().arc), [x, y, radius, 0, 3.141592653589793 * 2]), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().closePath), null), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().fill), null));
+};
+
+flash.display.Graphics.prototype.drawRect = function(x, y, width, height) {
+	this.moveTo(x, y);
+	this.lineTo(x + width, y);
+	this.lineTo(x + width, y + height);
+	this.lineTo(x, y + height);
+	this.lineTo(x, y);
+};
+
+flash.display.Graphics.prototype.drawRoundRect = function(x, y, width, height, ellipseWidth, ellipseHeight) {
+};
+
+flash.display.Graphics.prototype.drawGraphicsData = function(graphicsData) {
+	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.drawGraphicsData() $$$$");
+};
+
+flash.display.Graphics.prototype.endFill = function() {
+	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().closePath), null), new flash.display.cmds.SetAttribCmd(this, "filling", false));
+	if (this.filling) {
+		this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().fill), null));
 	}
-	return p;
 };
 
-
-// ====================================================
-// flash.display.LineScaleMode
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.LineScaleMode = function() {
+flash.display.Graphics.prototype.lineStyle = function(thickness, color, alpha, pixelHinting, scaleMode, caps, joints, miterLimit) {
+	if (this.lineing)
+		this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().stroke), null));
+	this.cmds.push(new flash.display.cmds.SetAttribCmd(this.getCanvas(), "lineWidth", thickness), new flash.display.cmds.SetColorAttribCmd(this.getCanvas(), "strokeStyle", color, alpha, this.sprite), new flash.display.cmds.SetAttribCmd(this, "lineing", !isNaN(thickness)));
 };
 
-flash.display.LineScaleMode.NONE = "none";
-
-
-flash.display.LineScaleMode.className = "flash.display.LineScaleMode";
-
-flash.display.LineScaleMode.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
+flash.display.Graphics.prototype.lineGradientStyle = function(type, colors, alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio) {
+	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.lineGradientStyle() $$$$");
 };
 
-flash.display.LineScaleMode.getStaticDependencies = function(t) {
-	var p;
-	return [];
+flash.display.Graphics.prototype.lineTo = function(x, y) {
+	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().lineTo), [x, y]));
 };
 
-flash.display.LineScaleMode.injectionPoints = function(t) {
-	return [];
+flash.display.Graphics.prototype.moveTo = function(x, y) {
+	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().moveTo), [x, y]));
 };
 
-// ====================================================
-// flash.display.GraphicsPath
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.GraphicsPath = function(commands, data, winding) {
+flash.display.Graphics.prototype.drawEllipse = function(x, y, width, height) {
+	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.drawEllipse() $$$$");
 };
 
-
-flash.display.GraphicsPath.className = "flash.display.GraphicsPath";
-
-flash.display.GraphicsPath.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
+flash.display.Graphics.prototype.copyFrom = function(g) {
+	this.cmds = g.cmds.concat();
 };
 
-flash.display.GraphicsPath.getStaticDependencies = function(t) {
-	var p;
-	return [];
+flash.display.Graphics.prototype.curveTo = function(controlX, controlY, anchorX, anchorY) {
+	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().quadraticCurveTo), [controlX, controlY, anchorX, anchorY]));
 };
 
-flash.display.GraphicsPath.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'commands', t:'Array'});
-			p.push({n:'data', t:'Array'});
-			p.push({n:'winding', t:'String'});
-			break;
-		default:
-			p = [];
-			break;
+flash.display.Graphics.prototype.cubicCurveTo = function(controlX1, controlY1, controlX2, controlY2, anchorX, anchorY) {
+	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().bezierCurveTo), [controlX1, controlY1, controlX2, controlY2, anchorX, anchorY]));
+};
+
+flash.display.Graphics.prototype.updateGraphics = function() {
+	var m = this.sprite.transform.worldMatrix;
+	this.getCanvas().setTransform(m.a, m.b, m.c, m.d, m.tx, m.ty);
+	this.lineing = false;
+	this.filling = false;
+	if (!this.filling)
+		this.getCanvas().beginPath();
+	var $n0;
+	for (var $v0 in ($n0 = this.cmds)) {
+		var cmd = $n0[$v0];
+		cmd.update()
 	}
-	return p;
+	this.getCanvas().closePath();
+	if (this.filling) {
+		if (this.fillingBmdCmd != null && this.fillingBmdCmd.matrix != null) {
+		} else {
+			this.getCanvas().fill();
+		}
+	}
+	if (this.lineing)
+		this.getCanvas().stroke();
 };
 
 
-// ====================================================
-// GuiceInjectorBootstrap
-// ====================================================
+flash.display.Graphics.className = "flash.display.Graphics";
 
-
-GuiceInjectorBootstrap = function(mainClassName, dynamicClassBaseUrl) {
-	this.mainClassName = mainClassName;
-	this.dynamicClassBaseUrl = dynamicClassBaseUrl;
-};
-
-GuiceInjectorBootstrap.prototype.launch = function(bgcolor, width, height, frameRate) {
-	var urlRewriter = new guice.loader.URLRewriterBase(false);
-	var loader = new guice.loader.SynchronousClassLoader(new XMLHttpRequest(), urlRewriter, this.dynamicClassBaseUrl);
-	var guiceJs = new guice.GuiceJs(loader);
-	var injector = guiceJs.createInjector(null);
-	var classBuilder = injector.getInstance(guice.InjectionClassBuilder);
-	var obj2 = classBuilder.buildClass("flash.utils.FlashEmbed");
-	var obj = classBuilder.buildClass(this.mainClassName);
-	if (bgcolor && bgcolor.indexOf("#", 0) > -1)
-		bgcolor = "0x" + bgcolor.substring(1, bgcolor.length);
-	flash.utils.FlashTimingEngine.start(obj, frameRate, width, height, bgcolor);
-};
-
-
-GuiceInjectorBootstrap.className = "GuiceInjectorBootstrap";
-
-GuiceInjectorBootstrap.getRuntimeDependencies = function(t) {
+flash.display.Graphics.getRuntimeDependencies = function(t) {
 	var p;
 	p = [];
-	p.push('guice.loader.SynchronousClassLoader');
+	p.push('flash.display.cmds.Cmd');
 	p.push('flash.utils.FlashTimingEngine');
-	p.push('guice.loader.URLRewriterBase');
-	p.push('guice.GuiceJs');
-	p.push('guice.InjectionClassBuilder');
+	p.push('flash.geom.Matrix');
+	p.push('flash.display.cmds.SetAttribCmd');
+	p.push('flash.display.cmds.SetColorAttribCmd');
+	p.push('flash.display.cmds.SetBitmapAttribCmd');
 	return p;
 };
 
-GuiceInjectorBootstrap.getStaticDependencies = function(t) {
+flash.display.Graphics.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-GuiceInjectorBootstrap.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'mainClassName', t:'String'});
-			p.push({n:'dynamicClassBaseUrl', t:'String'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display3D.Context3DTextureFormat
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.Context3DTextureFormat = function() {
-};
-
-flash.display3D.Context3DTextureFormat.BGRA = "bgra";
-
-flash.display3D.Context3DTextureFormat.COMPRESSED = "compress";
-
-flash.display3D.Context3DTextureFormat.COMPRESSED_ALPHA = "compressedAlpha";
-
-
-flash.display3D.Context3DTextureFormat.className = "flash.display3D.Context3DTextureFormat";
-
-flash.display3D.Context3DTextureFormat.getRuntimeDependencies = function(t) {
-	var p;
+flash.display.Graphics.injectionPoints = function(t) {
 	return [];
 };
-
-flash.display3D.Context3DTextureFormat.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DTextureFormat.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.geom.Orientation3D
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.geom == "undefined")
-	flash.geom = {};
-
-flash.geom.Orientation3D = function() {
-};
-
-
-flash.geom.Orientation3D.className = "flash.geom.Orientation3D";
-
-flash.geom.Orientation3D.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Orientation3D.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.geom.Orientation3D.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.utils.Embed
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.utils == "undefined")
-	flash.utils = {};
-
-flash.utils.Embed = function(metadata) {
-	this.mimeType = "";
-	this.source = "";
-	this.metadata = metadata;
-	if (metadata.source)
-		this.source = metadata.source;
-	if (metadata.mimeType)
-		this.source = metadata.mimeType;
-};
-
-flash.utils.Embed.createClass = function(metadata) {
-	return metadata;
-};
-
-
-flash.utils.Embed.className = "flash.utils.Embed";
-
-flash.utils.Embed.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.utils.Embed.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.utils.Embed.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'metadata', t:'Object'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.StageScaleMode
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.StageScaleMode = function() {
-};
-
-flash.display.StageScaleMode.NO_SCALE = "noScale";
-
-flash.display.StageScaleMode.SHOW_ALL = "showAll";
-
-
-flash.display.StageScaleMode.className = "flash.display.StageScaleMode";
-
-flash.display.StageScaleMode.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.StageScaleMode.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.StageScaleMode.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.display3D.Program3D
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.Program3D = function(context3D) {
-	this.shaderFragmentSrc = null;
-	this.shaderFragment = null;
-	this.colorAttribute = null;
-	this.shaderVertexSrc = null;
-	this.shaderVertex = null;
-	this.textureCoordAttribute = null;
-	this.shaderProgram = null;
-	this.samplerUniform = null;
-	this.mvMatrixUniform = null;
-	this.vertexPositionAttribute = null;
-	this.context3D = context3D;
-	this.shaderProgram = context3D.webglContext.createProgram();
-};
-
-flash.display3D.Program3D.prototype.dispose = function() {
-	this.context3D.webglContext.deleteShader(this.shaderVertex);
-	this.context3D.webglContext.deleteShader(this.shaderFragment);
-	this.context3D.webglContext.deleteProgram(this.shaderProgram);
-};
-
-flash.display3D.Program3D.prototype.upload = function(vertexProgram, fragmentProgram) {
-	this.shaderVertexSrc = vertexProgram;
-	this.shaderFragmentSrc = fragmentProgram;
-	var shaderVertex = this.compileShader(this.shaderVertexSrc, 35633);
-	var shaderFragment = this.compileShader(this.shaderFragmentSrc, 35632);
-	this.context3D.webglContext.attachShader(this.shaderProgram, shaderVertex);
-	this.context3D.webglContext.attachShader(this.shaderProgram, shaderFragment);
-	this.context3D.webglContext.linkProgram(this.shaderProgram);
-	if (!this.context3D.webglContext.getProgramParameter(this.shaderProgram, 35714)) {
-		throw new Error("Could not initialize shaders", 0);
-	}
-};
-
-flash.display3D.Program3D.prototype.compileShader = function(shaderSrc, shaderType) {
-	var src = shaderSrc.join("\n");
-	var shader = this.context3D.webglContext.createShader(shaderType);
-	this.context3D.webglContext.shaderSource(shader, src);
-	this.context3D.webglContext.compileShader(shader);
-	if (!this.context3D.webglContext.getShaderParameter(shader, 35713)) {
-		trace(this.context3D.webglContext.getShaderInfoLog(shader));
-		return null;
-	}
-	return shader;
-};
-
-flash.display3D.Program3D.prototype.focusProgram = function() {
-	this.context3D.webglContext.useProgram(this.shaderProgram);
-};
-
-
-flash.display3D.Program3D.className = "flash.display3D.Program3D";
-
-flash.display3D.Program3D.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('trace');
-	return p;
-};
-
-flash.display3D.Program3D.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Program3D.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'context3D', t:'flash.display3D.Context3D'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.display.GraphicsGradientFill
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.GraphicsGradientFill = function() {
-this.colors = null;
-this.matrix = null;
-};
-
-
-flash.display.GraphicsGradientFill.className = "flash.display.GraphicsGradientFill";
-
-flash.display.GraphicsGradientFill.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.GraphicsGradientFill.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.GraphicsGradientFill.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.display3D.VertexBuffer3D
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
-
-flash.display3D.VertexBuffer3D = function(context3D, numVertices, data32PerVertex) {
-	this.buffer = null;
-	this.verticies = null;
-	this.context3D = context3D;
-	this.buffer = context3D.webglContext.createBuffer();
-	this.numVertices = numVertices;
-	this.data32PerVertex = data32PerVertex;
-};
-
-flash.display3D.VertexBuffer3D.prototype.uploadFromVector = function(data, startVertex, numVertices) {
-	trace("VertexBuffer3D.uploadFromVector: " + data.length + " startVertex: " + startVertex + " nV: " + numVertices + "  data32PerVertex: " + this.data32PerVertex);
-	this.verticies = new ArrayBuffer(data.length * 4);
-	var floatArr = new Float32Array(this.verticies);
-	for (var i = 0; i < data.length; i++) {
-		floatArr[i] = data[i];
-	}
-	this.context3D.webglContext.bindBuffer(34962, this.buffer);
-	this.context3D.webglContext.bufferData(34962, this.verticies, 35044);
-	this.context3D.lastVertexBuffer = this;
-};
-
-flash.display3D.VertexBuffer3D.prototype.uploadFromByteArray = function(data, byteArrayOffset, startVertex, numVertices) {
-	trace("VertexBuffer3D.uploadFromByteArray: " + data.get_length() + " startVertex: " + startVertex + " nV: " + numVertices + "  byteArrayOffset: " + byteArrayOffset);
-	this.verticies = data.getArrayBuffer();
-	this.context3D.webglContext.bindBuffer(34962, this.buffer);
-	this.context3D.webglContext.bufferData(34962, this.verticies, 35044);
-	this.context3D.lastVertexBuffer = this;
-};
-
-flash.display3D.VertexBuffer3D.prototype.uploadLast = function() {
-	this.context3D.webglContext.bindBuffer(34962, this.buffer);
-	this.context3D.webglContext.bufferData(34962, this.verticies, 35048);
-	this.context3D.lastVertexBuffer = this;
-};
-
-flash.display3D.VertexBuffer3D.prototype.dispose = function() {
-};
-
-
-flash.display3D.VertexBuffer3D.className = "flash.display3D.VertexBuffer3D";
-
-flash.display3D.VertexBuffer3D.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('trace');
-	return p;
-};
-
-flash.display3D.VertexBuffer3D.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.VertexBuffer3D.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'context3D', t:'flash.display3D.Context3D'});
-			p.push({n:'numVertices', t:'int'});
-			p.push({n:'data32PerVertex', t:'int'});
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
 
 // ====================================================
 // flash.utils.JXONTree
@@ -5422,31 +1381,234 @@ flash.utils.JXONTree.injectionPoints = function(t) {
 
 
 // ====================================================
-// mx.core.MovieClipAsset
+// flash.display3D.Context3DCompareMode
 // ====================================================
 
-if (typeof mx == "undefined")
-	var mx = {};
-if (typeof mx.core == "undefined")
-	mx.core = {};
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
 
-mx.core.MovieClipAsset = function() {
+flash.display3D.Context3DCompareMode = function() {
 };
 
+flash.display3D.Context3DCompareMode.ALWAYS = "always";
 
-mx.core.MovieClipAsset.className = "mx.core.MovieClipAsset";
+flash.display3D.Context3DCompareMode.EQUAL = "equal";
 
-mx.core.MovieClipAsset.getRuntimeDependencies = function(t) {
+flash.display3D.Context3DCompareMode.GREATER = "greater";
+
+flash.display3D.Context3DCompareMode.GREATER_EQUAL = "greaterEqual";
+
+flash.display3D.Context3DCompareMode.LESS = "less";
+
+flash.display3D.Context3DCompareMode.LESS_EQUAL = "lessEqual";
+
+flash.display3D.Context3DCompareMode.NEVER = "never";
+
+flash.display3D.Context3DCompareMode.NOT_EQUAL = "notEqual";
+
+
+flash.display3D.Context3DCompareMode.className = "flash.display3D.Context3DCompareMode";
+
+flash.display3D.Context3DCompareMode.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-mx.core.MovieClipAsset.getStaticDependencies = function(t) {
+flash.display3D.Context3DCompareMode.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-mx.core.MovieClipAsset.injectionPoints = function(t) {
+flash.display3D.Context3DCompareMode.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.ui.Keyboard
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.ui == "undefined")
+	flash.ui = {};
+
+flash.ui.Keyboard = function() {
+};
+
+flash.ui.Keyboard.A = 65;
+
+flash.ui.Keyboard.B = 66;
+
+flash.ui.Keyboard.BACKQUOTE = 192;
+
+flash.ui.Keyboard.BACKSPACE = 8;
+
+flash.ui.Keyboard.BACKSLASH = 220;
+
+flash.ui.Keyboard.C = 67;
+
+flash.ui.Keyboard.D = 68;
+
+flash.ui.Keyboard.E = 69;
+
+flash.ui.Keyboard.END = 35;
+
+flash.ui.Keyboard.F = 70;
+
+flash.ui.Keyboard.G = 71;
+
+flash.ui.Keyboard.H = 72;
+
+flash.ui.Keyboard.HOME = 36;
+
+flash.ui.Keyboard.I = 73;
+
+flash.ui.Keyboard.J = 74;
+
+flash.ui.Keyboard.K = 75;
+
+flash.ui.Keyboard.L = 76;
+
+flash.ui.Keyboard.M = 77;
+
+flash.ui.Keyboard.N = 78;
+
+flash.ui.Keyboard.NUMBER_0 = 48;
+
+flash.ui.Keyboard.NUMBER_9 = 57;
+
+flash.ui.Keyboard.O = 79;
+
+flash.ui.Keyboard.P = 80;
+
+flash.ui.Keyboard.Q = 81;
+
+flash.ui.Keyboard.R = 82;
+
+flash.ui.Keyboard.S = 83;
+
+flash.ui.Keyboard.SPACE = 32;
+
+flash.ui.Keyboard.T = 84;
+
+flash.ui.Keyboard.U = 85;
+
+flash.ui.Keyboard.V = 86;
+
+flash.ui.Keyboard.W = 87;
+
+flash.ui.Keyboard.X = 88;
+
+flash.ui.Keyboard.Y = 89;
+
+flash.ui.Keyboard.Z = 90;
+
+flash.ui.Keyboard.ENTER = 13;
+
+flash.ui.Keyboard.RIGHT = 39;
+
+flash.ui.Keyboard.LEFT = 37;
+
+flash.ui.Keyboard.DOWN = 40;
+
+flash.ui.Keyboard.UP = 38;
+
+flash.ui.Keyboard.TAB = 9;
+
+flash.ui.Keyboard.CONTROL = 17;
+
+flash.ui.Keyboard.ESCAPE = 27;
+
+flash.ui.Keyboard.capsLock = false;
+
+flash.ui.Keyboard.numLock = false;
+
+flash.ui.Keyboard.hasVirtualKeyboard = false;
+
+
+flash.ui.Keyboard.className = "flash.ui.Keyboard";
+
+flash.ui.Keyboard.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.Keyboard.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.Keyboard.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.net.FileReference
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.net == "undefined")
+	flash.net = {};
+
+flash.net.FileReference = function() {
+this.name = "";
+};
+
+
+flash.net.FileReference.className = "flash.net.FileReference";
+
+flash.net.FileReference.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.FileReference.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.FileReference.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display3D.Context3DClearMask
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.Context3DClearMask = function() {
+	
+};
+
+flash.display3D.Context3DClearMask.COLOR = 16384;
+
+flash.display3D.Context3DClearMask.DEPTH = 256;
+
+flash.display3D.Context3DClearMask.STENCIL = 1024;
+
+flash.display3D.Context3DClearMask.ALL = ~~(16384) | ~~(256) | ~~(1024);
+
+
+flash.display3D.Context3DClearMask.className = "flash.display3D.Context3DClearMask";
+
+flash.display3D.Context3DClearMask.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DClearMask.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DClearMask.injectionPoints = function(t) {
 	return [];
 };
 
@@ -5491,7 +1653,271 @@ flash.utils.Dictionary.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.ui.Mouse
+// flash.profiler.showRedrawRegions
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.profiler == "undefined")
+	flash.profiler = {};
+
+flash.profiler.showRedrawRegions = function() {
+};
+
+
+flash.profiler.showRedrawRegions.className = "flash.profiler.showRedrawRegions";
+
+flash.profiler.showRedrawRegions.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.profiler.showRedrawRegions.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.profiler.showRedrawRegions.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display3D.Context3DProgramType
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.Context3DProgramType = function() {
+};
+
+flash.display3D.Context3DProgramType.FRAGMENT = "fragment";
+
+flash.display3D.Context3DProgramType.VERTEX = "vertex";
+
+
+flash.display3D.Context3DProgramType.className = "flash.display3D.Context3DProgramType";
+
+flash.display3D.Context3DProgramType.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DProgramType.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DProgramType.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display3D.Context3DBlendFactor
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.Context3DBlendFactor = function() {
+};
+
+flash.display3D.Context3DBlendFactor.DESTINATION_ALPHA = "destinationAlpha";
+
+flash.display3D.Context3DBlendFactor.DESTINATION_COLOR = "destinationColor";
+
+flash.display3D.Context3DBlendFactor.ONE = "one";
+
+flash.display3D.Context3DBlendFactor.ONE_MINUS_DESTINATION_ALPHA = "oneMinusDestinationAlpha";
+
+flash.display3D.Context3DBlendFactor.ONE_MINUS_DESTINATION_COLOR = "oneMinusDestinationColor";
+
+flash.display3D.Context3DBlendFactor.ONE_MINUS_SOURCE_ALPHA = "oneMinusSourceAlpha";
+
+flash.display3D.Context3DBlendFactor.ONE_MINUS_SOURCE_COLOR = "oneMinusSourceColor";
+
+flash.display3D.Context3DBlendFactor.SOURCE_ALPHA = "sourceAlpha";
+
+flash.display3D.Context3DBlendFactor.SOURCE_COLOR = "sourceColor";
+
+flash.display3D.Context3DBlendFactor.ZERO = "zero";
+
+
+flash.display3D.Context3DBlendFactor.className = "flash.display3D.Context3DBlendFactor";
+
+flash.display3D.Context3DBlendFactor.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DBlendFactor.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DBlendFactor.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.geom.Orientation3D
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.geom == "undefined")
+	flash.geom = {};
+
+flash.geom.Orientation3D = function() {
+};
+
+
+flash.geom.Orientation3D.className = "flash.geom.Orientation3D";
+
+flash.geom.Orientation3D.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.geom.Orientation3D.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.geom.Orientation3D.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display3D.Program3D
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.Program3D = function(context3D) {
+	this.shaderFragmentSrc = null;
+	this.shaderFragment = null;
+	this.colorAttribute = null;
+	this.shaderVertexSrc = null;
+	this.shaderVertex = null;
+	this.textureCoordAttribute = null;
+	this.shaderProgram = null;
+	this.samplerUniform = null;
+	this.mvMatrixUniform = null;
+	this.vertexPositionAttribute = null;
+	this.context3D = context3D;
+	this.shaderProgram = context3D.webglContext.createProgram();
+};
+
+flash.display3D.Program3D.prototype.dispose = function() {
+	this.context3D.webglContext.deleteShader(this.shaderVertex);
+	this.context3D.webglContext.deleteShader(this.shaderFragment);
+	this.context3D.webglContext.deleteProgram(this.shaderProgram);
+};
+
+flash.display3D.Program3D.prototype.upload = function(vertexProgram, fragmentProgram) {
+	this.shaderVertexSrc = vertexProgram;
+	this.shaderFragmentSrc = fragmentProgram;
+	var shaderVertex = this.compileShader(this.shaderVertexSrc, 35633);
+	var shaderFragment = this.compileShader(this.shaderFragmentSrc, 35632);
+	this.context3D.webglContext.attachShader(this.shaderProgram, shaderVertex);
+	this.context3D.webglContext.attachShader(this.shaderProgram, shaderFragment);
+	this.context3D.webglContext.linkProgram(this.shaderProgram);
+	if (!this.context3D.webglContext.getProgramParameter(this.shaderProgram, 35714)) {
+		throw new Error("Could not initialize shaders", 0);
+	}
+};
+
+flash.display3D.Program3D.prototype.compileShader = function(shaderSrc, shaderType) {
+	var src = shaderSrc.join("\n");
+	var shader = this.context3D.webglContext.createShader(shaderType);
+	this.context3D.webglContext.shaderSource(shader, src);
+	this.context3D.webglContext.compileShader(shader);
+	if (!this.context3D.webglContext.getShaderParameter(shader, 35713)) {
+		trace(this.context3D.webglContext.getShaderInfoLog(shader));
+		return null;
+	}
+	return shader;
+};
+
+flash.display3D.Program3D.prototype.focusProgram = function() {
+	this.context3D.webglContext.useProgram(this.shaderProgram);
+};
+
+
+flash.display3D.Program3D.className = "flash.display3D.Program3D";
+
+flash.display3D.Program3D.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('trace');
+	return p;
+};
+
+flash.display3D.Program3D.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Program3D.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'context3D', t:'flash.display3D.Context3D'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.display3D.Context3DTextureFormat
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.Context3DTextureFormat = function() {
+};
+
+flash.display3D.Context3DTextureFormat.BGRA = "bgra";
+
+flash.display3D.Context3DTextureFormat.COMPRESSED = "compress";
+
+flash.display3D.Context3DTextureFormat.COMPRESSED_ALPHA = "compressedAlpha";
+
+
+flash.display3D.Context3DTextureFormat.className = "flash.display3D.Context3DTextureFormat";
+
+flash.display3D.Context3DTextureFormat.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DTextureFormat.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DTextureFormat.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.ui.Multitouch
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -5499,41 +1925,30 @@ if (typeof flash == "undefined")
 if (typeof flash.ui == "undefined")
 	flash.ui = {};
 
-flash.ui.Mouse = function() {
+flash.ui.Multitouch = function() {
 };
 
-flash.ui.Mouse.hide = function() {
-};
-
-flash.ui.Mouse.registerCursor = function(name, cursor) {
-};
-
-flash.ui.Mouse.show = function() {
-};
-
-flash.ui.Mouse.cursor = "";
-
-flash.ui.Mouse.supportsCursor = true;
+flash.ui.Multitouch.inputMode;
 
 
-flash.ui.Mouse.className = "flash.ui.Mouse";
+flash.ui.Multitouch.className = "flash.ui.Multitouch";
 
-flash.ui.Mouse.getRuntimeDependencies = function(t) {
+flash.ui.Multitouch.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.ui.Mouse.getStaticDependencies = function(t) {
+flash.ui.Multitouch.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.ui.Mouse.injectionPoints = function(t) {
+flash.ui.Multitouch.injectionPoints = function(t) {
 	return [];
 };
 
 // ====================================================
-// flash.display.PixelSnapping
+// flash.display.GraphicsPath
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -5541,197 +1956,30 @@ if (typeof flash == "undefined")
 if (typeof flash.display == "undefined")
 	flash.display = {};
 
-flash.display.PixelSnapping = function() {
+flash.display.GraphicsPath = function(commands, data, winding) {
 };
 
-flash.display.PixelSnapping.NEVER = "never";
 
-flash.display.PixelSnapping.AUTO = "auto";
+flash.display.GraphicsPath.className = "flash.display.GraphicsPath";
 
-
-flash.display.PixelSnapping.className = "flash.display.PixelSnapping";
-
-flash.display.PixelSnapping.getRuntimeDependencies = function(t) {
+flash.display.GraphicsPath.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.PixelSnapping.getStaticDependencies = function(t) {
+flash.display.GraphicsPath.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.PixelSnapping.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.text.AntiAliasType
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
-
-flash.text.AntiAliasType = function() {
-	
-};
-
-flash.text.AntiAliasType.ADVANCED = "advanced";
-
-flash.text.AntiAliasType.NORMAL = "normal";
-
-
-flash.text.AntiAliasType.className = "flash.text.AntiAliasType";
-
-flash.text.AntiAliasType.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.AntiAliasType.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.text.AntiAliasType.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.system.Capabilities
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.system == "undefined")
-	flash.system = {};
-
-flash.system.Capabilities = function() {
-};
-
-flash.system.Capabilities.version = "1.0.0";
-
-flash.system.Capabilities.os = "mockapi";
-
-flash.system.Capabilities.screenDPI = 1;
-
-flash.system.Capabilities.screenResolutionX = 100;
-
-flash.system.Capabilities.screenResolutionY = 100;
-
-flash.system.Capabilities.isDebugger = false;
-
-flash.system.Capabilities.playerType = "js";
-
-flash.system.Capabilities.manufacturer = "Unknown OS";
-
-
-flash.system.Capabilities.className = "flash.system.Capabilities";
-
-flash.system.Capabilities.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.Capabilities.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.Capabilities.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.system.Security
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.system == "undefined")
-	flash.system = {};
-
-flash.system.Security = function() {
-};
-
-flash.system.Security.allowDomain = function(domains) {
-};
-
-flash.system.Security.allowInsecureDomain = function(domains) {
-};
-
-flash.system.Security.loadPolicyFile = function(url) {
-};
-
-
-flash.system.Security.className = "flash.system.Security";
-
-flash.system.Security.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.Security.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.system.Security.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.globalization.DateTimeFormatter
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.globalization == "undefined")
-	flash.globalization = {};
-
-flash.globalization.DateTimeFormatter = function(requestedLocaleIDName, dateStyle, timeStyle) {
-};
-
-flash.globalization.DateTimeFormatter.prototype.getMonthNames = function(nameStyle, context) {
-	var months = [];
-	months.push("January");
-	months.push("February");
-	months.push("March");
-	months.push("April");
-	months.push("May");
-	months.push("June");
-	months.push("July");
-	months.push("August");
-	months.push("Spetember");
-	months.push("October");
-	months.push("November");
-	months.push("December");
-	return months;
-};
-
-
-flash.globalization.DateTimeFormatter.className = "flash.globalization.DateTimeFormatter";
-
-flash.globalization.DateTimeFormatter.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.globalization.DateTimeFormatter.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.globalization.DateTimeFormatter.injectionPoints = function(t) {
+flash.display.GraphicsPath.injectionPoints = function(t) {
 	var p;
 	switch (t) {
 		case 0:
 			p = [];
-			p.push({n:'requestedLocaleIDName', t:'String'});
-			p.push({n:'dateStyle', t:'String'});
-			p.push({n:'timeStyle', t:'String'});
+			p.push({n:'commands', t:'Array'});
+			p.push({n:'data', t:'Array'});
+			p.push({n:'winding', t:'String'});
 			break;
 		default:
 			p = [];
@@ -5742,139 +1990,35 @@ flash.globalization.DateTimeFormatter.injectionPoints = function(t) {
 
 
 // ====================================================
-// JSON
-// ====================================================
-
-
-JSON = function() {
-	
-};
-
-JSON.parse = function(text, reviver) {
-	throw new Error("API NOT IMPLEMENTED -- JSON.parse", 0);
-};
-
-JSON.stringify = function(value, replacer, space) {
-	throw new Error("API NOT IMPLEMENTED -- JSON.stringify", 0);
-};
-
-
-JSON.className = "JSON";
-
-JSON.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-JSON.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-JSON.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// ArgumentError
-// ====================================================
-
-
-ArgumentError = function(message) {
-	Error.call(this, message, 0);
-};
-
-
-$inherit(ArgumentError, Error);
-
-ArgumentError.className = "ArgumentError";
-
-ArgumentError.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-ArgumentError.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-ArgumentError.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'message', t:'Object'});
-			break;
-		case 1:
-			p = Error.injectionPoints(t);
-			break;
-		case 2:
-			p = Error.injectionPoints(t);
-			break;
-		case 3:
-			p = Error.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
-};
-
-
-// ====================================================
-// flash.errors.IllegalOperationError
+// flash.display.StageAlign
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.errors == "undefined")
-	flash.errors = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
 
-flash.errors.IllegalOperationError = function(message, id) {
-	Error.call(this, message, id);
+flash.display.StageAlign = function() {
 };
 
+flash.display.StageAlign.TOP_LEFT = "topLeft";
 
-$inherit(flash.errors.IllegalOperationError, Error);
 
-flash.errors.IllegalOperationError.className = "flash.errors.IllegalOperationError";
+flash.display.StageAlign.className = "flash.display.StageAlign";
 
-flash.errors.IllegalOperationError.getRuntimeDependencies = function(t) {
+flash.display.StageAlign.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.errors.IllegalOperationError.getStaticDependencies = function(t) {
+flash.display.StageAlign.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.errors.IllegalOperationError.injectionPoints = function(t) {
-	var p;
-	switch (t) {
-		case 0:
-			p = [];
-			p.push({n:'message', t:'Object'});
-			p.push({n:'id', t:'Object'});
-			break;
-		case 1:
-			p = Error.injectionPoints(t);
-			break;
-		case 2:
-			p = Error.injectionPoints(t);
-			break;
-		case 3:
-			p = Error.injectionPoints(t);
-			break;
-		default:
-			p = [];
-			break;
-	}
-	return p;
+flash.display.StageAlign.injectionPoints = function(t) {
+	return [];
 };
-
 
 // ====================================================
 // flash.events.EventDispatcher
@@ -6862,13 +3006,6 @@ flash.display.Stage = function() {
 	this.stageHeight = 0;
 	this._stage3Ds = null;
 	flash.display.DisplayObjectContainer.call(this);
-	this.addEventListener("enterFrame", $createStaticDelegate(this, this.enterFrame), false, 0, false);
-};
-
-flash.display.Stage.prototype.enterFrame = function(e) {
-	var c = flash.utils.FlashTimingEngine.root.get_graphics().getCanvas();
-	c.clearRect(0, 0, 1000, 1000);
-	flash.utils.FlashTimingEngine.root.updateGraphics();
 };
 
 flash.display.Stage.prototype.get_stage3Ds = function() {
@@ -6892,8 +3029,6 @@ flash.display.Stage.getRuntimeDependencies = function(t) {
 	var p;
 	p = [];
 	p.push('flash.display.Stage3D');
-	p.push('flash.utils.FlashTimingEngine');
-	p.push('flash.events.Event');
 	return p;
 };
 
@@ -8826,158 +4961,7 @@ flash.ui.ContextMenu.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.display.Graphics
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
-
-flash.display.Graphics = function() {
-this.cmds = [];
-this.sprite = null;
-this.canvas = null;
-this.lineing = null;
-this.fillingBmdCmd = null;
-this.filling = null;
-};
-
-flash.display.Graphics.prototype.getCanvas = function() {
-	if (!this.canvas) {
-		this.canvas = document.getElementById("stage");
-	}
-	return this.canvas.getContext("2d");
-};
-
-flash.display.Graphics.prototype.beginFill = function(color, alpha) {
-	this.cmds.push(new flash.display.cmds.SetColorAttribCmd(this.getCanvas(), "fillStyle", color, alpha, this.sprite), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.SetAttribCmd(this, "filling", true), new flash.display.cmds.SetAttribCmd(this, "fillingBmdCmd", null));
-};
-
-flash.display.Graphics.prototype.beginBitmapFill = function(bitmap, matrix, repeat, smooth) {
-	var cmd = new flash.display.cmds.SetBitmapAttribCmd(this.getCanvas(), "fillStyle", bitmap, matrix, repeat, this.sprite);
-	this.cmds.push(cmd, new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.SetAttribCmd(this, "filling", true), new flash.display.cmds.SetAttribCmd(this, "fillingBmdCmd", cmd));
-};
-
-flash.display.Graphics.prototype.beginGradientFill = function(type, colors, alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.beginGradientFill() $$$$");
-};
-
-flash.display.Graphics.prototype.clear = function() {
-	this.filling = false;
-	this.lineing = false;
-	this.cmds = [];
-};
-
-flash.display.Graphics.prototype.drawCircle = function(x, y, radius) {
-	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().beginPath), null), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().arc), [x, y, radius, 0, 3.141592653589793 * 2]), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().closePath), null), new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().fill), null));
-};
-
-flash.display.Graphics.prototype.drawRect = function(x, y, width, height) {
-	this.moveTo(x, y);
-	this.lineTo(x + width, y);
-	this.lineTo(x + width, y + height);
-	this.lineTo(x, y + height);
-	this.lineTo(x, y);
-};
-
-flash.display.Graphics.prototype.drawRoundRect = function(x, y, width, height, ellipseWidth, ellipseHeight) {
-};
-
-flash.display.Graphics.prototype.drawGraphicsData = function(graphicsData) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.drawGraphicsData() $$$$");
-};
-
-flash.display.Graphics.prototype.endFill = function() {
-	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().closePath), null), new flash.display.cmds.SetAttribCmd(this, "filling", false));
-	if (this.filling) {
-		this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().fill), null));
-	}
-};
-
-flash.display.Graphics.prototype.lineStyle = function(thickness, color, alpha, pixelHinting, scaleMode, caps, joints, miterLimit) {
-	if (this.lineing)
-		this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().stroke), null));
-	this.cmds.push(new flash.display.cmds.SetAttribCmd(this.getCanvas(), "lineWidth", thickness), new flash.display.cmds.SetColorAttribCmd(this.getCanvas(), "strokeStyle", color, alpha, this.sprite), new flash.display.cmds.SetAttribCmd(this, "lineing", !isNaN(thickness)));
-};
-
-flash.display.Graphics.prototype.lineGradientStyle = function(type, colors, alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.lineGradientStyle() $$$$");
-};
-
-flash.display.Graphics.prototype.lineTo = function(x, y) {
-	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().lineTo), [x, y]));
-};
-
-flash.display.Graphics.prototype.moveTo = function(x, y) {
-	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().moveTo), [x, y]));
-};
-
-flash.display.Graphics.prototype.drawEllipse = function(x, y, width, height) {
-	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Graphics.drawEllipse() $$$$");
-};
-
-flash.display.Graphics.prototype.copyFrom = function(g) {
-	this.cmds = g.cmds.concat();
-};
-
-flash.display.Graphics.prototype.curveTo = function(controlX, controlY, anchorX, anchorY) {
-	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().quadraticCurveTo), [controlX, controlY, anchorX, anchorY]));
-};
-
-flash.display.Graphics.prototype.cubicCurveTo = function(controlX1, controlY1, controlX2, controlY2, anchorX, anchorY) {
-	this.cmds.push(new flash.display.cmds.Cmd($createStaticDelegate(this.getCanvas(), this.getCanvas().bezierCurveTo), [controlX1, controlY1, controlX2, controlY2, anchorX, anchorY]));
-};
-
-flash.display.Graphics.prototype.updateGraphics = function() {
-	var m = this.sprite.transform.worldMatrix;
-	this.getCanvas().setTransform(m.a, m.b, m.c, m.d, m.tx, m.ty);
-	this.lineing = false;
-	this.filling = false;
-	if (!this.filling)
-		this.getCanvas().beginPath();
-	var $n0;
-	for (var $v0 in ($n0 = this.cmds)) {
-		var cmd = $n0[$v0];
-		cmd.update()
-	}
-	this.getCanvas().closePath();
-	if (this.filling) {
-		if (this.fillingBmdCmd != null && this.fillingBmdCmd.matrix != null) {
-		} else {
-			this.getCanvas().fill();
-		}
-	}
-	if (this.lineing)
-		this.getCanvas().stroke();
-};
-
-
-flash.display.Graphics.className = "flash.display.Graphics";
-
-flash.display.Graphics.getRuntimeDependencies = function(t) {
-	var p;
-	p = [];
-	p.push('flash.display.cmds.Cmd');
-	p.push('flash.utils.FlashTimingEngine');
-	p.push('flash.geom.Matrix');
-	p.push('flash.display.cmds.SetAttribCmd');
-	p.push('flash.display.cmds.SetColorAttribCmd');
-	p.push('flash.display.cmds.SetBitmapAttribCmd');
-	return p;
-};
-
-flash.display.Graphics.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display.Graphics.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.utils.FlashTimingEngine
+// flash.utils.Endian
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -8985,522 +4969,2536 @@ if (typeof flash == "undefined")
 if (typeof flash.utils == "undefined")
 	flash.utils = {};
 
-flash.utils.FlashTimingEngine = function() {
-	this.framePerSecond = 0;
-	this.startFrameTime = 0;
-	this.ENTER_EVENT = new flash.events.Event("enterFrame", false, false);
-	this.stopFlag = false;
-	this.frameTime = 0;
-	this.lastID = 0;
-	this.currentTimers = new flash.utils.Dictionary(false);
-	this.TIMER_COMPLETE_EVENT = new flash.events.TimerEvent("timerComplete", false, false);
-	this.availableObjects = [];
-	this.lastFrameTime = 0;
-	this.TIMER_EVENT = new flash.events.TimerEvent("timer", false, false);
+flash.utils.Endian = function() {
 	
 };
 
-flash.utils.FlashTimingEngine.stageInstance;
+flash.utils.Endian.BIG_ENDIAN = "bigEndian";
 
-flash.utils.FlashTimingEngine.frameHandler;
+flash.utils.Endian.LITTLE_ENDIAN = "littleEndian";
 
-flash.utils.FlashTimingEngine.embedLoadingObjects = [];
 
-flash.utils.FlashTimingEngine.embedBitmapDatas = [];
+flash.utils.Endian.className = "flash.utils.Endian";
 
-flash.utils.FlashTimingEngine.embedSounds = [];
-
-flash.utils.FlashTimingEngine.getEmbed = function(source) {
-	if (!flash.utils.FlashTimingEngine.embedBitmapDatas[source]) {
-		var bitmapData = new flash.display.BitmapData(0, 0, true, 0);
-		bitmapData.embedImage(source);
-		flash.utils.FlashTimingEngine.embedBitmapDatas[source] = bitmapData;
-	}
-	return flash.utils.FlashTimingEngine.embedBitmapDatas[source];
+flash.utils.Endian.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
 };
 
-flash.utils.FlashTimingEngine.getSoundEmbed = function(source) {
-	if (!flash.utils.FlashTimingEngine.embedSounds[source]) {
-		var snd = new flash.media.Sound(new flash.net.URLRequest(source));
-		flash.utils.FlashTimingEngine.embedLoadingObjects.push(snd);
-		flash.utils.FlashTimingEngine.embedSounds[source] = snd;
-	}
-	return flash.utils.FlashTimingEngine.embedSounds[source];
+flash.utils.Endian.getStaticDependencies = function(t) {
+	var p;
+	return [];
 };
 
-flash.utils.FlashTimingEngine.setupStageInteractionEvents = function(canvas) {
-	canvas.addEventListener("mousedown", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureEventHandler), true);
-	canvas.addEventListener("mousemove", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureEventHandler), true);
-	canvas.addEventListener("mouseup", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureEventHandler), true);
-	if ("ontouchstart" in document.documentElement) {
-		canvas.addEventListener("touchstart", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureTouchEventHandler), true);
-		canvas.addEventListener("touchmove", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureTouchEventHandler), true);
-		canvas.addEventListener("touchend", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureTouchEventHandler), true);
-	}
+flash.utils.Endian.injectionPoints = function(t) {
+	return [];
 };
 
-flash.utils.FlashTimingEngine.captureEventHandler = function(event) {
-	if (!flash.utils.FlashTimingEngine.stageInstance)
-		return;
-	var type = "mouseDown";
-	if (event.type == "mousedown")
-		type = "mouseDown";
-	else if (event.type == "mousemove")
-		type = "mouseMove";
-	else if (event.type == "mouseup")
-		type = "mouseUp";
-	var me = new flash.events.MouseEvent(type, false, false, event.offsetX, event.offsetY, null, false, false, false, false, 0, false, false, 0);
-	flash.utils.FlashTimingEngine.stageInstance.dispatchEvent(me);
+// ====================================================
+// com.adobe.utils.AGALMiniAssembler
+// ====================================================
+
+if (typeof com == "undefined")
+	var com = {};
+if (typeof com.adobe == "undefined")
+	com.adobe = {};
+if (typeof com.adobe.utils == "undefined")
+	com.adobe.utils = {};
+
+com.adobe.utils.AGALMiniAssembler = function(debugging) {
+	this.initialized = false;
+	this._agalcode = null;
+	this.verbose = false;
+	this.debugEnabled = false;
+	this._error = "";
+	this.debugEnabled = debugging;
+	if (!com.adobe.utils.AGALMiniAssembler.initialized)
+		com.adobe.utils.AGALMiniAssembler.init();
 };
 
-flash.utils.FlashTimingEngine.captureTouchEventHandler = function(event) {
-	if (!flash.utils.FlashTimingEngine.stageInstance)
-		return;
-	var type = "touchBegin";
-	if (event.type == "touchstart")
-		type = "touchBegin";
-	else if (event.type == "touchmove")
-		type = "touchMove";
-	else if (event.type == "touchend")
-		type = "touchEnd";
+com.adobe.utils.AGALMiniAssembler.USE_NEW_SYNTAX = false;
+
+com.adobe.utils.AGALMiniAssembler.REGEXP_OUTER_SPACES = /^\s+|\s+$/g;
+
+com.adobe.utils.AGALMiniAssembler.initialized = false;
+
+com.adobe.utils.AGALMiniAssembler.prototype.get_error = function() {
+	return this._error;
 };
 
-flash.utils.FlashTimingEngine.start = function(root, framePerSecond, stageWidth, stageHeight, color) {
-	var OSName = "Unknown OS";
-	if (navigator.appVersion.indexOf("Win", 0) != -1)
-		OSName = "Windows";
-	else if (navigator.appVersion.indexOf("Mac", 0) != -1)
-		OSName = "Macintosh";
-	else if (navigator.appVersion.indexOf("X11", 0) != -1)
-		OSName = "UNIX";
-	else if (navigator.appVersion.indexOf("Linux", 0) != -1)
-		OSName = "Linux";
-	flash.system.Capabilities.manufacturer = OSName;
-	try {
-		flash.utils.FlashTimingEngine.frameHandler = new flash.utils.RequestAnimationFrame();
-	} catch (error) {
-	}
-	if (!flash.utils.FlashTimingEngine.stageInstance)
-		flash.utils.FlashTimingEngine.stageInstance = new flash.display.Stage();
-	flash.utils.FlashTimingEngine.stageInstance.stageWidth = stageWidth;
-	flash.utils.FlashTimingEngine.stageInstance.stageHeight = stageHeight;
-	flash.utils.FlashTimingEngine.stageInstance.color = color;
-	flash.utils.FlashTimingEngine.root = root;
-	root.root = root;
-	flash.utils.FlashTimingEngine.stopFlag = false;
-	flash.utils.FlashTimingEngine.framePerSecond = framePerSecond;
-	flash.utils.FlashTimingEngine.frameTime = ~~(1000 / framePerSecond);
-	flash.utils.FlashTimingEngine.currentTime = new Date().getTime();
-	if (flash.utils.FlashTimingEngine.embedLoadingObjects.length == 0) {
-		flash.utils.FlashTimingEngine.tick();
-		root.dispatchEvent(new flash.events.Event("addedToStage", false, false));
-	}
-	else
-		flash.utils.FlashTimingEngine.embedWait();
+com.adobe.utils.AGALMiniAssembler.prototype.get_agalcode = function() {
+	return this._agalcode;
 };
 
-flash.utils.FlashTimingEngine.embedWait = function() {
-	var allComplete = true;
-	for (var i = 0; i < flash.utils.FlashTimingEngine.embedLoadingObjects.length; i++) {
-		allComplete = allComplete && flash.utils.FlashTimingEngine.embedLoadingObjects[i].isLoaded;
-	}
-	trace("allComplete: " + allComplete);
-	if (allComplete) {
-		flash.utils.FlashTimingEngine.tick();
-		flash.utils.FlashTimingEngine.root.dispatchEvent(new flash.events.Event("addedToStage", false, false));
-	}
-	else
-		setTimeout($createStaticDelegate(this, flash.utils.FlashTimingEngine.embedWait), 50);
-};
-
-flash.utils.FlashTimingEngine.tick = function() {
-	flash.utils.FlashTimingEngine.startFrameTime = new Date().getTime();
-	flash.events.EventDispatcher.fireGlobalEvent(flash.utils.FlashTimingEngine.ENTER_EVENT);
-	var timerObject;
-	var $n0;
-	for (var $v0 in ($n0 = flash.utils.FlashTimingEngine.currentTimers)) {
-		timerObject = $n0[$v0];
-		if (!timerObject)
-			continue;
-		if (timerObject.timeLeft - flash.utils.FlashTimingEngine.lastFrameTime < 0) {
-			if (timerObject.repeat >= 0)
-				timerObject.repeat--;
-			timerObject.timeLeft = timerObject.time;
-			timerObject.callBack.dispatchEvent(flash.utils.FlashTimingEngine.TIMER_EVENT);
-			if (timerObject.repeat == -1) {
-				timerObject.callBack.dispatchEvent(flash.utils.FlashTimingEngine.TIMER_COMPLETE_EVENT);
-				flash.utils.FlashTimingEngine.addToPool(timerObject);
-				flash.utils.FlashTimingEngine.currentTimers[timerObject.id] = null;
-				delete flash.utils.FlashTimingEngine.currentTimers[timerObject.id];
-			}
-		} else {
-			timerObject.timeLeft -= flash.utils.FlashTimingEngine.lastFrameTime;
+com.adobe.utils.AGALMiniAssembler.prototype.assemble = function(mode, source) {
+	var start = flash.utils.getTimer();
+	this._agalcode = new flash.utils.ByteArray();
+	this._error = "";
+	var isFrag = false;
+	if (mode == "fragment")
+		isFrag = true;
+	else if (mode != "vertex")
+		this._error = "ERROR: mode needs to be \"" + "fragment" + "\" or \"" + "vertex" + "\" but is \"" + mode + "\".";
+	this.get_agalcode().set_endian("littleEndian");
+	this.get_agalcode().writeByte(0xa0);
+	this.get_agalcode().writeUnsignedInt(0x1);
+	this.get_agalcode().writeByte(0xa1);
+	this.get_agalcode().writeByte(isFrag ? 1 : 0);
+	var lines = source.replace(/[\f\n\r\v]+/g, "\n").split("\n", 4.294967295E9);
+	var nest = 0;
+	var nops = 0;
+	var i;
+	var lng = lines.length;
+	for (i = 0; i < lng && this._error == ""; i++) {
+		var line = new String(lines[i]);
+		line = line.replace(/^\s+|\s+$/g, "");
+		var startcomment = line.search("\/\/");
+		if (startcomment != -1)
+			line = line.slice(0, startcomment);
+		var optsi = line.search(/<.*>/g);
+		var opts;
+		if (optsi != -1) {
+			opts = line.slice(optsi, 2147483647).match(/([\w\.\-\+]+)/gi);
+			line = line.slice(0, optsi);
 		}
+		var opCode = line.match(/^\w{3}/ig);
+		if (!opCode) {
+			if (line.length >= 3)
+				trace("warning: bad line " + i + ": " + lines[i]);
+			continue;
+		}
+		var opFound = com.adobe.utils.AGALMiniAssembler.OPMAP[opCode[0]];
+		if (this.debugEnabled)
+			trace(opFound);
+		if (opFound == null) {
+			if (line.length >= 3)
+				trace("warning: bad line " + i + ": " + lines[i]);
+			continue;
+		}
+		line = line.slice(line.search(opFound.get_name()) + opFound.get_name().length, 2147483647);
+		if (opFound.get_flags() & 4) {
+			nest--;
+			if (nest < 0) {
+				this._error = "error: conditional closes without open.";
+				break;
+			}
+		}
+		if (opFound.get_flags() & 2) {
+			nest++;
+			if (nest > 4) {
+				this._error = "error: nesting to deep, maximum allowed is " + 4 + ".";
+				break;
+			}
+		}
+		if ((opFound.get_flags() & 32) && !isFrag) {
+			this._error = "error: opcode is only allowed in fragment programs.";
+			break;
+		}
+		if (this.verbose)
+			trace("emit opcode=" + opFound);
+		this.get_agalcode().writeUnsignedInt(opFound.get_emitCode());
+		nops++;
+		if (nops > 256) {
+			this._error = "error: too many opcodes. maximum is " + 256 + ".";
+			break;
+		}
+		var regs;
+		if (false)
+			regs = line.match(/vc\[([vif][acost]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vif][acost]?)(\d*)?(\.[xyzw]{1,4})?/gi);
+		else
+			regs = line.match(/vc\[([vof][actps]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vof][actps]?)(\d*)?(\.[xyzw]{1,4})?/gi);
+		if (!regs || regs.length != opFound.get_numRegister()) {
+			this._error = "error: wrong number of operands. found " + regs.length + " but expected " + opFound.get_numRegister() + ".";
+			break;
+		}
+		var badreg = false;
+		var pad = 64 + 64 + 32;
+		var regLength = regs.length;
+		for (var j = 0; j < regLength; j++) {
+			var isRelative = false;
+			var relreg = regs[j].match(/\[.*\]/ig);
+			if (relreg && relreg.length > 0) {
+				regs[j] = regs[j].replace(relreg[0], "0");
+				if (this.verbose)
+					trace("IS REL");
+				isRelative = true;
+			}
+			var res = regs[j].match(/^\b[A-Za-z]{1,2}/ig);
+			if (!res) {
+				this._error = "error: could not parse operand " + j + " (" + regs[j] + ").";
+				badreg = true;
+				break;
+			}
+			var regFound = com.adobe.utils.AGALMiniAssembler.REGMAP[res[0]];
+			if (this.debugEnabled)
+				trace(regFound);
+			if (regFound == null) {
+				this._error = "error: could not parse operand " + j + " (" + regs[j] + ").";
+				badreg = true;
+				break;
+			}
+			if (isFrag) {
+				if (!(regFound.get_flags() & 32)) {
+					this._error = "error: register operand " + j + " (" + regs[j] + ") only allowed in vertex programs.";
+					badreg = true;
+					break;
+				}
+				if (isRelative) {
+					this._error = "error: register operand " + j + " (" + regs[j] + ") relative adressing not allowed in fragment programs.";
+					badreg = true;
+					break;
+				}
+			} else {
+				if (!(regFound.get_flags() & 64)) {
+					this._error = "error: register operand " + j + " (" + regs[j] + ") only allowed in fragment programs.";
+					badreg = true;
+					break;
+				}
+			}
+			regs[j] = regs[j].slice(regs[j].search(regFound.get_name()) + regFound.get_name().length);
+			var idxmatch = isRelative ? relreg[0].match(/\d+/) : regs[j].match(/\d+/);
+			var regidx = 0;
+			if (idxmatch)
+				regidx = idxmatch[0];
+			if (regFound.get_range() < regidx) {
+				this._error = "error: register operand " + j + " (" + regs[j] + ") index exceeds limit of " + (regFound.get_range() + 1) + ".";
+				badreg = true;
+				break;
+			}
+			var regmask = 0;
+			var maskmatch = regs[j].match(/(\.[xyzw]{1,4})/);
+			var isDest = (j == 0 && !(opFound.get_flags() & 128));
+			var isSampler = (j == 2 && (opFound.get_flags() & 8));
+			var reltype = 0;
+			var relsel = 0;
+			var reloffset = 0;
+			if (isDest && isRelative) {
+				this._error = "error: relative can not be destination";
+				badreg = true;
+				break;
+			}
+			if (maskmatch) {
+				regmask = 0;
+				var cv;
+				var maskLength = maskmatch[0].length;
+				for (var k = 1; k < maskLength; k++) {
+					cv = maskmatch[0].charCodeAt(k) - "x".charCodeAt(0);
+					if (cv > 2)
+						cv = 3;
+					if (isDest)
+						regmask |= 1 << cv;
+					else
+						regmask |= cv << ((k - 1) << 1);
+				}
+				if (!isDest)
+					for (; k <= 4; k++)
+						regmask |= cv << ((k - 1) << 1);
+			} else {
+				regmask = isDest ? 0xf : 0xe4;
+			}
+			if (isRelative) {
+				var relname = relreg[0].match(/[A-Za-z]{1,2}/ig);
+				var regFoundRel = com.adobe.utils.AGALMiniAssembler.REGMAP[relname[0]];
+				if (regFoundRel == null) {
+					this._error = "error: bad index register";
+					badreg = true;
+					break;
+				}
+				reltype = regFoundRel.get_emitCode();
+				var selmatch = relreg[0].match(/(\.[xyzw]{1,1})/);
+				if (selmatch.length == 0) {
+					this._error = "error: bad index register select";
+					badreg = true;
+					break;
+				}
+				relsel = selmatch[0].charCodeAt(1) - "x".charCodeAt(0);
+				if (relsel > 2)
+					relsel = 3;
+				var relofs = relreg[0].match(/\+\d{1,3}/ig);
+				if (relofs.length > 0)
+					reloffset = relofs[0];
+				if (reloffset < 0 || reloffset > 255) {
+					this._error = "error: index offset " + reloffset + " out of bounds. [0..255]";
+					badreg = true;
+					break;
+				}
+				if (this.verbose)
+					trace("RELATIVE: type=" + reltype + "==" + relname[0] + " sel=" + relsel + "==" + selmatch[0] + " idx=" + regidx + " offset=" + reloffset);
+			}
+			if (this.verbose)
+				trace("  emit argcode=" + regFound + "[" + regidx + "][" + regmask + "]");
+			if (isDest) {
+				this.get_agalcode().writeShort(regidx);
+				this.get_agalcode().writeByte(regmask);
+				this.get_agalcode().writeByte(regFound.get_emitCode());
+				pad -= 32;
+			} else {
+				if (isSampler) {
+					if (this.verbose)
+						trace("  emit sampler");
+					var samplerbits = 5;
+					var optsLength = opts == null ? 0 : opts.length;
+					var bias = 0;
+					for (k = 0; k < optsLength; k++) {
+						if (this.verbose)
+							trace("    opt: " + opts[k]);
+						var optfound = com.adobe.utils.AGALMiniAssembler.SAMPLEMAP[opts[k]];
+						if (optfound == null) {
+							bias = opts[k];
+							if (this.verbose)
+								trace("    bias: " + bias);
+						} else {
+							if (optfound.get_flag() != 16)
+								samplerbits &= ~(0xf << optfound.get_flag());
+							samplerbits |= optfound.get_mask() << optfound.get_flag();
+						}
+					}
+					this.get_agalcode().writeShort(regidx);
+					this.get_agalcode().writeByte(~~(bias * 8.0));
+					this.get_agalcode().writeByte(0);
+					this.get_agalcode().writeUnsignedInt(samplerbits);
+					if (this.verbose)
+						trace("    bits: " + (samplerbits - 5));
+					pad -= 64;
+				} else {
+					if (j == 0) {
+						this.get_agalcode().writeUnsignedInt(0);
+						pad -= 32;
+					}
+					this.get_agalcode().writeShort(regidx);
+					this.get_agalcode().writeByte(reloffset);
+					this.get_agalcode().writeByte(regmask);
+					this.get_agalcode().writeByte(regFound.get_emitCode());
+					this.get_agalcode().writeByte(reltype);
+					this.get_agalcode().writeShort(isRelative ? (relsel | (1 << 15)) : 0);
+					pad -= 64;
+				}
+			}
+		}
+		for (j = 0; j < pad; j += 8)
+			this.get_agalcode().writeByte(0);
+		if (badreg)
+			break;
 	}
-	flash.utils.FlashTimingEngine.lastFrameTime = (new Date().getTime() - flash.utils.FlashTimingEngine.startFrameTime);
-	if (flash.utils.FlashTimingEngine.frameTime - flash.utils.FlashTimingEngine.lastFrameTime > 0) {
-		setTimeout($createStaticDelegate(this, flash.utils.FlashTimingEngine.tick), (flash.utils.FlashTimingEngine.frameTime - flash.utils.FlashTimingEngine.lastFrameTime));
-		return;
+	if (this._error != "") {
+		this._error += "\n  at line " + i + " " + lines[i];
+		this.get_agalcode().set_length(0);
+		trace(this._error);
 	}
-	if (flash.utils.FlashTimingEngine.lastFrameTime < flash.utils.FlashTimingEngine.frameTime)
-		flash.utils.FlashTimingEngine.lastFrameTime = flash.utils.FlashTimingEngine.frameTime;
-	if (!flash.utils.FlashTimingEngine.stopFlag)
-		flash.utils.FlashTimingEngine.frameHandler.request($createStaticDelegate(this, flash.utils.FlashTimingEngine.tick));
-};
-
-flash.utils.FlashTimingEngine.stop = function() {
-	flash.utils.FlashTimingEngine.stopFlag = true;
-};
-
-flash.utils.FlashTimingEngine.createTimer = function(time, repeat, callBack) {
-	flash.utils.FlashTimingEngine.lastID++;
-	if (flash.utils.FlashTimingEngine.availableObjects.length == 0)
-		flash.utils.FlashTimingEngine.availableObjects.push(new flash.utils.FlashTimingEngine$TimerObject(flash.utils.FlashTimingEngine.lastID, time, repeat, callBack));
-	var t = flash.utils.FlashTimingEngine.availableObjects.pop();
-	t.id = flash.utils.FlashTimingEngine.lastID;
-	t.time = time;
-	t.timeLeft = time;
-	t.repeat = repeat;
-	t.callBack = callBack;
-	flash.utils.FlashTimingEngine.currentTimers[flash.utils.FlashTimingEngine.lastID] = t;
-	return flash.utils.FlashTimingEngine.lastID;
-};
-
-flash.utils.FlashTimingEngine.addToPool = function(timerObject) {
-	flash.utils.FlashTimingEngine.availableObjects.push(timerObject);
-};
-
-flash.utils.FlashTimingEngine.stopTimer = function(key) {
-	flash.utils.FlashTimingEngine.addToPool(flash.utils.FlashTimingEngine.currentTimers[key]);
-	flash.utils.FlashTimingEngine.currentTimers[key] = null;
-	delete flash.utils.FlashTimingEngine.currentTimers[key];
-};
-
-flash.utils.FlashTimingEngine.logAPIWarning = function(msg) {
-	if (flash.utils.FlashTimingEngine.showAPIWarnings) {
-		console.log(msg + "\n" + new Error("", 0).stack);
+	if (this.debugEnabled) {
+		var dbgLine = "generated bytecode:";
+		var agalLength = this.get_agalcode().get_length();
+		for (var index = 0; index < agalLength; index++) {
+			if (!(index % 16))
+				dbgLine += "\n";
+			if (!(index % 4))
+				dbgLine += " ";
+			var byteStr = this.get_agalcode().getValueByPosition(index).toString(16);
+			if (byteStr.length < 2)
+				byteStr = "0" + byteStr;
+			dbgLine += byteStr;
+		}
+		trace(dbgLine);
 	}
+	if (this.verbose)
+		trace("AGALMiniAssembler.assemble time: " + ((flash.utils.getTimer() - start) / 1000) + "s");
+	return this.get_agalcode();
 };
 
-flash.utils.FlashTimingEngine.ENTER_EVENT = new flash.events.Event("enterFrame", false, false);
+com.adobe.utils.AGALMiniAssembler.init = function() {
+	com.adobe.utils.AGALMiniAssembler.initialized = true;
+	com.adobe.utils.AGALMiniAssembler.OPMAP["mov"] = new com.adobe.utils.AGALMiniAssembler$OpCode("mov", 2, 0x00, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["add"] = new com.adobe.utils.AGALMiniAssembler$OpCode("add", 3, 0x01, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sub"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sub", 3, 0x02, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["mul"] = new com.adobe.utils.AGALMiniAssembler$OpCode("mul", 3, 0x03, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["div"] = new com.adobe.utils.AGALMiniAssembler$OpCode("div", 3, 0x04, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["rcp"] = new com.adobe.utils.AGALMiniAssembler$OpCode("rcp", 2, 0x05, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["min"] = new com.adobe.utils.AGALMiniAssembler$OpCode("min", 3, 0x06, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["max"] = new com.adobe.utils.AGALMiniAssembler$OpCode("max", 3, 0x07, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["frc"] = new com.adobe.utils.AGALMiniAssembler$OpCode("frc", 2, 0x08, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sqt"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sqt", 2, 0x09, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["rsq"] = new com.adobe.utils.AGALMiniAssembler$OpCode("rsq", 2, 0x0a, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["pow"] = new com.adobe.utils.AGALMiniAssembler$OpCode("pow", 3, 0x0b, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["log"] = new com.adobe.utils.AGALMiniAssembler$OpCode("log", 2, 0x0c, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["exp"] = new com.adobe.utils.AGALMiniAssembler$OpCode("exp", 2, 0x0d, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["nrm"] = new com.adobe.utils.AGALMiniAssembler$OpCode("nrm", 2, 0x0e, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sin"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sin", 2, 0x0f, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["cos"] = new com.adobe.utils.AGALMiniAssembler$OpCode("cos", 2, 0x10, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["crs"] = new com.adobe.utils.AGALMiniAssembler$OpCode("crs", 3, 0x11, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["dp3"] = new com.adobe.utils.AGALMiniAssembler$OpCode("dp3", 3, 0x12, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["dp4"] = new com.adobe.utils.AGALMiniAssembler$OpCode("dp4", 3, 0x13, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["abs"] = new com.adobe.utils.AGALMiniAssembler$OpCode("abs", 2, 0x14, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["neg"] = new com.adobe.utils.AGALMiniAssembler$OpCode("neg", 2, 0x15, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sat"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sat", 2, 0x16, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["m33"] = new com.adobe.utils.AGALMiniAssembler$OpCode("m33", 3, 0x17, 16);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["m44"] = new com.adobe.utils.AGALMiniAssembler$OpCode("m44", 3, 0x18, 16);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["m34"] = new com.adobe.utils.AGALMiniAssembler$OpCode("m34", 3, 0x19, 16);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["ifz"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ifz", 1, 0x1a, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["inz"] = new com.adobe.utils.AGALMiniAssembler$OpCode("inz", 1, 0x1b, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["ife"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ife", 2, 0x1c, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["ine"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ine", 2, 0x1d, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["ifg"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ifg", 2, 0x1e, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["ifl"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ifl", 2, 0x1f, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["ieg"] = new com.adobe.utils.AGALMiniAssembler$OpCode("ieg", 2, 0x20, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["iel"] = new com.adobe.utils.AGALMiniAssembler$OpCode("iel", 2, 0x21, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["els"] = new com.adobe.utils.AGALMiniAssembler$OpCode("els", 0, 0x22, 128 | 2 | 4);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["eif"] = new com.adobe.utils.AGALMiniAssembler$OpCode("eif", 0, 0x23, 128 | 4);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["rep"] = new com.adobe.utils.AGALMiniAssembler$OpCode("rep", 1, 0x24, 128 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["erp"] = new com.adobe.utils.AGALMiniAssembler$OpCode("erp", 0, 0x25, 128 | 4);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["brk"] = new com.adobe.utils.AGALMiniAssembler$OpCode("brk", 0, 0x26, 128);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["kil"] = new com.adobe.utils.AGALMiniAssembler$OpCode("kil", 1, 0x27, 128 | 32);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["tex"] = new com.adobe.utils.AGALMiniAssembler$OpCode("tex", 3, 0x28, 32 | 8);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sge"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sge", 3, 0x29, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["slt"] = new com.adobe.utils.AGALMiniAssembler$OpCode("slt", 3, 0x2a, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sgn"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sgn", 2, 0x2b, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["seq"] = new com.adobe.utils.AGALMiniAssembler$OpCode("seq", 3, 0x2c, 0);
+	com.adobe.utils.AGALMiniAssembler.OPMAP["sne"] = new com.adobe.utils.AGALMiniAssembler$OpCode("sne", 3, 0x2d, 0);
+	com.adobe.utils.AGALMiniAssembler.REGMAP["va"] = new com.adobe.utils.AGALMiniAssembler$Register("va", "vertex attribute", 0x0, 7, 64 | 2);
+	com.adobe.utils.AGALMiniAssembler.REGMAP["vc"] = new com.adobe.utils.AGALMiniAssembler$Register("vc", "vertex constant", 0x1, 127, 64 | 2);
+	com.adobe.utils.AGALMiniAssembler.REGMAP["vt"] = new com.adobe.utils.AGALMiniAssembler$Register("vt", "vertex temporary", 0x2, 7, 64 | 1 | 2);
+	com.adobe.utils.AGALMiniAssembler.REGMAP[com.adobe.utils.AGALMiniAssembler.VO] = new com.adobe.utils.AGALMiniAssembler$Register(com.adobe.utils.AGALMiniAssembler.VO, "vertex output", 0x3, 0, 64 | 1);
+	com.adobe.utils.AGALMiniAssembler.REGMAP[com.adobe.utils.AGALMiniAssembler.I] = new com.adobe.utils.AGALMiniAssembler$Register(com.adobe.utils.AGALMiniAssembler.I, "varying", 0x4, 7, 64 | 32 | 2 | 1);
+	com.adobe.utils.AGALMiniAssembler.REGMAP["fc"] = new com.adobe.utils.AGALMiniAssembler$Register("fc", "fragment constant", 0x1, 27, 32 | 2);
+	com.adobe.utils.AGALMiniAssembler.REGMAP["ft"] = new com.adobe.utils.AGALMiniAssembler$Register("ft", "fragment temporary", 0x2, 7, 32 | 1 | 2);
+	com.adobe.utils.AGALMiniAssembler.REGMAP["fs"] = new com.adobe.utils.AGALMiniAssembler$Register("fs", "texture sampler", 0x5, 7, 32 | 2);
+	com.adobe.utils.AGALMiniAssembler.REGMAP[com.adobe.utils.AGALMiniAssembler.FO] = new com.adobe.utils.AGALMiniAssembler$Register(com.adobe.utils.AGALMiniAssembler.FO, "fragment output", 0x3, 0, 32 | 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["rgba"] = new com.adobe.utils.AGALMiniAssembler$Sampler("rgba", 8, 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["dxt1"] = new com.adobe.utils.AGALMiniAssembler$Sampler("dxt1", 8, 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["dxt5"] = new com.adobe.utils.AGALMiniAssembler$Sampler("dxt5", 8, 2);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["2d"] = new com.adobe.utils.AGALMiniAssembler$Sampler("2d", 12, 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["3d"] = new com.adobe.utils.AGALMiniAssembler$Sampler("3d", 12, 2);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["cube"] = new com.adobe.utils.AGALMiniAssembler$Sampler("cube", 12, 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["mipnearest"] = new com.adobe.utils.AGALMiniAssembler$Sampler("mipnearest", 24, 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["miplinear"] = new com.adobe.utils.AGALMiniAssembler$Sampler("miplinear", 24, 2);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["mipnone"] = new com.adobe.utils.AGALMiniAssembler$Sampler("mipnone", 24, 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["nomip"] = new com.adobe.utils.AGALMiniAssembler$Sampler("nomip", 24, 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["nearest"] = new com.adobe.utils.AGALMiniAssembler$Sampler("nearest", 28, 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["linear"] = new com.adobe.utils.AGALMiniAssembler$Sampler("linear", 28, 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic2x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic2x", 28, 2);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic4x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic4x", 28, 3);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic8x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic8x", 28, 4);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["anisotropic16x"] = new com.adobe.utils.AGALMiniAssembler$Sampler("anisotropic16x", 28, 5);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["centroid"] = new com.adobe.utils.AGALMiniAssembler$Sampler("centroid", 16, 1 << 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["single"] = new com.adobe.utils.AGALMiniAssembler$Sampler("single", 16, 1 << 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["depth"] = new com.adobe.utils.AGALMiniAssembler$Sampler("depth", 16, 1 << 2);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["repeat"] = new com.adobe.utils.AGALMiniAssembler$Sampler("repeat", 20, 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["wrap"] = new com.adobe.utils.AGALMiniAssembler$Sampler("wrap", 20, 1);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["clamp"] = new com.adobe.utils.AGALMiniAssembler$Sampler("clamp", 20, 0);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["clamp_u_repeat_v"] = new com.adobe.utils.AGALMiniAssembler$Sampler("clamp_u_repeat_v", 20, 2);
+	com.adobe.utils.AGALMiniAssembler.SAMPLEMAP["repeat_u_clamp_v"] = new com.adobe.utils.AGALMiniAssembler$Sampler("repeat_u_clamp_v", 20, 3);
+};
 
-flash.utils.FlashTimingEngine.TIMER_EVENT = new flash.events.TimerEvent("timer", false, false);
+com.adobe.utils.AGALMiniAssembler.OPMAP = new flash.utils.Dictionary(false);
 
-flash.utils.FlashTimingEngine.TIMER_COMPLETE_EVENT = new flash.events.TimerEvent("timerComplete", false, false);
+com.adobe.utils.AGALMiniAssembler.REGMAP = new flash.utils.Dictionary(false);
 
-flash.utils.FlashTimingEngine.root;
+com.adobe.utils.AGALMiniAssembler.SAMPLEMAP = new flash.utils.Dictionary(false);
 
-flash.utils.FlashTimingEngine.frameTime;
+com.adobe.utils.AGALMiniAssembler.MAX_NESTING = 4;
 
-flash.utils.FlashTimingEngine.framePerSecond;
+com.adobe.utils.AGALMiniAssembler.MAX_OPCODES = 256;
 
-flash.utils.FlashTimingEngine.startFrameTime = 0;
+com.adobe.utils.AGALMiniAssembler.FRAGMENT = "fragment";
 
-flash.utils.FlashTimingEngine.lastFrameTime = 0;
+com.adobe.utils.AGALMiniAssembler.VERTEX = "vertex";
 
-flash.utils.FlashTimingEngine.currentTimers = new flash.utils.Dictionary(false);
+com.adobe.utils.AGALMiniAssembler.SAMPLER_TYPE_SHIFT = 8;
 
-flash.utils.FlashTimingEngine.stopFlag = false;
+com.adobe.utils.AGALMiniAssembler.SAMPLER_DIM_SHIFT = 12;
 
-flash.utils.FlashTimingEngine.lastID = 0;
+com.adobe.utils.AGALMiniAssembler.SAMPLER_SPECIAL_SHIFT = 16;
 
-flash.utils.FlashTimingEngine.availableObjects = [];
+com.adobe.utils.AGALMiniAssembler.SAMPLER_REPEAT_SHIFT = 20;
 
-flash.utils.FlashTimingEngine.currentTime = 0;
+com.adobe.utils.AGALMiniAssembler.SAMPLER_MIPMAP_SHIFT = 24;
 
-flash.utils.FlashTimingEngine.showAPIWarnings = true;
+com.adobe.utils.AGALMiniAssembler.SAMPLER_FILTER_SHIFT = 28;
 
+com.adobe.utils.AGALMiniAssembler.REG_WRITE = 0x1;
 
-flash.utils.FlashTimingEngine.className = "flash.utils.FlashTimingEngine";
+com.adobe.utils.AGALMiniAssembler.REG_READ = 0x2;
 
-flash.utils.FlashTimingEngine.getRuntimeDependencies = function(t) {
+com.adobe.utils.AGALMiniAssembler.REG_FRAG = 0x20;
+
+com.adobe.utils.AGALMiniAssembler.REG_VERT = 0x40;
+
+com.adobe.utils.AGALMiniAssembler.OP_SCALAR = 0x1;
+
+com.adobe.utils.AGALMiniAssembler.OP_INC_NEST = 0x2;
+
+com.adobe.utils.AGALMiniAssembler.OP_DEC_NEST = 0x4;
+
+com.adobe.utils.AGALMiniAssembler.OP_SPECIAL_TEX = 0x8;
+
+com.adobe.utils.AGALMiniAssembler.OP_SPECIAL_MATRIX = 0x10;
+
+com.adobe.utils.AGALMiniAssembler.OP_FRAG_ONLY = 0x20;
+
+com.adobe.utils.AGALMiniAssembler.OP_NO_DEST = 0x80;
+
+com.adobe.utils.AGALMiniAssembler.MOV = "mov";
+
+com.adobe.utils.AGALMiniAssembler.ADD = "add";
+
+com.adobe.utils.AGALMiniAssembler.SUB = "sub";
+
+com.adobe.utils.AGALMiniAssembler.MUL = "mul";
+
+com.adobe.utils.AGALMiniAssembler.DIV = "div";
+
+com.adobe.utils.AGALMiniAssembler.RCP = "rcp";
+
+com.adobe.utils.AGALMiniAssembler.MIN = "min";
+
+com.adobe.utils.AGALMiniAssembler.MAX = "max";
+
+com.adobe.utils.AGALMiniAssembler.FRC = "frc";
+
+com.adobe.utils.AGALMiniAssembler.SQT = "sqt";
+
+com.adobe.utils.AGALMiniAssembler.RSQ = "rsq";
+
+com.adobe.utils.AGALMiniAssembler.POW = "pow";
+
+com.adobe.utils.AGALMiniAssembler.LOG = "log";
+
+com.adobe.utils.AGALMiniAssembler.EXP = "exp";
+
+com.adobe.utils.AGALMiniAssembler.NRM = "nrm";
+
+com.adobe.utils.AGALMiniAssembler.SIN = "sin";
+
+com.adobe.utils.AGALMiniAssembler.COS = "cos";
+
+com.adobe.utils.AGALMiniAssembler.CRS = "crs";
+
+com.adobe.utils.AGALMiniAssembler.DP3 = "dp3";
+
+com.adobe.utils.AGALMiniAssembler.DP4 = "dp4";
+
+com.adobe.utils.AGALMiniAssembler.ABS = "abs";
+
+com.adobe.utils.AGALMiniAssembler.NEG = "neg";
+
+com.adobe.utils.AGALMiniAssembler.SAT = "sat";
+
+com.adobe.utils.AGALMiniAssembler.M33 = "m33";
+
+com.adobe.utils.AGALMiniAssembler.M44 = "m44";
+
+com.adobe.utils.AGALMiniAssembler.M34 = "m34";
+
+com.adobe.utils.AGALMiniAssembler.IFZ = "ifz";
+
+com.adobe.utils.AGALMiniAssembler.INZ = "inz";
+
+com.adobe.utils.AGALMiniAssembler.IFE = "ife";
+
+com.adobe.utils.AGALMiniAssembler.INE = "ine";
+
+com.adobe.utils.AGALMiniAssembler.IFG = "ifg";
+
+com.adobe.utils.AGALMiniAssembler.IFL = "ifl";
+
+com.adobe.utils.AGALMiniAssembler.IEG = "ieg";
+
+com.adobe.utils.AGALMiniAssembler.IEL = "iel";
+
+com.adobe.utils.AGALMiniAssembler.ELS = "els";
+
+com.adobe.utils.AGALMiniAssembler.EIF = "eif";
+
+com.adobe.utils.AGALMiniAssembler.REP = "rep";
+
+com.adobe.utils.AGALMiniAssembler.ERP = "erp";
+
+com.adobe.utils.AGALMiniAssembler.BRK = "brk";
+
+com.adobe.utils.AGALMiniAssembler.KIL = "kil";
+
+com.adobe.utils.AGALMiniAssembler.TEX = "tex";
+
+com.adobe.utils.AGALMiniAssembler.SGE = "sge";
+
+com.adobe.utils.AGALMiniAssembler.SLT = "slt";
+
+com.adobe.utils.AGALMiniAssembler.SGN = "sgn";
+
+com.adobe.utils.AGALMiniAssembler.SEQ = "seq";
+
+com.adobe.utils.AGALMiniAssembler.SNE = "sne";
+
+com.adobe.utils.AGALMiniAssembler.VA = "va";
+
+com.adobe.utils.AGALMiniAssembler.VC = "vc";
+
+com.adobe.utils.AGALMiniAssembler.VT = "vt";
+
+com.adobe.utils.AGALMiniAssembler.VO = false ? "vo" : "op";
+
+com.adobe.utils.AGALMiniAssembler.I = false ? "i" : "v";
+
+com.adobe.utils.AGALMiniAssembler.FC = "fc";
+
+com.adobe.utils.AGALMiniAssembler.FT = "ft";
+
+com.adobe.utils.AGALMiniAssembler.FS = "fs";
+
+com.adobe.utils.AGALMiniAssembler.FO = false ? "fo" : "oc";
+
+com.adobe.utils.AGALMiniAssembler.D2 = "2d";
+
+com.adobe.utils.AGALMiniAssembler.D3 = "3d";
+
+com.adobe.utils.AGALMiniAssembler.CUBE = "cube";
+
+com.adobe.utils.AGALMiniAssembler.MIPNEAREST = "mipnearest";
+
+com.adobe.utils.AGALMiniAssembler.MIPLINEAR = "miplinear";
+
+com.adobe.utils.AGALMiniAssembler.MIPNONE = "mipnone";
+
+com.adobe.utils.AGALMiniAssembler.NOMIP = "nomip";
+
+com.adobe.utils.AGALMiniAssembler.NEAREST = "nearest";
+
+com.adobe.utils.AGALMiniAssembler.LINEAR = "linear";
+
+com.adobe.utils.AGALMiniAssembler.ANISOTROPIC2X = "anisotropic2x";
+
+com.adobe.utils.AGALMiniAssembler.ANISOTROPIC4X = "anisotropic4x";
+
+com.adobe.utils.AGALMiniAssembler.ANISOTROPIC8X = "anisotropic8x";
+
+com.adobe.utils.AGALMiniAssembler.ANISOTROPIC16X = "anisotropic16x";
+
+com.adobe.utils.AGALMiniAssembler.CENTROID = "centroid";
+
+com.adobe.utils.AGALMiniAssembler.SINGLE = "single";
+
+com.adobe.utils.AGALMiniAssembler.DEPTH = "depth";
+
+com.adobe.utils.AGALMiniAssembler.REPEAT = "repeat";
+
+com.adobe.utils.AGALMiniAssembler.WRAP = "wrap";
+
+com.adobe.utils.AGALMiniAssembler.CLAMP = "clamp";
+
+com.adobe.utils.AGALMiniAssembler.REPEAT_U_CLAMP_V = "repeat_u_clamp_v";
+
+com.adobe.utils.AGALMiniAssembler.CLAMP_U_REPEAT_V = "clamp_u_repeat_v";
+
+com.adobe.utils.AGALMiniAssembler.RGBA = "rgba";
+
+com.adobe.utils.AGALMiniAssembler.DXT1 = "dxt1";
+
+com.adobe.utils.AGALMiniAssembler.DXT5 = "dxt5";
+
+Object.defineProperty(com.adobe.utils.AGALMiniAssembler.prototype, 'agalcode', {
+  get: function() { return this.get_agalcode(); },
+  set: function(value) { return this.set_agalcode(value); }
+});
+Object.defineProperty(com.adobe.utils.AGALMiniAssembler.prototype, 'error', {
+  get: function() { return this.get_error(); },
+  set: function(value) { return this.set_error(value); }
+});
+
+com.adobe.utils.AGALMiniAssembler.className = "com.adobe.utils.AGALMiniAssembler";
+
+com.adobe.utils.AGALMiniAssembler.getRuntimeDependencies = function(t) {
 	var p;
 	p = [];
-	p.push('flash.events.MouseEvent');
 	p.push('trace');
-	p.push('flash.media.Sound');
-	p.push('flash.utils.FlashTimingEngine');
-	p.push('flash.utils.RequestAnimationFrame');
-	p.push('flash.display.Stage');
-	p.push('flash.net.URLRequest');
-	p.push('flash.system.Capabilities');
-	p.push('flash.display.BitmapData');
-	p.push('flash.events.EventDispatcher');
-	p.push('flash.events.Event');
+	p.push('flash.utils.ByteArray');
+	p.push('flash.utils.getTimer');
 	return p;
 };
 
-flash.utils.FlashTimingEngine.getStaticDependencies = function(t) {
+com.adobe.utils.AGALMiniAssembler.getStaticDependencies = function(t) {
 	var p;
 	p = [];
 	p.push('flash.utils.Dictionary');
-	p.push('flash.events.Event');
-	p.push('flash.events.TimerEvent');
 	return p;
 };
 
-flash.utils.FlashTimingEngine.injectionPoints = function(t) {
-	return [];
-};
-flash.utils.FlashTimingEngine$TimerObject = function(id, time, repeat, callBack) {
-	this.timeLeft = 0;
-	this.time = time;
-	this.timeLeft = time;
-	this.repeat = repeat;
-	this.callBack = callBack;
-};
-
-
-// ====================================================
-// flash.text.TextFormatAlign
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
-
-flash.text.TextFormatAlign = function() {
-};
-
-flash.text.TextFormatAlign.CENTER = "center";
-
-flash.text.TextFormatAlign.LEFT = "left";
-
-flash.text.TextFormatAlign.RIGHT = "right";
-
-
-flash.text.TextFormatAlign.className = "flash.text.TextFormatAlign";
-
-flash.text.TextFormatAlign.getRuntimeDependencies = function(t) {
+com.adobe.utils.AGALMiniAssembler.injectionPoints = function(t) {
 	var p;
-	return [];
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'debugging', t:'Boolean'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
 };
 
-flash.text.TextFormatAlign.getStaticDependencies = function(t) {
-	var p;
-	return [];
+com.adobe.utils.AGALMiniAssembler$OpCode = function(name, numRegister, emitCode, flags) {
+	this._numRegister = 0;
+	this._flags = 0;
+	this._name = null;
+	this._emitCode = 0;
+	this._name = name;
+	this._numRegister = numRegister;
+	this._emitCode = emitCode;
+	this._flags = flags;
 };
 
-flash.text.TextFormatAlign.injectionPoints = function(t) {
-	return [];
+com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_emitCode = function() {
+	return this._emitCode;
 };
+
+com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_flags = function() {
+	return this._flags;
+};
+
+com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_name = function() {
+	return this._name;
+};
+
+com.adobe.utils.AGALMiniAssembler$OpCode.prototype.get_numRegister = function() {
+	return this._numRegister;
+};
+
+com.adobe.utils.AGALMiniAssembler$OpCode.prototype.toString = function() {
+	return "[OpCode name=\"" + this._name + "\", numRegister=" + this._numRegister + ", emitCode=" + this._emitCode + ", flags=" + this._flags + "]";
+};
+
+com.adobe.utils.AGALMiniAssembler$Register = function(name, longName, emitCode, range, flags) {
+	this._name = null;
+	this._flags = 0;
+	this._emitCode = 0;
+	this._range = 0;
+	this._longName = null;
+	this._name = name;
+	this._longName = longName;
+	this._emitCode = emitCode;
+	this._range = range;
+	this._flags = flags;
+};
+
+com.adobe.utils.AGALMiniAssembler$Register.prototype.get_emitCode = function() {
+	return this._emitCode;
+};
+
+com.adobe.utils.AGALMiniAssembler$Register.prototype.get_longName = function() {
+	return this._longName;
+};
+
+com.adobe.utils.AGALMiniAssembler$Register.prototype.get_name = function() {
+	return this._name;
+};
+
+com.adobe.utils.AGALMiniAssembler$Register.prototype.get_flags = function() {
+	return this._flags;
+};
+
+com.adobe.utils.AGALMiniAssembler$Register.prototype.get_range = function() {
+	return this._range;
+};
+
+com.adobe.utils.AGALMiniAssembler$Register.prototype.toString = function() {
+	return "[Register name=\"" + this._name + "\", longName=\"" + this._longName + "\", emitCode=" + this._emitCode + ", range=" + this._range + ", flags=" + this._flags + "]";
+};
+
+com.adobe.utils.AGALMiniAssembler$Sampler = function(name, flag, mask) {
+	this._flag = 0;
+	this._name = null;
+	this._mask = 0;
+	this._name = name;
+	this._flag = flag;
+	this._mask = mask;
+};
+
+com.adobe.utils.AGALMiniAssembler$Sampler.prototype.get_flag = function() {
+	return this._flag;
+};
+
+com.adobe.utils.AGALMiniAssembler$Sampler.prototype.get_mask = function() {
+	return this._mask;
+};
+
+com.adobe.utils.AGALMiniAssembler$Sampler.prototype.get_name = function() {
+	return this._name;
+};
+
+com.adobe.utils.AGALMiniAssembler$Sampler.prototype.toString = function() {
+	return "[Sampler name=\"" + this._name + "\", flag=\"" + this._flag + "\", mask=" + this.get_mask() + "]";
+};
+
 
 // ====================================================
-// mx.core.SoundAsset
-// ====================================================
-
-if (typeof mx == "undefined")
-	var mx = {};
-if (typeof mx.core == "undefined")
-	mx.core = {};
-
-mx.core.SoundAsset = function() {
-};
-
-
-mx.core.SoundAsset.className = "mx.core.SoundAsset";
-
-mx.core.SoundAsset.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-mx.core.SoundAsset.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-mx.core.SoundAsset.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.ui.Keyboard
-// ====================================================
-
-if (typeof flash == "undefined")
-	var flash = {};
-if (typeof flash.ui == "undefined")
-	flash.ui = {};
-
-flash.ui.Keyboard = function() {
-};
-
-flash.ui.Keyboard.A = 65;
-
-flash.ui.Keyboard.B = 66;
-
-flash.ui.Keyboard.BACKQUOTE = 192;
-
-flash.ui.Keyboard.BACKSPACE = 8;
-
-flash.ui.Keyboard.BACKSLASH = 220;
-
-flash.ui.Keyboard.C = 67;
-
-flash.ui.Keyboard.D = 68;
-
-flash.ui.Keyboard.E = 69;
-
-flash.ui.Keyboard.END = 35;
-
-flash.ui.Keyboard.F = 70;
-
-flash.ui.Keyboard.G = 71;
-
-flash.ui.Keyboard.H = 72;
-
-flash.ui.Keyboard.HOME = 36;
-
-flash.ui.Keyboard.I = 73;
-
-flash.ui.Keyboard.J = 74;
-
-flash.ui.Keyboard.K = 75;
-
-flash.ui.Keyboard.L = 76;
-
-flash.ui.Keyboard.M = 77;
-
-flash.ui.Keyboard.N = 78;
-
-flash.ui.Keyboard.NUMBER_0 = 48;
-
-flash.ui.Keyboard.NUMBER_9 = 57;
-
-flash.ui.Keyboard.O = 79;
-
-flash.ui.Keyboard.P = 80;
-
-flash.ui.Keyboard.Q = 81;
-
-flash.ui.Keyboard.R = 82;
-
-flash.ui.Keyboard.S = 83;
-
-flash.ui.Keyboard.SPACE = 32;
-
-flash.ui.Keyboard.T = 84;
-
-flash.ui.Keyboard.U = 85;
-
-flash.ui.Keyboard.V = 86;
-
-flash.ui.Keyboard.W = 87;
-
-flash.ui.Keyboard.X = 88;
-
-flash.ui.Keyboard.Y = 89;
-
-flash.ui.Keyboard.Z = 90;
-
-flash.ui.Keyboard.ENTER = 13;
-
-flash.ui.Keyboard.RIGHT = 39;
-
-flash.ui.Keyboard.LEFT = 37;
-
-flash.ui.Keyboard.DOWN = 40;
-
-flash.ui.Keyboard.UP = 38;
-
-flash.ui.Keyboard.TAB = 9;
-
-flash.ui.Keyboard.CONTROL = 17;
-
-flash.ui.Keyboard.ESCAPE = 27;
-
-flash.ui.Keyboard.capsLock = false;
-
-flash.ui.Keyboard.numLock = false;
-
-flash.ui.Keyboard.hasVirtualKeyboard = false;
-
-
-flash.ui.Keyboard.className = "flash.ui.Keyboard";
-
-flash.ui.Keyboard.getRuntimeDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.Keyboard.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.ui.Keyboard.injectionPoints = function(t) {
-	return [];
-};
-
-// ====================================================
-// flash.display3D.Context3DProgramType
+// flash.media.SoundMixer
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.display3D == "undefined")
-	flash.display3D = {};
+if (typeof flash.media == "undefined")
+	flash.media = {};
 
-flash.display3D.Context3DProgramType = function() {
+flash.media.SoundMixer = function() {
 };
 
-flash.display3D.Context3DProgramType.FRAGMENT = "fragment";
+flash.media.SoundMixer.stopAll = function() {
+	var $n0;
+	for (var $v0 in ($n0 = flash.media.SoundMixer.soundTransformInstance.transforms)){
+		var transform = $n0[$v0];
+		if (transform.buffer)
+			transform.buffer.stop(0);
+	}
+};
 
-flash.display3D.Context3DProgramType.VERTEX = "vertex";
+flash.media.SoundMixer.cache = {};
+
+flash.media.SoundMixer.ctx = null;
+
+flash.media.SoundMixer.usingWebAudio = true;
+
+flash.media.SoundMixer.noAudio = false;
+
+flash.media.SoundMixer.codecs = {};
+
+flash.media.SoundMixer.masterGain;
+
+flash.media.SoundMixer.soundTransformInstance;
+
+flash.media.SoundMixer.get_soundTransform = function() {
+	if (!flash.media.SoundMixer.soundTransformInstance) {
+		if (typeof(AudioContext) !== "undefined") {
+			flash.media.SoundMixer.ctx = new webkitAudioContext();
+		} else if (typeof(webkitAudioContext) !== "undefined") {
+			flash.media.SoundMixer.ctx = new webkitAudioContext();
+		} else if (typeof(Audio) !== "undefined") {
+			flash.media.SoundMixer.usingWebAudio = false;
+		} else {
+			flash.media.SoundMixer.usingWebAudio = false;
+			flash.media.SoundMixer.noAudio = true;
+		}
+		if (flash.media.SoundMixer.usingWebAudio) {
+			flash.media.SoundMixer.masterGain = (typeof(flash.media.SoundMixer.ctx.createGain) === "undefined") ? flash.media.SoundMixer.ctx.createGainNode() : flash.media.SoundMixer.ctx.createGain();
+			flash.media.SoundMixer.masterGain.gain.value = 1;
+			flash.media.SoundMixer.masterGain.connect(flash.media.SoundMixer.ctx.destination);
+		}
+		var audioTest = null;
+		if (!flash.media.SoundMixer.noAudio) {
+			audioTest = new Audio();
+			flash.media.SoundMixer.codecs = {mp3:!!audioTest.canPlayType("audio\/mpeg;").replace(/^no$/, ""), opus:!!audioTest.canPlayType("audio\/ogg; codecs=\"opus\"").replace(/^no$/, ""), ogg:!!audioTest.canPlayType("audio\/ogg; codecs=\"vorbis\"").replace(/^no$/, ""), wav:!!audioTest.canPlayType("audio\/wav; codecs=\"1\"").replace(/^no$/, ""), m4a:!!(audioTest.canPlayType("audio\/x-m4a;") || audioTest.canPlayType("audio\/aac;")).replace(/^no$/, ""), webm:!!audioTest.canPlayType("audio\/webm; codecs=\"vorbis\"").replace(/^no$/, "")};
+		}
+		flash.media.SoundMixer.soundTransformInstance = new flash.media.SoundTransform(1, 0);
+	}
+	return flash.media.SoundMixer.soundTransformInstance;
+};
+
+flash.media.SoundMixer.getGainNode = function() {
+	var node = (typeof(flash.media.SoundMixer.ctx.createGain) === "undefined") ? flash.media.SoundMixer.ctx.createGainNode() : flash.media.SoundMixer.ctx.createGain();
+	return node;
+};
 
 
-flash.display3D.Context3DProgramType.className = "flash.display3D.Context3DProgramType";
+flash.media.SoundMixer.className = "flash.media.SoundMixer";
 
-flash.display3D.Context3DProgramType.getRuntimeDependencies = function(t) {
+flash.media.SoundMixer.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.media.SoundTransform');
+	return p;
+};
+
+flash.media.SoundMixer.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display3D.Context3DProgramType.getStaticDependencies = function(t) {
-	var p;
-	return [];
-};
-
-flash.display3D.Context3DProgramType.injectionPoints = function(t) {
+flash.media.SoundMixer.injectionPoints = function(t) {
 	return [];
 };
 
 // ====================================================
-// flash.ui.MultitouchInputMode
+// flash.geom.Point
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.ui == "undefined")
-	flash.ui = {};
+if (typeof flash.geom == "undefined")
+	flash.geom = {};
 
-flash.ui.MultitouchInputMode = function() {
+flash.geom.Point = function(x, y) {
+	this.x = x;
+	this.y = y;
 };
 
-flash.ui.MultitouchInputMode.GESTURE = "gesture";
+flash.geom.Point.interpolate = function(pt1, pt2, f) {
+	var xDis = (pt2.x - pt1.x);
+	var yDis = (pt2.y - pt1.y);
+	return new flash.geom.Point(pt1.x + (xDis * f), pt1.y + (xDis * f));
+};
 
-flash.ui.MultitouchInputMode.NONE = "none";
+flash.geom.Point.distance = function(pt1, pt2) {
+	var a = pt1.x - pt2.x;
+	var b = pt1.y - pt2.y;
+	return Math.sqrt(a * a + b * b);
+};
 
-flash.ui.MultitouchInputMode.TOUCH_POINT = "touchPoint";
+flash.geom.Point.prototype.clone = function() {
+	return new flash.geom.Point(this.x, this.y);
+};
 
+flash.geom.Point.prototype.normalize = function(thickness) {
+};
 
-flash.ui.MultitouchInputMode.className = "flash.ui.MultitouchInputMode";
+flash.geom.Point.prototype.get_length = function() {
+	return Math.sqrt(this.x * this.x + this.y * this.y);
+};
 
-flash.ui.MultitouchInputMode.getRuntimeDependencies = function(t) {
+flash.geom.Point.prototype.add = function(v) {
+	return new flash.geom.Point(this.x + v.x, this.y + v.y);
+};
+
+flash.geom.Point.prototype.subtract = function(v) {
+	return new flash.geom.Point(this.x - v.x, this.y - v.y);
+};
+
+flash.geom.Point.prototype.equals = function(toCompare) {
+	return (this.x == toCompare.x && this.y == toCompare.y);
+};
+
+flash.geom.Point.prototype.toString = function() {
+	return "Point";
+};
+
+flash.geom.Point.prototype.setTo = function(xa, ya) {
+	this.x = xa;
+	this.y = ya;
+};
+
+Object.defineProperty(flash.geom.Point.prototype, 'length', {
+  get: function() { return this.get_length(); },
+  set: function(value) { return this.set_length(value); }
+});
+
+flash.geom.Point.className = "flash.geom.Point";
+
+flash.geom.Point.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.ui.MultitouchInputMode.getStaticDependencies = function(t) {
+flash.geom.Point.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.ui.MultitouchInputMode.injectionPoints = function(t) {
+flash.geom.Point.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'x', t:'Number'});
+			p.push({n:'y', t:'Number'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.display.GraphicsGradientFill
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.GraphicsGradientFill = function() {
+this.colors = null;
+this.matrix = null;
+};
+
+
+flash.display.GraphicsGradientFill.className = "flash.display.GraphicsGradientFill";
+
+flash.display.GraphicsGradientFill.getRuntimeDependencies = function(t) {
+	var p;
 	return [];
 };
+
+flash.display.GraphicsGradientFill.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.GraphicsGradientFill.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.system.Capabilities
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.system == "undefined")
+	flash.system = {};
+
+flash.system.Capabilities = function() {
+};
+
+flash.system.Capabilities.version = "1.0.0";
+
+flash.system.Capabilities.os = "mockapi";
+
+flash.system.Capabilities.screenDPI = 1;
+
+flash.system.Capabilities.screenResolutionX = 100;
+
+flash.system.Capabilities.screenResolutionY = 100;
+
+flash.system.Capabilities.isDebugger = false;
+
+flash.system.Capabilities.playerType = "js";
+
+flash.system.Capabilities.manufacturer = "Unknown OS";
+
+
+flash.system.Capabilities.className = "flash.system.Capabilities";
+
+flash.system.Capabilities.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.Capabilities.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.Capabilities.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.geom.Transform
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.geom == "undefined")
+	flash.geom = {};
+
+flash.geom.Transform = function() {
+this.matrix = new flash.geom.Matrix(1, 0, 0, 1, 0, 0);
+this.worldMatrix = new flash.geom.Matrix(1, 0, 0, 1, 0, 0);
+this.target = null;
+this.colorTransform = null;
+};
+
+
+flash.geom.Transform.className = "flash.geom.Transform";
+
+flash.geom.Transform.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.geom.Transform.getStaticDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.geom.Matrix');
+	return p;
+};
+
+flash.geom.Transform.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.BitmapDataChannel
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.BitmapDataChannel = function() {
+	
+};
+
+flash.display.BitmapDataChannel.ALPHA = 8;
+
+flash.display.BitmapDataChannel.BLUE = 4;
+
+flash.display.BitmapDataChannel.GREEN = 2;
+
+flash.display.BitmapDataChannel.RED = 1;
+
+
+flash.display.BitmapDataChannel.className = "flash.display.BitmapDataChannel";
+
+flash.display.BitmapDataChannel.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.BitmapDataChannel.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.BitmapDataChannel.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.events.Event
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.Event = function(type, bubbles, cancelable) {
+	this._bubbles = null;
+	this._cancelable = null;
+	this._type = "";
+	this.target = null;
+	this.currentTarget = null;
+	this._type = type;
+	this._bubbles = bubbles;
+	this._cancelable = cancelable;
+};
+
+flash.events.Event.ACTIVATE = "activate";
+
+flash.events.Event.ADDED_TO_STAGE = "addedToStage";
+
+flash.events.Event.CLOSE = "close";
+
+flash.events.Event.OPEN = "open";
+
+flash.events.Event.COMPLETE = "complete";
+
+flash.events.Event.CONNECT = "connect";
+
+flash.events.Event.CHANGE = "change";
+
+flash.events.Event.ADDED = "added";
+
+flash.events.Event.ENTER_FRAME = "enterFrame";
+
+flash.events.Event.FULLSCREEN = "fullScreen";
+
+flash.events.Event.REMOVED_FROM_STAGE = "removedFromStage";
+
+flash.events.Event.REMOVED = "removed";
+
+flash.events.Event.RENDER = "render";
+
+flash.events.Event.RESIZE = "resize";
+
+flash.events.Event.MOUSE_LEAVE = "mouseLeave";
+
+flash.events.Event.SOUND_COMPLETE = "soundComplete";
+
+flash.events.Event.CONTEXT3D_CREATE = "context3DCreate";
+
+flash.events.Event.prototype.get_type = function() {
+	return this._type;
+};
+
+flash.events.Event.prototype.get_bubbles = function() {
+	return this._bubbles;
+};
+
+flash.events.Event.prototype.get_cancelable = function() {
+	return this._cancelable;
+};
+
+flash.events.Event.prototype.clone = function() {
+	return new flash.events.Event(this.get_type(), false, false);
+};
+
+flash.events.Event.prototype.preventDefault = function() {
+};
+
+flash.events.Event.prototype.toString = function() {
+	return "";
+};
+
+Object.defineProperty(flash.events.Event.prototype, 'cancelable', {
+  get: function() { return this.get_cancelable(); },
+  set: function(value) { return this.set_cancelable(value); }
+});
+Object.defineProperty(flash.events.Event.prototype, 'bubbles', {
+  get: function() { return this.get_bubbles(); },
+  set: function(value) { return this.set_bubbles(value); }
+});
+Object.defineProperty(flash.events.Event.prototype, 'type', {
+  get: function() { return this.get_type(); },
+  set: function(value) { return this.set_type(value); }
+});
+
+flash.events.Event.className = "flash.events.Event";
+
+flash.events.Event.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.Event.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.Event.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.ErrorEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.ErrorEvent = function(type, bubbles, cancelable, text, id) {
+	this._errorID = 0;
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.text = text;
+	this._errorID = id;
+};
+
+flash.events.ErrorEvent.ERROR = "error";
+
+flash.events.ErrorEvent.prototype.get_errorID = function() {
+	return this._errorID;
+};
+
+Object.defineProperty(flash.events.ErrorEvent.prototype, 'errorID', {
+  get: function() { return this.get_errorID(); },
+  set: function(value) { return this.set_errorID(value); }
+});
+
+$inherit(flash.events.ErrorEvent, flash.events.Event);
+
+flash.events.ErrorEvent.className = "flash.events.ErrorEvent";
+
+flash.events.ErrorEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ErrorEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ErrorEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'text', t:'String'});
+			p.push({n:'id', t:'int'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.SecurityErrorEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.SecurityErrorEvent = function(type, bubbles, cancelable, text, id) {
+	flash.events.ErrorEvent.call(this, type, bubbles, cancelable, text, id);
+};
+
+flash.events.SecurityErrorEvent.SECURITY_ERROR = "securityError";
+
+
+$inherit(flash.events.SecurityErrorEvent, flash.events.ErrorEvent);
+
+flash.events.SecurityErrorEvent.className = "flash.events.SecurityErrorEvent";
+
+flash.events.SecurityErrorEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.SecurityErrorEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.SecurityErrorEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'text', t:'String'});
+			p.push({n:'id', t:'int'});
+			break;
+		case 1:
+			p = flash.events.ErrorEvent.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.ErrorEvent.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.ErrorEvent.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.AsyncErrorEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.AsyncErrorEvent = function(type, bubbles, cancelable, text, id) {
+	flash.events.ErrorEvent.call(this, type, bubbles, cancelable, text, id);
+};
+
+flash.events.AsyncErrorEvent.ASYNC_ERROR = "asyncError";
+
+
+$inherit(flash.events.AsyncErrorEvent, flash.events.ErrorEvent);
+
+flash.events.AsyncErrorEvent.className = "flash.events.AsyncErrorEvent";
+
+flash.events.AsyncErrorEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.AsyncErrorEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.AsyncErrorEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'text', t:'String'});
+			p.push({n:'id', t:'int'});
+			break;
+		case 1:
+			p = flash.events.ErrorEvent.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.ErrorEvent.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.ErrorEvent.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.KeyboardEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.KeyboardEvent = function(type, bubbles, cancelable, charCodeValue, keyCodeValue, keyLocationValue, ctrlKeyValue, altKeyValue, shiftKeyValue, controlKeyValue, commandKeyValue) {
+	this.keyCode = 0;
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.keyCode = keyCodeValue;
+};
+
+flash.events.KeyboardEvent.KEY_UP = "keyUp";
+
+flash.events.KeyboardEvent.KEY_DOWN = "keyDown";
+
+
+$inherit(flash.events.KeyboardEvent, flash.events.Event);
+
+flash.events.KeyboardEvent.className = "flash.events.KeyboardEvent";
+
+flash.events.KeyboardEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.KeyboardEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.KeyboardEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'charCodeValue', t:'uint'});
+			p.push({n:'keyCodeValue', t:'uint'});
+			p.push({n:'keyLocationValue', t:'uint'});
+			p.push({n:'ctrlKeyValue', t:'Boolean'});
+			p.push({n:'altKeyValue', t:'Boolean'});
+			p.push({n:'shiftKeyValue', t:'Boolean'});
+			p.push({n:'controlKeyValue', t:'Boolean'});
+			p.push({n:'commandKeyValue', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.TextEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.TextEvent = function(type, bubbles, cancelable, text) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.text = text;
+};
+
+flash.events.TextEvent.LINK = "link";
+
+flash.events.TextEvent.TEXT_INPUT = "textInput";
+
+
+$inherit(flash.events.TextEvent, flash.events.Event);
+
+flash.events.TextEvent.className = "flash.events.TextEvent";
+
+flash.events.TextEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.TextEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.TextEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'text', t:'String'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.NetStatusEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.NetStatusEvent = function(type, bubbles, cancelable) {
+	this.info = {};
+	flash.events.Event.call(this, type, bubbles, cancelable);
+};
+
+flash.events.NetStatusEvent.NET_STATUS = "netStatus";
+
+
+$inherit(flash.events.NetStatusEvent, flash.events.Event);
+
+flash.events.NetStatusEvent.className = "flash.events.NetStatusEvent";
+
+flash.events.NetStatusEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.NetStatusEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.NetStatusEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.ContextMenuEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.ContextMenuEvent = function(type, bubbles, cancelable) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+};
+
+flash.events.ContextMenuEvent.MENU_ITEM_SELECT = "menuItemSelect";
+
+
+$inherit(flash.events.ContextMenuEvent, flash.events.Event);
+
+flash.events.ContextMenuEvent.className = "flash.events.ContextMenuEvent";
+
+flash.events.ContextMenuEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ContextMenuEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ContextMenuEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.ActivityEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.ActivityEvent = function(type, bubbles, cancelable, activating) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+};
+
+
+$inherit(flash.events.ActivityEvent, flash.events.Event);
+
+flash.events.ActivityEvent.className = "flash.events.ActivityEvent";
+
+flash.events.ActivityEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ActivityEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ActivityEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'activating', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.FullScreenEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.FullScreenEvent = function(type, bubbles, cancelable, fullScreen) {
+	flash.events.ActivityEvent.call(this, type, bubbles, cancelable, false);
+};
+
+flash.events.FullScreenEvent.FULL_SCREEN = "fullScreen";
+
+
+$inherit(flash.events.FullScreenEvent, flash.events.ActivityEvent);
+
+flash.events.FullScreenEvent.className = "flash.events.FullScreenEvent";
+
+flash.events.FullScreenEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.FullScreenEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.FullScreenEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'fullScreen', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.ActivityEvent.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.ActivityEvent.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.ActivityEvent.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.IOErrorEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.IOErrorEvent = function(type, bubbles, cancelable, text, id) {
+	this._errorID = 0;
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.text = text;
+	this._errorID = id;
+};
+
+flash.events.IOErrorEvent.IO_ERROR = "ioError";
+
+flash.events.IOErrorEvent.NETWORK_ERROR = "networkError";
+
+flash.events.IOErrorEvent.prototype.get_errorID = function() {
+	return this._errorID;
+};
+
+Object.defineProperty(flash.events.IOErrorEvent.prototype, 'errorID', {
+  get: function() { return this.get_errorID(); },
+  set: function(value) { return this.set_errorID(value); }
+});
+
+$inherit(flash.events.IOErrorEvent, flash.events.Event);
+
+flash.events.IOErrorEvent.className = "flash.events.IOErrorEvent";
+
+flash.events.IOErrorEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.IOErrorEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.IOErrorEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'text', t:'String'});
+			p.push({n:'id', t:'int'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.TimerEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.TimerEvent = function(type, bubbles, cancelable) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+};
+
+flash.events.TimerEvent.TIMER = "timer";
+
+flash.events.TimerEvent.TIMER_COMPLETE = "timerComplete";
+
+
+$inherit(flash.events.TimerEvent, flash.events.Event);
+
+flash.events.TimerEvent.className = "flash.events.TimerEvent";
+
+flash.events.TimerEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.TimerEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.TimerEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.TouchEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.TouchEvent = function(type, bubbles, cancelable, touchPointID, isPrimaryTouchPoint, localX, localY, sizeX, sizeY, pressure, relatedObject, ctrlKey, altKey, shiftKey, commandKey, controlKey, timestamp, touchIntent, samples, isTouchPointCanceled) {
+	this.stageY = 0;
+	this.stageX = 0;
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.pressure = pressure;
+	this.sizeX = sizeX;
+	this.sizeY = sizeY;
+	this.touchPointID = touchPointID;
+	this.isPrimaryTouchPoint = isPrimaryTouchPoint;
+};
+
+flash.events.TouchEvent.TOUCH_BEGIN = "touchBegin";
+
+flash.events.TouchEvent.TOUCH_END = "touchEnd";
+
+flash.events.TouchEvent.TOUCH_MOVE = "touchMove";
+
+
+$inherit(flash.events.TouchEvent, flash.events.Event);
+
+flash.events.TouchEvent.className = "flash.events.TouchEvent";
+
+flash.events.TouchEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.TouchEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.TouchEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'touchPointID', t:'int'});
+			p.push({n:'isPrimaryTouchPoint', t:'Boolean'});
+			p.push({n:'localX', t:'Number'});
+			p.push({n:'localY', t:'Number'});
+			p.push({n:'sizeX', t:'Number'});
+			p.push({n:'sizeY', t:'Number'});
+			p.push({n:'pressure', t:'Number'});
+			p.push({n:'relatedObject', t:'flash.display.InteractiveObject'});
+			p.push({n:'ctrlKey', t:'Boolean'});
+			p.push({n:'altKey', t:'Boolean'});
+			p.push({n:'shiftKey', t:'Boolean'});
+			p.push({n:'commandKey', t:'Boolean'});
+			p.push({n:'controlKey', t:'Boolean'});
+			p.push({n:'timestamp', t:'Number'});
+			p.push({n:'touchIntent', t:'String'});
+			p.push({n:'samples', t:'flash.utils.ByteArray'});
+			p.push({n:'isTouchPointCanceled', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.MouseEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.MouseEvent = function(type, bubbles, cancelable, localX, localY, relatedObject, ctrlKey, altKey, shiftKey, buttonDown, delta, commandKey, controlKey, clickCount) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.localX = localX;
+	this.localY = localY;
+};
+
+flash.events.MouseEvent.CLICK = "click";
+
+flash.events.MouseEvent.MOUSE_DOWN = "mouseDown";
+
+flash.events.MouseEvent.MOUSE_MOVE = "mouseMove";
+
+flash.events.MouseEvent.MOUSE_UP = "mouseUp";
+
+flash.events.MouseEvent.MOUSE_OVER = "mouseOver";
+
+flash.events.MouseEvent.MOUSE_OUT = "mouseOut";
+
+flash.events.MouseEvent.ROLL_OVER = "rollOver";
+
+flash.events.MouseEvent.ROLL_OUT = "rollOut";
+
+flash.events.MouseEvent.MOUSE_WHEEL = "mouseWheel";
+
+flash.events.MouseEvent.prototype.get_stageX = function() {
+	return this.localX;
+};
+
+flash.events.MouseEvent.prototype.get_stageY = function() {
+	return this.localY;
+};
+
+Object.defineProperty(flash.events.MouseEvent.prototype, 'stageY', {
+  get: function() { return this.get_stageY(); },
+  set: function(value) { return this.set_stageY(value); }
+});
+Object.defineProperty(flash.events.MouseEvent.prototype, 'stageX', {
+  get: function() { return this.get_stageX(); },
+  set: function(value) { return this.set_stageX(value); }
+});
+
+$inherit(flash.events.MouseEvent, flash.events.Event);
+
+flash.events.MouseEvent.className = "flash.events.MouseEvent";
+
+flash.events.MouseEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.MouseEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.MouseEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'localX', t:'Number'});
+			p.push({n:'localY', t:'Number'});
+			p.push({n:'relatedObject', t:'flash.display.InteractiveObject'});
+			p.push({n:'ctrlKey', t:'Boolean'});
+			p.push({n:'altKey', t:'Boolean'});
+			p.push({n:'shiftKey', t:'Boolean'});
+			p.push({n:'buttonDown', t:'Boolean'});
+			p.push({n:'delta', t:'int'});
+			p.push({n:'commandKey', t:'Boolean'});
+			p.push({n:'controlKey', t:'Boolean'});
+			p.push({n:'clickCount', t:'int'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.FocusEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.FocusEvent = function(type, bubbles, cancelable) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+};
+
+flash.events.FocusEvent.FOCUS_IN = "focusIn";
+
+flash.events.FocusEvent.FOCUS_OUT = "focusOut";
+
+
+$inherit(flash.events.FocusEvent, flash.events.Event);
+
+flash.events.FocusEvent.className = "flash.events.FocusEvent";
+
+flash.events.FocusEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.FocusEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.FocusEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.events.ProgressEvent
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.events == "undefined")
+	flash.events = {};
+
+flash.events.ProgressEvent = function(type, bubbles, cancelable, bytesLoaded, bytesTotal) {
+	flash.events.Event.call(this, type, bubbles, cancelable);
+	this.bytesLoaded = bytesLoaded;
+	this.bytesTotal = bytesTotal;
+};
+
+flash.events.ProgressEvent.PROGRESS = "progress";
+
+flash.events.ProgressEvent.SOCKET_DATA = "socketData";
+
+
+$inherit(flash.events.ProgressEvent, flash.events.Event);
+
+flash.events.ProgressEvent.className = "flash.events.ProgressEvent";
+
+flash.events.ProgressEvent.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ProgressEvent.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.events.ProgressEvent.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'String'});
+			p.push({n:'bubbles', t:'Boolean'});
+			p.push({n:'cancelable', t:'Boolean'});
+			p.push({n:'bytesLoaded', t:'Number'});
+			p.push({n:'bytesTotal', t:'Number'});
+			break;
+		case 1:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.events.Event.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// GuiceInjectorBootstrap
+// ====================================================
+
+
+GuiceInjectorBootstrap = function(mainClassName, dynamicClassBaseUrl) {
+	this.mainClassName = mainClassName;
+	this.dynamicClassBaseUrl = dynamicClassBaseUrl;
+};
+
+GuiceInjectorBootstrap.prototype.launch = function(bgcolor, width, height, frameRate) {
+	var urlRewriter = new guice.loader.URLRewriterBase(false);
+	var loader = new guice.loader.SynchronousClassLoader(new XMLHttpRequest(), urlRewriter, this.dynamicClassBaseUrl);
+	var guiceJs = new guice.GuiceJs(loader);
+	var injector = guiceJs.createInjector(null);
+	var classBuilder = injector.getInstance(guice.InjectionClassBuilder);
+	var obj2 = classBuilder.buildClass("flash.utils.FlashEmbed");
+	var obj = classBuilder.buildClass(this.mainClassName);
+	if (bgcolor && bgcolor.indexOf("#", 0) > -1)
+		bgcolor = "0x" + bgcolor.substring(1, bgcolor.length);
+	flash.utils.FlashTimingEngine.start(obj, frameRate, width, height, bgcolor);
+};
+
+
+GuiceInjectorBootstrap.className = "GuiceInjectorBootstrap";
+
+GuiceInjectorBootstrap.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('guice.loader.SynchronousClassLoader');
+	p.push('flash.utils.FlashTimingEngine');
+	p.push('guice.loader.URLRewriterBase');
+	p.push('guice.GuiceJs');
+	p.push('guice.InjectionClassBuilder');
+	return p;
+};
+
+GuiceInjectorBootstrap.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+GuiceInjectorBootstrap.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'mainClassName', t:'String'});
+			p.push({n:'dynamicClassBaseUrl', t:'String'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.utils.Embed
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.utils == "undefined")
+	flash.utils = {};
+
+flash.utils.Embed = function(metadata) {
+	this.mimeType = "";
+	this.source = "";
+	this.metadata = metadata;
+	if (metadata.source)
+		this.source = metadata.source;
+	if (metadata.mimeType)
+		this.source = metadata.mimeType;
+};
+
+flash.utils.Embed.createClass = function(metadata) {
+	return metadata;
+};
+
+
+flash.utils.Embed.className = "flash.utils.Embed";
+
+flash.utils.Embed.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.utils.Embed.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.utils.Embed.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'metadata', t:'Object'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.globalization.DateTimeFormatter
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.globalization == "undefined")
+	flash.globalization = {};
+
+flash.globalization.DateTimeFormatter = function(requestedLocaleIDName, dateStyle, timeStyle) {
+};
+
+flash.globalization.DateTimeFormatter.prototype.getMonthNames = function(nameStyle, context) {
+	var months = [];
+	months.push("January");
+	months.push("February");
+	months.push("March");
+	months.push("April");
+	months.push("May");
+	months.push("June");
+	months.push("July");
+	months.push("August");
+	months.push("Spetember");
+	months.push("October");
+	months.push("November");
+	months.push("December");
+	return months;
+};
+
+
+flash.globalization.DateTimeFormatter.className = "flash.globalization.DateTimeFormatter";
+
+flash.globalization.DateTimeFormatter.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.globalization.DateTimeFormatter.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.globalization.DateTimeFormatter.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'requestedLocaleIDName', t:'String'});
+			p.push({n:'dateStyle', t:'String'});
+			p.push({n:'timeStyle', t:'String'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.display.LineScaleMode
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.LineScaleMode = function() {
+};
+
+flash.display.LineScaleMode.NONE = "none";
+
+
+flash.display.LineScaleMode.className = "flash.display.LineScaleMode";
+
+flash.display.LineScaleMode.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.LineScaleMode.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.LineScaleMode.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.GraphicsPathCommand
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.GraphicsPathCommand = function() {
+};
+
+flash.display.GraphicsPathCommand.MOVE_TO = 1;
+
+flash.display.GraphicsPathCommand.LINE_TO = 2;
+
+
+flash.display.GraphicsPathCommand.className = "flash.display.GraphicsPathCommand";
+
+flash.display.GraphicsPathCommand.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.GraphicsPathCommand.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.GraphicsPathCommand.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.system.System
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.system == "undefined")
+	flash.system = {};
+
+flash.system.System = function() {
+};
+
+flash.system.System.freeMemory = 0;
+
+flash.system.System.privateMemory = 0;
+
+flash.system.System.totalMemory = 0;
+
+flash.system.System.setClipboard = function(message) {
+};
+
+flash.system.System.gc = function() {
+};
+
+flash.system.System.disposeXML = function(node) {
+};
+
+flash.system.System.pauseForGCIfCollectionImminent = function(imminence) {
+};
+
+
+flash.system.System.className = "flash.system.System";
+
+flash.system.System.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.System.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.System.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.StageDisplayState
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.StageDisplayState = function() {
+};
+
+flash.display.StageDisplayState.FULL_SCREEN = "fullScreen";
+
+flash.display.StageDisplayState.FULL_SCREEN_INTERACTIVE = "fullScreenInteractive";
+
+flash.display.StageDisplayState.NORMAL = "normal";
+
+
+flash.display.StageDisplayState.className = "flash.display.StageDisplayState";
+
+flash.display.StageDisplayState.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.StageDisplayState.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.StageDisplayState.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.Shader
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.Shader = function(code) {
+};
+
+
+flash.display.Shader.className = "flash.display.Shader";
+
+flash.display.Shader.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.Shader.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.Shader.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'code', t:'flash.utils.ByteArray'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
 
 // ====================================================
 // flash.display.BitmapData
@@ -9789,61 +7787,119 @@ flash.display.BitmapData.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.text.TextFormat
+// flash.display.GradientType
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.text == "undefined")
-	flash.text = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
 
-flash.text.TextFormat = function(font, size, color, bold, italic, underline, url, target, align, leftMargin, rightMargin, indent, leading) {
-	this.font = font;
-	this.size = size;
-	this.color = color;
-	this.bold = bold;
-	this.italic = italic;
-	this.underline = underline;
-	this.url = url;
-	this.target = target;
-	this.align = align;
-	this.leftMargin = leftMargin;
-	this.rightMargin = rightMargin;
-	this.indent = indent;
-	this.leading = leading;
+flash.display.GradientType = function() {
 };
 
+flash.display.GradientType.LINEAR = "linear";
 
-flash.text.TextFormat.className = "flash.text.TextFormat";
+flash.display.GradientType.RADIAL = "radial";
 
-flash.text.TextFormat.getRuntimeDependencies = function(t) {
+
+flash.display.GradientType.className = "flash.display.GradientType";
+
+flash.display.GradientType.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.text.TextFormat.getStaticDependencies = function(t) {
+flash.display.GradientType.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.text.TextFormat.injectionPoints = function(t) {
+flash.display.GradientType.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.BlendMode
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.BlendMode = function() {
+};
+
+flash.display.BlendMode.NORMAL = "normal";
+
+flash.display.BlendMode.MULTIPLY = "MULTIPLY";
+
+flash.display.BlendMode.ADD = "add";
+
+flash.display.BlendMode.SUBTRACT = "subtract";
+
+flash.display.BlendMode.OVERLAY = "overlay";
+
+
+flash.display.BlendMode.className = "flash.display.BlendMode";
+
+flash.display.BlendMode.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.BlendMode.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.BlendMode.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.net.URLVariables
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.net == "undefined")
+	flash.net = {};
+
+flash.net.URLVariables = function(source) {
+};
+
+flash.net.URLVariables.prototype.toString = function() {
+	var vars = "";
+	var v = 0;
+	for (var key in this) {
+		if (v++ > 0)
+			vars += "&";
+		vars += key + "=" + escape(this[key]);
+	}
+	return vars;
+};
+
+
+flash.net.URLVariables.className = "flash.net.URLVariables";
+
+flash.net.URLVariables.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLVariables.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLVariables.injectionPoints = function(t) {
 	var p;
 	switch (t) {
 		case 0:
 			p = [];
-			p.push({n:'font', t:'String'});
-			p.push({n:'size', t:'Object'});
-			p.push({n:'color', t:'Object'});
-			p.push({n:'bold', t:'Object'});
-			p.push({n:'italic', t:'Object'});
-			p.push({n:'underline', t:'Object'});
-			p.push({n:'url', t:'String'});
-			p.push({n:'target', t:'String'});
-			p.push({n:'align', t:'String'});
-			p.push({n:'leftMargin', t:'Object'});
-			p.push({n:'rightMargin', t:'Object'});
-			p.push({n:'indent', t:'Object'});
-			p.push({n:'leading', t:'Object'});
+			p.push({n:'source', t:'String'});
 			break;
 		default:
 			p = [];
@@ -9854,7 +7910,347 @@ flash.text.TextFormat.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.system.System
+// flash.display.StageScaleMode
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.StageScaleMode = function() {
+};
+
+flash.display.StageScaleMode.NO_SCALE = "noScale";
+
+flash.display.StageScaleMode.SHOW_ALL = "showAll";
+
+
+flash.display.StageScaleMode.className = "flash.display.StageScaleMode";
+
+flash.display.StageScaleMode.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.StageScaleMode.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.StageScaleMode.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.FrameLabel
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.FrameLabel = function() {
+};
+
+
+flash.display.FrameLabel.className = "flash.display.FrameLabel";
+
+flash.display.FrameLabel.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.FrameLabel.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.FrameLabel.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// mx.core.MovieClipAsset
+// ====================================================
+
+if (typeof mx == "undefined")
+	var mx = {};
+if (typeof mx.core == "undefined")
+	mx.core = {};
+
+mx.core.MovieClipAsset = function() {
+};
+
+
+mx.core.MovieClipAsset.className = "mx.core.MovieClipAsset";
+
+mx.core.MovieClipAsset.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+mx.core.MovieClipAsset.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+mx.core.MovieClipAsset.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display.StageQuality
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.StageQuality = function() {
+	
+};
+
+flash.display.StageQuality.BEST = "best";
+
+flash.display.StageQuality.HIGH = "high";
+
+flash.display.StageQuality.HIGH_16X16 = "16x16";
+
+flash.display.StageQuality.HIGH_16X16_LINEAR = "16x16linear";
+
+flash.display.StageQuality.HIGH_8X8 = "8x8";
+
+flash.display.StageQuality.HIGH_8X8_LINEAR = "8x8linear";
+
+flash.display.StageQuality.LOW = "low";
+
+flash.display.StageQuality.MEDIUM = "medium";
+
+
+flash.display.StageQuality.className = "flash.display.StageQuality";
+
+flash.display.StageQuality.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.StageQuality.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.StageQuality.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.media.SoundLoaderContext
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.media == "undefined")
+	flash.media = {};
+
+flash.media.SoundLoaderContext = function(bufferTime, checkPolicyFile) {
+	this.bufferTime = bufferTime;
+	this.checkPolicyFile = checkPolicyFile;
+};
+
+
+flash.media.SoundLoaderContext.className = "flash.media.SoundLoaderContext";
+
+flash.media.SoundLoaderContext.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.media.SoundLoaderContext.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.media.SoundLoaderContext.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'bufferTime', t:'Number'});
+			p.push({n:'checkPolicyFile', t:'Boolean'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.net.URLLoaderDataFormat
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.net == "undefined")
+	flash.net = {};
+
+flash.net.URLLoaderDataFormat = function() {
+};
+
+flash.net.URLLoaderDataFormat.TEXT = "text";
+
+flash.net.URLLoaderDataFormat.BINARY = "binary";
+
+
+flash.net.URLLoaderDataFormat.className = "flash.net.URLLoaderDataFormat";
+
+flash.net.URLLoaderDataFormat.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLLoaderDataFormat.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLLoaderDataFormat.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.geom.Matrix
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.geom == "undefined")
+	flash.geom = {};
+
+flash.geom.Matrix = function(a, b, c, d, tx, ty) {
+	this.a = a;
+	this.b = b;
+	this.c = c;
+	this.d = d;
+	this.tx = tx;
+	this.ty = ty;
+};
+
+flash.geom.Matrix.prototype.identity = function() {
+	this.a = 1;
+	this.b = 0;
+	this.c = 0;
+	this.d = 1;
+	this.tx = 0;
+	this.ty = 0;
+};
+
+flash.geom.Matrix.prototype.setTo = function(aa, ba, ca, da, txa, tya) {
+	this.a = aa;
+	this.b = ba;
+	this.c = ca;
+	this.d = da;
+	this.tx = txa;
+	this.ty = tya;
+};
+
+flash.geom.Matrix.prototype.concat = function(m) {
+	var aT = this.a;
+	var cT = this.c;
+	var txT = this.tx;
+	this.a = aT * m.a + this.b * m.c;
+	this.b = aT * m.b + this.b * m.d;
+	this.c = cT * m.a + this.d * m.c;
+	this.d = cT * m.b + this.d * m.d;
+	this.tx = txT * m.a + this.ty * m.c + m.tx;
+	this.ty = txT * m.b + this.ty * m.d + m.ty;
+};
+
+flash.geom.Matrix.prototype.copyFrom = function(sourceMatrix) {
+	this.a = sourceMatrix.a;
+	this.b = sourceMatrix.b;
+	this.c = sourceMatrix.c;
+	this.d = sourceMatrix.d;
+	this.tx = sourceMatrix.tx;
+	this.ty = sourceMatrix.ty;
+};
+
+flash.geom.Matrix.prototype.invert = function() {
+	var b01 = this.d;
+	var b11 = -1 * this.c;
+	var b21 = this.ty * this.c - this.d * this.tx;
+	var det = this.a * b01 + this.b * b11;
+	det = 1.0 / det;
+	this.a = b01 * det;
+	this.b = (-1 * this.b) * det;
+	this.c = b11 * det;
+	this.d = (1 * this.a) * det;
+	this.tx = b21 * det;
+	this.ty = (-this.ty * this.a + this.b * this.tx) * det;
+};
+
+flash.geom.Matrix.prototype.rotate = function(angle) {
+	var s = Math.sin(angle);
+	var c = Math.cos(angle);
+	var m = new flash.geom.Matrix(c, s, -s, c, 0, 0);
+	this.concat(m);
+};
+
+flash.geom.Matrix.prototype.scale = function(sx, sy) {
+	var m = new flash.geom.Matrix(sx, 0, 0, sy, 0, 0);
+	this.concat(m);
+};
+
+flash.geom.Matrix.prototype.translate = function(dx, dy) {
+	this.tx = dx;
+	this.ty = dy;
+};
+
+flash.geom.Matrix.prototype.createGradientBox = function(width, height, rotation, tx, ty) {
+	flash.utils.FlashTimingEngine.logAPIWarning("$$$$ API NOT COMPLETE: Matrix.createGradientBox() $$$$");
+};
+
+
+flash.geom.Matrix.className = "flash.geom.Matrix";
+
+flash.geom.Matrix.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.utils.FlashTimingEngine');
+	return p;
+};
+
+flash.geom.Matrix.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.geom.Matrix.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'a', t:'Number'});
+			p.push({n:'b', t:'Number'});
+			p.push({n:'c', t:'Number'});
+			p.push({n:'d', t:'Number'});
+			p.push({n:'tx', t:'Number'});
+			p.push({n:'ty', t:'Number'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.system.LoaderContext
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -9862,43 +8258,802 @@ if (typeof flash == "undefined")
 if (typeof flash.system == "undefined")
 	flash.system = {};
 
-flash.system.System = function() {
-};
-
-flash.system.System.freeMemory = 0;
-
-flash.system.System.privateMemory = 0;
-
-flash.system.System.totalMemory = 0;
-
-flash.system.System.setClipboard = function(message) {
-};
-
-flash.system.System.gc = function() {
-};
-
-flash.system.System.disposeXML = function(node) {
-};
-
-flash.system.System.pauseForGCIfCollectionImminent = function(imminence) {
+flash.system.LoaderContext = function(checkPolicyFile, applicationDomain, securityDomain) {
 };
 
 
-flash.system.System.className = "flash.system.System";
+flash.system.LoaderContext.className = "flash.system.LoaderContext";
 
-flash.system.System.getRuntimeDependencies = function(t) {
+flash.system.LoaderContext.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.system.System.getStaticDependencies = function(t) {
+flash.system.LoaderContext.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.system.System.injectionPoints = function(t) {
+flash.system.LoaderContext.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'checkPolicyFile', t:'Boolean'});
+			p.push({n:'applicationDomain', t:'Object'});
+			p.push({n:'securityDomain', t:'Object'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.display3D.Context3DTriangleFace
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.Context3DTriangleFace = function() {
+};
+
+flash.display3D.Context3DTriangleFace.BACK = "back";
+
+flash.display3D.Context3DTriangleFace.FRONT = "front";
+
+flash.display3D.Context3DTriangleFace.FRONT_AND_BACK = "fontAndBack";
+
+flash.display3D.Context3DTriangleFace.NONE = "none";
+
+
+flash.display3D.Context3DTriangleFace.className = "flash.display3D.Context3DTriangleFace";
+
+flash.display3D.Context3DTriangleFace.getRuntimeDependencies = function(t) {
+	var p;
 	return [];
 };
+
+flash.display3D.Context3DTriangleFace.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.Context3DTriangleFace.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// JSON
+// ====================================================
+
+
+JSON = function() {
+	
+};
+
+JSON.parse = function(text, reviver) {
+	throw new Error("API NOT IMPLEMENTED -- JSON.parse", 0);
+};
+
+JSON.stringify = function(value, replacer, space) {
+	throw new Error("API NOT IMPLEMENTED -- JSON.stringify", 0);
+};
+
+
+JSON.className = "JSON";
+
+JSON.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+JSON.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+JSON.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.ui.Mouse
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.ui == "undefined")
+	flash.ui = {};
+
+flash.ui.Mouse = function() {
+};
+
+flash.ui.Mouse.hide = function() {
+};
+
+flash.ui.Mouse.registerCursor = function(name, cursor) {
+};
+
+flash.ui.Mouse.show = function() {
+};
+
+flash.ui.Mouse.cursor = "";
+
+flash.ui.Mouse.supportsCursor = true;
+
+
+flash.ui.Mouse.className = "flash.ui.Mouse";
+
+flash.ui.Mouse.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.Mouse.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.Mouse.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.geom.Rectangle
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.geom == "undefined")
+	flash.geom = {};
+
+flash.geom.Rectangle = function(x, y, width, height) {
+	this._right = 0;
+	this.sizePoint = new flash.geom.Point(0, 0);
+	this.topLeftPoint = new flash.geom.Point(0, 0);
+	this._bottom = 0;
+	this.x = x;
+	this.y = y;
+	this.width = width;
+	this.height = height;
+};
+
+flash.geom.Rectangle.prototype.clone = function() {
+	return new flash.geom.Rectangle(this.x, this.y, this.width, this.height);
+};
+
+flash.geom.Rectangle.prototype.copyFrom = function(sourceRect) {
+	this.x = sourceRect.x;
+	this.y = sourceRect.y;
+	this.width = sourceRect.width;
+	this.height = sourceRect.height;
+};
+
+flash.geom.Rectangle.prototype.union = function(toUnion) {
+	if (toUnion.width == 0 || toUnion.height == 0)
+		return this;
+	var leftX = Math.min(this.x, toUnion.x);
+	var leftY = Math.min(this.y, toUnion.y);
+	var newW = Math.max(this.x + this.width, toUnion.x + toUnion.width) - leftX;
+	var newH = Math.max(this.y + this.height, toUnion.y + toUnion.height) - leftY;
+	return new flash.geom.Rectangle(leftX, leftY, newW, newH);
+};
+
+flash.geom.Rectangle.prototype.inflate = function(dx, dy) {
+	this.x -= dx;
+	this.width += 2 * dx;
+	this.y -= dy;
+	this.height += 2 * dy;
+};
+
+flash.geom.Rectangle.prototype.get_left = function() {
+	return this.x;
+};
+
+flash.geom.Rectangle.prototype.set_left = function(value) {
+	this.x = value;
+};
+
+flash.geom.Rectangle.prototype.get_top = function() {
+	return this.y;
+};
+
+flash.geom.Rectangle.prototype.set_top = function(value) {
+	this.y = value;
+};
+
+flash.geom.Rectangle.prototype.get_right = function() {
+	return this.x + this.width;
+};
+
+flash.geom.Rectangle.prototype.set_right = function(value) {
+	this.width = value - this.x;
+};
+
+flash.geom.Rectangle.prototype.get_bottom = function() {
+	return this.y + this.height;
+};
+
+flash.geom.Rectangle.prototype.set_bottom = function(value) {
+	this.height = value - this.y;
+};
+
+flash.geom.Rectangle.prototype.get_topLeft = function() {
+	this.topLeftPoint.x = this.x;
+	this.topLeftPoint.y = this.y;
+	return this.topLeftPoint;
+};
+
+flash.geom.Rectangle.prototype.set_topLeft = function(value) {
+	this.x = value.x;
+	this.y = value.y;
+};
+
+flash.geom.Rectangle.prototype.contains = function(cx, cy) {
+	return (cx >= this.x && cx <= this.get_right() && cy >= this.y && cy <= this.get_bottom());
+};
+
+flash.geom.Rectangle.prototype.containsPoint = function(point) {
+	return this.contains(point.x, point.y);
+};
+
+flash.geom.Rectangle.prototype.get_size = function() {
+	this.sizePoint.x = this.width;
+	this.sizePoint.y = this.height;
+	return this.sizePoint;
+};
+
+flash.geom.Rectangle.prototype.set_size = function(value) {
+	this.width = value.x;
+	this.height = value.y;
+};
+
+flash.geom.Rectangle.prototype.offset = function(dx, dy) {
+	this.x += dx;
+	this.y += dy;
+};
+
+flash.geom.Rectangle.prototype.intersects = function(toIntersect) {
+	return !(toIntersect.get_left() > this.get_right() || toIntersect.get_right() < this.get_left() || toIntersect.get_top() > this.get_bottom() || toIntersect.get_bottom() < this.get_top());
+};
+
+flash.geom.Rectangle.prototype.intersection = function(toIntersect) {
+	var rect = new flash.geom.Rectangle(0, 0, 0, 0);
+	if (this.intersects(toIntersect)) {
+		if (toIntersect.get_left() <= this.get_right()) {
+			rect.x = toIntersect.get_left();
+			rect.width = this.get_right() - rect.x;
+		} else {
+			rect.x = this.get_left();
+			rect.width = toIntersect.get_right() - rect.x;
+		}
+		rect.y = (toIntersect.get_top() < this.get_top()) ? this.get_top() : toIntersect.get_top();
+		rect.height = (toIntersect.get_bottom() < this.get_bottom()) ? toIntersect.get_bottom() : this.get_bottom();
+		rect.height = rect.height - rect.y;
+	}
+	return rect;
+};
+
+flash.geom.Rectangle.prototype.isEmpty = function() {
+	return this.width <= 0 || this.height <= 0;
+};
+
+flash.geom.Rectangle.prototype.setEmpty = function() {
+	this.x = 0;
+	this.y = 0;
+	this.width = 0;
+	this.height = 0;
+};
+
+flash.geom.Rectangle.prototype.setTo = function(xa, ya, widtha, heighta) {
+	this.x = xa;
+	this.y = ya;
+	this.width = widtha;
+	this.height = heighta;
+};
+
+Object.defineProperty(flash.geom.Rectangle.prototype, 'top', {
+  get: function() { return this.get_top(); },
+  set: function(value) { return this.set_top(value); }
+});
+Object.defineProperty(flash.geom.Rectangle.prototype, 'size', {
+  get: function() { return this.get_size(); },
+  set: function(value) { return this.set_size(value); }
+});
+Object.defineProperty(flash.geom.Rectangle.prototype, 'left', {
+  get: function() { return this.get_left(); },
+  set: function(value) { return this.set_left(value); }
+});
+Object.defineProperty(flash.geom.Rectangle.prototype, 'bottom', {
+  get: function() { return this.get_bottom(); },
+  set: function(value) { return this.set_bottom(value); }
+});
+Object.defineProperty(flash.geom.Rectangle.prototype, 'topLeft', {
+  get: function() { return this.get_topLeft(); },
+  set: function(value) { return this.set_topLeft(value); }
+});
+Object.defineProperty(flash.geom.Rectangle.prototype, 'right', {
+  get: function() { return this.get_right(); },
+  set: function(value) { return this.set_right(value); }
+});
+
+flash.geom.Rectangle.className = "flash.geom.Rectangle";
+
+flash.geom.Rectangle.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.geom.Point');
+	return p;
+};
+
+flash.geom.Rectangle.getStaticDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.geom.Point');
+	return p;
+};
+
+flash.geom.Rectangle.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'x', t:'Number'});
+			p.push({n:'y', t:'Number'});
+			p.push({n:'width', t:'Number'});
+			p.push({n:'height', t:'Number'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.net.URLRequest
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.net == "undefined")
+	flash.net = {};
+
+flash.net.URLRequest = function(url) {
+	this.method = "get";
+	this.url = url;
+};
+
+
+flash.net.URLRequest.className = "flash.net.URLRequest";
+
+flash.net.URLRequest.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLRequest.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLRequest.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'url', t:'String'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.geom.Matrix3D
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.geom == "undefined")
+	flash.geom = {};
+
+flash.geom.Matrix3D = function(v) {
+	this.rawData = null;
+	if (v == null) {
+		v = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
+	}
+	this.rawData = v;
+};
+
+flash.geom.Matrix3D.prototype.copyRawDataFrom = function(vector, index, transpose) {
+	if (!this.rawData)
+		this.rawData = [];
+	for (var i = 0; i < vector.length; i++)
+		this.rawData[i + index] = vector[i];
+};
+
+
+flash.geom.Matrix3D.className = "flash.geom.Matrix3D";
+
+flash.geom.Matrix3D.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.geom.Matrix3D.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.geom.Matrix3D.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'v', t:'Array'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// FlashAPILoggeer
+// ====================================================
+
+
+FlashAPILoggeer = function() {
+	
+};
+
+FlashAPILoggeer.logger;
+
+FlashAPILoggeer.log = function(msg) {
+	trace(FlashAPILoggeer.getTimestamp() + "[FAPI]" + msg + "");
+	if (FlashAPILoggeer.logger)
+		FlashAPILoggeer.logger(FlashAPILoggeer.getTimestamp() + "[FAPI]" + msg + "");
+};
+
+FlashAPILoggeer.getTimestamp = function() {
+	var date = new Date();
+	var hours = date.getHours();
+	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
+	var millis = date.getMilliseconds();
+	return "[" + hours < 10 ? "0" : "" + hours + ":" + minutes < 10 ? "0" : "" + minutes + ":" + seconds < 10 ? "0" : "" + seconds + "." + millis < 10 ? "00" : millis < 100 ? "0" : "" + millis + "] ";
+};
+
+
+FlashAPILoggeer.className = "FlashAPILoggeer";
+
+FlashAPILoggeer.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('trace');
+	return p;
+};
+
+FlashAPILoggeer.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+FlashAPILoggeer.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.net.URLRequestMethod
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.net == "undefined")
+	flash.net = {};
+
+flash.net.URLRequestMethod = function() {
+};
+
+flash.net.URLRequestMethod.GET = "get";
+
+flash.net.URLRequestMethod.POST = "post";
+
+
+flash.net.URLRequestMethod.className = "flash.net.URLRequestMethod";
+
+flash.net.URLRequestMethod.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLRequestMethod.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.net.URLRequestMethod.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.text.TextFieldAutoSize
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
+
+flash.text.TextFieldAutoSize = function() {
+};
+
+flash.text.TextFieldAutoSize.CENTER = "center";
+
+flash.text.TextFieldAutoSize.LEFT = "left";
+
+flash.text.TextFieldAutoSize.NONE = "none";
+
+flash.text.TextFieldAutoSize.RIGHT = "right";
+
+
+flash.text.TextFieldAutoSize.className = "flash.text.TextFieldAutoSize";
+
+flash.text.TextFieldAutoSize.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.TextFieldAutoSize.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.TextFieldAutoSize.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.utils.FlashEmbed
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.utils == "undefined")
+	flash.utils = {};
+
+flash.utils.FlashEmbed = function() {
+};
+
+flash.utils.FlashEmbed.getEmbed = function(type, properties) {
+	var embedClass;
+	if (type == "flash.display.Bitmap") {
+		flash.utils.FlashTimingEngine.getEmbed(properties.source);
+		embedClass = function() {
+			this.source = properties.source;
+			this.bitmapData = flash.utils.FlashTimingEngine.getEmbed(this.source);
+		};
+	} else if (type == "XML") {
+		embedClass = function() {
+			this.source = properties.source;
+			this.mimeType = properties.mimeType;
+			var xmlHTTP = new XMLHttpRequest();
+			try {
+				xmlHTTP.open("GET", this.source, false);
+				xmlHTTP.send(null);
+			} catch (e) {
+				window.alert("Unable to load the requested file.");
+				return;
+			}
+			var oParser = new DOMParser();
+			var oDOM = oParser.parseFromString(xmlHTTP.responseText, "text\/xml");
+			var jxon = new flash.utils.JXONTree(oDOM.documentElement);
+			for (var property in jxon) {
+				if (jxon.hasOwnProperty(property)) {
+					this[property] = jxon[property];
+				}
+			}
+		};
+		$inherit(embedClass, flash.utils.JXONTree);
+	} else if (type == "flash.media.Sound") {
+		flash.utils.FlashTimingEngine.getSoundEmbed(properties.source);
+		embedClass = function() {
+			this.source = properties.source;
+			flash.media.Sound.call(this, new flash.net.URLRequest(properties.source));
+		};
+		$inherit(embedClass, flash.media.Sound);
+	}
+	if (embedClass) {
+		embedClass.filename = properties.source.match(/[\w\-. ]+$/g)[0].split(".")[0];
+		embedClass.classType = type;
+	}
+	return embedClass;
+};
+
+
+flash.utils.FlashEmbed.className = "flash.utils.FlashEmbed";
+
+flash.utils.FlashEmbed.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.media.Sound');
+	p.push('flash.utils.FlashTimingEngine');
+	p.push('flash.utils.JXONTree');
+	p.push('flash.net.URLRequest');
+	return p;
+};
+
+flash.utils.FlashEmbed.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.utils.FlashEmbed.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.utils.RequestAnimationFrame
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.utils == "undefined")
+	flash.utils = {};
+
+flash.utils.RequestAnimationFrame = function() {
+	
+};
+
+flash.utils.RequestAnimationFrame.prototype.request = function(callback) {
+	var w = Window;
+	var requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.mozRequestAnimationFrame || w.oRequestAnimationFrame || w.msRequestAnimationFrame || function(callback) {
+		setTimeout(callback, 1000 / 60);
+	};
+	requestAnimationFrame($createStaticDelegate(this, callback));
+};
+
+
+flash.utils.RequestAnimationFrame.className = "flash.utils.RequestAnimationFrame";
+
+flash.utils.RequestAnimationFrame.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.utils.RequestAnimationFrame.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.utils.RequestAnimationFrame.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.text.TextFieldType
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
+
+flash.text.TextFieldType = function() {
+};
+
+flash.text.TextFieldType.INPUT = "input";
+
+flash.text.TextFieldType.DYNAMIC = "dynamic";
+
+
+flash.text.TextFieldType.className = "flash.text.TextFieldType";
+
+flash.text.TextFieldType.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.TextFieldType.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.TextFieldType.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.display3D.VertexBuffer3D
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.VertexBuffer3D = function(context3D, numVertices, data32PerVertex) {
+	this.buffer = null;
+	this.verticies = null;
+	this.context3D = context3D;
+	this.buffer = context3D.webglContext.createBuffer();
+	this.numVertices = numVertices;
+	this.data32PerVertex = data32PerVertex;
+};
+
+flash.display3D.VertexBuffer3D.prototype.uploadFromVector = function(data, startVertex, numVertices) {
+	trace("VertexBuffer3D.uploadFromVector: " + data.length + " startVertex: " + startVertex + " nV: " + numVertices + "  data32PerVertex: " + this.data32PerVertex);
+	this.verticies = new ArrayBuffer(data.length * 4);
+	var floatArr = new Float32Array(this.verticies);
+	for (var i = 0; i < data.length; i++) {
+		floatArr[i] = data[i];
+	}
+	this.context3D.webglContext.bindBuffer(34962, this.buffer);
+	this.context3D.webglContext.bufferData(34962, this.verticies, 35044);
+	this.context3D.lastVertexBuffer = this;
+};
+
+flash.display3D.VertexBuffer3D.prototype.uploadFromByteArray = function(data, byteArrayOffset, startVertex, numVertices) {
+	trace("VertexBuffer3D.uploadFromByteArray: " + data.get_length() + " startVertex: " + startVertex + " nV: " + numVertices + "  byteArrayOffset: " + byteArrayOffset);
+	this.verticies = data.getArrayBuffer();
+	this.context3D.webglContext.bindBuffer(34962, this.buffer);
+	this.context3D.webglContext.bufferData(34962, this.verticies, 35044);
+	this.context3D.lastVertexBuffer = this;
+};
+
+flash.display3D.VertexBuffer3D.prototype.uploadLast = function() {
+	this.context3D.webglContext.bindBuffer(34962, this.buffer);
+	this.context3D.webglContext.bufferData(34962, this.verticies, 35048);
+	this.context3D.lastVertexBuffer = this;
+};
+
+flash.display3D.VertexBuffer3D.prototype.dispose = function() {
+};
+
+
+flash.display3D.VertexBuffer3D.className = "flash.display3D.VertexBuffer3D";
+
+flash.display3D.VertexBuffer3D.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('trace');
+	return p;
+};
+
+flash.display3D.VertexBuffer3D.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.VertexBuffer3D.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'context3D', t:'flash.display3D.Context3D'});
+			p.push({n:'numVertices', t:'int'});
+			p.push({n:'data32PerVertex', t:'int'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
 
 // ====================================================
 // flash.utils.ByteArray
@@ -10395,40 +9550,183 @@ mx.core.ByteArrayAsset.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.display.GradientType
+// flash.external.ExternalInterface
 // ====================================================
 
 if (typeof flash == "undefined")
 	var flash = {};
-if (typeof flash.display == "undefined")
-	flash.display = {};
+if (typeof flash.external == "undefined")
+	flash.external = {};
 
-flash.display.GradientType = function() {
+flash.external.ExternalInterface = function() {
+	
 };
 
-flash.display.GradientType.LINEAR = "linear";
+flash.external.ExternalInterface.available = false;
 
-flash.display.GradientType.RADIAL = "radial";
+flash.external.ExternalInterface.objectID = "null";
+
+flash.external.ExternalInterface.addCallback = function(functionName, closure) {
+};
+
+flash.external.ExternalInterface.call = function(functionName, args) {
+	return "";
+};
 
 
-flash.display.GradientType.className = "flash.display.GradientType";
+flash.external.ExternalInterface.className = "flash.external.ExternalInterface";
 
-flash.display.GradientType.getRuntimeDependencies = function(t) {
+flash.external.ExternalInterface.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.GradientType.getStaticDependencies = function(t) {
+flash.external.ExternalInterface.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.GradientType.injectionPoints = function(t) {
+flash.external.ExternalInterface.injectionPoints = function(t) {
 	return [];
 };
 
 // ====================================================
-// flash.geom.Matrix3D
+// flash.ui.MultitouchInputMode
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.ui == "undefined")
+	flash.ui = {};
+
+flash.ui.MultitouchInputMode = function() {
+};
+
+flash.ui.MultitouchInputMode.GESTURE = "gesture";
+
+flash.ui.MultitouchInputMode.NONE = "none";
+
+flash.ui.MultitouchInputMode.TOUCH_POINT = "touchPoint";
+
+
+flash.ui.MultitouchInputMode.className = "flash.ui.MultitouchInputMode";
+
+flash.ui.MultitouchInputMode.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.MultitouchInputMode.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.MultitouchInputMode.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.system.ImageDecodingPolicy
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.system == "undefined")
+	flash.system = {};
+
+flash.system.ImageDecodingPolicy = function() {
+};
+
+flash.system.ImageDecodingPolicy.ON_LOAD = "onLoad";
+
+
+flash.system.ImageDecodingPolicy.className = "flash.system.ImageDecodingPolicy";
+
+flash.system.ImageDecodingPolicy.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.ImageDecodingPolicy.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.ImageDecodingPolicy.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.ui.MouseCursorData
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.ui == "undefined")
+	flash.ui = {};
+
+flash.ui.MouseCursorData = function() {
+this.hotSpot = null;
+this.data = null;
+};
+
+
+flash.ui.MouseCursorData.className = "flash.ui.MouseCursorData";
+
+flash.ui.MouseCursorData.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.MouseCursorData.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.MouseCursorData.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.system.Security
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.system == "undefined")
+	flash.system = {};
+
+flash.system.Security = function() {
+};
+
+flash.system.Security.allowDomain = function(domains) {
+};
+
+flash.system.Security.allowInsecureDomain = function(domains) {
+};
+
+flash.system.Security.loadPolicyFile = function(url) {
+};
+
+
+flash.system.Security.className = "flash.system.Security";
+
+flash.system.Security.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.Security.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.Security.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.geom.Vector3D
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -10436,40 +9734,31 @@ if (typeof flash == "undefined")
 if (typeof flash.geom == "undefined")
 	flash.geom = {};
 
-flash.geom.Matrix3D = function(v) {
-	this.rawData = null;
-	if (v == null) {
-		v = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
-	}
-	this.rawData = v;
-};
-
-flash.geom.Matrix3D.prototype.copyRawDataFrom = function(vector, index, transpose) {
-	if (!this.rawData)
-		this.rawData = [];
-	for (var i = 0; i < vector.length; i++)
-		this.rawData[i + index] = vector[i];
+flash.geom.Vector3D = function(x, y, z, w) {
 };
 
 
-flash.geom.Matrix3D.className = "flash.geom.Matrix3D";
+flash.geom.Vector3D.className = "flash.geom.Vector3D";
 
-flash.geom.Matrix3D.getRuntimeDependencies = function(t) {
+flash.geom.Vector3D.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.geom.Matrix3D.getStaticDependencies = function(t) {
+flash.geom.Vector3D.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.geom.Matrix3D.injectionPoints = function(t) {
+flash.geom.Vector3D.injectionPoints = function(t) {
 	var p;
 	switch (t) {
 		case 0:
 			p = [];
-			p.push({n:'v', t:'Array'});
+			p.push({n:'x', t:'Number'});
+			p.push({n:'y', t:'Number'});
+			p.push({n:'z', t:'Number'});
+			p.push({n:'w', t:'Number'});
 			break;
 		default:
 			p = [];
@@ -10478,6 +9767,35 @@ flash.geom.Matrix3D.injectionPoints = function(t) {
 	return p;
 };
 
+
+// ====================================================
+// flash.text.GridFitType
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
+
+flash.text.GridFitType = function() {
+};
+
+
+flash.text.GridFitType.className = "flash.text.GridFitType";
+
+flash.text.GridFitType.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.GridFitType.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.GridFitType.injectionPoints = function(t) {
+	return [];
+};
 
 // ====================================================
 // flash.geom.ColorTransform
@@ -10527,7 +9845,81 @@ flash.geom.ColorTransform.injectionPoints = function(t) {
 
 
 // ====================================================
-// flash.display.StageAlign
+// flash.system.ApplicationDomain
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.system == "undefined")
+	flash.system = {};
+
+flash.system.ApplicationDomain = function(parentDomain) {
+};
+
+flash.system.ApplicationDomain.get_MIN_DOMAIN_MEMORY_LENGTH = function() {
+	return 0;
+};
+
+flash.system.ApplicationDomain.cD;
+
+flash.system.ApplicationDomain.get_currentDomain = function() {
+	return {};
+};
+
+flash.system.ApplicationDomain.prototype.get_domainMemory = function() {
+	return new flash.utils.ByteArray();
+};
+
+flash.system.ApplicationDomain.prototype.set_domainMemory = function(value) {
+	FlashAPILoggeer.log("ApplicationDomain::set domainMemory: " + value);
+	FlashAPILoggeer.log("ApplicationDomain::set domainMemory: " + value.get_length());
+};
+
+flash.system.ApplicationDomain.prototype.hasDefinition = function(name) {
+	return true;
+};
+
+flash.system.ApplicationDomain.prototype.getDefinition = function(name) {
+	return {};
+};
+
+Object.defineProperty(flash.system.ApplicationDomain.prototype, 'domainMemory', {
+  get: function() { return this.get_domainMemory(); },
+  set: function(value) { return this.set_domainMemory(value); }
+});
+
+flash.system.ApplicationDomain.className = "flash.system.ApplicationDomain";
+
+flash.system.ApplicationDomain.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.utils.ByteArray');
+	p.push('FlashAPILoggeer');
+	return p;
+};
+
+flash.system.ApplicationDomain.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.ApplicationDomain.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'parentDomain', t:'Object'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.display.SpreadMethod
 // ====================================================
 
 if (typeof flash == "undefined")
@@ -10535,24 +9927,626 @@ if (typeof flash == "undefined")
 if (typeof flash.display == "undefined")
 	flash.display = {};
 
-flash.display.StageAlign = function() {
+flash.display.SpreadMethod = function() {
 };
 
-flash.display.StageAlign.TOP_LEFT = "topLeft";
+flash.display.SpreadMethod.PAD = "pad";
+
+flash.display.SpreadMethod.REFLECT = "reflect";
+
+flash.display.SpreadMethod.REPEAT = "repeat";
 
 
-flash.display.StageAlign.className = "flash.display.StageAlign";
+flash.display.SpreadMethod.className = "flash.display.SpreadMethod";
 
-flash.display.StageAlign.getRuntimeDependencies = function(t) {
+flash.display.SpreadMethod.getRuntimeDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.StageAlign.getStaticDependencies = function(t) {
+flash.display.SpreadMethod.getStaticDependencies = function(t) {
 	var p;
 	return [];
 };
 
-flash.display.StageAlign.injectionPoints = function(t) {
+flash.display.SpreadMethod.injectionPoints = function(t) {
 	return [];
 };
+
+// ====================================================
+// flash.display3D.IndexBuffer3D
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display3D == "undefined")
+	flash.display3D = {};
+
+flash.display3D.IndexBuffer3D = function(context3D, numIndices) {
+	this.buffer = null;
+	this.context3D = context3D;
+	this.numIndices = numIndices;
+	this.buffer = context3D.webglContext.createBuffer();
+};
+
+flash.display3D.IndexBuffer3D.prototype.uploadFromVector = function(data, startOffset, count) {
+	trace("IndexBuffer3D.uploadFromVector: " + data.length);
+	var indices = new ArrayBuffer(data.length * 2);
+	var shortArr = new Uint16Array(indices);
+	for (var i = 0; i < data.length; i++) {
+		shortArr[i] = data[i];
+	}
+	this.context3D.webglContext.bindBuffer(34963, this.buffer);
+	this.context3D.webglContext.bufferData(34963, indices, 35044);
+};
+
+flash.display3D.IndexBuffer3D.prototype.dispose = function() {
+	this.context3D.webglContext.deleteBuffer(this.buffer);
+};
+
+
+flash.display3D.IndexBuffer3D.className = "flash.display3D.IndexBuffer3D";
+
+flash.display3D.IndexBuffer3D.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('trace');
+	return p;
+};
+
+flash.display3D.IndexBuffer3D.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display3D.IndexBuffer3D.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'context3D', t:'flash.display3D.Context3D'});
+			p.push({n:'numIndices', t:'int'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.display.PixelSnapping
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.display == "undefined")
+	flash.display = {};
+
+flash.display.PixelSnapping = function() {
+};
+
+flash.display.PixelSnapping.NEVER = "never";
+
+flash.display.PixelSnapping.AUTO = "auto";
+
+
+flash.display.PixelSnapping.className = "flash.display.PixelSnapping";
+
+flash.display.PixelSnapping.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.PixelSnapping.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.display.PixelSnapping.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// mx.core.SoundAsset
+// ====================================================
+
+if (typeof mx == "undefined")
+	var mx = {};
+if (typeof mx.core == "undefined")
+	mx.core = {};
+
+mx.core.SoundAsset = function() {
+};
+
+
+mx.core.SoundAsset.className = "mx.core.SoundAsset";
+
+mx.core.SoundAsset.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+mx.core.SoundAsset.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+mx.core.SoundAsset.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.text.TextFormatAlign
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.text == "undefined")
+	flash.text = {};
+
+flash.text.TextFormatAlign = function() {
+};
+
+flash.text.TextFormatAlign.CENTER = "center";
+
+flash.text.TextFormatAlign.LEFT = "left";
+
+flash.text.TextFormatAlign.RIGHT = "right";
+
+
+flash.text.TextFormatAlign.className = "flash.text.TextFormatAlign";
+
+flash.text.TextFormatAlign.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.TextFormatAlign.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.text.TextFormatAlign.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.utils.FlashTimingEngine
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.utils == "undefined")
+	flash.utils = {};
+
+flash.utils.FlashTimingEngine = function() {
+	this.framePerSecond = 0;
+	this.startFrameTime = 0;
+	this.ENTER_EVENT = new flash.events.Event("enterFrame", false, false);
+	this.stopFlag = false;
+	this.frameTime = 0;
+	this.lastID = 0;
+	this.currentTimers = new flash.utils.Dictionary(false);
+	this.TIMER_COMPLETE_EVENT = new flash.events.TimerEvent("timerComplete", false, false);
+	this.availableObjects = [];
+	this.lastFrameTime = 0;
+	this.TIMER_EVENT = new flash.events.TimerEvent("timer", false, false);
+	
+};
+
+flash.utils.FlashTimingEngine.stageInstance;
+
+flash.utils.FlashTimingEngine.frameHandler;
+
+flash.utils.FlashTimingEngine.embedLoadingObjects = [];
+
+flash.utils.FlashTimingEngine.embedBitmapDatas = [];
+
+flash.utils.FlashTimingEngine.embedSounds = [];
+
+flash.utils.FlashTimingEngine.getEmbed = function(source) {
+	if (!flash.utils.FlashTimingEngine.embedBitmapDatas[source]) {
+		var bitmapData = new flash.display.BitmapData(0, 0, true, 0);
+		bitmapData.embedImage(source);
+		flash.utils.FlashTimingEngine.embedBitmapDatas[source] = bitmapData;
+	}
+	return flash.utils.FlashTimingEngine.embedBitmapDatas[source];
+};
+
+flash.utils.FlashTimingEngine.getSoundEmbed = function(source) {
+	if (!flash.utils.FlashTimingEngine.embedSounds[source]) {
+		var snd = new flash.media.Sound(new flash.net.URLRequest(source));
+		flash.utils.FlashTimingEngine.embedLoadingObjects.push(snd);
+		flash.utils.FlashTimingEngine.embedSounds[source] = snd;
+	}
+	return flash.utils.FlashTimingEngine.embedSounds[source];
+};
+
+flash.utils.FlashTimingEngine.setupStageInteractionEvents = function(canvas) {
+	canvas.addEventListener("mousedown", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureEventHandler), true);
+	canvas.addEventListener("mousemove", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureEventHandler), true);
+	canvas.addEventListener("mouseup", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureEventHandler), true);
+	if ("ontouchstart" in document.documentElement) {
+		canvas.addEventListener("touchstart", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureTouchEventHandler), true);
+		canvas.addEventListener("touchmove", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureTouchEventHandler), true);
+		canvas.addEventListener("touchend", $createStaticDelegate(flash.utils.FlashTimingEngine, flash.utils.FlashTimingEngine.captureTouchEventHandler), true);
+	}
+};
+
+flash.utils.FlashTimingEngine.captureEventHandler = function(event) {
+	if (!flash.utils.FlashTimingEngine.stageInstance)
+		return;
+	var type = "mouseDown";
+	if (event.type == "mousedown")
+		type = "mouseDown";
+	else if (event.type == "mousemove")
+		type = "mouseMove";
+	else if (event.type == "mouseup")
+		type = "mouseUp";
+	var me = new flash.events.MouseEvent(type, false, false, event.offsetX, event.offsetY, null, false, false, false, false, 0, false, false, 0);
+	flash.utils.FlashTimingEngine.stageInstance.dispatchEvent(me);
+};
+
+flash.utils.FlashTimingEngine.captureTouchEventHandler = function(event) {
+	if (!flash.utils.FlashTimingEngine.stageInstance)
+		return;
+	var type = "touchBegin";
+	if (event.type == "touchstart")
+		type = "touchBegin";
+	else if (event.type == "touchmove")
+		type = "touchMove";
+	else if (event.type == "touchend")
+		type = "touchEnd";
+};
+
+flash.utils.FlashTimingEngine.start = function(root, framePerSecond, stageWidth, stageHeight, color) {
+	var OSName = "Unknown OS";
+	if (navigator.appVersion.indexOf("Win", 0) != -1)
+		OSName = "Windows";
+	else if (navigator.appVersion.indexOf("Mac", 0) != -1)
+		OSName = "Macintosh";
+	else if (navigator.appVersion.indexOf("X11", 0) != -1)
+		OSName = "UNIX";
+	else if (navigator.appVersion.indexOf("Linux", 0) != -1)
+		OSName = "Linux";
+	flash.system.Capabilities.manufacturer = OSName;
+	try {
+		flash.utils.FlashTimingEngine.frameHandler = new flash.utils.RequestAnimationFrame();
+	} catch (error) {
+	}
+	if (!flash.utils.FlashTimingEngine.stageInstance)
+		flash.utils.FlashTimingEngine.stageInstance = new flash.display.Stage();
+	flash.utils.FlashTimingEngine.stageInstance.stageWidth = stageWidth;
+	flash.utils.FlashTimingEngine.stageInstance.stageHeight = stageHeight;
+	flash.utils.FlashTimingEngine.stageInstance.color = color;
+	flash.utils.FlashTimingEngine.root = root;
+	root.root = root;
+	flash.utils.FlashTimingEngine.stopFlag = false;
+	flash.utils.FlashTimingEngine.framePerSecond = framePerSecond;
+	flash.utils.FlashTimingEngine.frameTime = ~~(1000 / framePerSecond);
+	flash.utils.FlashTimingEngine.currentTime = new Date().getTime();
+	if (flash.utils.FlashTimingEngine.embedLoadingObjects.length == 0) {
+		flash.utils.FlashTimingEngine.tick();
+		root.dispatchEvent(new flash.events.Event("addedToStage", false, false));
+	}
+	else
+		flash.utils.FlashTimingEngine.embedWait();
+};
+
+flash.utils.FlashTimingEngine.embedWait = function() {
+	var allComplete = true;
+	for (var i = 0; i < flash.utils.FlashTimingEngine.embedLoadingObjects.length; i++) {
+		allComplete = allComplete && flash.utils.FlashTimingEngine.embedLoadingObjects[i].isLoaded;
+	}
+	trace("allComplete: " + allComplete);
+	if (allComplete) {
+		flash.utils.FlashTimingEngine.tick();
+		flash.utils.FlashTimingEngine.root.dispatchEvent(new flash.events.Event("addedToStage", false, false));
+	}
+	else
+		setTimeout($createStaticDelegate(this, flash.utils.FlashTimingEngine.embedWait), 50);
+};
+
+flash.utils.FlashTimingEngine.tick = function() {
+	var c = flash.utils.FlashTimingEngine.root.get_graphics().getCanvas();
+	c.clearRect(0, 0, 1000, 1000);
+	flash.utils.FlashTimingEngine.root.updateGraphics();
+	flash.utils.FlashTimingEngine.startFrameTime = new Date().getTime();
+	flash.events.EventDispatcher.fireGlobalEvent(flash.utils.FlashTimingEngine.ENTER_EVENT);
+	var timerObject;
+	var $n0;
+	for (var $v0 in ($n0 = flash.utils.FlashTimingEngine.currentTimers)) {
+		timerObject = $n0[$v0];
+		if (!timerObject)
+			continue;
+		if (timerObject.timeLeft - flash.utils.FlashTimingEngine.lastFrameTime < 0) {
+			if (timerObject.repeat >= 0)
+				timerObject.repeat--;
+			timerObject.timeLeft = timerObject.time;
+			timerObject.callBack.dispatchEvent(flash.utils.FlashTimingEngine.TIMER_EVENT);
+			if (timerObject.repeat == -1) {
+				timerObject.callBack.dispatchEvent(flash.utils.FlashTimingEngine.TIMER_COMPLETE_EVENT);
+				flash.utils.FlashTimingEngine.addToPool(timerObject);
+				flash.utils.FlashTimingEngine.currentTimers[timerObject.id] = null;
+				delete flash.utils.FlashTimingEngine.currentTimers[timerObject.id];
+			}
+		} else {
+			timerObject.timeLeft -= flash.utils.FlashTimingEngine.lastFrameTime;
+		}
+	}
+	flash.utils.FlashTimingEngine.lastFrameTime = (new Date().getTime() - flash.utils.FlashTimingEngine.startFrameTime);
+	if (flash.utils.FlashTimingEngine.frameTime - flash.utils.FlashTimingEngine.lastFrameTime > 0) {
+		setTimeout($createStaticDelegate(this, flash.utils.FlashTimingEngine.tick), (flash.utils.FlashTimingEngine.frameTime - flash.utils.FlashTimingEngine.lastFrameTime));
+		return;
+	}
+	if (flash.utils.FlashTimingEngine.lastFrameTime < flash.utils.FlashTimingEngine.frameTime)
+		flash.utils.FlashTimingEngine.lastFrameTime = flash.utils.FlashTimingEngine.frameTime;
+	if (!flash.utils.FlashTimingEngine.stopFlag)
+		flash.utils.FlashTimingEngine.frameHandler.request($createStaticDelegate(this, flash.utils.FlashTimingEngine.tick));
+};
+
+flash.utils.FlashTimingEngine.stop = function() {
+	flash.utils.FlashTimingEngine.stopFlag = true;
+};
+
+flash.utils.FlashTimingEngine.createTimer = function(time, repeat, callBack) {
+	flash.utils.FlashTimingEngine.lastID++;
+	if (flash.utils.FlashTimingEngine.availableObjects.length == 0)
+		flash.utils.FlashTimingEngine.availableObjects.push(new flash.utils.FlashTimingEngine$TimerObject(flash.utils.FlashTimingEngine.lastID, time, repeat, callBack));
+	var t = flash.utils.FlashTimingEngine.availableObjects.pop();
+	t.id = flash.utils.FlashTimingEngine.lastID;
+	t.time = time;
+	t.timeLeft = time;
+	t.repeat = repeat;
+	t.callBack = callBack;
+	flash.utils.FlashTimingEngine.currentTimers[flash.utils.FlashTimingEngine.lastID] = t;
+	return flash.utils.FlashTimingEngine.lastID;
+};
+
+flash.utils.FlashTimingEngine.addToPool = function(timerObject) {
+	flash.utils.FlashTimingEngine.availableObjects.push(timerObject);
+};
+
+flash.utils.FlashTimingEngine.stopTimer = function(key) {
+	flash.utils.FlashTimingEngine.addToPool(flash.utils.FlashTimingEngine.currentTimers[key]);
+	flash.utils.FlashTimingEngine.currentTimers[key] = null;
+	delete flash.utils.FlashTimingEngine.currentTimers[key];
+};
+
+flash.utils.FlashTimingEngine.logAPIWarning = function(msg) {
+	if (flash.utils.FlashTimingEngine.showAPIWarnings) {
+		console.log(msg + "\n" + new Error("", 0).stack);
+	}
+};
+
+flash.utils.FlashTimingEngine.ENTER_EVENT = new flash.events.Event("enterFrame", false, false);
+
+flash.utils.FlashTimingEngine.TIMER_EVENT = new flash.events.TimerEvent("timer", false, false);
+
+flash.utils.FlashTimingEngine.TIMER_COMPLETE_EVENT = new flash.events.TimerEvent("timerComplete", false, false);
+
+flash.utils.FlashTimingEngine.root;
+
+flash.utils.FlashTimingEngine.frameTime;
+
+flash.utils.FlashTimingEngine.framePerSecond;
+
+flash.utils.FlashTimingEngine.startFrameTime = 0;
+
+flash.utils.FlashTimingEngine.lastFrameTime = 0;
+
+flash.utils.FlashTimingEngine.currentTimers = new flash.utils.Dictionary(false);
+
+flash.utils.FlashTimingEngine.stopFlag = false;
+
+flash.utils.FlashTimingEngine.lastID = 0;
+
+flash.utils.FlashTimingEngine.availableObjects = [];
+
+flash.utils.FlashTimingEngine.currentTime = 0;
+
+flash.utils.FlashTimingEngine.showAPIWarnings = true;
+
+
+flash.utils.FlashTimingEngine.className = "flash.utils.FlashTimingEngine";
+
+flash.utils.FlashTimingEngine.getRuntimeDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.events.MouseEvent');
+	p.push('trace');
+	p.push('flash.media.Sound');
+	p.push('flash.utils.FlashTimingEngine');
+	p.push('flash.utils.RequestAnimationFrame');
+	p.push('flash.display.Stage');
+	p.push('flash.net.URLRequest');
+	p.push('flash.system.Capabilities');
+	p.push('flash.display.BitmapData');
+	p.push('flash.events.EventDispatcher');
+	p.push('flash.events.Event');
+	return p;
+};
+
+flash.utils.FlashTimingEngine.getStaticDependencies = function(t) {
+	var p;
+	p = [];
+	p.push('flash.utils.Dictionary');
+	p.push('flash.events.Event');
+	p.push('flash.events.TimerEvent');
+	return p;
+};
+
+flash.utils.FlashTimingEngine.injectionPoints = function(t) {
+	return [];
+};
+flash.utils.FlashTimingEngine$TimerObject = function(id, time, repeat, callBack) {
+	this.timeLeft = 0;
+	this.time = time;
+	this.timeLeft = time;
+	this.repeat = repeat;
+	this.callBack = callBack;
+};
+
+
+// ====================================================
+// flash.ui.MouseCursor
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.ui == "undefined")
+	flash.ui = {};
+
+flash.ui.MouseCursor = function() {
+};
+
+flash.ui.MouseCursor.AUTO = "auto";
+
+flash.ui.MouseCursor.BUTTON = "button";
+
+flash.ui.MouseCursor.ARROW = "arrow";
+
+flash.ui.MouseCursor.HAND = "hand";
+
+
+flash.ui.MouseCursor.className = "flash.ui.MouseCursor";
+
+flash.ui.MouseCursor.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.MouseCursor.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.ui.MouseCursor.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.system.SecurityDomain
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.system == "undefined")
+	flash.system = {};
+
+flash.system.SecurityDomain = function() {
+};
+
+flash.system.SecurityDomain.currentDomain = new flash.system.SecurityDomain();
+
+
+flash.system.SecurityDomain.className = "flash.system.SecurityDomain";
+
+flash.system.SecurityDomain.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.SecurityDomain.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.system.SecurityDomain.injectionPoints = function(t) {
+	return [];
+};
+
+// ====================================================
+// flash.xml.XMLNode
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.xml == "undefined")
+	flash.xml = {};
+
+flash.xml.XMLNode = function(type, value) {
+};
+
+
+flash.xml.XMLNode.className = "flash.xml.XMLNode";
+
+flash.xml.XMLNode.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.xml.XMLNode.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.xml.XMLNode.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'type', t:'uint'});
+			p.push({n:'value', t:'String'});
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
+
+// ====================================================
+// flash.xml.XMLDocument
+// ====================================================
+
+if (typeof flash == "undefined")
+	var flash = {};
+if (typeof flash.xml == "undefined")
+	flash.xml = {};
+
+flash.xml.XMLDocument = function(source) {
+	flash.xml.XMLNode.call(this, 1, source);
+};
+
+
+$inherit(flash.xml.XMLDocument, flash.xml.XMLNode);
+
+flash.xml.XMLDocument.className = "flash.xml.XMLDocument";
+
+flash.xml.XMLDocument.getRuntimeDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.xml.XMLDocument.getStaticDependencies = function(t) {
+	var p;
+	return [];
+};
+
+flash.xml.XMLDocument.injectionPoints = function(t) {
+	var p;
+	switch (t) {
+		case 0:
+			p = [];
+			p.push({n:'source', t:'String'});
+			break;
+		case 1:
+			p = flash.xml.XMLNode.injectionPoints(t);
+			break;
+		case 2:
+			p = flash.xml.XMLNode.injectionPoints(t);
+			break;
+		case 3:
+			p = flash.xml.XMLNode.injectionPoints(t);
+			break;
+		default:
+			p = [];
+			break;
+	}
+	return p;
+};
+
