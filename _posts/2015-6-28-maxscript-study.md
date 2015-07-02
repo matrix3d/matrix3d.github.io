@@ -42,3 +42,23 @@ print ,"print 1"
 		format "123" to:file
 		close file
 	)
+
+### 遍历顶点，面
+
+	for i = 1 to selection.count do (
+		show selection[i]
+		tmesh = snapshotAsMesh selection[i]
+		if(tmesh != undefined) then(
+			print ("顶点："+tmesh.numverts as String)
+			for j = 1 to tmesh.numverts do(
+				vert = getVert tmesh j
+				print vert
+			)
+			
+			print ("面："+tmesh.numfaces as String)
+			for j = 1 to tmesh.numfaces do(
+				face = getFace tmesh j
+				print face
+			)
+		)
+	)
