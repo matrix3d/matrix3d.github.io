@@ -62,3 +62,13 @@ print ,"print 1"
 			)
 		)
 	)
+
+### 递归遍历根节点
+
+	function traversalNode pnode=(
+		print pnode.name
+		for c in pnode.children do(
+			traversalNode c
+		)
+	)
+	traversalNode rootNode
