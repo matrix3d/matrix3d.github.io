@@ -225,20 +225,6 @@
 		var container = document.createElement( 'div' );
 		content.appendChild( container );
 
-		var button = document.createElement( 'div' );
-		button.id = 'button';
-		button.textContent = 'View source';
-		button.addEventListener( 'click', function ( event ) {
-
-			var array = location.href.split( '/' );
-			array.pop();
-
-			window.open( 'view-source:' + array.join( '/' ) + '/' + selected + '.html' );
-
-		}, false );
-		button.style.display = 'none';
-		document.body.appendChild( button );
-
 		var divs = {};
 		var selected = null;
 
