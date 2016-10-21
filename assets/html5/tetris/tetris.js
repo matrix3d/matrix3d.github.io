@@ -1,6 +1,6 @@
 /**
  * ...
- * @author lizhi
+ * @author lizhi 
  */
 
 function Tetris(canvas) {
