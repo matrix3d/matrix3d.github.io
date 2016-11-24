@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="TestBitmapDataFuns.css">
+	<script type="text/javascript" src="./TestBitmapDataFuns.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var main=new TestBitmapDataFuns();
+	</script>
+	<div style="position:absolute;left:400px">
+		<form id="myfrom">
+		<input type="range" min="0" max="1000" value="100" onchange="update()" id="baseX">baseX</input><br/>
+		<input type="range" min="0" max="1000" value="100" onchange="update()" id="baseY">baseY</input><br/>
+		<input type="range" min="0" max="10" value="10" onchange="update()" id="numOctaves">numOctaves</input><br/>
+		<input type="checkbox" checked="true" onchange="update()" id="red">red</input><br/>
+		<input type="checkbox" checked="true" onchange="update()" id="green">green</input><br/>
+		<input type="checkbox" checked="true" onchange="update()" id="blue">blue</input><br/>
+		<input type="checkbox" onchange="update()" id="grayScale">grayScale</input><br/>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function update(){
+			var form = document.getElementById("myfrom");
+			main.perlinNoise(
+			form.baseX.value
+			,form.baseY.value
+			,form.numOctaves.value
+			,form.red.checked
+			,form.green.checked
+			,form.blue.checked
+			,form.grayScale.checked
+			);
+		}
+	</script>
+</body>
+</html>
