@@ -90,6 +90,7 @@ fd新建swc工程，as中调用c中的注册的函数
 
 点击air属性设置，添加ane id
 编辑runapp.bat 找到adl 后面添加 -extdir lib。
+编辑packager.bat 找到adt 后面添加 -extdir lib。
 
 lib文件夹即为放置解压后ane文件夹的路径
 
