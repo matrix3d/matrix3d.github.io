@@ -25,8 +25,8 @@ fd新建swc工程，as中调用c中的注册的函数
 	} 
 
 需要更改fd自动生成的build.xml
-	<project name="testswc" default="build">
-	
+
+	<project name="testswc" default="build">	
 		<property environment="env" />
 		<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
 		<property name="FLEX_HOME" location="${env.FLEX_HOME}" />
