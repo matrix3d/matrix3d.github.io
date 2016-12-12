@@ -8,11 +8,14 @@ tags : [as3]
 
 #gcc将c生成dll
 gcc可以用mingw的
+
 	set path=%path%;D:\Program Files (x86)\CodeBlocks\MinGW\bin
 	gcc -c hello.c
 	gcc -shared -o hello.dll hello.o FlashRuntimeExtensions.lib
+	
 #ant将as3生成swc
 fd新建swc工程，as中调用c中的注册的函数
+
 	context= ExtensionContext.createExtensionContext("WinANE", ""); 
 	public function print():String
 	{
@@ -85,11 +88,15 @@ fd新建swc工程，as中调用c中的注册的函数
 	%SDK_PATH%\bin\adt.bat -package -storetype pkcs12 -keystore test.p12 -storepass test -target ane winane.ane extension.xml -swc hello.swc -platform Windows-x86 library.swf hello.dll
 
 #flashdevelop使用ane
+
 建立fd air工程
+
 将生成的ane复制到lib文件夹中，添加到库，解压，命名为 xxx_.ane
 
 点击air属性设置，添加ane id
+
 编辑runapp.bat 找到adl 后面添加 -extdir lib。
+
 编辑packager.bat 找到adt 后面添加 -extdir lib。
 
 lib文件夹即为放置解压后ane文件夹的路径
