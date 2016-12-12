@@ -6,14 +6,16 @@ tags : [as3]
 ---
 {% include JB/setup %}
 
-#gcc将c生成dll
+#gcc将c生成dll#
+
 gcc可以用mingw的
 
 	set path=%path%;D:\Program Files (x86)\CodeBlocks\MinGW\bin
 	gcc -c hello.c
 	gcc -shared -o hello.dll hello.o FlashRuntimeExtensions.lib
 	
-#ant将as3生成swc
+#ant将as3生成swc#
+
 fd新建swc工程，as中调用c中的注册的函数
 
 	context= ExtensionContext.createExtensionContext("WinANE", ""); 
@@ -63,7 +65,9 @@ fd新建swc工程，as中调用c中的注册的函数
 			</zip>
 		</target>
 	</project>
-#adt将swc,dll生成ane
+	
+#adt将swc,dll生成ane#
+
 写extension.xml文件
 
 定义id，和初始化，完成函数名,用到的dll
@@ -87,7 +91,7 @@ fd新建swc工程，as中调用c中的注册的函数
 	set SDK_PATH=E:\sdk\apache-flex-sdk-4.12.1-bin
 	%SDK_PATH%\bin\adt.bat -package -storetype pkcs12 -keystore test.p12 -storepass test -target ane winane.ane extension.xml -swc hello.swc -platform Windows-x86 library.swf hello.dll
 
-#flashdevelop使用ane
+#flashdevelop使用ane#
 
 建立fd air工程
 
