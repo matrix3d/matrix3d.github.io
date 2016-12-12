@@ -8,23 +8,18 @@ tags : [as3]
 
 #gcc将c生成dll
 gcc可以用mingw的
-```bat
 	set path=%path%;D:\Program Files (x86)\CodeBlocks\MinGW\bin
 	gcc -c hello.c
 	gcc -shared -o hello.dll hello.o FlashRuntimeExtensions.lib
-```
 #ant将as3生成swc
 fd新建swc工程，as中调用c中的注册的函数
-```as3
 	context= ExtensionContext.createExtensionContext("WinANE", ""); 
 	public function print():String
 	{
 		return context.call("test") as String;
 	} 
-```
 
 需要更改fd自动生成的build.xml
-```xml
 	<project name="testswc" default="build">
 	
 		<property environment="env" />
@@ -65,7 +60,6 @@ fd新建swc工程，as中调用c中的注册的函数
 			</zip>
 		</target>
 	</project>
-```
 #adt将swc,dll生成ane
 写extension.xml文件
 
@@ -100,7 +94,3 @@ fd新建swc工程，as中调用c中的注册的函数
 lib文件夹即为放置解压后ane文件夹的路径
 
 (如需打包ane要放到不同的路径，在adt后添加-extdir ext)
-在application.xml里加入
-```xml
-	<supportedProfiles>mobileDevice</supportedProfiles>
-```
