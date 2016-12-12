@@ -102,5 +102,5 @@ lib文件夹即为放置解压后ane文件夹的路径
 (如需打包ane要放到不同的路径，在adt后添加-extdir ext)
 在application.xml里加入
 ```xml
-<supportedProfiles>mobileDevice</supportedProfiles>
+	<supportedProfiles>mobileDevice</supportedProfiles>
 ```
