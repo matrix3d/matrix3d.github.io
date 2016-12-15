@@ -24,6 +24,8 @@ fd新建swc工程，as中调用c中的注册的函数
 ```
 
 需要更改fd自动生成的build.xml
+
+这里需要删除文档部分，否则会产生invalid swc错误
 ```xml
 	<project name="testswc" default="build">
 	
@@ -45,24 +47,6 @@ fd新建swc工程，as中调用c中的注册的函数
 				<sp path-element="src" />
 				<include-sources dir="src" includes="*"  />
 			</compc>
-			<!-- generate documentation -->
-			<exec executable="${FLEX_HOME}/bin/asdoc.bat" failonerror="true">
-				<arg line="-load-config '${FLEX_HOME}/frameworks/air-config.xml'"/>
-				<arg line="-source-path 'src'"/>
-				<arg line="-doc-sources 'src'"/>
-				<arg line="-output 'lib/tempDoc'"/>
-				<arg line="-keep-xml='true'"/>
-				<arg line="-skip-xsl='true'"/>
-			</exec>
-	
-			<!-- inject documentation inside SWC -->
-			<zip destfile="${OUTPUT}" update="true">
-				<zipfileset dir="lib/tempDoc/tempdita" prefix="docs">
-					<include name="*.*"/>
-					<exclude name="ASDoc_Config.xml"/>
-					<exclude name="overviews.xml"/>
-				</zipfileset>
-			</zip>
 		</target>
 	</project>
 ```
@@ -96,11 +80,6 @@ fd新建swc工程，as中调用c中的注册的函数
 
 点击air属性设置，添加ane id
 编辑runapp.bat 找到adl 后面添加 -extdir lib。
+编辑packager.bat 找到adt 后面添加 -extdir lib。
 
 lib文件夹即为放置解压后ane文件夹的路径
-
-(如需打包ane要放到不同的路径，在adt后添加-extdir ext)
-在application.xml里加入
-```xml
-	<supportedProfiles>mobileDevice</supportedProfiles>
-```
