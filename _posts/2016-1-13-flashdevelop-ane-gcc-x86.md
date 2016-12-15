@@ -6,29 +6,34 @@ tags : [as3]
 ---
 {% include JB/setup %}
 
-#gcc将c生成dll
+#gcc将c生成dll#
+
 gcc可以用mingw的
-```bat
+
 	set path=%path%;D:\Program Files (x86)\CodeBlocks\MinGW\bin
 	gcc -c hello.c
 	gcc -shared -o hello.dll hello.o FlashRuntimeExtensions.lib
-```
-#ant将as3生成swc
+	
+#ant将as3生成swc#
+
 fd新建swc工程，as中调用c中的注册的函数
-```as3
+
 	context= ExtensionContext.createExtensionContext("WinANE", ""); 
 	public function print():String
 	{
 		return context.call("test") as String;
 	} 
-```
 
 需要更改fd自动生成的build.xml
 
+<<<<<<< HEAD
 这里需要删除文档部分，否则会产生invalid swc错误
 ```xml
 	<project name="testswc" default="build">
 	
+=======
+	<project name="testswc" default="build">	
+>>>>>>> 875323de7beb3c5168b59d4ccb1c7f0a2d24e31f
 		<property environment="env" />
 		<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
 		<property name="FLEX_HOME" location="${env.FLEX_HOME}" />
@@ -49,8 +54,9 @@ fd新建swc工程，as中调用c中的注册的函数
 			</compc>
 		</target>
 	</project>
-```
-#adt将swc,dll生成ane
+	
+#adt将swc,dll生成ane#
+
 写extension.xml文件
 
 定义id，和初始化，完成函数名,用到的dll
@@ -74,12 +80,23 @@ fd新建swc工程，as中调用c中的注册的函数
 	set SDK_PATH=E:\sdk\apache-flex-sdk-4.12.1-bin
 	%SDK_PATH%\bin\adt.bat -package -storetype pkcs12 -keystore test.p12 -storepass test -target ane winane.ane extension.xml -swc hello.swc -platform Windows-x86 library.swf hello.dll
 
-#flashdevelop使用ane
+#flashdevelop使用ane#
+
 建立fd air工程
+
 将生成的ane复制到lib文件夹中，添加到库，解压，命名为 xxx_.ane
 
 点击air属性设置，添加ane id
+
 编辑runapp.bat 找到adl 后面添加 -extdir lib。
 编辑packager.bat 找到adt 后面添加 -extdir lib。
 
+<<<<<<< HEAD
 lib文件夹即为放置解压后ane文件夹的路径
+=======
+编辑packager.bat 找到adt 后面添加 -extdir lib。
+
+lib文件夹即为放置解压后ane文件夹的路径
+
+(如需打包ane要放到不同的路径，在adt后添加-extdir ext)
+>>>>>>> 875323de7beb3c5168b59d4ccb1c7f0a2d24e31f
