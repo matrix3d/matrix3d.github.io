@@ -26,14 +26,9 @@ fd新建swc工程，as中调用c中的注册的函数
 
 需要更改fd自动生成的build.xml
 
-<<<<<<< HEAD
 这里需要删除文档部分，否则会产生invalid swc错误
 ```xml
-	<project name="testswc" default="build">
-	
-=======
 	<project name="testswc" default="build">	
->>>>>>> 875323de7beb3c5168b59d4ccb1c7f0a2d24e31f
 		<property environment="env" />
 		<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
 		<property name="FLEX_HOME" location="${env.FLEX_HOME}" />
@@ -89,14 +84,7 @@ fd新建swc工程，as中调用c中的注册的函数
 点击air属性设置，添加ane id
 
 编辑runapp.bat 找到adl 后面添加 -extdir lib。
-编辑packager.bat 找到adt 后面添加 -extdir lib。
 
-<<<<<<< HEAD
-lib文件夹即为放置解压后ane文件夹的路径
-=======
 编辑packager.bat 找到adt 后面添加 -extdir lib。
 
 lib文件夹即为放置解压后ane文件夹的路径
-
-(如需打包ane要放到不同的路径，在adt后添加-extdir ext)
->>>>>>> 875323de7beb3c5168b59d4ccb1c7f0a2d24e31f
