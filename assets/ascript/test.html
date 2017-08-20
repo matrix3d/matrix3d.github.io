@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>CodeMirror</title>
+    <title>live code as3</title>
 	
 	<script src="js/swfobject.js"></script>
 <script src="lib/codemirror.js"></script>
@@ -38,17 +38,16 @@ html {
 </head>
 <body>
 <div id="wrapper">
-<div id="header">header</div>
+<div id="header">live code as3,stage3d,a website similar to wonderfl.net.</div>
 <div id="body" class="clearfix">
 <div id="aside">
-aside
-
 	<div id="altContent">
 		<h1>ascript</h1>
 		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
 	</div>
 </div>
 <div id="main">
+<button id="shareBtn">share</button>
 <form>
         <textarea id='code' name='code'>
 package
@@ -151,6 +150,9 @@ package
 		}
 		
 		public function dispose():void{
+			if(context3D){
+				context3D.dispose();
+			}
 			stage.removeEventListener(Event.ENTER_FRAME, onRender);
 		}
 	}
@@ -159,17 +161,27 @@ package
     </form>
 </div>
 </div>
-<div id="footer">footer</div>
+<div id="footer">build flash online</div>
 </div>
 <script>
+
+var codeParm=getParameter("code");
+if(codeParm){
+	try{
+		document.getElementById("code").innerHTML =b64DecodeUnicode(codeParm);
+	}catch(err){
+	
+	}
+	//alert(codeParm);
+}else{
+	//alert(codeParm+"null");
+}
 var myCodeMirror=CodeMirror.fromTextArea(document.getElementById("code"),
 {
 lineNumbers:true
 }
 );
-
-var flashvars = {
-		};
+var flashvars = {};
 		var params = {
 			menu: "false",
 			scale: "noScale",
@@ -186,7 +198,31 @@ var flashvars = {
 			"altContent", "400px", "400px", "10.0.0", 
 			"expressInstall.swf", 
 			flashvars, params, attributes);
-
+			
+function getParameter(param) {
+	var reg = new RegExp(".*[?,&]"+param+"=(.*?)((&.*)|$)");
+	var obj = reg.exec(window.location.search);
+	if(obj)return obj[1];
+	else return "";
+}
+//base64
+function b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {
+        return String.fromCharCode('0x' + p1);
+    }));
+}
+function b64DecodeUnicode(str) {
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}
+//alert(b64DecodeUnicode(b64EncodeUnicode(document.getElementById("code").value)));
+document.getElementById("shareBtn").addEventListener("click",onShare);
+function onShare(){
+	var url=window.location.href.split("?")[0];
+	var codevalue=myCodeMirror.getValue();
+	window.open(url+"?code="+b64EncodeUnicode(codevalue));
+}
 </script>
 </body>
 </html>
