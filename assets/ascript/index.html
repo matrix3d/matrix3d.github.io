@@ -9,6 +9,8 @@
 	
 	<script src="js/swfobject.js"></script>
 <script src="lib/codemirror.js"></script>
+<script src="rawdeflate.js"></script>
+<script src="rawinflate.js"></script>
 <link rel="stylesheet" href="lib/codemirror.css">
 <style type="text/css">
 * {
@@ -168,7 +170,7 @@ package
 var codeParm=getParameter("code");
 if(codeParm){
 	try{
-		document.getElementById("code").innerHTML =b64DecodeUnicode(codeParm);
+		document.getElementById("code").innerHTML =b64DecodeUnicode(RawDeflate.inflate(b64DecodeUnicode(codeParm)));
 	}catch(err){
 	
 	}
@@ -228,7 +230,7 @@ document.getElementById("shareBtn").addEventListener("click",onShare);
 function onShare(){
 	var url=window.location.href.split("?")[0];
 	var codevalue=myCodeMirror.getValue();
-	window.open(url+"?code="+b64EncodeUnicode(myCodeMirror.getValue()));
+	window.open(url+"?code="+b64EncodeUnicode(RawDeflate.deflate(b64EncodeUnicode(myCodeMirror.getValue()))));
 }
 </script>
 </body>
