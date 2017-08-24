@@ -53,7 +53,8 @@ html {
 	</div>
 </div>
 <div id="main">
-<button id="shareBtn">share</button>
+<button id="shareBtn">share</button><br>
+Press ctrl-space or alt-/ to activate autocompletion
 <form>
         <textarea id='code' name='code'>
 package
@@ -187,7 +188,8 @@ var myCodeMirror=CodeMirror.fromTextArea(document.getElementById("code"),
 firstLineNumber:0,
 lineNumbers:true,
 extraKeys: {
-"ctrl-space": "autocomplete"
+"Ctrl-Space": "autocomplete",
+"Alt-/": "autocomplete"
 },         
 indentWithTabs:true,
 indentUnit:4
