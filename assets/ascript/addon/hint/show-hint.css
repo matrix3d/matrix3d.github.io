@@ -15,7 +15,7 @@
 
   background: white;
   font-size: 90%;
-  font-family: monospace;
+  font-family: Consolas,Menlo,Monospace;
 
   max-height: 20em;
   overflow-y: auto;
