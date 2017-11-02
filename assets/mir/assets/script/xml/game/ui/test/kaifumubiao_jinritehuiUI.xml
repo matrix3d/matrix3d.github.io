@@ -1,0 +1,9 @@
+<View width="1440" height="810">
+			  <Image skin="png.yongzhezhilu.boss.xudi" x="391" y="680" width="908" height="38"/>
+			  <Image skin="png.renwu.xudi" x="391" y="684" width="909" height="30"/>
+			  <Label text="规则：完成累充任务即可购买特惠礼包，每个礼包每日限购1次，活动结束倒计时：" x="400" y="689" color="0xa79d75" stroke="0x0" align="center" var="shuoming1" size="20" mouseEnabled="false" bold="true" isHtml="true" font="simsun"/>
+			  <Label text="20:20:20" x="1167" y="689" color="0x23dd69" stroke="0x0" align="left" var="lab_time" size="20" mouseEnabled="false" bold="true" isHtml="true" width="129" height="24" font="simsun"/>
+			  <List x="415" y="338" var="list_libao" repeatX="3" spaceX="60" width="864" height="341">
+			    <kaifumubiao_jinritehui_list x="-226" y="-1" name="render" runtime="game.ui.test.kaifumubiao_jinritehui_listUI"/>
+			  </List>
+			</View>

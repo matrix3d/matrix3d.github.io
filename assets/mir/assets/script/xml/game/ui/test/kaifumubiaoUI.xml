@@ -1,0 +1,17 @@
+<Dialog width="1440" height="810">
+			  <Image skin="png.comp.mianban.mianban_bg" x="69" y="54" mouseEnabled="false" var="bg_img" width="1299" height="712" sizeGrid="150,150,150,150"/>
+			  <Button skin="png.comp.guanbi" x="1241" y="60" name="close" stateNum="2"/>
+			  <Image skin="png.comp.biaoti.kaifumubiao" x="185" y="86"/>
+			  <Image skin="png.comp.dihuawen" x="391" y="146" sizeGrid="20,20,20,20" width="908" height="578"/>
+			  <Image skin="png.comp.biankuang_m" x="397" y="152" sizeGrid="25,25,25,25" width="896" height="185"/>
+			  <List width="233" height="575" x="145" y="147" vScrollBarSkin="png.comp.vscroll.vscroll" var="list_anniu" repeatY="7" spaceY="4">
+			    <zuoanniu x="25" y="61" name="render" runtime="game.ui.test.zuoanniuUI"/>
+			  </List>
+			  <Button skin="png.kaifumubiao.btn_jinrimubiao" x="721" y="154" stateNum="2" var="btn_jinrimubiao"/>
+			  <Button skin="png.kaifumubiao.btn_meiridenglu" x="428" y="154" stateNum="2" var="btn_meiridenglu"/>
+			  <Button skin="png.kaifumubiao.btn_tehuilibao" x="1014" y="154" stateNum="2" var="btn_tehuilibao"/>
+			  <kaifumubiao_jinrimubiao x="0" y="0" var="jirimubiao" runtime="game.ui.test.kaifumubiao_jinrimubiaoUI"/>
+			  <kaifumubiao_jinritehui x="0" y="0" var="jinritehui" runtime="game.ui.test.kaifumubiao_jinritehuiUI"/>
+			  <kaifumubiao_jinrushouchong x="0" y="0" var="jirishouchong" runtime="game.ui.test.kaifumubiao_jinrushouchongUI"/>
+			  <kaifumubiao_meiridenglu x="0" y="0" var="meiridenglu" runtime="game.ui.test.kaifumubiao_meiridengluUI"/>
+			</Dialog>

@@ -1,0 +1,9 @@
+<View width="1440" height="810">
+			  <Image skin="png.kaifumubiao.kaifumubiao_tehui" x="396" y="338" width="898" height="381"/>
+			  <Button label="领取奖励" skin="png.comp.btn.btn_tongyong1" x="936" y="606" labelColors="0xffc982,0xffc982,0xffc982" labelStroke="0x0" var="but_vip" stateNum="2" labelSize="22" width="163" height="57"/>
+			  <Image skin="png.yongzhezhilu.boss.xudi" x="391" y="680" width="908" height="38"/>
+			  <Image skin="png.renwu.xudi" x="391" y="684" width="909" height="30"/>
+			  <Label text="首冲后即可领取额外大礼" x="406" y="689" color="0xa79d75" stroke="0x0" align="center" var="shuoming1" size="20" mouseEnabled="false" bold="true" isHtml="true" font="simsun"/>
+			  <Label text="20:20:20" x="1167" y="689" color="0x23dd69" stroke="0x0" align="left" var="lab_time" size="20" mouseEnabled="false" bold="true" isHtml="true" width="129" height="24" font="simsun"/>
+			  <Label text="倒计时：" x="1082" y="689" color="0xa79d75" stroke="0x0" align="center" size="20" mouseEnabled="false" bold="true" isHtml="true" width="86" height="24" font="simsun"/>
+			</View>
