@@ -1,0 +1,9 @@
+<View width="1440" height="810">
+			  <List x="398" y="391" var="lite_item" repeatX="1" repeatY="3" spaceX="1" spaceY="3" width="895" height="325" vScrollBarSkin="png.comp.vscroll.vscroll">
+			    <kaifumubiao_jinrimubiao_list x="-2" y="-128" name="render" runtime="game.ui.test.kaifumubiao_jinrimubiao_listUI"/>
+			  </List>
+			  <Image skin="png.comp.tiaoshang" x="395" y="339" width="900" height="49"/>
+			  <Label text="排名" x="469" y="352" color="0xd9bd3c" stroke="0x0" bold="true" size="20" align="left" font="simsun"/>
+			  <Label text="奖励" x="816" y="352" color="0xd9bd3c" stroke="0x0" bold="true" size="20" align="left" font="simsun"/>
+			  <Label text="操作" x="1151" y="352" color="0xd9bd3c" stroke="0x0" bold="true" size="20" align="left" font="simsun"/>
+			</View>
