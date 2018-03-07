@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		html, body{
+		  height:100%; overflow:hidden; 
+		}
+		body { margin:0; }
+	</style>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+var createSwfObject = function(src, attributes, parameters) {
+		var i, html, div, obj, attr = attributes || {}, param = parameters || {};
+		attr.type = 'application/x-shockwave-flash';
+		if (window.ActiveXObject) {
+			attr.classid = 'clsid:d27cdb6e-ae6d-11cf-96b8-444553540000';
+			param.movie = src;
+		}
+		else {
+			attr.data = src;
+		}
+		var style="style='";
+		html = '<object';
+		for (i in attr) {
+			html += ' ' + i + '="' + attr[i] + '"';
+			if(i=="width"||i=="height"){
+				style+=i+":"+attr[i]+";";
+			}
+		}
+		style+="'";
+		html+=" "+style;
+		html += '>';
+		for (i in param) {
+			html += '<param name="' + i + '" value="' + param[i] + '" />';
+		}
+		html += '</object>';
+		div = document.createElement('div');
+		div.innerHTML = html;
+		obj = div.firstChild;
+		div.removeChild(obj);
+		return obj;
+	};
+
+	var swfEl = createSwfObject('FlashShader.swf?v=1', {id: 'myid', 'class': 'myclass', width: "100%", height: "100%"}, {wmode: 'direct',FlashVars:window.location.search.substring(1)});
+	document.body.appendChild(swfEl);
+</script>
