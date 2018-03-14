@@ -201,7 +201,18 @@
 				"test_perlin"
 			]
 		};
-
+		
+		var selected2source={
+			test_graphics:"TestGraphics",
+			test_glsl:"TestStage3DGLSL",
+			test_mouse:"TestMouseEvent",
+			test_bitmapsand:"TestBitmapDataSand",
+			test_puyodot:"PuyoDot3JS",
+			test_hugryherogpu:"TestHungryHeroGPU",
+			test_box2d:"TestBox2D",
+			test_bunnymark:"TestBunnymark",
+			test_perlin:"TestBitmapData"
+		}
 		//
 
 		var panel = document.getElementById( 'panel' );
@@ -233,6 +244,19 @@
 		var divs = {};
 		var selected = null;
 
+		var button = document.createElement( 'div' );
+		button.id = 'button';
+		button.textContent = 'View source';
+		button.addEventListener( 'click', function ( event ) {
+
+			var array = location.href.split( '/' );
+			array.pop();
+			window.open( "https://github.com/matrix3d/spriteflexjs/blob/master/test/src/"+selected2source[selected]+".as" );
+
+		}, false );
+		button.style.display = 'none';
+		document.body.appendChild( button );
+		
 		for ( var key in files ) {
 
 			var section = files[ key ];
