@@ -5,6 +5,9 @@ tagline: ""
 tags : [as3, flash]
 ---
 {% include JB/setup %}
+```as3
+var a= 1;
+```
 ~~~py
 #import
 from Tkinter import *
