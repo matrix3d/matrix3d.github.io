@@ -5,7 +5,7 @@ tagline: ""
 tags : [as3, flash]
 ---
 {% include JB/setup %}
-
+···py
     #import
     from Tkinter import *
     try:
@@ -41,4 +41,5 @@ tags : [as3, flash]
 
     mainloop()
     #raw_input();
+···
 
