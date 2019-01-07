@@ -10,23 +10,28 @@ tags : [antlr]
 
 ###  根据g4生成java
 
-```java -jar antlr-4.7.2-complete.jar Hello.g4```
+```
+java -jar antlr-4.7.2-complete.jar Hello.g4
+```
 
 ###  编译java
 
-```javac -cp antlr-4.7.2-complete.jar *.java```
+```
+javac -cp antlr-4.7.2-complete.jar *.java
+```
 
 ###  gui测试
-```java org.antlr.v4.gui.TestRig Hello init -gui```
+
+```
+java org.antlr.v4.gui.TestRig Hello init -gui
+```
 
 输入代码 ctrl+z结束 回车
 
-```bat
-```
 	
 ### g4 例子
 
-```
+```g4
 grammar Hello;
 init : '{' value (',' value)* '}' ;
 value : init
