@@ -1,0 +1,22 @@
+<script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+<script type='text/javascript'>
+    var fyre = LF({
+        site_id: {{ site.JB.comments.livefyre.site_id }}
+    });
+</script>
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+//id: '页面 ID', // 可选。默认为 location.href
+owner: 'matrix3d',
+repo: 'matrix3d.github.io',
+oauth: {
+    client_id: 'cbba158232af7a2cb431',
+    client_secret: 'bed68942cee3f9b412fb6a3442ad754d4ee2967e',
+},
+})
+gitment.render('container')
+</script>
