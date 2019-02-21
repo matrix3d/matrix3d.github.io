@@ -1,12 +1,5 @@
-<script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
-<script type='text/javascript'>
-    var fyre = LF({
-        site_id: {{ site.JB.comments.livefyre.site_id }}
-    });
-</script>
-
 <div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
