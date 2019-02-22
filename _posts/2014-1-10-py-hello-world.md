@@ -4,7 +4,6 @@ category : as3
 tagline: ""
 tags : [as3, flash]
 ---
-{% include JB/setup %}
 ```as3
 var a= 1;
 ```

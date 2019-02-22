@@ -4,7 +4,6 @@ category : 3dmax
 tagline: ""
 tags : [3dmax]
 ---
-{% include JB/setup %}
 
 ### 运行
 

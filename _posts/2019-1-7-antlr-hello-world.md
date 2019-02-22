@@ -4,7 +4,6 @@ category : antlr
 tagline: ""
 tags : [antlr]
 ---
-{% include JB/setup %}
 
 ###  下载 antlr-4.7.2-complete.jar
 

@@ -4,7 +4,6 @@ category : as3
 tagline: ""
 tags : [as3]
 ---
-{% include JB/setup %}
 
 #gcc将c生成dll#
 

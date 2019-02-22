@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: default
 title: Hello World!
 tagline: Supporting tagline
 ---
-{% include JB/setup %}
 
 
 "posts list".
