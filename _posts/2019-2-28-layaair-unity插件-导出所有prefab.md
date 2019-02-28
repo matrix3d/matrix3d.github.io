@@ -12,14 +12,14 @@ tags : [laya,h5]
 增加的代码如下
 
 
-```cshape
+```cs
 if (GUILayout.Button("prefab导出", GUILayout.Height(26)))
 		{
 			exportResourcePrefab(false);
 		}
 ```
 
-```cshape
+```cs
 private static void exportResourcePrefab(bool isDebug)
 	{
 		exportResource(false);
