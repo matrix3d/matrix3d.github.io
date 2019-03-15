@@ -739,6 +739,45 @@ var Handler=(function(){
 })()
 
 
+/**
+*...
+*@author lizhi
+*/
+//class code.Color
+var Color=(function(){
+	function Color(){}
+	__class(Color,'code.Color');
+	Color.getRandomColor=function(){
+		return Color.fromHSV(Math.random(),1,1);
+	}
+
+	Color.fromHSV=function(h,s,v){
+		var R=NaN,G=NaN,B=NaN;
+		if (s==0){
+			R=G=B=v;
+			}else{
+			var h6=h *6;
+			var i=h6>>0;
+			var f=h6-i;
+			var a=v *(1-s)
+			var b=v *(1-s *f)
+			var c=v *(1-s *(1-f))
+			switch(i){
+				case 0:R=v;G=c;B=a;break ;
+				case 1:R=b;G=v;B=a;break ;
+				case 2:R=a;G=v;B=c;break ;
+				case 3:R=a;G=b;B=v;break ;
+				case 4:R=c;G=a;B=v;break ;
+				case 5:R=v;G=a;B=b;break ;
+				}
+		}
+		return new Vector3(R,G,B);
+	}
+
+	return Color;
+})()
+
+
 //class code.CommonData
 var CommonData=(function(){
 	function CommonData(){}
@@ -1252,6 +1291,8 @@ var NavTest=(function(){
 		Laya3D.init(0,0,true);
 		Laya.stage.scaleMode="full";
 		Laya.stage.screenMode="none";
+		Laya3D.debugMode=true;
+		Laya3D._debugPhasorSprite=new PhasorSpriter3D;
 		Stat.show();
 		this.scene=Laya.stage.addChild(new Scene());
 		this.camera=(this.scene.addChild(new Camera(0,0.1,10000)));
@@ -1265,6 +1306,7 @@ var NavTest=(function(){
 		this.mesh=new BoxMesh(1,1,1);
 		this.player=new MeshSprite3D(this.mesh);
 		this.agent=this.player.addComponent(NavMeshAgent);
+		this.agent.speed=10;
 		this.material=new StandardMaterial();
 		this.player.meshRender.material=this.material;
 		this.scene.addChild(this.player);
@@ -7880,7 +7922,7 @@ var OctreeNode=(function(){
 
 
 //class laya.d3.core.trail.module.Color
-var Color=(function(){
+var Color$1=(function(){
 	function Color(r,g,b,a){
 		this._r=NaN;
 		this._g=NaN;
@@ -7896,7 +7938,7 @@ var Color=(function(){
 		this._a=a;
 	}
 
-	__class(Color,'laya.d3.core.trail.module.Color');
+	__class(Color,'laya.d3.core.trail.module.Color',null,'Color$1');
 	var __proto=Color.prototype;
 	__proto.cloneTo=function(destObject){
 		destObject._r=this._r;
@@ -8095,7 +8137,7 @@ var GradientColorKey=(function(){
 		this._color=null;
 		this._time=NaN;
 		(time===void 0)&& (time=0);
-		this._color=color||new Color();
+		this._color=color||new Color$1();
 		this._time=time;
 	}
 
@@ -21467,7 +21509,7 @@ var Font=(function(){
 		*首行缩进 （以像素为单位）。
 		*/
 		this.indent=0;
-		this._color=Color$1.create(Font.defaultColor);
+		this._color=Color$2.create(Font.defaultColor);
 		this.family=Font.defaultFamily;
 		this.stroke=Font._STROKE;
 		this.size=Font.defaultSize;
@@ -21542,7 +21584,7 @@ var Font=(function(){
 	__getset(0,__proto,'color',function(){
 		return this._color.strColor;
 		},function(value){
-		this._color=Color$1.create(value);
+		this._color=Color$2.create(value);
 	});
 
 	/**
@@ -21611,7 +21653,7 @@ var Font=(function(){
 			default :
 				this._decoration.type=strs[0];
 			}
-		strs[1] && (this._decoration.color=Color$1.create(strs));
+		strs[1] && (this._decoration.color=Color$2.create(strs));
 		this._decoration.value=value;
 	});
 
@@ -27591,7 +27633,7 @@ var ClassUtils=(function(){
 *<code>Color</code> 是一个颜色值处理类。
 */
 //class laya.utils.Color
-var Color$1=(function(){
+var Color$2=(function(){
 	function Color(str){
 		/**@private */
 		this._color=[];
@@ -27626,7 +27668,7 @@ var Color$1=(function(){
 		(this._color).__id=++Color._COLODID;
 	}
 
-	__class(Color,'laya.utils.Color',null,'Color$1');
+	__class(Color,'laya.utils.Color',null,'Color$2');
 	Color._initDefault=function(){
 		Color._DEFAULT={};
 		for (var i in Color._COLOR_MAP)Color._SAVE[i]=Color._DEFAULT[i]=new Color(Color._COLOR_MAP[i]);
@@ -30399,7 +30441,7 @@ var BlendMode=(function(){
 //class laya.webgl.canvas.DrawStyle
 var DrawStyle=(function(){
 	function DrawStyle(value){
-		this._color=Color$1.create("black");
+		this._color=Color$2.create("black");
 		this.setValue(value);
 	}
 
@@ -30408,7 +30450,7 @@ var DrawStyle=(function(){
 	__proto.setValue=function(value){
 		if (value){
 			if ((typeof value=='string')){
-				this._color=Color$1.create(value);
+				this._color=Color$2.create(value);
 				return;
 			}
 			if ((value instanceof laya.utils.Color )){
@@ -30419,7 +30461,7 @@ var DrawStyle=(function(){
 	}
 
 	__proto.reset=function(){
-		this._color=Color$1.create("black");
+		this._color=Color$2.create("black");
 	}
 
 	__proto.equal=function(value){
@@ -30435,7 +30477,7 @@ var DrawStyle=(function(){
 	DrawStyle.create=function(value){
 		if (value){
 			var color;
-			if ((typeof value=='string'))color=Color$1.create(value);
+			if ((typeof value=='string'))color=Color$2.create(value);
 			else if ((value instanceof laya.utils.Color ))color=value;
 			if (color){
 				return color._drawStyle || (color._drawStyle=new DrawStyle(value));
@@ -33701,7 +33743,7 @@ var WebGL=(function(){
 		RunDriver.clear=function (color){
 			RenderState2D.worldScissorTest && laya.webgl.WebGL.mainContext.disable(0x0C11);
 			var ctx=Render.context.ctx;
-			var c=(ctx._submits._length==0 || Config.preserveDrawingBuffer)? Color$1.create(color)._color :Stage._wgColor;
+			var c=(ctx._submits._length==0 || Config.preserveDrawingBuffer)? Color$2.create(color)._color :Stage._wgColor;
 			if (c)ctx.clearBG(c[0],c[1],c[2],c[3]);
 			RenderState2D.clear();
 		}
@@ -38511,26 +38553,6 @@ var SphereShape=(function(_super){
 
 
 /**
-*@private
-*/
-//class laya.d3.core.render.SubMeshRenderElement extends laya.d3.core.render.RenderElement
-var SubMeshRenderElement=(function(_super){
-	function SubMeshRenderElement(){
-		/**@private */
-		this._batchIndexStart=0;
-		/**@private */
-		this._batchIndexEnd=0;
-		/**@private */
-		this._skinAnimationDatas=null;
-		SubMeshRenderElement.__super.call(this);
-	}
-
-	__class(SubMeshRenderElement,'laya.d3.core.render.SubMeshRenderElement',_super);
-	return SubMeshRenderElement;
-})(RenderElement)
-
-
-/**
 *<p> <code>LoaderManager</code> 类用于用于批量加载资源。此类是单例，不要手动实例化此类，请通过Laya.loader访问。</p>
 *<p>全部队列加载完成，会派发 Event.COMPLETE 事件；如果队列中任意一个加载失败，会派发 Event.ERROR 事件，事件回调参数值为加载出错的资源地址。</p>
 *<p> <code>LoaderManager</code> 类提供了以下几种功能：<br/>
@@ -38991,6 +39013,26 @@ var LoaderManager=(function(_super){
 
 	return LoaderManager;
 })(EventDispatcher)
+
+
+/**
+*@private
+*/
+//class laya.d3.core.render.SubMeshRenderElement extends laya.d3.core.render.RenderElement
+var SubMeshRenderElement=(function(_super){
+	function SubMeshRenderElement(){
+		/**@private */
+		this._batchIndexStart=0;
+		/**@private */
+		this._batchIndexEnd=0;
+		/**@private */
+		this._skinAnimationDatas=null;
+		SubMeshRenderElement.__super.call(this);
+	}
+
+	__class(SubMeshRenderElement,'laya.d3.core.render.SubMeshRenderElement',_super);
+	return SubMeshRenderElement;
+})(RenderElement)
 
 
 /**
@@ -41602,7 +41644,7 @@ var CSSStyle=(function(_super){
 		this._border || (this._border={});
 		this._border.value=value;
 		var values=value.split(' ');
-		this._border.color=Color$1.create(values[values.length-1]);
+		this._border.color=Color$2.create(values[values.length-1]);
 		if (values.length==1){
 			this._border.size=1;
 			this._border.type='solid';
@@ -41628,7 +41670,7 @@ var CSSStyle=(function(_super){
 			return;
 		}
 		this._border || (this._border={size:1,type:'solid'});
-		this._border.color=(value==null)? null :Color$1.create(value);
+		this._border.color=(value==null)? null :Color$2.create(value);
 		this._ower.conchModel && this._ower.conchModel.border(this._border.color.strColor);
 		this._ower._renderType |=0x100;
 	});
@@ -42249,7 +42291,7 @@ var WebGLContext2D=(function(_super){
 			DrawText.drawText(this,txt,words,this._curMat,font,textAlign || this._other.textAlign,color,strokeColor,lineWidth,x,y,underLine);
 			}else {
 			var preDef=this._shader2D.defines.getValue();
-			var colorAdd=color ? Color$1.create(color)._color :shader.colorAdd;
+			var colorAdd=color ? Color$2.create(color)._color :shader.colorAdd;
 			if (shader.ALPHA!==curShader.ALPHA || colorAdd!==shader.colorAdd || curShader.colorAdd!==shader.colorAdd){
 				shader.glTexture=null;
 				shader.colorAdd=colorAdd;
@@ -54413,7 +54455,7 @@ var Leader=(function(_super){
 		this._circleRadius=2;
 		this.isFollowChanged=false;
 		Leader.__super.call(this);
-		this.color=new Color$1("#ffffff");
+		this.color=new Color$2("#ffffff");
 		console.log("new leader");
 	}
 
@@ -58509,6 +58551,186 @@ var WaterMaterial=(function(_super){
 
 
 /**
+*<code>BoxCollider</code> 类用于创建盒子碰撞器。
+*/
+//class laya.d3.component.physics.BoxCollider extends laya.d3.component.physics.Collider
+var BoxCollider=(function(_super){
+	function BoxCollider(){
+		/**@private */
+		this._size=null;
+		/**@private */
+		this._transformOrientedBoundBox=null;
+		/**中心点 */
+		this.center=null;
+		BoxCollider.__super.call(this);
+		this._needUpdate=false;
+	}
+
+	__class(BoxCollider,'laya.d3.component.physics.BoxCollider',_super);
+	var __proto=BoxCollider.prototype;
+	/**
+	*@private
+	*/
+	__proto._updateCollider=function(){
+		if (this._needUpdate){
+			var obbMat=this._transformOrientedBoundBox.transformation;
+			var transform=(this._owner).transform;
+			var rotation=transform.rotation;
+			var scale=transform.scale;
+			var centerE=this.center.elements;
+			if (centerE[0]===0.0 && centerE[1]===0.0 && centerE[2]===0.0){
+				Matrix4x4.createAffineTransformation(transform.position,rotation,Vector3.ONE,obbMat);
+				}else {
+				Vector3.multiply(this.center,scale,BoxCollider._deviationV3);
+				Vector3.transformQuat(BoxCollider._deviationV3,rotation,BoxCollider._deviationV3);
+				Vector3.add(transform.position,BoxCollider._deviationV3,BoxCollider._deviationV3);
+				Matrix4x4.createAffineTransformation(BoxCollider._deviationV3,rotation,Vector3.ONE,obbMat);
+			}
+			this._transformOrientedBoundBox.transformation=obbMat;
+			var extentsE=this._transformOrientedBoundBox.extents.elements;
+			var sizeE=this._size.elements;
+			var scaleE=scale.elements;
+			extentsE[0]=sizeE[0] *0.5 *scaleE[0];
+			extentsE[1]=sizeE[1] *0.5 *scaleE[1];
+			extentsE[2]=sizeE[2] *0.5 *scaleE[2];
+			this._needUpdate=false;
+		}
+	}
+
+	/**
+	*@private
+	*/
+	__proto._onWorldMatrixChanged=function(){
+		this._needUpdate=true;
+		for (var k in this._runtimeCollisonMap){
+			this._runtimeCollisonTestMap[k]=true;
+			this._runtimeCollisonMap[k]._runtimeCollisonTestMap[this.id]=true;
+		}
+	}
+
+	/**
+	*@inheritDoc
+	*/
+	__proto._initialize=function(owner){
+		laya.d3.component.Component3D.prototype._initialize.call(this,owner);
+		this._transformOrientedBoundBox=new OrientedBoundBox(new Vector3(),new Matrix4x4());
+		this._size=new Vector3();
+		this.center=new Vector3();
+		(owner).transform.on("worldmatrixneedchanged",this,this._onWorldMatrixChanged);
+		this._needUpdate=true;
+	}
+
+	/**
+	*@inheritDoc
+	*/
+	__proto._getType=function(){
+		return 1;
+	}
+
+	/**
+	*@inheritDoc
+	*/
+	__proto._collisonTo=function(other){
+		switch (other._getType()){
+			case 0:
+				return this.boundBox.containsSphere((other).boundSphere)!==0;
+				break ;
+			case 1:
+				return this.boundBox.containsOrientedBoundBox((other).boundBox)!==0;
+				break ;
+			case 2:;
+				var meshCollider=other;
+				if (this.boundBox.containsBoundBox(meshCollider._boundBox)!==0){
+					var positions=(other).mesh._positions;
+					for (var i=0,n=positions.length;i < n;i++){
+						if (this.boundBox.containsPoint(positions[i])===1)
+							return true
+					}
+					return false;
+					}else {
+					return false;
+				}
+				break ;
+			default :
+				throw new Error("BoxCollider:unknown collider type.");
+			}
+	}
+
+	/**
+	*@inheritDoc
+	*/
+	__proto._cloneTo=function(dest){
+		var destBoxCollider=dest;
+		var destSize=destBoxCollider.size;
+		this.size.cloneTo(destSize);
+		destBoxCollider.size=destSize;
+		this.center.cloneTo(destBoxCollider.center);
+	}
+
+	/**
+	*@inheritDoc
+	*/
+	__proto.raycast=function(ray,hitInfo,maxDistance){
+		(maxDistance===void 0)&& (maxDistance=1.79e+308);
+		this._updateCollider();
+		var distance=this._transformOrientedBoundBox.intersectsRay(ray,hitInfo.position);
+		if (distance!==-1 && distance <=maxDistance){
+			hitInfo.distance=distance;
+			hitInfo.sprite3D=this._owner;
+			return true;
+			}else {
+			hitInfo.distance=-1;
+			hitInfo.sprite3D=null;
+			return false;
+		}
+	}
+
+	/**
+	*从AABB碰撞盒设置center和Size。
+	*@param boundBox 碰撞盒。
+	*/
+	__proto.setFromBoundBox=function(boundBox){
+		OrientedBoundBox.createByBoundBox(boundBox,this._transformOrientedBoundBox);
+		var extents=this._transformOrientedBoundBox.extents;
+		this._size=new Vector3(extents.x *2,extents.y *2,extents.z *2);
+		this.center=new Vector3();
+		Vector3.add(boundBox.min,boundBox.max,this.center);
+		Vector3.scale(this.center,0.5,this.center);
+		this._needUpdate=true;
+	}
+
+	/**
+	*获取包围盒子,只读,不允许修改。
+	*@return 包围球。
+	*/
+	__getset(0,__proto,'boundBox',function(){
+		this._updateCollider();
+		return this._transformOrientedBoundBox;
+	});
+
+	/**
+	*设置盒子碰撞器长宽高的一半。
+	*@param 长宽高的一半。
+	*/
+	/**
+	*获取盒子碰撞器长宽高的一半。
+	*@return 长宽高的一半。
+	*/
+	__getset(0,__proto,'size',function(){
+		return this._size;
+		},function(value){
+		this._size=value;
+		this._needUpdate=true;
+	});
+
+	__static(BoxCollider,
+	['_deviationV3',function(){return this._deviationV3=new Vector3();},'_obbCenterV3',function(){return this._obbCenterV3=new Vector3();}
+	]);
+	return BoxCollider;
+})(Collider)
+
+
+/**
 *...
 *@author ...
 */
@@ -58809,186 +59031,6 @@ var ShurikenParticleMaterial=(function(_super){
 	]);
 	return ShurikenParticleMaterial;
 })(BaseMaterial)
-
-
-/**
-*<code>BoxCollider</code> 类用于创建盒子碰撞器。
-*/
-//class laya.d3.component.physics.BoxCollider extends laya.d3.component.physics.Collider
-var BoxCollider=(function(_super){
-	function BoxCollider(){
-		/**@private */
-		this._size=null;
-		/**@private */
-		this._transformOrientedBoundBox=null;
-		/**中心点 */
-		this.center=null;
-		BoxCollider.__super.call(this);
-		this._needUpdate=false;
-	}
-
-	__class(BoxCollider,'laya.d3.component.physics.BoxCollider',_super);
-	var __proto=BoxCollider.prototype;
-	/**
-	*@private
-	*/
-	__proto._updateCollider=function(){
-		if (this._needUpdate){
-			var obbMat=this._transformOrientedBoundBox.transformation;
-			var transform=(this._owner).transform;
-			var rotation=transform.rotation;
-			var scale=transform.scale;
-			var centerE=this.center.elements;
-			if (centerE[0]===0.0 && centerE[1]===0.0 && centerE[2]===0.0){
-				Matrix4x4.createAffineTransformation(transform.position,rotation,Vector3.ONE,obbMat);
-				}else {
-				Vector3.multiply(this.center,scale,BoxCollider._deviationV3);
-				Vector3.transformQuat(BoxCollider._deviationV3,rotation,BoxCollider._deviationV3);
-				Vector3.add(transform.position,BoxCollider._deviationV3,BoxCollider._deviationV3);
-				Matrix4x4.createAffineTransformation(BoxCollider._deviationV3,rotation,Vector3.ONE,obbMat);
-			}
-			this._transformOrientedBoundBox.transformation=obbMat;
-			var extentsE=this._transformOrientedBoundBox.extents.elements;
-			var sizeE=this._size.elements;
-			var scaleE=scale.elements;
-			extentsE[0]=sizeE[0] *0.5 *scaleE[0];
-			extentsE[1]=sizeE[1] *0.5 *scaleE[1];
-			extentsE[2]=sizeE[2] *0.5 *scaleE[2];
-			this._needUpdate=false;
-		}
-	}
-
-	/**
-	*@private
-	*/
-	__proto._onWorldMatrixChanged=function(){
-		this._needUpdate=true;
-		for (var k in this._runtimeCollisonMap){
-			this._runtimeCollisonTestMap[k]=true;
-			this._runtimeCollisonMap[k]._runtimeCollisonTestMap[this.id]=true;
-		}
-	}
-
-	/**
-	*@inheritDoc
-	*/
-	__proto._initialize=function(owner){
-		laya.d3.component.Component3D.prototype._initialize.call(this,owner);
-		this._transformOrientedBoundBox=new OrientedBoundBox(new Vector3(),new Matrix4x4());
-		this._size=new Vector3();
-		this.center=new Vector3();
-		(owner).transform.on("worldmatrixneedchanged",this,this._onWorldMatrixChanged);
-		this._needUpdate=true;
-	}
-
-	/**
-	*@inheritDoc
-	*/
-	__proto._getType=function(){
-		return 1;
-	}
-
-	/**
-	*@inheritDoc
-	*/
-	__proto._collisonTo=function(other){
-		switch (other._getType()){
-			case 0:
-				return this.boundBox.containsSphere((other).boundSphere)!==0;
-				break ;
-			case 1:
-				return this.boundBox.containsOrientedBoundBox((other).boundBox)!==0;
-				break ;
-			case 2:;
-				var meshCollider=other;
-				if (this.boundBox.containsBoundBox(meshCollider._boundBox)!==0){
-					var positions=(other).mesh._positions;
-					for (var i=0,n=positions.length;i < n;i++){
-						if (this.boundBox.containsPoint(positions[i])===1)
-							return true
-					}
-					return false;
-					}else {
-					return false;
-				}
-				break ;
-			default :
-				throw new Error("BoxCollider:unknown collider type.");
-			}
-	}
-
-	/**
-	*@inheritDoc
-	*/
-	__proto._cloneTo=function(dest){
-		var destBoxCollider=dest;
-		var destSize=destBoxCollider.size;
-		this.size.cloneTo(destSize);
-		destBoxCollider.size=destSize;
-		this.center.cloneTo(destBoxCollider.center);
-	}
-
-	/**
-	*@inheritDoc
-	*/
-	__proto.raycast=function(ray,hitInfo,maxDistance){
-		(maxDistance===void 0)&& (maxDistance=1.79e+308);
-		this._updateCollider();
-		var distance=this._transformOrientedBoundBox.intersectsRay(ray,hitInfo.position);
-		if (distance!==-1 && distance <=maxDistance){
-			hitInfo.distance=distance;
-			hitInfo.sprite3D=this._owner;
-			return true;
-			}else {
-			hitInfo.distance=-1;
-			hitInfo.sprite3D=null;
-			return false;
-		}
-	}
-
-	/**
-	*从AABB碰撞盒设置center和Size。
-	*@param boundBox 碰撞盒。
-	*/
-	__proto.setFromBoundBox=function(boundBox){
-		OrientedBoundBox.createByBoundBox(boundBox,this._transformOrientedBoundBox);
-		var extents=this._transformOrientedBoundBox.extents;
-		this._size=new Vector3(extents.x *2,extents.y *2,extents.z *2);
-		this.center=new Vector3();
-		Vector3.add(boundBox.min,boundBox.max,this.center);
-		Vector3.scale(this.center,0.5,this.center);
-		this._needUpdate=true;
-	}
-
-	/**
-	*获取包围盒子,只读,不允许修改。
-	*@return 包围球。
-	*/
-	__getset(0,__proto,'boundBox',function(){
-		this._updateCollider();
-		return this._transformOrientedBoundBox;
-	});
-
-	/**
-	*设置盒子碰撞器长宽高的一半。
-	*@param 长宽高的一半。
-	*/
-	/**
-	*获取盒子碰撞器长宽高的一半。
-	*@return 长宽高的一半。
-	*/
-	__getset(0,__proto,'size',function(){
-		return this._size;
-		},function(value){
-		this._size=value;
-		this._needUpdate=true;
-	});
-
-	__static(BoxCollider,
-	['_deviationV3',function(){return this._deviationV3=new Vector3();},'_obbCenterV3',function(){return this._obbCenterV3=new Vector3();}
-	]);
-	return BoxCollider;
-})(Collider)
 
 
 /**
@@ -63664,13 +63706,13 @@ var Stage=(function(_super){
 		this.conchModel && this.conchModel.bgColor(value);
 		if (Render.isWebGL){
 			if (value){
-				Stage._wgColor=Color$1.create(value)._color;
+				Stage._wgColor=Color$2.create(value)._color;
 				}else {
 				if (!Browser.onMiniGame)Stage._wgColor=null;
 			}
 		}
 		if (Browser.onLimixiu){
-			Stage._wgColor=Color$1.create(value)._color;
+			Stage._wgColor=Color$2.create(value)._color;
 		}else
 		if (value){
 			Render.canvas.style.background=value;
@@ -67113,26 +67155,53 @@ var NavMesh=(function(_super){
 	__class(NavMesh,'code.NavMesh',_super);
 	var __proto=NavMesh.prototype;
 	__proto.recreateResource=function(){
-		this._numberVertices=this.p.length/3;
 		this._numberIndices=this.i.length / 5 *3;
-		var vertexDeclaration=VertexPositionNormal.vertexDeclaration;
+		var vertexDeclaration=VertexPositionNormalColor.vertexDeclaration;
 		var p2=[];
-		for (var j=0;j < this.p.length;j+=3){
-			p2.push(this.p[j]);
-			p2.push(this.p[j+1]);
-			p2.push(this.p[j+2]);
+		var i2=[];
+		var k=0;
+		for (var j=0;j <this._numberIndices/3;j++){
+			i2.push(k++);
+			i2.push(k++);
+			i2.push(k++);
+			var a=this.i[j *5+2];
+			var b=this.i[j *5+1];
+			var c=this.i[j *5+3];
+			p2.push(this.p[a *3]);
+			p2.push(this.p[a *3+1]);
+			p2.push(this.p[a *3+2]);
 			p2.push(0);
 			p2.push(1);
 			p2.push(0);
-		};
-		var vertices=new Float32Array(p2);
-		var i2=[];
-		for (var j=0;j <this._numberIndices/3;j++){
-			i2.push(this.i[j*5+2]);
-			i2.push(this.i[j*5+1]);
-			i2.push(this.i[j*5+3]);
+			var cc=Color.fromHSV(((Math.random()*10)>>0)/10,1,1);
+			p2.push(cc.x);
+			p2.push(cc.y);
+			p2.push(cc.z);
+			p2.push(1);
+			p2.push(this.p[b *3]);
+			p2.push(this.p[b *3+1]);
+			p2.push(this.p[b *3+2]);
+			p2.push(0);
+			p2.push(1);
+			p2.push(0);
+			p2.push(cc.x);
+			p2.push(cc.y);
+			p2.push(cc.z);
+			p2.push(1);
+			p2.push(this.p[c *3]);
+			p2.push(this.p[c *3+1]);
+			p2.push(this.p[c *3+2]);
+			p2.push(0);
+			p2.push(1);
+			p2.push(0);
+			p2.push(cc.x);
+			p2.push(cc.y);
+			p2.push(cc.z);
+			p2.push(1);
 		};
 		var indices=new Uint16Array(i2);
+		var vertices=new Float32Array(p2);
+		this._numberVertices=p2.length / 10;
 		this._vertexBuffer=new VertexBuffer3D(vertexDeclaration,this._numberVertices,0x88E4,true);
 		this._indexBuffer=new IndexBuffer3D("ushort",this._numberIndices,0x88E4,true);
 		this._vertexBuffer.setData(vertices);
@@ -71249,7 +71318,7 @@ var TrailSprite3D=(function(_super){
 		var _colorKey;
 		for (i=0,j=_colorKeys.length;i < j;i++){
 			_colorKey=_colorKeys[i];
-			colorKey=new GradientColorKey(new Color(_colorKey.value[0],_colorKey.value[1],_colorKey.value[2],1.0),_colorKey.time);
+			colorKey=new GradientColorKey(new Color$1(_colorKey.value[0],_colorKey.value[1],_colorKey.value[2],1.0),_colorKey.time);
 			colorKeys.push(colorKey);
 		};
 		var alphaKeys=[];
