@@ -17,7 +17,7 @@ cocos的可视化编辑器是cocoscreate，基础版本只支持js。但是可�
 
 几个命令
 
-```
+```bat
 set path=D:\Python27;%path%
 cocos new test -p test.mygame -l lua -d test
 cocos compile -s test/test -p win32 -m release -o bin
