@@ -19,9 +19,9 @@ cocos的可视化编辑器是cocoscreate，基础版本只支持js。但是可�
 
 ```bat
 set path=D:\Python27;%path%
-cocos new test -p test.mygame -l lua -d test
-cocos compile -s test/test -p win32 -m release -o bin
-cocos run -s test/test -p win32
+cocos new test -p test.mygame -l lua -d .
+cocos compile -s test -p win32 -m release -o bin
+cocos run -s test -p win32
 ```
 
 这几个命令就可以运行基本的项目了
@@ -34,7 +34,7 @@ testc\test\test\frameworks\runtime-src\proj.win32\test.sln
 
 更改src里的 app/views/MainScene.lua即可立即看到更改效果
 
-如果想调试可以用vscode安装luaide-lite插件，打开工程目录，去插件官网下载LuaDebug.lua放到根目录，然后main.lua第一行添加 `require("LuaDebug")("localhost", 7003)`,新建launch配置文件,更改Cocos-Launch里的exePath指向 simulator/win32/test.exe
+如果想调试可以用vscode安装luaide-lite插件，打开工程目录，去插件官网下载LuaDebug.lua放到根目录，然后main.lua第一行添加 `require("LuaDebug")("localhost", 7003)`,新建launch配置文件,更改Cocos-Launch里的exePath指向 `${workspaceRoot}/simulator/win32/test.exe`
 
 这样就可以用vscode debug lua了。
 
