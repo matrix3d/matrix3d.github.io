@@ -40,7 +40,7 @@ testc\test\test\frameworks\runtime-src\proj.win32\test.sln
 
 官方的模版用的是mvc结构。默认生成了一个MainScene.lua。新建一个NewScene.lua 复制MainScene.lua的大部分代码，稍作修改。然后在MainScene里添加按钮事件，点击切换到NewScene
 
-```
+```lua
 local btn=ccui.Button:create( "HelloWorld.png","HelloWorld.png","HelloWorld.png")
 btn:addTo(self)
 btn:move(display.center)
