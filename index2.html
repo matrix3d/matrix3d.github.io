@@ -3,7 +3,7 @@ layout: default
 title: Hello World2!
 tagline: Supporting tagline
 ---
-{{ post.url | prepend: site.baseurl }}
+url{{ post.url | prepend: site.baseurl }}
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
