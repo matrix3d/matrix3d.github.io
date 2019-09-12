@@ -6,7 +6,7 @@ tags : [as3, flash]
 ---
 
 py3写法
-```py3
+```py
 #import
 from tkinter import *
 try:
