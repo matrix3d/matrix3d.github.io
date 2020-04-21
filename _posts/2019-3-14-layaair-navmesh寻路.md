@@ -60,6 +60,11 @@ public class NavMeshExport : MonoBehaviour
 }
 ```
 
+通过脚本导出obj后，可以通过threejs的convert_obj_three.py工具转换成js供程序使用
+
 <a href='https://matrix3d.github.io/patrollaya/bin/h5/'>测试demo</a>
+
 <a href='https://matrix3d.github.io/assets/html5/layanav/'>测试demo2</a>
+
+<a href='https://github.com/matrix3d/patrollaya'>source</a>
 
