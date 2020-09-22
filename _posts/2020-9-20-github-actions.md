@@ -15,6 +15,6 @@ github推出了一个新功能actions，就是提供了主机，可以在某些�
 
 然后看完整的例子吧
 
-https://github.com/matrix3d/testactionpri/blob/master/.github/workflows/blank.yml
+<a href='https://github.com/matrix3d/testactionpri/blob/master/.github/workflows/blank.yml'>https://github.com/matrix3d/testactionpri/blob/master/.github/workflows/blank.yml</a>
 
 效果还不错，每次提交代码自动编译java，生成apk
