@@ -33,8 +33,8 @@
     function i(e) {
         var a = t.createElement("div");
 		if("changedTouches" in e){
-			var cx=e.changedTouches[0].pageX;
-			var cy=e.changedTouches[0].pageY;
+			var cx=e.changedTouches[0].clientX;
+			var cy=e.changedTouches[0].clientY;
 		}else{
 			cx=e.clientX;
 			cy=e.clientY;
