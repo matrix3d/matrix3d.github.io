@@ -33,11 +33,11 @@
     function i(e) {
         var a = t.createElement("div");
 		if("changedTouches" in e){
-			var cx=e.changedTouches[0].clientX;
-			var cy=e.changedTouches[0].clientY;
+			var cx=e.changedTouches[0].screenX;
+			var cy=e.changedTouches[0].screenY;
 		}else{
-			cx=e.screenX;
-			cy=e.screenY;
+			cx=e.clientX;
+			cy=e.clientY;
 		}
         a.className = "heart",
         d.push({
