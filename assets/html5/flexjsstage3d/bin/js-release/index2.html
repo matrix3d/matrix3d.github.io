@@ -152,8 +152,8 @@
 				//"test_astar",
 				"test_perlin"
 			]
-		for each( var name in files ) {
-			document.getElementById("therow").innerHTML = tmpl.replace(/\$/g,name);
+		for ( var i=0;i<files.length;i++ ) {
+			document.getElementById("therow").innerHTML = tmpl.replace(/\$/g,files[i]);
 		}
 		
 	</script>
