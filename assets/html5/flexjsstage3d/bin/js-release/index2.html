@@ -86,10 +86,10 @@
   <div class="album py-5 bg-light">
     <div class="container">
 
-      <div class="row">
+      <div class="row" id="therow">
 	  
 		
-		 <div class="col-md-3">
+		 <!-- <div class="col-md-3">
           <div class="card mb-3 shadow-sm">
             <img src="img/test_box2d.jpg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
 			
@@ -105,9 +105,59 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 			
       </div>
+	  
+	  <script>
+	  function heredoc(fn) {
+		return fn.toString().split('\n').slice(1,-1).join('\n') + '\n'
+	}
+	 var tmpl = heredoc(function(){/*
+		<div class="col-md-3">
+			  <div class="card mb-3 shadow-sm">
+				<img src="img/$.jpg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
+				
+				</img>
+				<div class="card-body">
+				  <p class="card-text">$</p>
+				  <div class="d-flex justify-content-between align-items-center">
+					<div class="btn-group">
+					  <a href="$.html" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+					  <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary">Src</a>
+					</div>
+					<small class="text-muted">9 mins</small>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	 */});
+	 
+	 var files = [
+				"test_graphics",
+				//"test_stage3d",
+				"test_glsl",
+				"test_mouse",
+				//"test_bitmap",
+				"test_bitmapsand",
+				//"test_hugryhero",
+				//"test_tmx",
+				//"test_tmxgpu",
+				"test_puyodot",
+				"test_hugryherogpu",
+				"test_box2d",
+				"test_bunnymark",
+				//"test_engine3d",
+				//"test_jsmin",
+				//"test_astar",
+				"test_perlin"
+			]
+		for each( var name in files ) {
+			document.getElementById("therow").innerHTML = tmpl.replace(/\$/g,name);
+		}
+		
+	</script>
+	  
     </div>
   </div>
   
