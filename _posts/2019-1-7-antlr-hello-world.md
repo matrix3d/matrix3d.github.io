@@ -22,7 +22,7 @@ javac -cp antlr-4.7.2-complete.jar *.java
 ###  gui测试
 
 ```
-java org.antlr.v4.gui.TestRig Hello init -gui
+java -cp antlr-4.11.1-complete.jar;. org.antlr.v4.gui.TestRig Hello init -gui
 ```
 
 输入代码 ctrl+z结束 回车
