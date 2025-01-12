@@ -3,75 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>native physical bone | Welcome</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
+
+        /* Header */
         header {
-            background-color: #4CAF50;
-            color: white;
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            padding: 1rem 0;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+            text-decoration: underline;
+        }
+
+        /* Main Content */
         .container {
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 1.5rem;
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .intro {
             background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            text-align: center;
+
+        .intro h2 {
+            margin-top: 0;
         }
-        form {
-            display: flex;
-            flex-direction: column;
+
+        .intro p {
+            font-size: 1.1em;
         }
-        label {
-            margin-top: 1rem;
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        input, textarea {
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+
+        .section h2 {
+            margin-top: 0;
         }
-        button {
-            margin-top: 1.5rem;
-            padding: 0.75rem;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+
+        .section p {
+            font-size: 1.1em;
         }
-        button:hover {
-            background-color: #45a049;
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
         }
+
+        /* Footer */
         footer {
+            background: #333;
+            color: #fff;
             text-align: center;
-            margin-top: 2rem;
-            font-size: 0.9rem;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Contact Us</h1>
+        <h1>native physical bone</h1>
+        <p>Innovative Solutions for a Better Tomorrow</p>
     </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#project">Our Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions, feel free to reach out using the form below or email us directly at:</p>
-        <p><strong>Email:</strong> <a href="mailto:sliz@qq.com">sliz@qq.com</a></p>
-        
+        <!-- Intro Section -->
+        <section id="intro" class="intro">
+            <h2>Welcome to native physical bone</h2>
+            <p>Hello visitor of my blog. My name is npb. I am developing assets for creating games on Unity. Some of my work is featured on this blog. In order to get acquainted with my work in more detail, I recommend that you go to my Asset Store page: https://assetstore.unity.com/publishers/1003897. If you want to contact me, then go to the email me.
+
+All the best!</p>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>native physical bone was founded with the vision of transforming ideas into reality. With years of experience in the industry, we pride ourselves on our commitment to excellence and customer satisfaction.</p>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project" class="section">
+            <h2>LZSplineExtrude</h2>
+            <img src="p1.jpg" alt="LZSplineMesh">
+            <h1>How to Use</h1>
+
+    <h2>LZSplineExtrude</h2>
+    <ol>
+        <li>Add the <strong>LZSplineExtrude</strong> component to any GameObject that has a <strong>SplineContainer</strong> component.</li>
+        <li>Adjust the component parameters to customize the model's thickness, rotation interpolation, and other settings to shape it along the spline.</li>
+    </ol>
+
+    <h2>LZSplineShape</h2>
+    <ol>
+        <li>Add the <strong>LZSplineShape</strong> component to any GameObject that has a <strong>SplineContainer</strong> component.</li>
+        <li>Adjust the component parameters to customize the model's sourceMesh, size, rotation interpolation, and other settings to shape it along the spline.</li>
+    </ol>
+
+    <div class="note">
+        <p>This flexibility makes <strong>LZSplineMesh</strong> a powerful option for creating extruded models that follow complex paths in Unity.</p>
     </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to discuss a project? Feel free to reach out to us at <a href="mailto:starlizhi@gmail.com">info@yourcompany.com</a></p>
+        </section>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        &copy; 2024 lizhi. All rights reserved.
+        <p>&copy; 2024 native physical bone. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
