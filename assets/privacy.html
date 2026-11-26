@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>用户隐私保护指引</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --ink:#1f2329; --sub:#5c6672;
+    --line:#e5e8ee; --brand:#2a6df4; --brand-soft:#eaf1ff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#15171b; --card:#1d2026; --ink:#e8eaee; --sub:#a2abb8; --line:#2c313a; --brand:#6f9dff; --brand-soft:#1f2940; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:24px 18px 64px; background:var(--bg); color:var(--ink);
+    font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .logo{width:44px;height:44px;border-radius:12px;background:var(--brand-soft);color:var(--brand);
+        display:flex;align-items:center;justify-content:center;font-weight:700;font-size:19px;flex:none}
+  h1{font-size:20px;margin:0;font-weight:650}
+  .meta{color:var(--sub);font-size:13px;margin-top:2px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 20px 8px;margin-top:14px}
+  h2{font-size:16px;margin:22px 0 8px;font-weight:650}
+  h2:first-child{margin-top:4px}
+  p{margin:8px 0}
+  ul{margin:8px 0;padding-left:1.25em}
+  li{margin:5px 0}
+  .muted{color:var(--sub)}
+  .tag{display:inline-block;background:var(--brand-soft);color:var(--brand);border-radius:999px;
+       padding:2px 10px;font-size:12px;margin-left:8px;vertical-align:middle}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{margin-top:22px;color:var(--sub);font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo" id="logo">游</div>
+    <div>
+      <h1 id="title">用户隐私保护指引</h1>
+      <div class="meta" id="meta"></div>
+    </div>
+  </header>
+
+  <div class="card" id="content"></div>
+
+  <footer>本指引适用于 <span id="footName">本小游戏</span>，如有疑问请通过文末联系方式与我联系。</footer>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ============ 所有内容都从 URL 参数读取，参数名用中文 ============
+  // 例：?游戏名=命运试炼场&类型=横版动作闯关小游戏&收集=设备信息|游戏记录&...
+  var q = new URLSearchParams(location.search);
+
+  function p(name, fallback) {
+    var v = q.get(name);
+    return (v === null || v.trim() === '') ? fallback : v.trim();
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  // 默认值：不带参数直接打开也能看到一份完整、合规的通用指引
+  var name    = p('游戏名', '本小游戏');
+  var kind    = p('类型', '休闲小游戏');
+  var updated = p('更新日期', '2026 年 11 月 25 日');
+  var contact = p('开发者', '张柏超');
+  var email   = p('邮箱', 'starlizhi@gmail.com');
+  var phone   = p('电话', '13601288580');
+  var addr    = p('地址', '河北省承德市上板城镇上板城村16组1405号');
+
+  // 多值参数用 | 分隔
+  var collect = p('收集信息',
+    '设备信息：设备型号、操作系统版本、网络类型、屏幕分辨率，用于画面适配与故障排查|' +
+    '游戏记录：关卡进度、金币数量、已解锁内容，仅保存在你的设备本地').split('|');
+
+  var purpose = p('使用目的',
+    '用于提供游戏功能、适配设备、排查崩溃与优化体验，不会用于广告定向或与第三方共享。');
+  var storage = p('存储期限',
+    '游戏存档保存在你的设备本地（抖音小游戏本地存储）。卸载小游戏或清除缓存后，存档将被删除，无法恢复。');
+  var third   = p('第三方共享',
+    '本游戏未接入第三方统计、广告或支付 SDK，不会向任何第三方提供你的个人信息。');
+  var minor   = p('未成年人保护',
+    '若你是未满 14 周岁的儿童，请在监护人陪同下阅读本指引并使用本小游戏。我们不会主动收集儿童的个人信息；' +
+    '如监护人发现相关情况，可通过文末方式联系我们删除。');
+
+  // ============ 渲染 ============
+  document.title = name + ' · 用户隐私保护指引';
+  document.getElementById('logo').textContent = name.slice(0, 1);
+  document.getElementById('title').textContent = name;
+  document.getElementById('footName').textContent = name;
+  document.getElementById('meta').innerHTML =
+    '更新日期：' + esc(updated) + '<span class="tag">' + esc(kind) + '</span>';
+
+  var li = collect.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
+
+  document.getElementById('content').innerHTML =
+    '<p>感谢你使用《' + esc(name) + '》。本指引说明本小游戏如何收集、使用、存储和保护你的个人信息，' +
+    '请你在使用前仔细阅读并理解本指引。</p>' +
+
+    '<h2>一、我们收集的信息</h2>' +
+    '<p>本小游戏仅收集为提供游戏功能所必需的信息：</p>' +
+    '<ul>' + li + '</ul>' +
+    '<p class="muted">本小游戏不需要注册账号，不会收集你的姓名、手机号、身份证号、通讯录、相册、位置、' +
+    '麦克风、摄像头等敏感个人信息。</p>' +
+
+    '<h2>二、信息的使用目的</h2><p>' + esc(purpose) + '</p>' +
+    '<h2>三、信息的存储与保存期限</h2><p>' + esc(storage) + '</p>' +
+    '<h2>四、信息的共享与第三方</h2><p>' + esc(third) + '</p>' +
+
+    '<h2>五、你的权利</h2>' +
+    '<ul>' +
+    '<li>你可以随时清除本地存档：在抖音中删除本小游戏，或在系统设置中清除小游戏缓存。</li>' +
+    '<li>你可以通过文末联系方式，就个人信息处理相关事宜进行咨询、投诉或提出删除请求。</li>' +
+    '</ul>' +
+
+    '<h2>六、未成年人保护</h2><p>' + esc(minor) + '</p>' +
+
+    '<h2>七、本指引的更新</h2>' +
+    '<p>本指引可能因法律法规或功能调整而更新。更新后我们会在本页面公布最新版本并标注更新日期；' +
+    '重大变更会通过小游戏内提示等方式另行告知。</p>' +
+
+    '<h2>八、联系我们</h2>' +
+    '<p>开发者：' + esc(contact) + '<br>' +
+    '联系邮箱：<a href="mailto:' + esc(email) + '">' + esc(email) + '</a><br>' +
+    '联系电话：' + esc(phone) + '<br>' +
+    '联系地址：' + esc(addr) + '</p>' +
+    '<p class="muted">我们会在收到你的请求后 15 个工作日内回复。</p>';
+})();
+</script>
+</body>
+</html>
